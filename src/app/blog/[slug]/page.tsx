@@ -55,10 +55,20 @@ export default function ArticleDetailPage({ params }: Props) {
           <p className="mt-3 text-text-secondary text-lg">{article.excerpt}</p>
         </div>
 
-        {/* 封面图占位 */}
-        <div className="h-48 md:h-64 bg-bg-muted rounded-card flex items-center justify-center mb-10">
-          <span className="text-5xl">{article.category === "排行榜" ? "🏆" : article.category === "教程" ? "📖" : "📝"}</span>
-        </div>
+        {/* 封面图 */}
+        {article.coverImage ? (
+          <div className="rounded-card overflow-hidden mb-10">
+            <img
+              src={article.coverImage}
+              alt={article.title}
+              className="w-full h-auto"
+            />
+          </div>
+        ) : (
+          <div className="h-48 md:h-64 bg-bg-muted rounded-card flex items-center justify-center mb-10">
+            <span className="text-5xl">{article.category === "排行榜" ? "🏆" : article.category === "教程" ? "📖" : "📝"}</span>
+          </div>
+        )}
 
         {/* 文章正文 */}
         <div

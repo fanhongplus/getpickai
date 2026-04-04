@@ -1,0 +1,73 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 深蓝色渐变背景 -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0c0e1a"/>
+      <stop offset="100%" stop-color="#1a1f36"/>
+    </linearGradient>
+    <!-- 装饰光圈 -->
+    <radialGradient id="glow1" cx="900" cy="200" r="300" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4f6ef7" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#4f6ef7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow2" cx="200" cy="500" r="250" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow1)"/>
+  <rect width="1200" height="630" fill="url(#glow2)"/>
+
+  <!-- 顶部装饰线 -->
+  <rect x="100" y="140" width="60" height="4" rx="2" fill="#4f6ef7"/>
+
+  <!-- 分类标签 -->
+  <text x="100" y="180" fill="#94a3b8" font-size="22" font-family="sans-serif" font-weight="500">亲测排名 · 2026年4月</text>
+
+  <!-- 主标题 -->
+  <text x="100" y="260" fill="#ffffff" font-size="56" font-family="sans-serif" font-weight="700">2026年最值得付费的</text>
+  <text x="100" y="330" fill="#ffffff" font-size="56" font-family="sans-serif" font-weight="700">10个AI工具</text>
+
+  <!-- 副标题 -->
+  <text x="100" y="390" fill="#94a3b8" font-size="24" font-family="sans-serif">每一个都经过真实使用体验，排名分先后</text>
+
+  <!-- 工具图标行 -->
+  <!-- ChatGPT -->
+  <rect x="100" y="440" width="48" height="48" rx="10" fill="#10a37f"/>
+  <text x="124" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">C</text>
+  <!-- Claude -->
+  <rect x="164" y="440" width="48" height="48" rx="10" fill="#d4a574"/>
+  <text x="188" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">C</text>
+  <!-- Midjourney -->
+  <rect x="228" y="440" width="48" height="48" rx="10" fill="#111827"/>
+  <text x="252" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">M</text>
+  <!-- Canva -->
+  <rect x="292" y="440" width="48" height="48" rx="10" fill="#00c4cc"/>
+  <text x="316" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">C</text>
+  <!-- HeyGen -->
+  <rect x="356" y="440" width="48" height="48" rx="10" fill="#1d4ed8"/>
+  <text x="380" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">H</text>
+  <!-- Jasper -->
+  <rect x="420" y="440" width="48" height="48" rx="10" fill="#4f6ef7"/>
+  <text x="444" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">J</text>
+  <!-- ElevenLabs -->
+  <rect x="484" y="440" width="48" height="48" rx="10" fill="#000000"/>
+  <text x="508" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">E</text>
+  <!-- Cursor -->
+  <rect x="548" y="440" width="48" height="48" rx="10" fill="#000000"/>
+  <text x="572" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">C</text>
+  <!-- Writesonic -->
+  <rect x="612" y="440" width="48" height="48" rx="10" fill="#6c5ce7"/>
+  <text x="636" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">W</text>
+  <!-- 省略号 -->
+  <text x="686" y="472" fill="#64748b" font-size="24" font-family="sans-serif">+1</text>
+
+  <!-- 底部品牌 -->
+  <text x="100" y="570" fill="#64748b" font-size="20" font-family="sans-serif">GetPickAI · 帮你挑出最值得用的 AI 工具</text>
+
+  <!-- 右下角装饰 -->
+  <rect x="1050" y="540" width="50" height="4" rx="2" fill="#4f6ef7" opacity="0.5"/>
+</svg>
