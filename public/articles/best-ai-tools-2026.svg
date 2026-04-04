@@ -1,73 +1,102 @@
 <svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- 深蓝色渐变背景 -->
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#0c0e1a"/>
-      <stop offset="100%" stop-color="#1a1f36"/>
+    <!-- 深蓝渐变背景 -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0d1f"/>
+      <stop offset="50%" stop-color="#111640"/>
+      <stop offset="100%" stop-color="#1a1f52"/>
     </linearGradient>
-    <!-- 装饰光圈 -->
-    <radialGradient id="glow1" cx="900" cy="200" r="300" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#4f6ef7" stop-opacity="0.15"/>
+    <!-- 光晕效果 -->
+    <radialGradient id="glowTop" cx="800" cy="100" r="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4f6ef7" stop-opacity="0.2"/>
       <stop offset="100%" stop-color="#4f6ef7" stop-opacity="0"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="200" cy="500" r="250" gradientUnits="userSpaceOnUse">
-      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.1"/>
+    <radialGradient id="glowBottom" cx="300" cy="550" r="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#818cf8" stop-opacity="0.12"/>
       <stop offset="100%" stop-color="#818cf8" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCenter" cx="600" cy="315" r="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
     </radialGradient>
   </defs>
 
-  <!-- 背景 -->
-  <rect width="1200" height="630" fill="url(#bg)"/>
-  <rect width="1200" height="630" fill="url(#glow1)"/>
-  <rect width="1200" height="630" fill="url(#glow2)"/>
+  <!-- 背景层 -->
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="630" fill="url(#glowTop)"/>
+  <rect width="1200" height="630" fill="url(#glowBottom)"/>
+  <rect width="1200" height="630" fill="url(#glowCenter)"/>
 
-  <!-- 顶部装饰线 -->
-  <rect x="100" y="140" width="60" height="4" rx="2" fill="#4f6ef7"/>
+  <!-- 网格装饰 (subtle) -->
+  <line x1="0" y1="0" x2="1200" y2="630" stroke="#4f6ef7" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="1200" y1="0" x2="0" y2="630" stroke="#4f6ef7" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="600" y1="0" x2="600" y2="630" stroke="#4f6ef7" stroke-opacity="0.02" stroke-width="1"/>
+  <line x1="0" y1="315" x2="1200" y2="315" stroke="#4f6ef7" stroke-opacity="0.02" stroke-width="1"/>
 
-  <!-- 分类标签 -->
-  <text x="100" y="180" fill="#94a3b8" font-size="22" font-family="sans-serif" font-weight="500">亲测排名 · 2026年4月</text>
+  <!-- 装饰圆点 -->
+  <circle cx="950" cy="120" r="80" fill="#4f6ef7" fill-opacity="0.06"/>
+  <circle cx="1050" cy="180" r="40" fill="#818cf8" fill-opacity="0.05"/>
+  <circle cx="150" cy="480" r="60" fill="#6366f1" fill-opacity="0.05"/>
 
-  <!-- 主标题 -->
-  <text x="100" y="260" fill="#ffffff" font-size="56" font-family="sans-serif" font-weight="700">2026年最值得付费的</text>
-  <text x="100" y="330" fill="#ffffff" font-size="56" font-family="sans-serif" font-weight="700">10个AI工具</text>
+  <!-- 顶部标签 -->
+  <rect x="100" y="135" width="100" height="32" rx="16" fill="#4f6ef7" fill-opacity="0.2"/>
+  <text x="150" y="156" text-anchor="middle" fill="#93a4fc" font-size="14" font-family="'DM Sans', sans-serif" font-weight="600">亲测排名</text>
+
+  <!-- 年份标签 -->
+  <rect x="215" y="135" width="70" height="32" rx="16" fill="#ffffff" fill-opacity="0.08"/>
+  <text x="250" y="156" text-anchor="middle" fill="#94a3b8" font-size="14" font-family="'DM Sans', sans-serif" font-weight="500">2026</text>
+
+  <!-- 主标题第1行 -->
+  <text x="100" y="240" fill="#ffffff" font-size="62" font-family="'Noto Sans SC', 'DM Sans', sans-serif" font-weight="800" letter-spacing="-1">2026年最值得付费的</text>
+
+  <!-- 主标题第2行 - 带强调色 -->
+  <text x="100" y="320" fill="#ffffff" font-size="62" font-family="'Noto Sans SC', 'DM Sans', sans-serif" font-weight="800" letter-spacing="-1">10个</text>
+  <text x="260" y="320" fill="#8b9cf7" font-size="62" font-family="'Noto Sans SC', 'DM Sans', sans-serif" font-weight="800" letter-spacing="-1">AI工具</text>
 
   <!-- 副标题 -->
-  <text x="100" y="390" fill="#94a3b8" font-size="24" font-family="sans-serif">每一个都经过真实使用体验，排名分先后</text>
+  <text x="100" y="375" fill="#64748b" font-size="22" font-family="'Noto Sans SC', sans-serif" font-weight="400">每一个都经过至少两周的真实使用体验</text>
 
-  <!-- 工具图标行 -->
-  <!-- ChatGPT -->
-  <rect x="100" y="440" width="48" height="48" rx="10" fill="#10a37f"/>
-  <text x="124" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">C</text>
-  <!-- Claude -->
-  <rect x="164" y="440" width="48" height="48" rx="10" fill="#d4a574"/>
-  <text x="188" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">C</text>
-  <!-- Midjourney -->
-  <rect x="228" y="440" width="48" height="48" rx="10" fill="#111827"/>
-  <text x="252" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">M</text>
-  <!-- Canva -->
-  <rect x="292" y="440" width="48" height="48" rx="10" fill="#00c4cc"/>
-  <text x="316" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">C</text>
-  <!-- HeyGen -->
-  <rect x="356" y="440" width="48" height="48" rx="10" fill="#1d4ed8"/>
-  <text x="380" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">H</text>
-  <!-- Jasper -->
-  <rect x="420" y="440" width="48" height="48" rx="10" fill="#4f6ef7"/>
-  <text x="444" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">J</text>
-  <!-- ElevenLabs -->
-  <rect x="484" y="440" width="48" height="48" rx="10" fill="#000000"/>
-  <text x="508" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">E</text>
-  <!-- Cursor -->
-  <rect x="548" y="440" width="48" height="48" rx="10" fill="#000000"/>
-  <text x="572" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">C</text>
-  <!-- Writesonic -->
-  <rect x="612" y="440" width="48" height="48" rx="10" fill="#6c5ce7"/>
-  <text x="636" y="470" text-anchor="middle" fill="white" font-size="18" font-weight="bold" font-family="sans-serif">W</text>
-  <!-- 省略号 -->
-  <text x="686" y="472" fill="#64748b" font-size="24" font-family="sans-serif">+1</text>
+  <!-- 分隔线 -->
+  <rect x="100" y="410" width="80" height="3" rx="1.5" fill="#4f6ef7"/>
+
+  <!-- 工具Logo行 -->
+  <!-- 1. ChatGPT -->
+  <rect x="100" y="445" width="44" height="44" rx="11" fill="#10a37f"/>
+  <text x="122" y="473" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="'DM Sans', sans-serif">G</text>
+  <!-- 2. Claude -->
+  <rect x="156" y="445" width="44" height="44" rx="11" fill="#cc9b6d"/>
+  <text x="178" y="473" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="'DM Sans', sans-serif">C</text>
+  <!-- 3. Midjourney -->
+  <rect x="212" y="445" width="44" height="44" rx="11" fill="#ffffff" fill-opacity="0.12"/>
+  <text x="234" y="473" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="'DM Sans', sans-serif">M</text>
+  <!-- 4. Canva -->
+  <rect x="268" y="445" width="44" height="44" rx="11" fill="#00c4cc"/>
+  <text x="290" y="473" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="'DM Sans', sans-serif">C</text>
+  <!-- 5. CapCut -->
+  <rect x="324" y="445" width="44" height="44" rx="11" fill="#000000" stroke="#333" stroke-width="1"/>
+  <text x="346" y="473" text-anchor="middle" fill="white" font-size="14" font-weight="700" font-family="'DM Sans', sans-serif">CC</text>
+  <!-- 6. HeyGen -->
+  <rect x="380" y="445" width="44" height="44" rx="11" fill="#1d4ed8"/>
+  <text x="402" y="473" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="'DM Sans', sans-serif">H</text>
+  <!-- 7. Jasper -->
+  <rect x="436" y="445" width="44" height="44" rx="11" fill="#4f6ef7"/>
+  <text x="458" y="473" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="'DM Sans', sans-serif">J</text>
+  <!-- 8. ElevenLabs -->
+  <rect x="492" y="445" width="44" height="44" rx="11" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+  <text x="514" y="473" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="'DM Sans', sans-serif">E</text>
+  <!-- 9. Cursor -->
+  <rect x="548" y="445" width="44" height="44" rx="11" fill="#1a1a2e" stroke="#333" stroke-width="1"/>
+  <text x="570" y="473" text-anchor="middle" fill="white" font-size="14" font-weight="700" font-family="'DM Sans', sans-serif">Cu</text>
+  <!-- 10. Writesonic -->
+  <rect x="604" y="445" width="44" height="44" rx="11" fill="#6c5ce7"/>
+  <text x="626" y="473" text-anchor="middle" fill="white" font-size="16" font-weight="700" font-family="'DM Sans', sans-serif">W</text>
 
   <!-- 底部品牌 -->
-  <text x="100" y="570" fill="#64748b" font-size="20" font-family="sans-serif">GetPickAI · 帮你挑出最值得用的 AI 工具</text>
+  <text x="100" y="560" fill="#4f6ef7" font-size="20" font-family="'DM Sans', sans-serif" font-weight="700">Get</text>
+  <text x="136" y="560" fill="#4f6ef7" font-size="20" font-family="'DM Sans', sans-serif" font-weight="700">Pick</text>
+  <text x="176" y="560" fill="#ffffff" font-size="20" font-family="'DM Sans', sans-serif" font-weight="700">AI</text>
+  <text x="210" y="560" fill="#4a5568" font-size="16" font-family="'Noto Sans SC', sans-serif" font-weight="400">  帮你挑出最值得用的 AI 工具</text>
 
-  <!-- 右下角装饰 -->
-  <rect x="1050" y="540" width="50" height="4" rx="2" fill="#4f6ef7" opacity="0.5"/>
+  <!-- 右侧装饰大数字 -->
+  <text x="1020" y="420" fill="#ffffff" fill-opacity="0.03" font-size="280" font-family="'DM Sans', sans-serif" font-weight="900">10</text>
 </svg>

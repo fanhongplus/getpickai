@@ -87,3 +87,38 @@ body {
   color: var(--text);
   font-weight: 600;
 }
+.prose-custom em {
+  color: var(--text-muted);
+  font-style: italic;
+}
+.prose-custom blockquote {
+  border-left: 3px solid #4f6ef7;
+  padding-left: 1rem;
+  margin: 1.5rem 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+.prose-custom table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.875rem;
+}
+.prose-custom thead {
+  background-color: var(--bg-muted);
+}
+.prose-custom th {
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+  color: var(--text);
+  border-bottom: 2px solid var(--border);
+}
+.prose-custom td {
+  padding: 0.75rem;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+}
+.prose-custom tr:hover {
+  background-color: var(--bg-soft);
+}
