@@ -1,0 +1,63 @@
+{
+  "slug": "pictory",
+  "name": "Pictory",
+  "logo": "/logos/pictory.svg",
+  "tagline": "把文章和博客一键转成视频，内容二次创作的最短路径",
+  "scenes": ["做视频", "写博客"],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $19/月起",
+  "rating": 4.3,
+  "affiliateUrl": "https://pictory.ai?ref=getpickai",
+  "websiteUrl": "https://pictory.ai",
+  "editorReview": "Pictory 解决的是一个很具体的问题：你写了一篇 2000 字的博客，想把它变成一个 3 分钟的 YouTube 视频，但你不想学剪辑软件。这正是 Pictory 最擅长的事情，而且它做得相当不错——粘贴文章 URL，AI 自动拆分段落、匹配素材画面、生成配音，整个流程 20 分钟搞定。\n\nPictory 的素材库很大，有数百万张正版图片和视频片段，大多数情况下自动匹配的效果还算合理。对于 YouTuber、内容博主来说，用来做「博客转视频」或者「把长视频剪成 Shorts/Reels」非常实用，能明显提升内容复用效率。\n\n但要说清楚它不擅长什么：Pictory 不是数字人工具，没有虚拟主播，生成出来的视频是「图文配音」风格，不是那种真人讲解的感觉。如果你需要数字人出镜，去看 HeyGen 或 Synthesia。另外视频模板感比较强，个性化程度有限，进阶编辑需求满足不了。",
+  "goodFor": ["博客作者和内容创作者", "需要将长内容转化为短视频的运营", "YouTube 和播客创作者", "希望内容二次创作的营销人员"],
+  "notGoodFor": ["需要数字人出镜的用户", "有高级视频编辑需求的专业剪辑师", "需要高度定制化视频风格的创作者"],
+  "pros": [
+    "文章/博客一键转视频，操作极简",
+    "数百万正版素材库，自动匹配画面",
+    "支持 AI 自动配音，多种声音可选",
+    "长视频自动剪辑为 Shorts/Reels 片段",
+    "价格亲民，$19/月 起步"
+  ],
+  "cons": [
+    "不支持数字人出镜，视频风格偏「PPT 配音」",
+    "视频模板感较强，个性化空间有限",
+    "高级编辑功能薄弱，无法精细调整"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free Trial",
+      "price": "免费试用",
+      "features": ["3 个视频项目", "素材库访问", "AI 配音体验", "720p 导出"]
+    },
+    {
+      "name": "Starter",
+      "price": "$19/月",
+      "features": ["每月 30 个视频", "1080p 导出", "去除水印", "10 小时自动字幕"]
+    },
+    {
+      "name": "Professional",
+      "price": "$39/月",
+      "features": ["每月 60 个视频", "品牌套件", "优先渲染", "自定义字体和颜色"]
+    },
+    {
+      "name": "Teams",
+      "price": "$99/月",
+      "features": ["每月 90 个视频", "3 个用户席位", "协作功能", "API 接入"]
+    }
+  ],
+  "quickStart": [
+    "注册免费试用账号（无需信用卡）",
+    "选择「Script to Video」或「Article to Video」",
+    "粘贴文章 URL 或直接输入脚本内容",
+    "AI 自动生成视频，选择配音和背景音乐",
+    "微调字幕和素材后，导出 MP4 文件"
+  ],
+  "relatedTools": ["heygen", "synthesia", "runway"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "50% first payment",
+  "cookieDuration": "30 days",
+  "createdAt": "2026-04-04"
+}

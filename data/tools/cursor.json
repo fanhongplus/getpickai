@@ -1,0 +1,58 @@
+{
+  "slug": "cursor",
+  "name": "Cursor",
+  "logo": "/logos/cursor.svg",
+  "tagline": "目前最强 AI 编程 IDE，让写代码快 10 倍的程序员神器",
+  "scenes": ["写代码"],
+  "pricingType": "freemium",
+  "priceLabel": "免费 / $20/月起",
+  "rating": 4.9,
+  "affiliateUrl": "https://cursor.com?ref=getpickai",
+  "websiteUrl": "https://cursor.com",
+  "editorReview": "Cursor 是近两年开发工具领域最让人兴奋的产品，没有之一。基于 VS Code 构建意味着你的插件、快捷键、配置文件全部直接迁移，没有任何切换成本。第一次用 Tab 键接受 AI 补全的那一刻，你会明白为什么那么多程序员说「用了就回不去了」。\n\nComposer 功能才是 Cursor 的真正杀手锏。你可以直接用自然语言描述「帮我在这个项目里加一个用户登录功能」，Cursor 会自动理解代码库结构，跨多个文件同时修改，最后给你展示一个完整的 diff。这已经不是「辅助编程」，而是「AI 和你结对编程」的体验。\n\n唯一要注意的是，免费版有每月 2000 次补全和 50 次 Composer 调用的限制，重度用户很快会触顶。$20/月 的 Pro 版物超所值，如果你每天写代码，这钱花得比买外卖划算多了。",
+  "goodFor": ["全栈开发者", "独立开发者", "需要频繁重构代码的程序员", "想快速上手新技术栈的开发者"],
+  "notGoodFor": ["不写代码的用户", "极度依赖特定非 VS Code 插件的开发者", "对数据隐私有严格要求的企业开发者"],
+  "pros": [
+    "目前综合实力最强的 AI 编程 IDE",
+    "基于 VS Code，迁移成本几乎为零",
+    "Composer 支持跨文件多步骤复杂编辑",
+    "Tab 自动补全极其智能，能预测多行代码",
+    "支持 Claude、GPT-4 等多种顶级模型"
+  ],
+  "cons": [
+    "免费版有月度使用次数限制",
+    "对大型项目进行代码库索引时速度较慢",
+    "部分企业对代码上传云端有安全顾虑"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版 (Hobby)",
+      "price": "免费",
+      "features": ["每月 2000 次代码补全", "每月 50 次慢速 Composer 调用", "基础代码库理解", "VS Code 插件兼容"]
+    },
+    {
+      "name": "Pro",
+      "price": "$20/月",
+      "features": ["无限代码补全", "每月 500 次快速 Composer 调用", "GPT-4、Claude 等顶级模型", "优先响应速度"]
+    },
+    {
+      "name": "Business",
+      "price": "$40/人/月",
+      "features": ["Pro 全部功能", "团队管理控制台", "SSO 登录", "隐私模式（代码不上传）"]
+    }
+  ],
+  "quickStart": [
+    "从官网下载 Cursor 安装包（支持 Mac/Windows/Linux）",
+    "安装后可一键导入 VS Code 配置（插件、主题、快捷键）",
+    "用 GitHub 或邮箱注册登录",
+    "打开项目文件夹，Cursor 会自动索引代码库",
+    "按 Tab 接受 AI 补全建议，或用 Cmd+K 打开 Composer 对话"
+  ],
+  "relatedTools": ["windsurf", "github-copilot"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-04"
+}

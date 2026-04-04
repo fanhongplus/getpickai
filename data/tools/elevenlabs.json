@@ -1,0 +1,58 @@
+{
+  "slug": "elevenlabs",
+  "name": "ElevenLabs",
+  "logo": "/logos/elevenlabs.svg",
+  "tagline": "AI 语音合成天花板，声音克隆逼真到让人细思极恐",
+  "scenes": ["做音乐", "做视频"],
+  "pricingType": "freemium",
+  "priceLabel": "免费 / $5/月起",
+  "rating": 4.8,
+  "affiliateUrl": "https://elevenlabs.io?ref=getpickai",
+  "websiteUrl": "https://elevenlabs.io",
+  "editorReview": "说真的，第一次听到 ElevenLabs 克隆出来的声音时我楞了好几秒——这不就是真人说话吗？情感起伏、停顿节奏、甚至呼吸声都有。同类工具里没有第二家能做到这个水平，尤其英文语音，基本可以直接商用。\n\n免费版每个月只有 1 万字符，听起来不少，其实很快就用完了。如果你做播客、有声书或者视频配音，$22/月 的 Creator 套餐是最值的选择，专业声音克隆 + 10 万字符基本够一个人用。\n\n中文语音质量比英文差一个档次，不过在所有 AI 配音工具里仍然是前三。29 种语言支持、完善的 API 接口，让它成了开发者圈子里的标配。要说唯一让我担心的，就是声音克隆的伦理边界——用别人声音要小心，ElevenLabs 自己也在不断收紧审核。",
+  "goodFor": ["播客制作人", "有声书制作者", "视频博主配音", "需要API集成的开发者"],
+  "notGoodFor": ["只需要简单TTS的普通用户", "预算紧张的学生", "主要需要中文配音的用户"],
+  "pros": [
+    "英文语音合成效果是行业天花板，情感自然",
+    "声音克隆功能强大，少量样本即可复刻",
+    "支持 29 种语言，覆盖范围广",
+    "API 文档完善，开发者集成方便",
+    "声音库丰富，数千个预设声音可选"
+  ],
+  "cons": [
+    "免费版仅 1 万字符/月，很容易用完",
+    "中文语音质量明显不如英文",
+    "声音克隆存在伦理风险，需谨慎使用"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": ["1 万字符/月", "3 个自定义声音", "访问预设声音库", "非商业用途"]
+    },
+    {
+      "name": "Starter",
+      "price": "$5/月",
+      "features": ["3 万字符/月", "10 个自定义声音", "商业用途授权", "基础 API 访问"]
+    },
+    {
+      "name": "Creator",
+      "price": "$22/月",
+      "features": ["10 万字符/月", "专业声音克隆", "更高音频质量", "优先生成速度"]
+    }
+  ],
+  "quickStart": [
+    "注册免费账号，进入 Speech Synthesis 页面",
+    "从声音库选择预设声音，或上传 1 分钟录音克隆自己的声音",
+    "在文本框输入要合成的内容",
+    "调整稳定性和清晰度滑块，点击生成",
+    "试听满意后下载 MP3 文件使用"
+  ],
+  "relatedTools": ["murf-ai", "lalal-ai"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-04"
+}

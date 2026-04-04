@@ -1,0 +1,58 @@
+{
+  "slug": "adobe-firefly",
+  "name": "Adobe Firefly",
+  "logo": "/logos/adobe-firefly.svg",
+  "tagline": "商用版权最安全的 AI 绘图工具，Adobe 生态的最强补充",
+  "scenes": ["画图片", "做设计"],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $4.99/月起",
+  "rating": 4.5,
+  "affiliateUrl": "https://firefly.adobe.com?ref=getpickai",
+  "websiteUrl": "https://firefly.adobe.com",
+  "editorReview": "Adobe Firefly 解决了 AI 绘图领域最让甲方头疼的问题：版权。它只用 Adobe Stock 授权素材和公共领域内容训练模型，生成的图片可以放心用于商业项目，不用担哪天收到律师函。这一点在企业环境里是实打实的竞争优势。\n\n生成填充（Generative Fill）功能是 Firefly 的真正杀手锏。在 Photoshop 里框选一块区域，输入文字描述，AI 直接帮你无缝填充内容——这个功能节省的修图时间，比你订阅费贵十倍。如果你是重度 Photoshop 用户，Firefly 几乎是必装的。\n\n但要说纯粹的「AI 创意绘图」，Firefly 的艺术感和创意性确实不及 Midjourney。它更像是设计师的生产力工具，而不是艺术家的创作伙伴。脱离 Adobe 生态单独使用，吸引力会大打折扣。",
+  "goodFor": ["Adobe Photoshop/Illustrator 用户", "需要商用版权安全保障的设计师", "广告和品牌设计团队", "图片后期处理工作者"],
+  "notGoodFor": ["追求艺术感和创意性的 AI 绘图用户", "不使用 Adobe 软件的用户", "需要高度个性化风格生成的创作者"],
+  "pros": [
+    "商用版权最安全，仅使用授权素材训练",
+    "与 Photoshop、Illustrator 深度集成",
+    "生成填充（Generative Fill）功能极其实用",
+    "起步价格亲民，$4.99/月即可使用",
+    "出图风格真实自然，适合商业场景"
+  ],
+  "cons": [
+    "创意性和艺术风格不如 Midjourney",
+    "独立网页版功能偏少，需配合 Adobe 应用发挥最大价值",
+    "免费版每月生成额度有限"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": ["每月 25 个生成额度", "基础文生图功能", "网页版访问", "有水印输出"]
+    },
+    {
+      "name": "Firefly 标准版",
+      "price": "$4.99/月",
+      "features": ["每月 100 生成额度", "无水印输出", "所有 Firefly 模型", "商用授权"]
+    },
+    {
+      "name": "Creative Cloud 套餐",
+      "price": "$54.99/月",
+      "features": ["Firefly 全功能", "Photoshop + Illustrator 等全套 CC 应用", "1TB 云存储", "企业级支持"]
+    }
+  ],
+  "quickStart": [
+    "访问 firefly.adobe.com，用 Adobe 账号登录（可免费注册）",
+    "选择「文字生成图像」功能",
+    "输入提示词，选择内容类型和风格",
+    "生成后可调整长宽比、效果强度",
+    "满意后下载，或直接在 Photoshop 中使用生成填充"
+  ],
+  "relatedTools": ["midjourney", "leonardo-ai", "canva"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-04"
+}

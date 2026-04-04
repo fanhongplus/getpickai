@@ -1,0 +1,58 @@
+{
+  "slug": "writesonic",
+  "name": "Writesonic",
+  "logo": "/logos/writesonic.svg",
+  "tagline": "高性价比 AI 写作工具，内置联网搜索，文章生成比 Jasper 快还便宜",
+  "scenes": ["写文案", "做营销", "写博客"],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $16/月起",
+  "rating": 4.5,
+  "affiliateUrl": "https://writesonic.com?ref=getpickai",
+  "websiteUrl": "https://writesonic.com",
+  "editorReview": "用了 Jasper 再用 Writesonic，最大的感受是：这俩功能差不多，但价格差了三倍。如果你是独立创业者或者小团队，Writesonic 几乎可以完全替代 Jasper——尤其是英文博客和营销文案场景，生成质量真的不差。\n\nWritesonic 内置的 Chatsonic 是个惊喜，相当于带联网功能的 ChatGPT，可以搜索最新资讯来写内容。这对写时效性内容特别有用，竞品里很少有这个功能。Article Writer 5.0 可以一键生成带大纲、带小标题的完整长文，省去了反复提示的麻烦。\n\n唯一要提醒的是中文生成质量确实一般，如果你主要写中文内容，体验会比较失望。另外免费额度用完之后必须付费，$16/月 的入门套餐限制比较多，实际用起来可能需要更高档套餐。",
+  "goodFor": ["英文博客创作者", "独立创业者", "中小型营销团队", "跨境电商卖家"],
+  "notGoodFor": ["主要写中文内容的用户", "需要高度定制品牌声音的企业", "预算为零的学生"],
+  "pros": [
+    "价格比 Jasper 便宜很多，性价比高",
+    "内置 Chatsonic，支持实时联网搜索写作",
+    "Article Writer 一键生成完整长文章",
+    "模板覆盖广告、邮件、产品描述等多种场景",
+    "支持 25+ 语言，生成速度快"
+  ],
+  "cons": [
+    "中文生成质量明显弱于英文",
+    "免费版额度有限，用完需付费",
+    "高级功能（如品牌声音）需要更贵套餐"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": ["10,000 字/月", "Chatsonic 基础功能", "25+ 语言支持", "基础模板"]
+    },
+    {
+      "name": "Individual",
+      "price": "$16/月",
+      "features": ["100,000 字/月", "Article Writer 5.0", "SEO 优化模式", "浏览器扩展"]
+    },
+    {
+      "name": "Standard",
+      "price": "$33/月",
+      "features": ["无限字数", "品牌声音", "协作功能", "优先支持", "API 接入"]
+    }
+  ],
+  "quickStart": [
+    "注册账号，免费版可直接使用（无需绑卡）",
+    "进入 Article Writer，输入文章主题和关键词",
+    "选择文章长度和语气风格",
+    "点击生成，等待约 30 秒获得完整长文",
+    "用内置编辑器润色，或导出到 WordPress"
+  ],
+  "relatedTools": ["jasper-ai", "copy-ai", "rytr"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "30% recurring",
+  "cookieDuration": "30 days",
+  "createdAt": "2026-04-04"
+}

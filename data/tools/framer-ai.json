@@ -1,0 +1,58 @@
+{
+  "slug": "framer-ai",
+  "name": "Framer",
+  "logo": "/logos/framer-ai.svg",
+  "tagline": "设计师最爱的 AI 建站工具，颜值和性能都拉满",
+  "scenes": ["做设计"],
+  "pricingType": "freemium",
+  "priceLabel": "免费 / $5/月起",
+  "rating": 4.7,
+  "affiliateUrl": "https://framer.com?ref=getpickai",
+  "websiteUrl": "https://framer.com",
+  "editorReview": "在所有 AI 建站工具里，Framer 生成的网站颜值是最能打的。你描述一个想法，它给你的不是那种「模板感十足」的普通页面，而是有设计感、有动效、像真正设计师做出来的作品。对于做品牌展示、产品落地页、个人作品集的用户来说，Framer 几乎是完美答案。\n\n性能也是亮点。Framer 生成的是静态站点，加载速度极快，Core Web Vitals 得分漂亮，这对 SEO 和用户体验都有好处。起步价只要 $5/月，比 Wix 便宜很多，如果是个人项目或小型展示站，成本极低。\n\n但要说清楚它不擅长什么：复杂的电商功能、会员系统、预约管理——这些 Framer 要么不支持要么很薄弱。CMS 功能相对简单，适合内容不太复杂的网站。学习曲线也比 Wix 稍陡，有点设计基础的人用起来更顺手。如果你的目标是「好看的展示型网站」，Framer 是首选；如果需要复杂业务功能，去看 Wix。",
+  "goodFor": ["设计师和创意从业者做作品集展示", "需要高颜值产品落地页的创业者", "对网站加载速度和性能有要求的用户", "预算有限但不想牺牲设计质量的个人"],
+  "notGoodFor": ["需要电商、预约、会员等复杂功能的用户", "完全没有设计基础、只想傻瓜式操作的用户", "需要管理大量内容的博客或媒体网站"],
+  "pros": [
+    "AI 生成网站的设计质量是同类工具中最高的",
+    "内置丰富的交互动效，网站视觉体验出众",
+    "静态站点架构，加载速度极快，SEO 友好",
+    "起步价 $5/月，性价比在同类产品中突出",
+    "持续迭代，新功能更新频率高"
+  ],
+  "cons": [
+    "不适合复杂电商或应用型网站，功能局限明显",
+    "CMS 内容管理系统相对简单，内容量大时不够用",
+    "学习曲线比 Wix 陡，上手需要一定时间"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": ["Framer 子域名", "单个项目", "基础 AI 建站功能", "100 访问者/月"]
+    },
+    {
+      "name": "Mini",
+      "price": "$5/月",
+      "features": ["自定义域名", "无限页面", "1000 访问者/月", "去除 Framer 水印"]
+    },
+    {
+      "name": "Basic",
+      "price": "$15/月",
+      "features": ["无限访问者", "CMS 内容管理", "表单收集", "高级动效功能"]
+    }
+  ],
+  "quickStart": [
+    "访问 framer.com，用 Google 或邮箱注册账号",
+    "点击「Start with AI」，用一句话描述你想要的网站",
+    "从 AI 生成的多个方案中选择最接近你想法的版本",
+    "在编辑器中调整文字、图片和颜色，添加自己的内容",
+    "发布到 Framer 子域名预览，满意后连接自定义域名上线"
+  ],
+  "relatedTools": ["wix-ai", "looka"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-04"
+}

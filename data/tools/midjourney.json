@@ -1,0 +1,58 @@
+{
+  "slug": "midjourney",
+  "name": "Midjourney",
+  "logo": "/logos/midjourney.svg",
+  "tagline": "最强 AI 绘图工具，输入文字就能生成惊艳的艺术级图片",
+  "scenes": ["画图片", "做设计"],
+  "pricingType": "paid",
+  "priceLabel": "$10/月起",
+  "rating": 4.9,
+  "affiliateUrl": "https://midjourney.com?ref=getpickai",
+  "websiteUrl": "https://midjourney.com",
+  "editorReview": "如果只能推荐一个 AI 绘图工具，那一定是 Midjourney。它生成的图片质量目前依然是天花板级别的，尤其擅长艺术风格、概念设计和产品渲染图。\n\n和 DALL-E、Stable Diffusion 比起来，Midjourney 的优势在于「审美」——同样的提示词，它出图的构图、色彩和细节都明显更高级。对于设计师、插画师和内容创作者来说，这就是生产力工具。\n\n缺点是它之前只能在 Discord 里用，不太方便。不过现在已经推出了网页版，体验好了很多。$10/月的入门价格非常良心。",
+  "goodFor": ["设计师和插画师", "内容创作者", "电商卖家（产品图）", "自媒体博主"],
+  "notGoodFor": ["需要精确控制画面的用户", "需要生成真实照片的用户", "完全不会写英文提示词的用户"],
+  "pros": [
+    "图片质量是 AI 绘图工具中的天花板",
+    "艺术风格多样，审美在线",
+    "社区活跃，有大量提示词参考",
+    "入门价格亲民（$10/月）",
+    "已推出网页版，不再依赖 Discord"
+  ],
+  "cons": [
+    "对中文提示词支持一般",
+    "精确控制画面元素比较困难",
+    "生成的图片商用需注意版权条款"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Basic",
+      "price": "$10/月",
+      "features": ["200 张图/月", "3 个并发任务", "基础生成速度"]
+    },
+    {
+      "name": "Standard",
+      "price": "$30/月",
+      "features": ["无限生成（标准速度）", "15 小时快速生成", "隐私模式"]
+    },
+    {
+      "name": "Pro",
+      "price": "$60/月",
+      "features": ["无限生成", "30 小时快速生成", "隐私模式", "12 个并发任务"]
+    }
+  ],
+  "quickStart": [
+    "访问 midjourney.com 注册账号",
+    "选择订阅套餐",
+    "在生成界面输入英文提示词（如 a cute cat in watercolor style）",
+    "等待 30-60 秒生成 4 张候选图",
+    "选择喜欢的图片放大下载"
+  ],
+  "relatedTools": ["jasper-ai", "heygen"],
+  "screenshots": [],
+  "isFeatured": true,
+  "isNew": false,
+  "affiliateCommission": "N/A",
+  "cookieDuration": "N/A",
+  "createdAt": "2026-04-04"
+}

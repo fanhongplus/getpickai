@@ -1,0 +1,58 @@
+{
+  "slug": "canva",
+  "name": "Canva",
+  "logo": "/logos/canva.svg",
+  "tagline": "设计界的瑞士军刀，0 基础也能做出专业好图",
+  "scenes": ["画图片", "做设计", "做PPT"],
+  "pricingType": "freemium",
+  "priceLabel": "免费 / $13/月起",
+  "rating": 4.8,
+  "affiliateUrl": "https://canva.com?ref=getpickai",
+  "websiteUrl": "https://canva.com",
+  "editorReview": "Canva 是那种「不用不知道，一用回不去」的工具。做海报、做 PPT、做社交媒体配图，Canva 的模板库基本上把所有场景都覆盖了。免费版就已经相当能打，大多数普通用户靠免费版就能满足日常需求，这在工具圈里真的难得。\n\nMagic Studio 这套 AI 功能是近两年加进来的，虽然 AI 绘图质量不如 Midjourney 那些专业选手，但胜在用起来无缝——你正在编辑一张海报，突然需要一张配图，直接在 Canva 里生成，省去了切换工具的麻烦。这种「够用就好」的集成体验，对非专业用户来说非常香。\n\n唯一槽点是，如果你的需求是「纯粹的 AI 创意绘图」，Canva 并不是最佳选择。它的定位是设计工具，AI 是加分项而非核心。但如果你是做内容运营、自媒体、小团队设计，Canva 是目前综合分最高的选择，没有之一。",
+  "goodFor": ["内容运营", "自媒体创作者", "小团队设计", "PPT 制作", "社交媒体配图"],
+  "notGoodFor": ["专业 AI 绘图需求", "需要精细图层控制的设计师", "追求极致创意艺术感的用户"],
+  "pros": [
+    "模板库海量，覆盖几乎所有设计场景",
+    "0 设计基础也能快速上手",
+    "免费版功能已经相当完整",
+    "Magic Studio AI 功能与设计流程无缝集成",
+    "支持多人协作，团队效率高"
+  ],
+  "cons": [
+    "AI 绘图质量不如 Midjourney、Leonardo 等专业工具",
+    "免费版导出格式受限（PNG/JPG，无 SVG）",
+    "部分精品模板和元素需要 Pro 才能使用"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": ["25 万+ 模板", "基础 AI 功能", "5GB 云存储", "有限导出格式"]
+    },
+    {
+      "name": "Canva Pro",
+      "price": "$13/月",
+      "features": ["全部 4100 万+ 模板", "Magic Studio 全功能", "100GB 存储", "背景移除", "品牌套件"]
+    },
+    {
+      "name": "Canva Teams",
+      "price": "$10/人/月（3人起）",
+      "features": ["Pro 全部功能", "团队协作工作区", "品牌管控", "内容审批流程"]
+    }
+  ],
+  "quickStart": [
+    "注册账号（免费，支持 Google 登录）",
+    "选择设计类型（海报、PPT、社媒配图等）",
+    "从模板库选一个喜欢的模板",
+    "替换文字、图片，调整颜色",
+    "点击右上角「分享」或「下载」导出"
+  ],
+  "relatedTools": ["midjourney", "leonardo-ai", "adobe-firefly"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-04"
+}

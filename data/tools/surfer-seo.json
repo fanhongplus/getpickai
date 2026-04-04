@@ -1,0 +1,58 @@
+{
+  "slug": "surfer-seo",
+  "name": "Surfer SEO",
+  "logo": "/logos/surfer-seo.svg",
+  "tagline": "AI 驱动的 SEO 内容优化工具，写出来就能排名",
+  "scenes": ["做营销", "写博客"],
+  "pricingType": "paid",
+  "priceLabel": "$89/月起",
+  "rating": 4.6,
+  "affiliateUrl": "https://surferseo.com?ref=getpickai",
+  "websiteUrl": "https://surferseo.com",
+  "editorReview": "做英文 SEO 内容的人，Surfer 是绕不开的工具。它的核心逻辑很直接：分析你目标关键词排名第一的竞争对手在写什么，然后告诉你你的文章应该包含哪些词、写多长、用几个标题——你的内容评分越高，排名概率越大。这套系统听起来简单，但真的有效。\n\n和 Jasper 的集成是亮点，你可以在写作时实时看到 SEO 评分，边写边优化，不用反复切换工具。Google Docs 插件也很方便，老用户直接在习惯的环境里用就行。\n\n缺点是价格门槛不低，$89/月 对个人博主来说是笔不小的开销。而且 Surfer 主要针对英文市场优化，中文 SEO 的数据和支持有限，国内做 SEO 的同学可能会觉得不够用。学习曲线也存在，刚开始用要花点时间理解它的内容评分逻辑。",
+  "goodFor": ["英文内容营销团队", "SEO 顾问和代理商", "专注博客流量增长的独立站卖家", "跨境电商内容团队"],
+  "notGoodFor": ["主要做中文 SEO 的用户", "偶尔写博客的个人用户", "预算有限的初创团队"],
+  "pros": [
+    "实时内容评分系统，边写边优化 SEO",
+    "竞争对手内容分析深入，数据驱动决策",
+    "关键词研究和内容规划功能完善",
+    "与 Jasper、Google Docs 无缝集成",
+    "内容审计功能帮助优化已发布文章"
+  ],
+  "cons": [
+    "起步价 $89/月，对个人用户门槛偏高",
+    "中文 SEO 支持有限，主要针对英文市场",
+    "需要一定学习时间才能充分发挥作用"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Essential",
+      "price": "$89/月",
+      "features": ["30 篇文章编辑/月", "关键词研究", "内容编辑器", "SERP 分析"]
+    },
+    {
+      "name": "Scale",
+      "price": "$129/月",
+      "features": ["100 篇文章编辑/月", "AI 写作功能", "批量内容优化", "内容规划工具"]
+    },
+    {
+      "name": "Enterprise",
+      "price": "定制",
+      "features": ["无限文章编辑", "自定义 AI 模型", "API 访问", "专属客户经理", "团队培训"]
+    }
+  ],
+  "quickStart": [
+    "注册 Surfer SEO，连接 Google Search Console 获取网站数据",
+    "在 Content Editor 中输入目标关键词",
+    "查看 Surfer 分析的竞争对手内容结构和关键词建议",
+    "按照建议撰写或粘贴文章，实时查看内容评分",
+    "优化到评分 70+ 后发布，持续追踪排名变化"
+  ],
+  "relatedTools": ["jasper-ai", "getresponse", "instantly-ai"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-04"
+}

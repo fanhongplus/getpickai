@@ -1,0 +1,58 @@
+{
+  "slug": "github-copilot",
+  "name": "GitHub Copilot",
+  "logo": "/logos/github-copilot.svg",
+  "tagline": "最老牌的 AI 编程助手，与 GitHub 生态无缝打通",
+  "scenes": ["写代码"],
+  "pricingType": "paid",
+  "priceLabel": "$10/月起",
+  "rating": 4.6,
+  "affiliateUrl": "https://github.com/features/copilot?ref=getpickai",
+  "websiteUrl": "https://github.com/features/copilot",
+  "editorReview": "GitHub Copilot 是 AI 编程助手这个品类的开创者，2021 年上线至今积累了最大的用户基础和最成熟的产品体验。代码建议稳定、不乱来，这种「可靠感」在生产环境里非常重要。尤其是当你在写公司核心业务代码时，你需要的不是「惊喜」，而是「靠谱」。\n\n它最大的优势是兼容性。VS Code、JetBrains 全家桶、Neovim、甚至命令行，Copilot 都能跑。如果你的团队用不同的 IDE，Copilot 是唯一能统一体验的选择。再加上和 GitHub Actions、PR Review 的深度整合，整个开发工作流都被 AI 串起来了。\n\n唯一的遗憾是，在 Cursor、Windsurf 这些新生代 IDE 崛起之后，Copilot 的「多文件编辑」和「对话式编程」体验显得有些落后。它更像是一个极其可靠的副驾驶，而不是一个能自主开车的智能体。对于稳定性优先的企业团队，Copilot 依然是首选；个人开发者的话，可以考虑 Cursor。",
+  "goodFor": ["企业和团队开发者", "JetBrains 系 IDE 用户", "重视工具稳定性的工程师", "学生（有免费计划）"],
+  "notGoodFor": ["追求最前沿 AI 编程体验的开发者", "需要 AI 自主完成复杂多步骤任务的用户", "个人预算有限且非学生的用户"],
+  "pros": [
+    "支持几乎所有主流 IDE（VS Code、JetBrains、Neovim 等）",
+    "与 GitHub 生态深度整合（PR Review、Actions 等）",
+    "代码建议稳定可靠，经过大规模生产验证",
+    "学生可免费使用（GitHub Student Pack）",
+    "企业版有完善的合规和隐私保障"
+  ],
+  "cons": [
+    "多文件跨上下文编辑能力不如 Cursor",
+    "对话式编程体验不如新生代 AI IDE 流畅",
+    "个人版 $10/月，不提供免费计划（非学生）"
+  ],
+  "pricingPlans": [
+    {
+      "name": "个人版 (Individual)",
+      "price": "$10/月",
+      "features": ["无限代码补全", "Copilot Chat 对话", "多 IDE 支持", "CLI 集成"]
+    },
+    {
+      "name": "商业版 (Business)",
+      "price": "$19/人/月",
+      "features": ["个人版全部功能", "组织级管理控制台", "策略管理", "审计日志", "IP 赔偿保护"]
+    },
+    {
+      "name": "企业版 (Enterprise)",
+      "price": "$39/人/月",
+      "features": ["商业版全部功能", "自定义代码库知识库", "Copilot 专属微调", "Docset 集成", "专属支持"]
+    }
+  ],
+  "quickStart": [
+    "访问 github.com/features/copilot 订阅（学生可申请免费）",
+    "在 VS Code 中搜索并安装「GitHub Copilot」插件",
+    "用 GitHub 账号授权登录",
+    "打开任意代码文件，开始输入，等待 AI 补全建议出现",
+    "按 Tab 接受建议，或 Alt+] 切换下一条建议"
+  ],
+  "relatedTools": ["cursor", "windsurf"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-04"
+}

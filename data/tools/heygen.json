@@ -1,0 +1,58 @@
+{
+  "slug": "heygen",
+  "name": "HeyGen",
+  "logo": "/logos/heygen.svg",
+  "tagline": "AI 数字人视频生成平台，几分钟做出专业级视频",
+  "scenes": ["做视频", "做营销"],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $24/月起",
+  "rating": 4.7,
+  "affiliateUrl": "https://heygen.com?ref=getpickai",
+  "websiteUrl": "https://heygen.com",
+  "editorReview": "HeyGen 是目前做 AI 数字人视频最好用的工具，没有之一。它的数字人表情自然、口型同步精准，生成的视频质量已经可以直接用在企业宣传和产品介绍里了。\n\n最让我惊喜的是它的「视频翻译」功能——上传一条中文视频，它能自动翻译成英文并且换口型，效果相当自然。这对做海外市场的团队来说简直是神器。\n\n免费版可以生成 1 分钟视频，足够你体验效果。如果觉得好用，$24/月的入门价格在 AI 视频工具里算是很有性价比的。",
+  "goodFor": ["跨境电商卖家", "企业营销团队", "在线教育创作者", "YouTube 博主"],
+  "notGoodFor": ["需要复杂视频剪辑的用户", "预算为零的学生", "需要真人出镜的场景"],
+  "pros": [
+    "数字人质量业内领先，表情自然",
+    "视频翻译功能强大，支持 40+ 语言",
+    "模板丰富，上手极快",
+    "可以克隆自己的形象和声音",
+    "免费版就能体验核心功能"
+  ],
+  "cons": [
+    "高级功能价格不低",
+    "自定义数字人需要额外付费",
+    "视频时长有限制"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": ["1 分钟视频/月", "基础数字人", "基础模板"]
+    },
+    {
+      "name": "Creator",
+      "price": "$24/月",
+      "features": ["15 分钟视频/月", "所有公共数字人", "品牌套件"]
+    },
+    {
+      "name": "Business",
+      "price": "$120/月",
+      "features": ["30 分钟视频/月", "自定义数字人", "API 接入", "优先渲染"]
+    }
+  ],
+  "quickStart": [
+    "注册免费账号",
+    "选择一个数字人形象",
+    "输入或粘贴视频脚本",
+    "选择语言和声音",
+    "点击生成，等待几分钟即可下载"
+  ],
+  "relatedTools": ["jasper-ai", "midjourney"],
+  "screenshots": [],
+  "isFeatured": true,
+  "isNew": false,
+  "affiliateCommission": "20% recurring",
+  "cookieDuration": "60 days",
+  "createdAt": "2026-04-04"
+}

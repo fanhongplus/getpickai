@@ -1,0 +1,58 @@
+{
+  "slug": "notion-ai",
+  "name": "Notion AI",
+  "logo": "/logos/notion-ai.svg",
+  "tagline": "AI 直接住进你的知识库，写作、总结、翻译全搞定",
+  "scenes": ["提效率", "写文案"],
+  "pricingType": "paid",
+  "priceLabel": "$10/月(需先有Notion)",
+  "rating": 4.5,
+  "affiliateUrl": "https://notion.so?ref=getpickai",
+  "websiteUrl": "https://notion.so",
+  "editorReview": "Notion AI 的核心优势就两个字：上下文。它不是一个孤立的 AI 工具，而是直接活在你的文档里。当你让它总结会议记录时，它真的知道你之前写了什么；当你让它基于项目文档写报告时，它能引用你库里的内容。这种「活在工作空间里的 AI」体验是 ChatGPT 给不了的。\n\n$10/月 加在 Notion 订阅上，乍看有点贵，但如果你本来就是 Notion 重度用户，这笔钱花得值。每天用它帮你起草邮件、总结长文、翻译文档、头脑风暴，一个月节省的时间远超 10 块钱的价值。\n\n不过有一点要说清楚：它不是专业写作工具，深度比不上 Jasper；也不是专业分析工具，比不上 Perplexity。它的价值在于「够用 + 顺手」——打开 Notion 就能用，不用切换 Tab，这对效率的提升比功能更深更重要。",
+  "goodFor": ["Notion 重度用户", "需要AI辅助写作的知识工作者", "远程团队协作用户", "经常整理文档和会议纪要的人"],
+  "notGoodFor": ["不使用 Notion 的用户", "需要专业级文案生成的营销人员", "预算紧张不想额外付费的用户"],
+  "pros": [
+    "AI 直接嵌入 Notion 工作空间，无需切换工具",
+    "能理解当前文档上下文，生成内容更贴合需求",
+    "写作、总结、翻译、头脑风暴一站式覆盖",
+    "与 Notion 协作功能无缝融合，团队共享方便",
+    "支持基于整个知识库的问答和检索"
+  ],
+  "cons": [
+    "必须先是 Notion 用户，额外增加 $10/月",
+    "AI 写作深度不如 Jasper 等专业写作工具",
+    "功能依赖 Notion 生态，迁移成本高"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Notion Free + AI",
+      "price": "$10/月",
+      "features": ["Notion 免费版基础上加 AI", "无限 AI 使用次数", "写作、总结、翻译", "AI 问答功能"]
+    },
+    {
+      "name": "Notion Plus + AI",
+      "price": "$18/月",
+      "features": ["Notion Plus 全部功能", "AI 无限使用", "更多存储空间", "自定义域名"]
+    },
+    {
+      "name": "Notion Business + AI",
+      "price": "$20/月/人",
+      "features": ["团队协作全功能", "AI 无限使用", "高级权限管理", "SAML SSO 登录"]
+    }
+  ],
+  "quickStart": [
+    "登录 Notion，在设置中开通 Notion AI 订阅",
+    "在任意文档页面，按空格键或输入 / 唤出 AI 菜单",
+    "选择需要的操作：继续写作、总结、改写、翻译等",
+    "也可以选中已有文字，右键选择 AI 操作",
+    "在文档内直接审阅 AI 生成内容，接受或重新生成"
+  ],
+  "relatedTools": ["notta", "otter-ai"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-04"
+}

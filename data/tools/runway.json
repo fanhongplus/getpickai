@@ -1,0 +1,63 @@
+{
+  "slug": "runway",
+  "name": "Runway",
+  "logo": "/logos/runway.svg",
+  "tagline": "Gen-3 Alpha 视频生成模型震撼业界，专业创作者的 AI 视频工作站",
+  "scenes": ["做视频", "画图片"],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $12/月起",
+  "rating": 4.7,
+  "affiliateUrl": "https://runwayml.com?ref=getpickai",
+  "websiteUrl": "https://runwayml.com",
+  "editorReview": "Gen-3 Alpha 出来的那一刻，整个 AI 视频圈都被震到了。Runway 生成的视频在运镜流畅度、光影细节、物体物理感上，目前是业内天花板。如果你是电影人、广告导演、MV 制作者，Runway 是你工具箱里绕不开的存在——用它做概念板、分镜预览、特效合成，效率会大幅提升。\n\nRunway 的功能矩阵很宽：文字生成视频、图片生成视频、视频转视频、背景去除、音频转视频……几乎覆盖了专业视频制作的所有 AI 辅助需求。特别是「图生视频」功能，上传一张静态图，它能让画面动起来，效果惊艳。\n\n不过要说清楚代价：免费版只有 125 积分，生成一段 5 秒视频要消耗 50 积分，用完就没了。$12/月 的基础套餐也只有 625 积分，真正想高频使用需要 $28/月 以上。加上生成时间有时要等 2-5 分钟，学习曲线也比其他工具陡，入门需要投入一些时间。但一旦上手，你不会想换回去。",
+  "goodFor": ["专业视频创作者和导演", "广告、MV、短片制作团队", "概念板和视觉开发阶段的项目", "追求顶级 AI 视频质量的创作者"],
+  "notGoodFor": ["完全不懂视频制作的新手", "需要批量高频生成视频的用户", "预算极其有限且需要长视频的用户"],
+  "pros": [
+    "Gen-3 Alpha 视频生成质量是业内顶级",
+    "图片生成视频效果惊艳，细节真实",
+    "功能矩阵完整，覆盖专业视频制作全流程",
+    "持续迭代快，新功能频繁上线",
+    "有 Adobe Premiere 等专业软件插件"
+  ],
+  "cons": [
+    "积分消耗快，免费额度很少",
+    "生成时间较长，需要耐心等待",
+    "学习曲线陡，上手需要一定时间投入"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": ["125 积分（一次性）", "Gen-3 Alpha 体验", "720p 导出", "水印"]
+    },
+    {
+      "name": "Standard",
+      "price": "$12/月",
+      "features": ["625 积分/月", "无水印", "1080p 导出", "视频延长功能"]
+    },
+    {
+      "name": "Pro",
+      "price": "$28/月",
+      "features": ["2250 积分/月", "4K 导出", "更快生成队列", "所有高级功能"]
+    },
+    {
+      "name": "Unlimited",
+      "price": "$76/月",
+      "features": ["无限标清生成", "2250 高清积分/月", "最高优先级队列", "团队协作"]
+    }
+  ],
+  "quickStart": [
+    "注册账号，免费获得 125 积分（无需绑卡）",
+    "选择「Text to Video」，用英文描述你想要的画面",
+    "调整视频时长（5 秒或 10 秒）和画面比例",
+    "点击生成，等待 2-5 分钟渲染完成",
+    "预览满意后下载，或继续用「Extend」延长视频"
+  ],
+  "relatedTools": ["heygen", "synthesia", "midjourney"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "20% recurring",
+  "cookieDuration": "30 days",
+  "createdAt": "2026-04-04"
+}
