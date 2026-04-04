@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { GoogleAnalytics } from "@/components/GoogleAnalytics";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body
         className={`${dmSans.variable} ${notoSansSC.variable} font-sans antialiased bg-bg text-text`}
       >
+        <GoogleAnalytics />
         <ThemeProvider>
           <Navbar />
           <main className="min-h-screen">{children}</main>

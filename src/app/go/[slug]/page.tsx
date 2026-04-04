@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
+import { trackAffiliateClick } from "@/components/GoogleAnalytics";
 
 export default function GoPage() {
   const params = useParams();
@@ -18,6 +19,9 @@ export default function GoPage() {
         if (tool) {
           setToolName(tool.name);
           setRedirectUrl(tool.affiliateUrl);
+
+          // GA4 追踪 Affiliate 点击
+          trackAffiliateClick(slug, tool.name);
 
           // 记录点击（发送到 API）
           fetch("/api/click", {
