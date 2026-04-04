@@ -54,8 +54,8 @@ export function Footer() {
 
         {/* 底部声明 */}
         <div className="mt-8 pt-6 border-t border-border">
-          <p className="text-xs text-text-muted leading-body">
-            Affiliate 声明：本站部分链接为推广链接。当您通过这些链接购买产品时，我们可能获得佣金。这不会增加您的费用，也不影响我们的评测客观性。我们只推荐我们真正使用过且认可的工具。
+          <p className="text-[11px] text-text-muted/60 leading-body">
+            本站含推广链接，通过链接购买不增加您的费用。详情见关于页面。
           </p>
           <p className="mt-3 text-xs text-text-muted">
             &copy; 2026 GetPickAI. 帮你挑出最值得用的 AI 工具。
