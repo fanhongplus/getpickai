@@ -5,6 +5,7 @@ import { Metadata } from "next";
 import { getToolBySlug, getAllTools } from "@/lib/data";
 import { sceneColorMap, priceColorMap } from "@/lib/constants";
 import { ToolCard } from "@/components/ToolCard";
+import { PromptCopyBlock } from "@/components/PromptCopyBlock";
 
 interface Props {
   params: { slug: string };
@@ -46,7 +47,15 @@ export default function ToolDetailPage({ params }: Props) {
             <Image src={tool.logo} alt={tool.name} width={64} height={64} className="w-full h-full object-cover" />
           </div>
           <div className="flex-1">
-            <h1 className="text-2xl md:text-3xl font-bold text-text leading-heading">{tool.name}</h1>
+            <div className="flex items-center gap-3 flex-wrap">
+              <h1 className="text-2xl md:text-3xl font-bold text-text leading-heading">{tool.name}</h1>
+              {tool.verifiedAt && (
+                <span className="inline-flex items-center gap-1.5 text-xs text-price-free">
+                  <span className="w-2 h-2 rounded-full bg-price-free animate-pulse" />
+                  {tool.verifiedAt.replace("-", "年")}月已验证
+                </span>
+              )}
+            </div>
             <p className="text-text-secondary mt-1">{tool.tagline}</p>
             <div className="flex flex-wrap items-center gap-3 mt-3">
               <span className="text-sm text-text-muted flex items-center gap-1">
@@ -173,6 +182,18 @@ export default function ToolDetailPage({ params }: Props) {
             </ol>
           </div>
         </section>
+
+        {/* 常用 Prompt */}
+        {tool.prompts && tool.prompts.length > 0 && (
+          <section className="mb-10">
+            <h2 className="text-xl font-bold text-text mb-4 leading-heading">最佳 Prompt（一键复制）</h2>
+            <div className="space-y-4">
+              {tool.prompts.map((p, i) => (
+                <PromptCopyBlock key={i} title={p.title} prompt={p.prompt} />
+              ))}
+            </div>
+          </section>
+        )}
 
         {/* 同类推荐 */}
         {relatedTools.length > 0 && (

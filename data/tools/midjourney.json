@@ -3,15 +3,27 @@
   "name": "Midjourney",
   "logo": "/logos/midjourney.svg",
   "tagline": "最强 AI 绘图工具，输入文字就能生成惊艳的艺术级图片",
-  "scenes": ["画图片", "做设计"],
+  "scenes": [
+    "画图片",
+    "做设计"
+  ],
   "pricingType": "paid",
   "priceLabel": "$10/月起",
   "rating": 4.9,
   "affiliateUrl": "https://midjourney.com?ref=gopickai",
   "websiteUrl": "https://midjourney.com",
   "editorReview": "如果只能推荐一个 AI 绘图工具，那一定是 Midjourney。它生成的图片质量目前依然是天花板级别的，尤其擅长艺术风格、概念设计和产品渲染图。\n\n和 DALL-E、Stable Diffusion 比起来，Midjourney 的优势在于「审美」——同样的提示词，它出图的构图、色彩和细节都明显更高级。对于设计师、插画师和内容创作者来说，这就是生产力工具。\n\n缺点是它之前只能在 Discord 里用，不太方便。不过现在已经推出了网页版，体验好了很多。$10/月的入门价格非常良心。",
-  "goodFor": ["设计师和插画师", "内容创作者", "电商卖家（产品图）", "自媒体博主"],
-  "notGoodFor": ["需要精确控制画面的用户", "需要生成真实照片的用户", "完全不会写英文提示词的用户"],
+  "goodFor": [
+    "设计师和插画师",
+    "内容创作者",
+    "电商卖家（产品图）",
+    "自媒体博主"
+  ],
+  "notGoodFor": [
+    "需要精确控制画面的用户",
+    "需要生成真实照片的用户",
+    "完全不会写英文提示词的用户"
+  ],
   "pros": [
     "图片质量是 AI 绘图工具中的天花板",
     "艺术风格多样，审美在线",
@@ -28,17 +40,30 @@
     {
       "name": "Basic",
       "price": "$10/月",
-      "features": ["200 张图/月", "3 个并发任务", "基础生成速度"]
+      "features": [
+        "200 张图/月",
+        "3 个并发任务",
+        "基础生成速度"
+      ]
     },
     {
       "name": "Standard",
       "price": "$30/月",
-      "features": ["无限生成（标准速度）", "15 小时快速生成", "隐私模式"]
+      "features": [
+        "无限生成（标准速度）",
+        "15 小时快速生成",
+        "隐私模式"
+      ]
     },
     {
       "name": "Pro",
       "price": "$60/月",
-      "features": ["无限生成", "30 小时快速生成", "隐私模式", "12 个并发任务"]
+      "features": [
+        "无限生成",
+        "30 小时快速生成",
+        "隐私模式",
+        "12 个并发任务"
+      ]
     }
   ],
   "quickStart": [
@@ -48,11 +73,29 @@
     "等待 30-60 秒生成 4 张候选图",
     "选择喜欢的图片放大下载"
   ],
-  "relatedTools": ["jasper-ai", "heygen"],
+  "relatedTools": [
+    "jasper-ai",
+    "heygen"
+  ],
   "screenshots": [],
   "isFeatured": true,
   "isNew": false,
   "affiliateCommission": "N/A",
   "cookieDuration": "N/A",
-  "createdAt": "2026-04-04"
+  "createdAt": "2026-04-04",
+  "verifiedAt": "2026-04",
+  "prompts": [
+    {
+      "title": "电商产品白底图",
+      "prompt": "Professional product photography of [你的产品], pure white background, studio lighting, high-key, 8k resolution, commercial photography, clean and minimal, centered composition --ar 1:1 --v 7"
+    },
+    {
+      "title": "社交媒体场景图",
+      "prompt": "[你的产品] in a lifestyle setting, natural lighting, cozy home environment, warm color palette, Instagram style photography, depth of field, aspirational mood --ar 4:5 --v 7"
+    },
+    {
+      "title": "品牌视觉风格探索",
+      "prompt": "Brand mood board for [品牌名/行业], modern and sophisticated aesthetic, [色调描述 如 earth tones / vibrant colors], typography-inspired, editorial style, premium feel, abstract elements --ar 16:9 --v 7"
+    }
+  ]
 }

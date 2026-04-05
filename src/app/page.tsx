@@ -95,6 +95,83 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* 人群入口：找到适合你的AI工具箱 */}
+      <section className="py-section px-4 bg-bg-soft">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl font-bold text-text text-center leading-heading">
+            找到适合你的 AI 工具箱
+          </h2>
+          <p className="mt-2 text-text-secondary text-center text-sm">
+            按你的身份，获取定制化的工具推荐方案
+          </p>
+          <div className="mt-section-title grid grid-cols-1 md:grid-cols-3 gap-5">
+            {[
+              { icon: "🛒", title: "跨境电商卖家", desc: "从选品到投流，AI帮你全链路提效", href: "/for/ecommerce" },
+              { icon: "🎬", title: "自媒体创作者", desc: "从选题到发布，一个人就是一支团队", href: "/for/creator" },
+              { icon: "🎓", title: "留学生", desc: "写论文、做PPT、练口语，AI是你的学霸搭档", href: "/for/student" },
+            ].map((item) => (
+              <Link key={item.href} href={item.href}>
+                <div className="card-hover bg-bg border border-border rounded-card p-6 h-full hover:border-accent/30 cursor-pointer">
+                  <div className="text-[48px] mb-3">{item.icon}</div>
+                  <h3 className="text-lg font-bold text-text">{item.title}</h3>
+                  <p className="text-sm text-text-secondary mt-1">{item.desc}</p>
+                  <span className="inline-block mt-4 text-sm text-accent font-medium">
+                    查看工具箱 &rarr;
+                  </span>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* AI 变现工作流 */}
+      <section className="py-section px-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-2xl font-bold text-text text-center leading-heading">
+            用 AI 赚钱的实战指南
+          </h2>
+          <p className="mt-2 text-text-secondary text-center text-sm max-w-2xl mx-auto">
+            不是教你用工具，是教你用工具赚钱。每套方案都附带成本核算和可复制的 Prompt。
+          </p>
+          <div className="mt-section-title space-y-4 max-w-3xl mx-auto">
+            {/* 工作流卡片1 - 已发布 */}
+            <Link href="/blog/ai-side-hustle-guide">
+              <div className="card-hover flex border border-border rounded-card overflow-hidden hover:bg-accent/5 cursor-pointer">
+                <div className="w-1 bg-accent flex-shrink-0" />
+                <div className="flex-1 p-5 flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="font-bold text-text text-base">AI副业变现：5种不需要技术基础的赚钱方式</h3>
+                    <p className="text-sm text-text-secondary mt-1">每种方式都附带工具推荐和上手教程</p>
+                  </div>
+                  <span className="text-xs px-2 py-1 rounded-tag bg-tag-video/10 text-tag-video flex-shrink-0 whitespace-nowrap">
+                    🔥 热门
+                  </span>
+                </div>
+              </div>
+            </Link>
+            {/* 工作流卡片2 - 即将发布 */}
+            <div className="flex border border-border rounded-card overflow-hidden opacity-60">
+              <div className="w-1 bg-text-muted flex-shrink-0" />
+              <div className="flex-1 p-5 flex items-start justify-between gap-4">
+                <div>
+                  <h3 className="font-bold text-text text-base">全自动YouTube频道：从选题到发布的完整工作流</h3>
+                  <p className="text-sm text-text-secondary mt-1">工具月费$45，预估月收益$500-2000</p>
+                </div>
+                <span className="text-xs px-2 py-1 rounded-tag bg-bg-muted text-text-muted flex-shrink-0 whitespace-nowrap">
+                  即将发布
+                </span>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mt-6">
+            <Link href="/workflows" className="text-sm text-accent hover:text-accent-hover font-medium transition-colors">
+              查看全部工作流 &rarr;
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* 编辑精选 */}
       <section className="py-section px-4 bg-bg-soft">
         <div className="max-w-6xl mx-auto">

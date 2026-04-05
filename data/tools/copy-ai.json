@@ -3,15 +3,27 @@
   "name": "Copy.ai",
   "logo": "/logos/copy-ai.svg",
   "tagline": "营销团队的 AI 写作利器，工作流自动化让文案生产提速 10 倍",
-  "scenes": ["写文案", "做营销"],
+  "scenes": [
+    "写文案",
+    "做营销"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费 / $49/月起",
   "rating": 4.4,
   "affiliateUrl": "https://copy.ai?ref=gopickai",
   "websiteUrl": "https://copy.ai",
   "editorReview": "Copy.ai 的免费版是我见过最大方的——2000 字/月、90 多个模板全开放，注册完直接能用，不用担心试用期到期被催着付钱。如果你只是偶尔写写社交媒体文案或者广告语，免费版完全够用，根本不需要付钱。\n\n真正让 Copy.ai 在营销团队圈子里口碑好的，是它的工作流（Workflows）功能。你可以把「竞品分析 → 卖点提炼 → 广告文案生成」这一串操作做成自动化流程，一键跑完，大幅减少重复劳动。这是很多同类工具没有的，Jasper 有类似功能但价格更贵。\n\n付费版 $49/月 起步价偏高，而且长文章的生成质量不如 Jasper 稳定。如果你的核心需求是写完整博客文章，Writesonic 或 Jasper 可能更合适。Copy.ai 最适合的场景是：短文案量大、流程可标准化的营销团队。",
-  "goodFor": ["营销团队和内容运营", "需要批量生成短文案的用户", "社交媒体运营", "广告创意策划"],
-  "notGoodFor": ["需要写长篇博客文章的用户", "预算超过 $49/月 的高性价比追求者", "中文内容为主的用户"],
+  "goodFor": [
+    "营销团队和内容运营",
+    "需要批量生成短文案的用户",
+    "社交媒体运营",
+    "广告创意策划"
+  ],
+  "notGoodFor": [
+    "需要写长篇博客文章的用户",
+    "预算超过 $49/月 的高性价比追求者",
+    "中文内容为主的用户"
+  ],
   "pros": [
     "免费版慷慨，2000 字/月 + 90+ 模板",
     "工作流自动化功能强大，适合批量生产",
@@ -28,17 +40,33 @@
     {
       "name": "Free",
       "price": "免费",
-      "features": ["2,000 字/月", "90+ 文案模板", "无限项目数", "基础工作流"]
+      "features": [
+        "2,000 字/月",
+        "90+ 文案模板",
+        "无限项目数",
+        "基础工作流"
+      ]
     },
     {
       "name": "Pro",
       "price": "$49/月",
-      "features": ["无限字数", "无限工作流", "品牌声音", "优先客服支持", "5 个用户席位"]
+      "features": [
+        "无限字数",
+        "无限工作流",
+        "品牌声音",
+        "优先客服支持",
+        "5 个用户席位"
+      ]
     },
     {
       "name": "Team",
       "price": "$249/月",
-      "features": ["无限用户席位", "高级分析报告", "API 接入", "专属客户成功经理"]
+      "features": [
+        "无限用户席位",
+        "高级分析报告",
+        "API 接入",
+        "专属客户成功经理"
+      ]
     }
   ],
   "quickStart": [
@@ -48,11 +76,16 @@
     "点击生成，通常会给出 5-10 个版本供选择",
     "收藏满意的版本，或进入工作流批量生产"
   ],
-  "relatedTools": ["jasper-ai", "writesonic", "rytr"],
+  "relatedTools": [
+    "jasper-ai",
+    "writesonic",
+    "rytr"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": false,
   "affiliateCommission": "45% recurring",
   "cookieDuration": "60 days",
-  "createdAt": "2026-04-04"
+  "createdAt": "2026-04-04",
+  "verifiedAt": "2026-04"
 }

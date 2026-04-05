@@ -3,15 +3,27 @@
   "name": "Leonardo AI",
   "logo": "/logos/leonardo-ai.svg",
   "tagline": "免费额度最慷慨的 AI 绘图工具，游戏素材和角色设计的首选",
-  "scenes": ["画图片", "做设计"],
+  "scenes": [
+    "画图片",
+    "做设计"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费 / $12/月起",
   "rating": 4.6,
   "affiliateUrl": "https://leonardo.ai?ref=gopickai",
   "websiteUrl": "https://leonardo.ai",
   "editorReview": "在AI绘图这个赛道，Leonardo AI 是性价比最炸裂的选择。每天 150 个免费代币，对普通用户来说基本够用，这种慷慨程度在行业里真的少见。出图质量嘛，和 Midjourney 对比不落下风，尤其是游戏风格、奇幻角色这类题材，Leonardo 简直是主场作战。\n\n如果你需要训练自己专属的风格模型，Leonardo 开放了 Finetune 功能，免费用户也能用，这在竞品里几乎绝无仅有。做游戏独立开发、角色设计、3D概念图的朋友，强烈建议把 Leonardo 列为主力工具。\n\n唯一要适应的就是界面，信息量有点大，第一次打开可能会有点懵。但上手之后会发现功能深度确实够，专业用户挖半年都挖不完。",
-  "goodFor": ["游戏开发者", "概念设计师", "AI绘图爱好者", "独立创作者"],
-  "notGoodFor": ["只需要简单设计的用户", "不想有学习成本的新手", "纯商业摄影图需求"],
+  "goodFor": [
+    "游戏开发者",
+    "概念设计师",
+    "AI绘图爱好者",
+    "独立创作者"
+  ],
+  "notGoodFor": [
+    "只需要简单设计的用户",
+    "不想有学习成本的新手",
+    "纯商业摄影图需求"
+  ],
   "pros": [
     "每天 150 个免费代币，免费额度行业最慷慨",
     "图片质量接近 Midjourney，游戏和奇幻风格尤为突出",
@@ -28,22 +40,42 @@
     {
       "name": "免费版",
       "price": "免费",
-      "features": ["每天 150 代币", "基础图片生成", "访问社区模型", "有限 Finetune 功能"]
+      "features": [
+        "每天 150 代币",
+        "基础图片生成",
+        "访问社区模型",
+        "有限 Finetune 功能"
+      ]
     },
     {
       "name": "Apprentice",
       "price": "$12/月",
-      "features": ["每月 8500 代币", "优先生成队列", "无限 Relaxed 模式", "私密生成"]
+      "features": [
+        "每月 8500 代币",
+        "优先生成队列",
+        "无限 Relaxed 模式",
+        "私密生成"
+      ]
     },
     {
       "name": "Artisan",
       "price": "$30/月",
-      "features": ["每月 25000 代币", "更多 Finetune 训练次数", "高级 Alchemy 功能", "自定义画布"]
+      "features": [
+        "每月 25000 代币",
+        "更多 Finetune 训练次数",
+        "高级 Alchemy 功能",
+        "自定义画布"
+      ]
     },
     {
       "name": "Maestro",
       "price": "$60/月",
-      "features": ["每月 60000 代币", "最高优先级队列", "全部高级功能解锁", "API 访问"]
+      "features": [
+        "每月 60000 代币",
+        "最高优先级队列",
+        "全部高级功能解锁",
+        "API 访问"
+      ]
     }
   ],
   "quickStart": [
@@ -53,11 +85,16 @@
     "调整尺寸、数量等参数后点击生成",
     "满意后下载，或进入 Canvas 继续编辑"
   ],
-  "relatedTools": ["midjourney", "canva", "adobe-firefly"],
+  "relatedTools": [
+    "midjourney",
+    "canva",
+    "adobe-firefly"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": false,
   "affiliateCommission": "",
   "cookieDuration": "",
-  "createdAt": "2026-04-04"
+  "createdAt": "2026-04-04",
+  "verifiedAt": "2026-04"
 }

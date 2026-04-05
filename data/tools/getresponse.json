@@ -3,15 +3,26 @@
   "name": "GetResponse",
   "logo": "/logos/getresponse.svg",
   "tagline": "全能邮件营销平台，AI 帮你写邮件、建漏斗、跑自动化",
-  "scenes": ["做营销"],
+  "scenes": [
+    "做营销"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费 / $19/月起",
   "rating": 4.4,
   "affiliateUrl": "https://getresponse.com?ref=gopickai",
   "websiteUrl": "https://getresponse.com",
   "editorReview": "做邮件营销的工具选了那么多，GetResponse 是少数真正做到「全」的——邮件发送、自动化工作流、Landing Page 搭建、Webinar 主持、甚至转化漏斗，都在一个平台里。对于不想管一堆 SaaS 账单的小团队来说，这种一站式很省心。\n\nAI 功能近两年加了不少：AI 邮件主题行生成、邮件内容优化、发送时间智能推荐，虽然不算最顶级，但日常够用。Landing Page 构建器质量在同价位产品里属于不错的，模板挺多，拖拽操作逻辑也清晰。\n\n说缺点：界面整体有点老派，跟 Mailchimp 的现代感比稍微差一些。高级自动化功能（多路径工作流）上手需要花时间摸索，逻辑复杂的场景容易绕晕。免费版只有 500 联系人，只够试试水，稍微有点规模的业务都得付费。",
-  "goodFor": ["中小型电商和独立站", "需要全套营销工具的创业团队", "做Webinar和在线课程的教育创作者", "外贸B2B营销团队"],
-  "notGoodFor": ["只需要简单邮件发送的用户", "对界面审美要求高的用户", "联系人数量庞大的大型企业"],
+  "goodFor": [
+    "中小型电商和独立站",
+    "需要全套营销工具的创业团队",
+    "做Webinar和在线课程的教育创作者",
+    "外贸B2B营销团队"
+  ],
+  "notGoodFor": [
+    "只需要简单邮件发送的用户",
+    "对界面审美要求高的用户",
+    "联系人数量庞大的大型企业"
+  ],
   "pros": [
     "邮件营销、自动化、Landing Page、Webinar 全功能一站式",
     "AI 邮件生成和发送时间优化功能实用",
@@ -27,17 +38,32 @@
     {
       "name": "Free",
       "price": "免费",
-      "features": ["500 联系人", "基础邮件发送", "Landing Page 构建器", "网站构建器"]
+      "features": [
+        "500 联系人",
+        "基础邮件发送",
+        "Landing Page 构建器",
+        "网站构建器"
+      ]
     },
     {
       "name": "Email Marketing",
       "price": "$19/月",
-      "features": ["1000 联系人起", "无限邮件发送", "自动化工作流", "AI 邮件生成"]
+      "features": [
+        "1000 联系人起",
+        "无限邮件发送",
+        "自动化工作流",
+        "AI 邮件生成"
+      ]
     },
     {
       "name": "Marketing Automation",
       "price": "$59/月",
-      "features": ["高级自动化流程", "联系人评分", "网页事件追踪", "Webinar 功能（最多100人）"]
+      "features": [
+        "高级自动化流程",
+        "联系人评分",
+        "网页事件追踪",
+        "Webinar 功能（最多100人）"
+      ]
     }
   ],
   "quickStart": [
@@ -47,11 +73,15 @@
     "在 Automation 中配置欢迎邮件等自动化序列",
     "发送后查看打开率、点击率等数据并持续优化"
   ],
-  "relatedTools": ["surfer-seo", "instantly-ai"],
+  "relatedTools": [
+    "surfer-seo",
+    "instantly-ai"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": false,
   "affiliateCommission": "",
   "cookieDuration": "",
-  "createdAt": "2026-04-04"
+  "createdAt": "2026-04-04",
+  "verifiedAt": "2026-04"
 }

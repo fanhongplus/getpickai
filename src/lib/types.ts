@@ -24,6 +24,13 @@ export interface Tool {
   affiliateCommission: string;
   cookieDuration: string;
   createdAt: string;
+  verifiedAt?: string;
+  prompts?: ToolPrompt[];
+}
+
+export interface ToolPrompt {
+  title: string;
+  prompt: string;
 }
 
 export interface PricingPlan {

@@ -3,15 +3,27 @@
   "name": "Synthesia",
   "logo": "/logos/synthesia.svg",
   "tagline": "企业级 AI 数字人视频平台，230+ 虚拟形象，多语言一键配音",
-  "scenes": ["做视频", "做营销"],
+  "scenes": [
+    "做视频",
+    "做营销"
+  ],
   "pricingType": "paid",
   "priceLabel": "$22/月起",
   "rating": 4.6,
   "affiliateUrl": "https://synthesia.io?ref=gopickai",
   "websiteUrl": "https://synthesia.io",
   "editorReview": "如果你需要用数字人做企业培训视频、产品演示或多语言营销素材，Synthesia 是目前最成熟的选择。它不是最便宜的，但在企业场景下，它的安全合规性、数字人质量和多语言能力让它成为大公司的默认选项——微软、谷歌、路易威登都在用。\n\nSynthesia 最牛的地方是多语言支持。你写一份英文脚本，它可以帮你生成 120 多种语言的配音版本，而且数字人的口型会跟着变。这对跨国公司本地化营销简直是神器，省去了雇多语言配音演员的麻烦。230+ 套数字人形象基本能覆盖各种场景需求。\n\n和 HeyGen 比，Synthesia 更偏企业向，个人用户会觉得性价比不如 HeyGen。自定义真人数字人（把你自己的脸做成数字人）需要企业版，价格谈判。如果你是个人创业者或者中小团队，先试试 HeyGen，再考虑要不要升级到 Synthesia。",
-  "goodFor": ["企业培训和内部传播团队", "跨国公司本地化营销", "产品演示视频制作", "需要合规认证的行业（金融、医疗等）"],
-  "notGoodFor": ["预算有限的个人创作者", "需要真人出镜风格的内容", "追求高性价比的中小团队"],
+  "goodFor": [
+    "企业培训和内部传播团队",
+    "跨国公司本地化营销",
+    "产品演示视频制作",
+    "需要合规认证的行业（金融、医疗等）"
+  ],
+  "notGoodFor": [
+    "预算有限的个人创作者",
+    "需要真人出镜风格的内容",
+    "追求高性价比的中小团队"
+  ],
   "pros": [
     "230+ 高质量数字人形象，覆盖各种场景",
     "支持 120+ 语言配音，口型同步准确",
@@ -28,17 +40,34 @@
     {
       "name": "Starter",
       "price": "$22/月",
-      "features": ["每月 10 个视频", "120+ 语言", "230+ AI 形象", "基础模板库"]
+      "features": [
+        "每月 10 个视频",
+        "120+ 语言",
+        "230+ AI 形象",
+        "基础模板库"
+      ]
     },
     {
       "name": "Creator",
       "price": "$67/月",
-      "features": ["每月 30 个视频", "自定义背景", "品牌套件", "1080p 导出", "优先渲染"]
+      "features": [
+        "每月 30 个视频",
+        "自定义背景",
+        "品牌套件",
+        "1080p 导出",
+        "优先渲染"
+      ]
     },
     {
       "name": "Enterprise",
       "price": "定制报价",
-      "features": ["无限视频", "自定义数字人（真人形象）", "SSO 登录", "专属客户成功团队", "API 接入"]
+      "features": [
+        "无限视频",
+        "自定义数字人（真人形象）",
+        "SSO 登录",
+        "专属客户成功团队",
+        "API 接入"
+      ]
     }
   ],
   "quickStart": [
@@ -48,11 +77,16 @@
     "选择语言和背景模板",
     "点击生成，通常 5-10 分钟渲染完成后下载"
   ],
-  "relatedTools": ["heygen", "pictory", "runway"],
+  "relatedTools": [
+    "heygen",
+    "pictory",
+    "runway"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": false,
   "affiliateCommission": "20% recurring",
   "cookieDuration": "60 days",
-  "createdAt": "2026-04-04"
+  "createdAt": "2026-04-04",
+  "verifiedAt": "2026-04"
 }
