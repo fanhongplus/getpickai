@@ -48,7 +48,7 @@ export default function GoPage() {
     <div className="min-h-screen flex items-center justify-center px-4">
       <div className="text-center">
         <div className="text-2xl font-bold text-text mb-2">
-          Get<span className="text-accent">Pick</span>AI
+          Go<span className="text-accent">Pick</span> AI
         </div>
         <div className="mt-6">
           {/* 加载动画 */}

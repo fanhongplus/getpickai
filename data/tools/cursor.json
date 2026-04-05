@@ -7,7 +7,7 @@
   "pricingType": "freemium",
   "priceLabel": "免费 / $20/月起",
   "rating": 4.9,
-  "affiliateUrl": "https://cursor.com?ref=getpickai",
+  "affiliateUrl": "https://cursor.com?ref=gopickai",
   "websiteUrl": "https://cursor.com",
   "editorReview": "Cursor 是近两年开发工具领域最让人兴奋的产品，没有之一。基于 VS Code 构建意味着你的插件、快捷键、配置文件全部直接迁移，没有任何切换成本。第一次用 Tab 键接受 AI 补全的那一刻，你会明白为什么那么多程序员说「用了就回不去了」。\n\nComposer 功能才是 Cursor 的真正杀手锏。你可以直接用自然语言描述「帮我在这个项目里加一个用户登录功能」，Cursor 会自动理解代码库结构，跨多个文件同时修改，最后给你展示一个完整的 diff。这已经不是「辅助编程」，而是「AI 和你结对编程」的体验。\n\n唯一要注意的是，免费版有每月 2000 次补全和 50 次 Composer 调用的限制，重度用户很快会触顶。$20/月 的 Pro 版物超所值，如果你每天写代码，这钱花得比买外卖划算多了。",
   "goodFor": ["全栈开发者", "独立开发者", "需要频繁重构代码的程序员", "想快速上手新技术栈的开发者"],

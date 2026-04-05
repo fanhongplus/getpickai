@@ -7,7 +7,7 @@
   "pricingType": "freemium",
   "priceLabel": "免费 / $5/月起",
   "rating": 4.8,
-  "affiliateUrl": "https://elevenlabs.io?ref=getpickai",
+  "affiliateUrl": "https://elevenlabs.io?ref=gopickai",
   "websiteUrl": "https://elevenlabs.io",
   "editorReview": "说真的，第一次听到 ElevenLabs 克隆出来的声音时我楞了好几秒——这不就是真人说话吗？情感起伏、停顿节奏、甚至呼吸声都有。同类工具里没有第二家能做到这个水平，尤其英文语音，基本可以直接商用。\n\n免费版每个月只有 1 万字符，听起来不少，其实很快就用完了。如果你做播客、有声书或者视频配音，$22/月 的 Creator 套餐是最值的选择，专业声音克隆 + 10 万字符基本够一个人用。\n\n中文语音质量比英文差一个档次，不过在所有 AI 配音工具里仍然是前三。29 种语言支持、完善的 API 接口，让它成了开发者圈子里的标配。要说唯一让我担心的，就是声音克隆的伦理边界——用别人声音要小心，ElevenLabs 自己也在不断收紧审核。",
   "goodFor": ["播客制作人", "有声书制作者", "视频博主配音", "需要API集成的开发者"],

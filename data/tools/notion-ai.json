@@ -7,7 +7,7 @@
   "pricingType": "paid",
   "priceLabel": "$10/月(需先有Notion)",
   "rating": 4.5,
-  "affiliateUrl": "https://notion.so?ref=getpickai",
+  "affiliateUrl": "https://notion.so?ref=gopickai",
   "websiteUrl": "https://notion.so",
   "editorReview": "Notion AI 的核心优势就两个字：上下文。它不是一个孤立的 AI 工具，而是直接活在你的文档里。当你让它总结会议记录时，它真的知道你之前写了什么；当你让它基于项目文档写报告时，它能引用你库里的内容。这种「活在工作空间里的 AI」体验是 ChatGPT 给不了的。\n\n$10/月 加在 Notion 订阅上，乍看有点贵，但如果你本来就是 Notion 重度用户，这笔钱花得值。每天用它帮你起草邮件、总结长文、翻译文档、头脑风暴，一个月节省的时间远超 10 块钱的价值。\n\n不过有一点要说清楚：它不是专业写作工具，深度比不上 Jasper；也不是专业分析工具，比不上 Perplexity。它的价值在于「够用 + 顺手」——打开 Notion 就能用，不用切换 Tab，这对效率的提升比功能更深更重要。",
   "goodFor": ["Notion 重度用户", "需要AI辅助写作的知识工作者", "远程团队协作用户", "经常整理文档和会议纪要的人"],

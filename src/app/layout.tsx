@@ -21,8 +21,8 @@ const notoSansSC = Noto_Sans_SC({
 
 export const metadata: Metadata = {
   title: {
-    default: "GetPickAI - 帮你挑出最值得用的 AI 工具",
-    template: "%s | GetPickAI",
+    default: "GoPick AI - 帮你挑出最值得用的 AI 工具",
+    template: "%s | GoPick AI",
   },
   description: "不做最全的，只做最适合你的。每个工具都经过真实测评，帮全球华人挑出最值得用的 AI 工具。",
   keywords: ["AI工具", "AI工具推荐", "AI写作", "AI绘图", "AI视频", "人工智能工具"],

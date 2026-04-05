@@ -19,7 +19,7 @@ export function Navbar() {
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="text-xl font-bold text-text">
-          Get<span className="text-accent">Pick</span>AI
+          Go<span className="text-accent">Pick</span> AI
         </Link>
 
         {/* 桌面端导航 */}
