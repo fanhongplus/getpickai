@@ -1,0 +1,65 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0d1f"/>
+      <stop offset="50%" stop-color="#111640"/>
+      <stop offset="100%" stop-color="#1a1f52"/>
+    </linearGradient>
+    <radialGradient id="glowTop" cx="850" cy="150" r="450" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowBottom" cx="250" cy="500" r="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="630" fill="url(#glowTop)"/>
+  <rect width="1200" height="630" fill="url(#glowBottom)"/>
+
+  <!-- 顶部标签 -->
+  <rect x="100" y="135" width="90" height="32" rx="16" fill="#f59e0b" fill-opacity="0.2"/>
+  <text x="145" y="156" text-anchor="middle" fill="#fbbf24" font-size="14" font-family="sans-serif" font-weight="600">实战指南</text>
+
+  <rect x="205" y="135" width="90" height="32" rx="16" fill="#10b981" fill-opacity="0.15"/>
+  <text x="250" y="156" text-anchor="middle" fill="#34d399" font-size="14" font-family="sans-serif" font-weight="600">AI变现</text>
+
+  <!-- 主标题 -->
+  <text x="100" y="245" fill="#ffffff" font-size="58" font-family="sans-serif" font-weight="800" letter-spacing="-1">AI副业变现</text>
+
+  <text x="100" y="320" fill="#fbbf24" font-size="58" font-family="sans-serif" font-weight="800" letter-spacing="-1">5种赚钱方式</text>
+
+  <!-- 副标题 -->
+  <text x="100" y="375" fill="#94a3b8" font-size="22" font-family="sans-serif">不需要技术基础，每种都附带工具链和可复制的 Prompt</text>
+
+  <!-- 分隔线 -->
+  <rect x="100" y="405" width="80" height="3" rx="1.5" fill="#f59e0b"/>
+
+  <!-- 5 种方式图标 -->
+  <rect x="100" y="440" width="44" height="44" rx="11" fill="#f59e0b" fill-opacity="0.15"/>
+  <text x="122" y="467" text-anchor="middle" fill="#fbbf24" font-size="18">🎬</text>
+
+  <rect x="156" y="440" width="44" height="44" rx="11" fill="#8b5cf6" fill-opacity="0.15"/>
+  <text x="178" y="467" text-anchor="middle" fill="#a78bfa" font-size="18">✍️</text>
+
+  <rect x="212" y="440" width="44" height="44" rx="11" fill="#06b6d4" fill-opacity="0.15"/>
+  <text x="234" y="467" text-anchor="middle" fill="#22d3ee" font-size="18">🌍</text>
+
+  <rect x="268" y="440" width="44" height="44" rx="11" fill="#10b981" fill-opacity="0.15"/>
+  <text x="290" y="467" text-anchor="middle" fill="#34d399" font-size="18">🛒</text>
+
+  <rect x="324" y="440" width="44" height="44" rx="11" fill="#ec4899" fill-opacity="0.15"/>
+  <text x="346" y="467" text-anchor="middle" fill="#f472b6" font-size="18">📦</text>
+
+  <!-- 方式标签 -->
+  <text x="100" y="515" fill="#64748b" font-size="14" font-family="sans-serif">自媒体 · 接单服务 · 翻译 · 电商 · 数字产品</text>
+
+  <!-- 底部品牌 -->
+  <text x="100" y="565" fill="#4f6ef7" font-size="20" font-family="sans-serif" font-weight="700">GoPick AI</text>
+  <text x="205" y="565" fill="#4a5568" font-size="16" font-family="sans-serif">帮你挑出最值得用的 AI 工具</text>
+
+  <!-- 右侧装饰 -->
+  <text x="950" y="450" fill="#ffffff" fill-opacity="0.02" font-size="300" font-family="sans-serif" font-weight="900">$</text>
+</svg>
