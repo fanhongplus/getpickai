@@ -10,7 +10,7 @@
   "priceLabel": "免费 / $15/月起",
   "rating": 4.7,
   "affiliateUrl": "https://codeium.com/windsurf?ref=gopickai",
-  "websiteUrl": "https://codeium.com/windsurf",
+  "websiteUrl": "https://windsurf.com",
   "editorReview": "Windsurf 是 Cursor 最有力的挑战者，而且它的免费版比 Cursor 慷慨得多。Codeium 在代码补全领域深耕多年，Windsurf 直接把这些积累转化成了流畅的补全体验，速度快、准确率高，日常写代码非常顺手。\n\nCascade 是 Windsurf 的核心卖点，本质是一个能感知整个代码库的 AI 智能体。你可以给它布置复杂任务——「帮我把这个 REST API 改造成 GraphQL」——它会自己分析代码、规划步骤、逐步执行，全程你只需要坐在旁边看着。这种「AI 自主完成任务」的体验，是对传统「AI 辅助」模式的一次升级。\n\n目前 Windsurf 的短板是生态成熟度。插件兼容性偶尔会有小问题，社区讨论和教程资源也不如 Cursor 丰富。但对于愿意尝鲜的开发者来说，免费版的高额度加上 Cascade 的独特体验，绝对值得安装下来和 Cursor 并行使用对比一下。",
   "goodFor": [
     "希望免费用高质量 AI IDE 的开发者",

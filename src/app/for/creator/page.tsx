@@ -32,7 +32,6 @@ export default function CreatorPage() {
         { slug: "suno", usage: "AI 音乐生成，输入描述就能创作完整歌曲和视频配乐" },
         { slug: "udio", usage: "AI 音乐创作，古典爵士等复杂风格特别出色" },
         { slug: "chuangkit", usage: "国产在线设计，AI 智能设计 + 海量中文模板" },
-        { slug: "huoshan-writing", usage: "免费 AI 英文写作助手，语法纠错和润色" },
         { slug: "copy-ai", usage: "AI 营销文案生成，社媒帖子和广告文案一键搞定" },
         { slug: "leonardo-ai", usage: "AI 图片生成，内置多种风格模型，社媒配图利器" },
         { slug: "ideogram", usage: "AI 图片生成，文字渲染能力最强，做海报和 Logo 首选" },

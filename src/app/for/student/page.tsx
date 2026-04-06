@@ -39,7 +39,6 @@ export default function StudentPage() {
         { slug: "smodin", usage: "AI 改写和查重，覆盖 100+ 语言，引用生成" },
         { slug: "speechify", usage: "AI 文字转语音，把论文变有声书，碎片时间学习" },
         { slug: "flowus", usage: "国产 AI 笔记工具，学术笔记整理好帮手" },
-        { slug: "huoshan-writing", usage: "免费 AI 英文写作助手，Grammarly 的免费替代" },
         { slug: "napkin-ai", usage: "AI 文字转图表，论文和 PPT 数据可视化" },
       ]}
       workflowTeaser={{
