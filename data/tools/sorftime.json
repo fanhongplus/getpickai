@@ -1,0 +1,31 @@
+{
+  "slug": "sorftime",
+  "name": "Sorftime 数魔跨境",
+  "logo": "/logos/sorftime.svg",
+  "tagline": "国产亚马逊选品数据分析工具，支持市场容量、竞争度、利润率分析",
+  "scenes": ["提效率"],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / ¥299起/月",
+  "rating": 4.3,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.sorftime.com",
+  "editorReview": "数魔跨境是国内做得比较好的亚马逊数据分析工具，主打选品方向。它的市场容量分析和竞争度评估功能很实用，能快速帮你判断一个品类值不值得做。\n\n中文界面友好，数据维度覆盖市场容量、竞争度、利润率、季节性趋势等，对中国卖家来说比 Helium 10 上手更快。\n\n免费试用可以体验核心功能，付费版 ¥299/月起。和卖家精灵相比各有优势，建议两个都试用后选择更适合自己的。",
+  "goodFor": ["亚马逊中国卖家", "选品调研", "市场分析"],
+  "notGoodFor": ["非亚马逊卖家", "已有同类工具的用户"],
+  "pros": ["市场容量分析精准", "中文界面友好", "利润率计算方便", "竞争度评估实用"],
+  "cons": ["知名度不如 Jungle Scout", "部分数据更新不够及时", "价格不算便宜"],
+  "pricingPlans": [
+    {"name": "免费试用", "price": "免费", "features": ["有限功能体验", "基础数据查看"]},
+    {"name": "标准版", "price": "¥299/月", "features": ["全部选品功能", "市场分析", "竞品监控"]},
+    {"name": "高级版", "price": "¥599/月", "features": ["所有标准版功能", "高级数据分析", "批量操作", "优先支持"]}
+  ],
+  "quickStart": ["注册数魔跨境账号", "选择要分析的亚马逊站点", "输入品类关键词搜索", "查看市场容量和竞争分析", "筛选高潜力低竞争的产品方向"],
+  "relatedTools": ["sellersprite", "jungle-scout", "helium-10"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

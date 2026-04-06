@@ -1,0 +1,31 @@
+{
+  "slug": "tidio",
+  "name": "Tidio",
+  "logo": "/logos/tidio.svg",
+  "tagline": "AI 驱动的在线客服聊天机器人，专为 Shopify 等独立站设计",
+  "scenes": ["提效率"],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $29起/月",
+  "rating": 4.5,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.tidio.com",
+  "editorReview": "Tidio 是独立站卖家最常用的 AI 客服工具之一，和 Shopify 的集成特别好。AI 聊天机器人可以自动回答客户常见问题、推荐产品、处理订单查询，7×24 小时在线。\n\n设置非常简单，拖拽式的聊天流程编辑器，不需要写代码就能配置复杂的自动回复逻辑。AI 学习能力不错，用得越久回答越准确。\n\n免费版支持 50 次 AI 对话/月，够小卖家用。$29/月的付费版解锁无限对话和更多 AI 功能。",
+  "goodFor": ["Shopify 独立站卖家", "跨境电商独立站", "需要自动客服的卖家"],
+  "notGoodFor": ["只在亚马逊的卖家", "不需要在线客服的用户", "预算极紧的新手"],
+  "pros": ["Shopify 集成极好", "AI 回复准确率高", "拖拽式配置简单", "免费版够体验", "多语言支持"],
+  "cons": ["免费版对话数限制", "高级功能价格不低", "主要服务独立站"],
+  "pricingPlans": [
+    {"name": "Free", "price": "免费", "features": ["50 次 AI 对话/月", "基础聊天功能", "邮件集成"]},
+    {"name": "Starter", "price": "$29/月", "features": ["无限对话", "AI 聊天机器人", "访客分析"]},
+    {"name": "Growth", "price": "$59/月", "features": ["高级 AI 功能", "自动化工作流", "A/B 测试"]}
+  ],
+  "quickStart": ["注册 Tidio 账号", "在 Shopify 后台安装 Tidio 插件", "配置 AI 聊天机器人回复规则", "设置常见问题自动回答", "上线并监控对话质量"],
+  "relatedTools": ["salesmartly", "shopify-magic"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

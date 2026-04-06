@@ -1,0 +1,30 @@
+{
+  "slug": "creatorkit",
+  "name": "CreatorKit",
+  "logo": "/logos/creatorkit.svg",
+  "tagline": "AI 电商素材生成工具，自动生成产品视频、Banner 和广告图",
+  "scenes": ["画图片", "做视频"],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $29起/月",
+  "rating": 4.2,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.creatorkit.com",
+  "editorReview": "CreatorKit 专注电商素材自动生成，上传产品图后可以自动生成产品视频、Banner 广告和社媒图片。对需要大量素材的电商卖家来说效率提升明显。\n\n视频生成是它的亮点，可以把静态产品图变成带动效和文字的短视频，直接用于广告投放。Banner 生成也很方便，一键适配不同广告平台尺寸。\n\n免费试用可以体验核心功能，$29/月起解锁全部功能。适合需要频繁出素材的电商运营。",
+  "goodFor": ["电商广告投放", "需要大量素材的卖家", "社媒营销运营"],
+  "notGoodFor": ["不需要大量素材的用户", "追求极致画质的品牌", "纯文案需求"],
+  "pros": ["产品视频自动生成", "多平台尺寸适配", "操作简单高效", "免费试用"],
+  "cons": ["创意自由度有限", "价格中等", "视频风格相对固定"],
+  "pricingPlans": [
+    {"name": "免费试用", "price": "免费", "features": ["有限生成次数"]},
+    {"name": "Pro", "price": "$29/月", "features": ["无限生成", "产品视频", "Banner 生成", "去水印"]}
+  ],
+  "quickStart": ["注册 CreatorKit 账号", "上传产品图片", "选择视频或图片模板", "AI 自动生成素材", "下载并投放"],
+  "relatedTools": ["canva", "photoroom", "capcut"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

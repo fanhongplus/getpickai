@@ -1,0 +1,31 @@
+{
+  "slug": "tool4seller",
+  "name": "Tool4seller",
+  "logo": "/logos/tool4seller.svg",
+  "tagline": "亚马逊卖家 AI 运营助手，支持 13 种语言内容生成和利润分析",
+  "scenes": ["提效率", "写文案"],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $19起/月",
+  "rating": 4.3,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.tool4seller.com",
+  "editorReview": "Tool4seller 是一个专注亚马逊卖家的 AI 运营工具，亮点是支持 13 种语言的内容生成，对做多站点的卖家很实用。\n\n利润分析功能也做得不错，可以追踪每个 ASIN 的利润变化，帮你发现哪些产品在亏钱。AI 文案生成可以一键出多语言 Listing。\n\n$19/月的入门价格在同类工具中算便宜的，性价比不错。适合中小卖家作为轻量级运营工具使用。",
+  "goodFor": ["亚马逊多站点卖家", "中小型卖家", "需要多语言文案的卖家"],
+  "notGoodFor": ["大型卖家团队", "非亚马逊卖家", "只做单站点的卖家"],
+  "pros": ["支持 13 种语言", "利润分析实用", "价格亲民", "AI 文案生成方便"],
+  "cons": ["功能不如 Helium 10 全面", "部分功能还在完善", "用户基数较小"],
+  "pricingPlans": [
+    {"name": "免费试用", "price": "免费", "features": ["基础功能体验"]},
+    {"name": "Basic", "price": "$19/月", "features": ["利润分析", "AI 文案生成", "关键词工具"]},
+    {"name": "Pro", "price": "$49/月", "features": ["全部功能", "批量操作", "高级分析"]}
+  ],
+  "quickStart": ["注册 Tool4seller 账号", "绑定亚马逊店铺", "查看利润分析数据", "使用 AI 生成多语言 Listing", "监控关键词排名变化"],
+  "relatedTools": ["helium-10", "sellersprite"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}
