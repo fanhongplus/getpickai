@@ -1,0 +1,46 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0d1f"/><stop offset="50%" stop-color="#111640"/><stop offset="100%" stop-color="#1a1f52"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="900" cy="300" r="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.08"/><stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="100" y="135" width="70" height="32" rx="16" fill="#f59e0b" fill-opacity="0.2"/>
+  <text x="135" y="156" text-anchor="middle" fill="#fbbf24" font-size="14" font-family="sans-serif" font-weight="600">工作流</text>
+  <rect x="185" y="135" width="70" height="32" rx="16" fill="#ef4444" fill-opacity="0.15"/>
+  <text x="220" y="156" text-anchor="middle" fill="#f87171" font-size="14" font-family="sans-serif" font-weight="600">自媒体</text>
+  <text x="100" y="240" fill="#ffffff" font-size="54" font-family="sans-serif" font-weight="800" letter-spacing="-1">自媒体AI工具</text>
+  <text x="100" y="315" fill="#fbbf24" font-size="54" font-family="sans-serif" font-weight="800" letter-spacing="-1">8个效率神器</text>
+  <text x="100" y="370" fill="#94a3b8" font-size="20" font-family="sans-serif">选题 · 脚本 · 封面 · 剪辑 · 配音 · 分发 · 数据</text>
+  <rect x="100" y="400" width="80" height="3" rx="1.5" fill="#f59e0b"/>
+  <text x="100" y="460" fill="#64748b" font-size="14" font-family="sans-serif">从零成本到全套方案 · 附实操技巧</text>
+  <text x="100" y="565" fill="#4f6ef7" font-size="20" font-family="sans-serif" font-weight="700">GoPick AI</text>
+  <text x="205" y="565" fill="#4a5568" font-size="16" font-family="sans-serif">帮你挑出最值得用的 AI 工具</text>
+  <rect x="750" y="120" width="150" height="70" rx="14" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="780" y="160" font-size="22">🔍</text>
+  <text x="815" y="162" fill="#fbbf24" font-size="13" font-family="sans-serif" font-weight="600">选题调研</text>
+  <rect x="920" y="120" width="150" height="70" rx="14" fill="#8b5cf6" fill-opacity="0.08" stroke="#8b5cf6" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="950" y="160" font-size="22">✍️</text>
+  <text x="985" y="162" fill="#a78bfa" font-size="13" font-family="sans-serif" font-weight="600">写脚本</text>
+  <rect x="750" y="210" width="150" height="70" rx="14" fill="#06b6d4" fill-opacity="0.08" stroke="#06b6d4" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="780" y="250" font-size="22">🎨</text>
+  <text x="815" y="252" fill="#22d3ee" font-size="13" font-family="sans-serif" font-weight="600">封面配图</text>
+  <rect x="920" y="210" width="150" height="70" rx="14" fill="#ef4444" fill-opacity="0.08" stroke="#ef4444" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="950" y="250" font-size="22">🎬</text>
+  <text x="985" y="252" fill="#f87171" font-size="13" font-family="sans-serif" font-weight="600">视频剪辑</text>
+  <rect x="750" y="300" width="150" height="70" rx="14" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="780" y="340" font-size="22">🎙️</text>
+  <text x="815" y="342" fill="#34d399" font-size="13" font-family="sans-serif" font-weight="600">AI配音</text>
+  <rect x="920" y="300" width="150" height="70" rx="14" fill="#ec4899" fill-opacity="0.08" stroke="#ec4899" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="950" y="340" font-size="22">✂️</text>
+  <text x="985" y="342" fill="#f472b6" font-size="13" font-family="sans-serif" font-weight="600">短视频拆条</text>
+  <rect x="750" y="390" width="150" height="70" rx="14" fill="#3b82f6" fill-opacity="0.08" stroke="#3b82f6" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="780" y="430" font-size="22">📱</text>
+  <text x="815" y="432" fill="#60a5fa" font-size="13" font-family="sans-serif" font-weight="600">多平台管理</text>
+  <rect x="920" y="390" width="150" height="70" rx="14" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="950" y="430" font-size="22">📊</text>
+  <text x="985" y="432" fill="#fbbf24" font-size="13" font-family="sans-serif" font-weight="600">数据分析</text>
+</svg>

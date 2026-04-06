@@ -1,0 +1,38 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0d1f"/><stop offset="50%" stop-color="#111640"/><stop offset="100%" stop-color="#1a1f52"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="900" cy="300" r="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.08"/><stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="100" y="135" width="70" height="32" rx="16" fill="#10b981" fill-opacity="0.2"/>
+  <text x="135" y="156" text-anchor="middle" fill="#34d399" font-size="14" font-family="sans-serif" font-weight="600">排行榜</text>
+  <rect x="185" y="135" width="70" height="32" rx="16" fill="#f59e0b" fill-opacity="0.15"/>
+  <text x="220" y="156" text-anchor="middle" fill="#fbbf24" font-size="14" font-family="sans-serif" font-weight="600">免费</text>
+  <text x="100" y="240" fill="#ffffff" font-size="54" font-family="sans-serif" font-weight="800" letter-spacing="-1">10个免费AI工具</text>
+  <text x="100" y="315" fill="#34d399" font-size="54" font-family="sans-serif" font-weight="800" letter-spacing="-1">不花一分钱提效</text>
+  <text x="100" y="370" fill="#94a3b8" font-size="20" font-family="sans-serif">写作 · 搜索 · 设计 · 视频 · 编程 五大场景</text>
+  <rect x="100" y="400" width="80" height="3" rx="1.5" fill="#10b981"/>
+  <text x="100" y="460" fill="#64748b" font-size="14" font-family="sans-serif">2026亲测好用 · 长期免费方案</text>
+  <text x="100" y="565" fill="#4f6ef7" font-size="20" font-family="sans-serif" font-weight="700">GoPick AI</text>
+  <text x="205" y="565" fill="#4a5568" font-size="16" font-family="sans-serif">帮你挑出最值得用的 AI 工具</text>
+  <rect x="750" y="120" width="310" height="55" rx="12" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="770" y="153" fill="#34d399" font-size="14" font-family="sans-serif" font-weight="700">FREE</text>
+  <text x="825" y="153" fill="#94a3b8" font-size="14" font-family="sans-serif">豆包 · AI对话写作</text>
+  <rect x="750" y="190" width="310" height="55" rx="12" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="770" y="223" fill="#34d399" font-size="14" font-family="sans-serif" font-weight="700">FREE</text>
+  <text x="825" y="223" fill="#94a3b8" font-size="14" font-family="sans-serif">Kimi · 长文本处理</text>
+  <rect x="750" y="260" width="310" height="55" rx="12" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="770" y="293" fill="#34d399" font-size="14" font-family="sans-serif" font-weight="700">FREE</text>
+  <text x="825" y="293" fill="#94a3b8" font-size="14" font-family="sans-serif">秘塔搜索 · AI搜索</text>
+  <rect x="750" y="330" width="310" height="55" rx="12" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="770" y="363" fill="#34d399" font-size="14" font-family="sans-serif" font-weight="700">FREE</text>
+  <text x="825" y="363" fill="#94a3b8" font-size="14" font-family="sans-serif">Canva · 设计海报</text>
+  <rect x="750" y="400" width="310" height="55" rx="12" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="770" y="433" fill="#34d399" font-size="14" font-family="sans-serif" font-weight="700">FREE</text>
+  <text x="825" y="433" fill="#94a3b8" font-size="14" font-family="sans-serif">剪映 · 视频剪辑</text>
+  <text x="905" y="495" text-anchor="middle" fill="#475569" font-size="13" font-family="sans-serif">... 还有更多</text>
+</svg>

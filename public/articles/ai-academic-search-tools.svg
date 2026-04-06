@@ -1,0 +1,45 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0d1f"/><stop offset="50%" stop-color="#111640"/><stop offset="100%" stop-color="#1a1f52"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="900" cy="300" r="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.08"/><stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/><rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="100" y="135" width="90" height="32" rx="16" fill="#6366f1" fill-opacity="0.2"/>
+  <text x="145" y="156" text-anchor="middle" fill="#818cf8" font-size="14" font-family="sans-serif" font-weight="600">对比评测</text>
+  <rect x="205" y="135" width="70" height="32" rx="16" fill="#f59e0b" fill-opacity="0.15"/>
+  <text x="240" y="156" text-anchor="middle" fill="#fbbf24" font-size="14" font-family="sans-serif" font-weight="600">学术</text>
+  <text x="100" y="240" fill="#ffffff" font-size="54" font-family="sans-serif" font-weight="800" letter-spacing="-1">AI学术搜索工具</text>
+  <text x="100" y="315" fill="#818cf8" font-size="54" font-family="sans-serif" font-weight="800" letter-spacing="-1">高效找文献</text>
+  <text x="100" y="370" fill="#94a3b8" font-size="20" font-family="sans-serif">论文搜索 · 文献综述 · 关联图谱 · 学术问答</text>
+  <rect x="100" y="400" width="80" height="3" rx="1.5" fill="#6366f1"/>
+  <text x="100" y="460" fill="#64748b" font-size="14" font-family="sans-serif">Consensus · Semantic Scholar · Connected Papers</text>
+  <text x="100" y="565" fill="#4f6ef7" font-size="20" font-family="sans-serif" font-weight="700">GoPick AI</text>
+  <text x="205" y="565" fill="#4a5568" font-size="16" font-family="sans-serif">帮你挑出最值得用的 AI 工具</text>
+  <rect x="750" y="130" width="120" height="130" rx="18" fill="#6366f1" fill-opacity="0.1" stroke="#6366f1" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="810" y="185" text-anchor="middle" font-size="30">🎓</text>
+  <text x="810" y="240" text-anchor="middle" fill="#818cf8" font-size="12" font-family="sans-serif" font-weight="600">Consensus</text>
+  <rect x="900" y="115" width="120" height="130" rx="18" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="960" y="170" text-anchor="middle" font-size="30">📚</text>
+  <text x="960" y="225" text-anchor="middle" fill="#34d399" font-size="11" font-family="sans-serif" font-weight="600">Semantic Scholar</text>
+  <rect x="1050" y="140" width="120" height="130" rx="18" fill="#f59e0b" fill-opacity="0.1" stroke="#f59e0b" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="1110" y="195" text-anchor="middle" font-size="30">🔗</text>
+  <text x="1110" y="250" text-anchor="middle" fill="#fbbf24" font-size="11" font-family="sans-serif" font-weight="600">Connected Papers</text>
+  <text x="875" y="200" text-anchor="middle" fill="#64748b" font-size="16" font-weight="700">VS</text>
+  <text x="1025" y="210" text-anchor="middle" fill="#64748b" font-size="16" font-weight="700">VS</text>
+  <rect x="750" y="320" width="170" height="80" rx="14" fill="#6366f1" fill-opacity="0.06" stroke="#6366f1" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="835" y="360" text-anchor="middle" font-size="24">🔬</text>
+  <text x="835" y="388" text-anchor="middle" fill="#818cf8" font-size="11" font-family="sans-serif">学术问答</text>
+  <rect x="940" y="320" width="170" height="80" rx="14" fill="#10b981" fill-opacity="0.06" stroke="#10b981" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="1025" y="360" text-anchor="middle" font-size="24">🗂️</text>
+  <text x="1025" y="388" text-anchor="middle" fill="#34d399" font-size="11" font-family="sans-serif">论文管理</text>
+  <rect x="750" y="420" width="170" height="80" rx="14" fill="#f59e0b" fill-opacity="0.06" stroke="#f59e0b" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="835" y="460" text-anchor="middle" font-size="24">🕸️</text>
+  <text x="835" y="488" text-anchor="middle" fill="#fbbf24" font-size="11" font-family="sans-serif">关联图谱</text>
+  <rect x="940" y="420" width="170" height="80" rx="14" fill="#ec4899" fill-opacity="0.06" stroke="#ec4899" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="1025" y="460" text-anchor="middle" font-size="24">💰</text>
+  <text x="1025" y="488" text-anchor="middle" fill="#f472b6" font-size="11" font-family="sans-serif">价格对比</text>
+</svg>
