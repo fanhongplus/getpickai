@@ -1,0 +1,54 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1200" y2="630" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1a0a1f"/>
+      <stop offset="50%" stop-color="#2d1140"/>
+      <stop offset="100%" stop-color="#1a1f52"/>
+    </linearGradient>
+    <radialGradient id="glowTop" cx="850" cy="200" r="400" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#ef4444" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bgGrad)"/>
+  <rect width="1200" height="630" fill="url(#glowTop)"/>
+  <rect x="100" y="135" width="90" height="32" rx="16" fill="#ef4444" fill-opacity="0.2"/>
+  <text x="145" y="156" text-anchor="middle" fill="#f87171" font-size="14" font-family="sans-serif" font-weight="600">对比评测</text>
+  <rect x="205" y="135" width="70" height="32" rx="16" fill="#f59e0b" fill-opacity="0.15"/>
+  <text x="240" y="156" text-anchor="middle" fill="#fbbf24" font-size="14" font-family="sans-serif" font-weight="600">国产AI</text>
+  <text x="100" y="240" fill="#ffffff" font-size="54" font-family="sans-serif" font-weight="800" letter-spacing="-1">国产AI助手对比</text>
+  <text x="100" y="315" fill="#f87171" font-size="54" font-family="sans-serif" font-weight="800" letter-spacing="-1">哪个更好用？</text>
+  <text x="100" y="370" fill="#94a3b8" font-size="20" font-family="sans-serif">中文写作 · 长文本 · 多模态 · 特色功能 · 价格</text>
+  <rect x="100" y="400" width="80" height="3" rx="1.5" fill="#ef4444"/>
+  <text x="100" y="460" fill="#64748b" font-size="14" font-family="sans-serif">Kimi · 豆包 · 智谱清言 — 免费无需翻墙</text>
+  <text x="100" y="565" fill="#4f6ef7" font-size="20" font-family="sans-serif" font-weight="700">GoPick AI</text>
+  <text x="205" y="565" fill="#4a5568" font-size="16" font-family="sans-serif">帮你挑出最值得用的 AI 工具</text>
+  <!-- Right side: 3 brand cards -->
+  <rect x="730" y="140" width="130" height="140" rx="18" fill="#3b82f6" fill-opacity="0.1" stroke="#3b82f6" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="795" y="200" text-anchor="middle" fill="#ffffff" font-size="32" font-weight="700" font-family="sans-serif">K</text>
+  <text x="795" y="255" text-anchor="middle" fill="#60a5fa" font-size="12" font-family="sans-serif" font-weight="600">Kimi</text>
+  <rect x="885" y="120" width="130" height="140" rx="18" fill="#ef4444" fill-opacity="0.1" stroke="#ef4444" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="950" y="180" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="700" font-family="sans-serif">豆</text>
+  <text x="950" y="235" text-anchor="middle" fill="#f87171" font-size="12" font-family="sans-serif" font-weight="600">豆包</text>
+  <rect x="1040" y="150" width="130" height="140" rx="18" fill="#10b981" fill-opacity="0.1" stroke="#10b981" stroke-opacity="0.25" stroke-width="1"/>
+  <text x="1105" y="210" text-anchor="middle" fill="#ffffff" font-size="28" font-weight="700" font-family="sans-serif">智</text>
+  <text x="1105" y="265" text-anchor="middle" fill="#34d399" font-size="12" font-family="sans-serif" font-weight="600">智谱清言</text>
+  <text x="862" y="210" text-anchor="middle" fill="#64748b" font-size="16" font-weight="700" font-family="sans-serif">VS</text>
+  <text x="1017" y="220" text-anchor="middle" fill="#64748b" font-size="16" font-weight="700" font-family="sans-serif">VS</text>
+  <!-- Bottom right: feature highlights -->
+  <rect x="730" y="340" width="140" height="70" rx="12" fill="#3b82f6" fill-opacity="0.06" stroke="#3b82f6" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="800" y="375" text-anchor="middle" font-size="22">📝</text>
+  <text x="800" y="398" text-anchor="middle" fill="#60a5fa" font-size="10" font-family="sans-serif">中文写作</text>
+  <rect x="885" y="340" width="140" height="70" rx="12" fill="#f59e0b" fill-opacity="0.06" stroke="#f59e0b" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="955" y="375" text-anchor="middle" font-size="22">📚</text>
+  <text x="955" y="398" text-anchor="middle" fill="#fbbf24" font-size="10" font-family="sans-serif">长文本处理</text>
+  <rect x="1040" y="340" width="130" height="70" rx="12" fill="#8b5cf6" fill-opacity="0.06" stroke="#8b5cf6" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="1105" y="375" text-anchor="middle" font-size="22">🎨</text>
+  <text x="1105" y="398" text-anchor="middle" fill="#a78bfa" font-size="10" font-family="sans-serif">多模态</text>
+  <rect x="782" y="425" width="140" height="70" rx="12" fill="#10b981" fill-opacity="0.06" stroke="#10b981" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="852" y="460" text-anchor="middle" font-size="22">🚀</text>
+  <text x="852" y="483" text-anchor="middle" fill="#34d399" font-size="10" font-family="sans-serif">特色功能</text>
+  <rect x="937" y="425" width="130" height="70" rx="12" fill="#ef4444" fill-opacity="0.06" stroke="#ef4444" stroke-opacity="0.15" stroke-width="1"/>
+  <text x="1002" y="460" text-anchor="middle" font-size="22">🆓</text>
+  <text x="1002" y="483" text-anchor="middle" fill="#f87171" font-size="10" font-family="sans-serif">免费好用</text>
+</svg>
