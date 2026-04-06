@@ -24,7 +24,7 @@ export function ArticleCard({ article }: ArticleCardProps) {
         <div className="p-4 flex flex-col flex-1">
           <div className="flex items-center gap-2 mb-2">
             <span className="text-xs text-accent bg-accent-bg px-2 py-0.5 rounded-tag">
-              {article.category}
+              GoPick AI
             </span>
             <span className="text-xs text-text-muted">{article.readTime}</span>
           </div>

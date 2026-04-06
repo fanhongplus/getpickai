@@ -40,7 +40,7 @@ export default function ArticleDetailPage({ params }: Props) {
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-4 text-sm text-text-muted">
             <span className="text-xs text-accent bg-accent-bg px-2 py-0.5 rounded-tag">
-              {article.category}
+              GoPick AI
             </span>
             <span>{article.publishedAt}</span>
             <span>·</span>
