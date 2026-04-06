@@ -1,0 +1,29 @@
+{
+  "slug": "pic-copilot",
+  "name": "Pic Copilot",
+  "logo": "/logos/pic-copilot.svg",
+  "tagline": "阿里国际出品的 AI 电商图片设计工具，懂电商、懂多语言营销",
+  "scenes": ["画图片", "做营销"],
+  "pricingType": "free",
+  "priceLabel": "免费",
+  "rating": 4.3,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.piccopilot.com",
+  "editorReview": "Pic Copilot 是阿里国际站团队出品的 AI 电商图片工具，最大的特点是它真的懂电商。不像通用的 AI 绘图工具，它的模板和功能都是围绕电商场景设计的。\n\n一键生成商品主图、营销海报、多语言广告图，还能自动适配不同平台的尺寸要求。对速卖通和阿里国际站卖家来说是原生工具，和平台无缝衔接。\n\n最重要的是——完全免费。虽然在创意自由度上不如 Midjourney，但对于快速出图的需求来说，效率极高。",
+  "goodFor": ["速卖通卖家", "阿里国际站卖家", "预算有限的新手卖家", "需要快速出图的卖家"],
+  "notGoodFor": ["需要高度创意自由的设计师", "不做电商的用户", "对图片质量要求极高的品牌"],
+  "pros": ["完全免费", "电商场景深度优化", "多语言营销图支持", "一键适配多平台尺寸", "和阿里系平台无缝衔接"],
+  "cons": ["创意自由度有限", "图片风格偏模板化", "非阿里系平台支持一般"],
+  "pricingPlans": [
+    {"name": "免费版", "price": "免费", "features": ["全部核心功能", "商品主图生成", "营销海报制作", "多语言广告图"]}
+  ],
+  "quickStart": ["访问 piccopilot.com 注册账号", "上传你的产品图片", "选择电商图片模板", "AI 自动生成多种方案", "选择满意的方案下载使用"],
+  "relatedTools": ["photoroom", "canva", "midjourney"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "xiezuocat",
+  "name": "秘塔写作猫",
+  "logo": "/logos/xiezuocat.svg",
+  "tagline": "国产 AI 写作助手，支持改写润色、纠错、续写，中文写作体验极佳",
+  "scenes": ["写文案"],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / 会员制",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://xiezuocat.com",
+  "editorReview": "秘塔写作猫是目前中文 AI 写作体验最好的工具之一。它不只是简单的生成文字，更擅长改写润色、语法纠错和风格转换，非常适合需要打磨中文内容的创作者。\n\n对自媒体创作者来说，写完初稿丢给写作猫润色一下，质量能提升一个档次。它的中文理解能力明显强于 ChatGPT 等国际工具，特别是在成语使用、语序调整这些细节上。\n\n免费版基础功能够用，会员解锁更多 AI 能力。如果你的主要创作语言是中文，这个工具值得一试。",
+  "goodFor": ["中文自媒体创作者", "公众号作者", "内容运营", "留学生写中文报告"],
+  "notGoodFor": ["主要写英文的用户", "需要长文生成的用户", "技术写作场景"],
+  "pros": ["中文写作体验极佳", "改写润色能力强", "语法纠错准确", "支持多种写作风格", "免费版够日常使用"],
+  "cons": ["英文能力不如 Grammarly", "生成长文能力一般", "高级功能需付费"],
+  "pricingPlans": [
+    {"name": "免费版", "price": "免费", "features": ["基础纠错", "简单润色", "有限使用次数"]},
+    {"name": "会员", "price": "会员制", "features": ["无限使用", "高级润色", "风格转换", "全文改写"]}
+  ],
+  "quickStart": ["打开 xiezuocat.com 注册账号", "粘贴你的文章初稿", "选择纠错、润色或改写功能", "AI 自动标注修改建议", "一键应用修改并导出"],
+  "relatedTools": ["jasper-ai", "writesonic", "grammarly"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

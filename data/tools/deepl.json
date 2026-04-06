@@ -1,0 +1,31 @@
+{
+  "slug": "deepl",
+  "name": "DeepL",
+  "logo": "/logos/deepl.svg",
+  "tagline": "全球翻译质量最高的 AI 翻译工具，多语言 Listing 文案翻译首选",
+  "scenes": ["写文案"],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $9起/月",
+  "rating": 4.8,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.deepl.com",
+  "editorReview": "DeepL 是我用过翻译质量最好的工具，没有之一。它对语境的理解能力远超 Google 翻译，翻出来的文案读起来像母语者写的，不像机翻。\n\n对跨境电商卖家来说，用 DeepL 翻译 Listing 文案是性价比最高的方案。日语、德语、法语这些语种的翻译质量尤其突出，比请翻译公司便宜太多。\n\n免费版每月有翻译字数限制，但日常使用基本够。Pro 版 $9/月起，解锁无限翻译和文档翻译功能，强烈推荐给有多语言需求的卖家。",
+  "goodFor": ["跨境电商卖家", "多语言内容创作者", "翻译从业者", "留学生"],
+  "notGoodFor": ["只做中文市场的用户", "需要实时口译的场景", "翻译量极小的用户"],
+  "pros": ["翻译质量业内第一", "支持 30+ 语言", "理解语境，不是逐字翻译", "文档翻译保留格式", "免费版就够日常使用"],
+  "cons": ["免费版有字数限制", "不支持语音翻译", "中文翻译质量略逊于欧洲语言"],
+  "pricingPlans": [
+    {"name": "Free", "price": "免费", "features": ["每月有限翻译量", "基础翻译功能", "网页版使用"]},
+    {"name": "Starter", "price": "$9/月", "features": ["无限翻译", "文档翻译", "5 个术语表"]},
+    {"name": "Advanced", "price": "$29/月", "features": ["所有 Starter 功能", "无限术语表", "CAT 工具集成", "团队协作"]}
+  ],
+  "quickStart": ["打开 deepl.com 或下载桌面客户端", "粘贴或输入需要翻译的文本", "选择目标语言", "根据需要调整翻译结果", "复制翻译后的文案到你的 Listing"],
+  "relatedTools": ["jasper-ai", "writesonic"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

@@ -1,0 +1,31 @@
+{
+  "slug": "photoroom",
+  "name": "Photoroom",
+  "logo": "/logos/photoroom.svg",
+  "tagline": "电商卖家专用的 AI 商品图工具，一键生成白底图和场景图",
+  "scenes": ["画图片"],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $10起/月",
+  "rating": 4.6,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.photoroom.com",
+  "editorReview": "Photoroom 是我见过最懂电商卖家需求的 AI 图片工具。它的核心功能就三个：去背景、换背景、生成场景图——每一个都做到了极致。\n\n手机拍一张产品图，上传后 AI 自动去除背景生成白底图，效果比手动 PS 抠图还干净。然后一键选择场景模板，就能生成各种生活场景图。\n\n对亚马逊卖家来说，这工具可以省掉大部分拍摄费用。免费版有水印，$10/月去水印并解锁高清导出，非常划算。",
+  "goodFor": ["跨境电商卖家", "独立站卖家", "社交媒体运营", "小型电商团队"],
+  "notGoodFor": ["需要精细修图的专业摄影师", "不做电商的用户", "需要视频功能的用户"],
+  "pros": ["AI 去背景效果极佳", "电商场景模板丰富", "手机端体验流畅", "批量处理效率高", "价格亲民"],
+  "cons": ["免费版有水印", "创意自由度不如 Midjourney", "模板风格相对固定"],
+  "pricingPlans": [
+    {"name": "Free", "price": "免费", "features": ["基础去背景", "有水印", "标准质量导出"]},
+    {"name": "Pro", "price": "$10/月", "features": ["无水印", "高清导出", "批量处理", "全部模板"]},
+    {"name": "Business", "price": "$25/月", "features": ["所有 Pro 功能", "API 接入", "团队协作", "优先支持"]}
+  ],
+  "quickStart": ["下载 Photoroom App 或打开网页版", "上传你的产品照片", "AI 自动去除背景", "选择白底或场景模板", "导出高清图片用于 Listing"],
+  "relatedTools": ["canva", "midjourney", "pic-copilot"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

@@ -1,0 +1,30 @@
+{
+  "slug": "quillbot",
+  "name": "QuillBot",
+  "logo": "/logos/quillbot.svg",
+  "tagline": "AI 改写和释义工具，留学生论文写作和降重必备",
+  "scenes": ["写文案"],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $10起/月",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://quillbot.com",
+  "editorReview": "QuillBot 是留学生圈子里口碑最好的改写工具。它的核心能力是把一段英文换一种方式表达，保持原意但用词和句式完全不同——也就是留学生常说的「降重」。\n\n提供 7 种改写模式（标准、流畅、正式、学术等），可以根据不同场景选择。学术模式特别适合论文写作，改写后的文本学术味十足。\n\n免费版有字数限制但核心功能都有，$10/月解锁无限改写和更多模式。配合 Grammarly 一起用，英文写作质量能提升好几个档次。",
+  "goodFor": ["留学生", "学术写作", "英文内容创作", "论文降重"],
+  "notGoodFor": ["中文写作用户", "不需要改写的用户", "需要原创内容生成的用户"],
+  "pros": ["改写质量高，保持原意", "7 种改写模式覆盖各场景", "学术模式对论文特别有用", "浏览器插件方便", "免费版核心功能齐全"],
+  "cons": ["免费版字数有限", "偶尔改写会改变原意", "中文改写能力弱"],
+  "pricingPlans": [
+    {"name": "Free", "price": "免费", "features": ["基础改写", "125 词限制", "2 种模式"]},
+    {"name": "Premium", "price": "$10/月", "features": ["无限改写", "全部 7 种模式", "无字数限制", "语法检查"]}
+  ],
+  "quickStart": ["打开 quillbot.com 或安装浏览器插件", "粘贴需要改写的英文段落", "选择改写模式（推荐学术模式）", "点击改写，查看结果", "微调不满意的部分后复制使用"],
+  "relatedTools": ["grammarly", "jasper-ai", "writesonic"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

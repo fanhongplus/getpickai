@@ -1,0 +1,31 @@
+{
+  "slug": "salesmartly",
+  "name": "SaleSmartly",
+  "logo": "/logos/salesmartly.svg",
+  "tagline": "跨境电商多渠道智能客服系统，支持 AI 自动回复和多语言翻译",
+  "scenes": ["提效率"],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $16起/月",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.salesmartly.com",
+  "editorReview": "SaleSmartly 解决了跨境卖家最头疼的客服问题——时差。它可以把 WhatsApp、Facebook Messenger、Instagram、Shopify 等多个渠道的消息统一到一个后台，AI 自动回复常见问题。\n\n最实用的功能是实时多语言翻译，客户用日语问，你用中文回，系统自动翻译发送。还有智能话术推荐，根据客户问题自动推荐最佳回复。\n\n免费版支持 100 条消息/月，够小卖家用。付费版 $16/月起，对于有一定订单量的卖家来说性价比很高。",
+  "goodFor": ["跨境电商卖家", "独立站卖家", "多平台运营卖家", "小型客服团队"],
+  "notGoodFor": ["只在亚马逊站内的卖家", "消息量极少的新手", "需要电话客服的场景"],
+  "pros": ["多渠道消息统一管理", "AI 自动回复准确率高", "实时多语言翻译", "智能话术推荐", "中文界面友好"],
+  "cons": ["免费版消息数有限", "高级 AI 功能需付费", "部分平台对接需配置"],
+  "pricingPlans": [
+    {"name": "Free", "price": "免费", "features": ["100 条消息/月", "基础自动回复", "2 个渠道"]},
+    {"name": "Pro", "price": "$16/月", "features": ["无限消息", "AI 智能回复", "全渠道接入", "多语言翻译"]},
+    {"name": "Enterprise", "price": "定制报价", "features": ["所有 Pro 功能", "专属客服经理", "API 接入", "数据分析报表"]}
+  ],
+  "quickStart": ["注册 SaleSmartly 账号", "绑定你的社交媒体和电商平台", "配置 AI 自动回复规则", "设置常见问题话术库", "开始统一管理所有客户消息"],
+  "relatedTools": ["deepl", "jasper-ai"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

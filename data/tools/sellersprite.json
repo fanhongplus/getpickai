@@ -1,0 +1,31 @@
+{
+  "slug": "sellersprite",
+  "name": "卖家精灵",
+  "logo": "/logos/sellersprite.svg",
+  "tagline": "亚马逊卖家必备的选品和关键词分析工具，支持中文界面，数据覆盖全球主要站点",
+  "scenes": ["提效率"],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $39起/月",
+  "rating": 4.5,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.sellersprite.com",
+  "editorReview": "卖家精灵是国内跨境电商卖家最常用的亚马逊数据分析工具之一。最大的优势就是全中文界面，上手零门槛，不像 Helium 10 和 Jungle Scout 需要英文基础。\n\n它的关键词反查和选品数据覆盖了美国、日本、欧洲等主要站点，竞品分析和市场趋势功能也很实用。特别是「选品精灵」功能，可以按利润率、竞争度等条件筛选蓝海产品。\n\n免费版功能有限但够入门体验，付费版 $39/月起，对于认真做亚马逊的卖家来说是值得投资的工具。",
+  "goodFor": ["亚马逊中国卖家", "跨境电商新手", "需要中文界面的卖家", "多站点运营卖家"],
+  "notGoodFor": ["不做亚马逊的卖家", "独立站卖家", "预算极紧的新手"],
+  "pros": ["全中文界面，上手零门槛", "数据覆盖全球主要亚马逊站点", "选品精灵功能实用", "关键词反查精准度高", "价格比国际同类工具更友好"],
+  "cons": ["免费版功能很有限", "部分小站点数据覆盖不全", "界面设计略显老旧"],
+  "pricingPlans": [
+    {"name": "免费版", "price": "免费", "features": ["基础关键词查询", "有限次数/天", "部分功能体验"]},
+    {"name": "标准版", "price": "$39/月", "features": ["全功能解锁", "关键词反查", "竞品监控", "选品精灵"]},
+    {"name": "高级版", "price": "$79/月", "features": ["所有标准版功能", "更多查询次数", "批量操作", "API 接入"]}
+  ],
+  "quickStart": ["注册卖家精灵账号", "安装浏览器插件", "打开亚马逊页面查看实时数据", "使用选品精灵筛选潜力产品", "导出关键词列表优化 Listing"],
+  "relatedTools": ["jungle-scout", "jasper-ai", "writesonic"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

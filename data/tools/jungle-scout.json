@@ -1,0 +1,31 @@
+{
+  "slug": "jungle-scout",
+  "name": "Jungle Scout",
+  "logo": "/logos/jungle-scout.svg",
+  "tagline": "亚马逊卖家最知名的选品工具，AI 驱动的销量预测和市场分析",
+  "scenes": ["提效率"],
+  "pricingType": "paid",
+  "priceLabel": "$29起/月",
+  "rating": 4.6,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.junglescout.com",
+  "editorReview": "Jungle Scout 可以说是亚马逊选品工具的鼻祖，也是全球用户最多的一个。它的数据准确度在业内公认最高，特别是销量预估和市场趋势分析。\n\n AI 功能方面，最近推出的 AI Assist 可以自动分析市场机会、生成关键词建议、预测产品销量趋势。结合它本身强大的数据库，选品决策的效率提升非常明显。\n\n$29/月的入门价格不算便宜，但数据质量对得起这个价。如果你认真做亚马逊，这是投资回报率最高的工具之一。",
+  "goodFor": ["亚马逊卖家", "选品调研", "竞品分析", "关键词研究"],
+  "notGoodFor": ["不做亚马逊的卖家", "预算有限的新手", "只需要简单数据的用户"],
+  "pros": ["数据准确度业内最高", "AI 驱动的市场分析", "产品追踪和监控强大", "浏览器插件体验好", "教程和社区资源丰富"],
+  "cons": ["价格不便宜", "英文界面", "小站点数据覆盖不如大站"],
+  "pricingPlans": [
+    {"name": "Basic", "price": "$29/月", "features": ["浏览器插件", "产品数据库", "基础关键词工具"]},
+    {"name": "Suite", "price": "$49/月", "features": ["所有 Basic 功能", "产品追踪", "市场分析", "AI Assist"]},
+    {"name": "Professional", "price": "$84/月", "features": ["所有 Suite 功能", "历史数据", "高级筛选", "6 个用户"]}
+  ],
+  "quickStart": ["注册 Jungle Scout 账号", "安装 Chrome 浏览器插件", "在亚马逊页面查看实时销量数据", "使用产品数据库筛选潜力产品", "用 AI Assist 分析市场趋势"],
+  "relatedTools": ["sellersprite", "jasper-ai", "writesonic"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

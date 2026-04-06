@@ -1,0 +1,29 @@
+{
+  "slug": "kimi",
+  "name": "Kimi",
+  "logo": "/logos/kimi.svg",
+  "tagline": "国产最受欢迎的 AI 助手之一，超长上下文能力突出，支持文件和网页解读",
+  "scenes": ["写文案", "提效率"],
+  "pricingType": "free",
+  "priceLabel": "免费",
+  "rating": 4.6,
+  "affiliateUrl": "",
+  "websiteUrl": "https://kimi.moonshot.cn",
+  "editorReview": "Kimi 是月之暗面出品的 AI 助手，在国产 AI 工具里属于顶尖水平。最大的特点是超长上下文能力——可以一次处理 20 万字的文本，这意味着你可以把整本书、整篇论文丢给它分析。\n\n支持上传 PDF、Word 等文档直接解读，也可以粘贴网页链接让它总结内容。对留学生来说，用来读论文和整理文献效率极高。\n\n完全免费使用，这在同等能力的 AI 工具中非常难得。中文理解和生成能力优秀，推荐给所有需要中文 AI 助手的用户。",
+  "goodFor": ["所有需要 AI 助手的用户", "留学生读论文", "长文本分析", "文件解读"],
+  "notGoodFor": ["需要英文为主的 AI 对话", "需要生成图片的用户", "需要 API 调用的开发者"],
+  "pros": ["完全免费", "超长上下文处理能力", "文件和网页解读强大", "中文理解能力优秀", "响应速度快"],
+  "cons": ["英文能力不如 ChatGPT", "不支持图片生成", "高峰期可能排队"],
+  "pricingPlans": [
+    {"name": "免费版", "price": "免费", "features": ["全部对话功能", "文件上传解读", "网页总结", "超长上下文"]}
+  ],
+  "quickStart": ["打开 kimi.moonshot.cn", "注册或直接开始对话", "上传文件或粘贴网页链接", "提出你的问题或需求", "AI 给出详细分析和回答"],
+  "relatedTools": ["doubao", "metaso"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

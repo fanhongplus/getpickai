@@ -1,0 +1,29 @@
+{
+  "slug": "doubao",
+  "name": "豆包",
+  "logo": "/logos/doubao.svg",
+  "tagline": "字节跳动出品的 AI 助手，功能全面，支持对话、写作、绘图、搜索",
+  "scenes": ["写文案", "画图片", "提效率"],
+  "pricingType": "free",
+  "priceLabel": "免费",
+  "rating": 4.5,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.doubao.com",
+  "editorReview": "豆包是字节跳动推出的 AI 助手，背靠字节的技术实力，功能非常全面。对话、写作、绘图、搜索、翻译，一个工具全覆盖。\n\n最大的优势是免费且能力不弱。中文对话体验流畅自然，写作能力可以应对日常文案需求。AI 绘图功能也已经接入，虽然不如 Midjourney 精细但够用。\n\n对于不想花钱买 ChatGPT Plus 的用户来说，豆包是目前最好的免费替代品之一。手机端体验特别好，适合随时随地使用。",
+  "goodFor": ["所有需要 AI 助手的用户", "不想付费的用户", "中文内容创作", "日常问答和写作"],
+  "notGoodFor": ["对英文能力要求高的用户", "专业级 AI 绘图需求", "需要 API 开发的场景"],
+  "pros": ["完全免费", "功能全面覆盖", "中文体验优秀", "手机端好用", "背靠字节技术实力"],
+  "cons": ["英文能力不如 ChatGPT", "绘图能力还在提升中", "部分高级功能开发中"],
+  "pricingPlans": [
+    {"name": "免费版", "price": "免费", "features": ["AI 对话", "AI 写作", "AI 绘图", "AI 搜索", "文件解读"]}
+  ],
+  "quickStart": ["下载豆包 App 或打开网页版", "注册账号开始使用", "选择对话、写作或绘图功能", "输入你的需求", "AI 即时给出回应"],
+  "relatedTools": ["kimi", "metaso"],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

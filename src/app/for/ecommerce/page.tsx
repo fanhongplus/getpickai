@@ -18,6 +18,15 @@ export default function EcommercePage() {
         { slug: "heygen", usage: "制作多语言产品视频，AI 数字人口播 + 自动翻译，一条视频卖全球" },
         { slug: "canva", usage: "做电商海报、社交媒体图和 A+ 页面，模板多到用不完" },
         { slug: "writesonic", usage: "写广告文案和产品描述，价格只有 Jasper 的一半，性价比之选" },
+        { slug: "sellersprite", usage: "亚马逊选品和关键词分析，中文界面零门槛，数据覆盖全球主要站点" },
+        { slug: "deepl", usage: "多语言 Listing 文案翻译首选，翻译质量远超 Google 翻译" },
+        { slug: "photoroom", usage: "一键生成白底图和场景图，手机拍照就能出专业商品图" },
+        { slug: "salesmartly", usage: "多渠道智能客服，AI 自动回复 + 实时多语言翻译，解决时差问题" },
+        { slug: "pic-copilot", usage: "阿里出品的免费电商图工具，一键生成商品主图和营销海报" },
+        { slug: "dianxiaomi-ai", usage: "130 万卖家在用的 ERP，接入 AI 大模型辅助运营" },
+        { slug: "jungle-scout", usage: "亚马逊选品数据最准确的工具，AI 驱动销量预测和市场分析" },
+        { slug: "accio-work", usage: "阿里 AI Agent 平台，30 分钟完成从选品到开店全流程" },
+        { slug: "gaoding", usage: "国产在线设计工具，AI 抠图 + 海量电商模板，快速出营销图" },
       ]}
       workflowTeaser={{
         title: "从选品到出单的 AI 全流程方案 —— 即将发布",
