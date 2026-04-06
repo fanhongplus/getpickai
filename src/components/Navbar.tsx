@@ -10,8 +10,8 @@ export function Navbar() {
 
   const navLinks = [
     { href: "/", label: "首页" },
-    { href: "/tools", label: "工具库" },
-    { href: "/blog", label: "博客" },
+    { href: "/tools", label: "找工具" },
+    { href: "/blog", label: "AI攻略" },
   ];
 
   return (

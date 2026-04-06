@@ -20,10 +20,10 @@ export function Footer() {
             <h4 className="font-semibold text-sm text-text mb-3">快速链接</h4>
             <div className="space-y-2">
               <Link href="/tools" className="block text-sm text-text-secondary hover:text-accent transition-colors">
-                工具库
+                找工具
               </Link>
               <Link href="/blog" className="block text-sm text-text-secondary hover:text-accent transition-colors">
-                博客
+                AI攻略
               </Link>
             </div>
           </div>

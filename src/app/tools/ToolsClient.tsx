@@ -36,7 +36,7 @@ function ToolsContent({ tools }: { tools: Tool[] }) {
     <div className="animate-fade-in pt-24 pb-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold text-text leading-heading">AI 工具库</h1>
+          <h1 className="text-3xl font-bold text-text leading-heading">找工具</h1>
           <p className="mt-2 text-text-secondary">每个工具都经过我们的真实测评</p>
         </div>
 

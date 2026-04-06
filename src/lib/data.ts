@@ -51,3 +51,12 @@ export function getArticleBySlug(slug: string): Article | undefined {
   const content = fs.readFileSync(filePath, "utf-8");
   return JSON.parse(content) as Article;
 }
+
+export function isArticlePublished(article: Article): boolean {
+  const today = new Date().toISOString().split("T")[0];
+  return article.publishedAt <= today;
+}
+
+export function getPublishedArticles(): Article[] {
+  return getAllArticles().filter(isArticlePublished);
+}

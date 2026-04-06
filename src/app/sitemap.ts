@@ -1,12 +1,11 @@
 import { MetadataRoute } from "next";
-import { getAllTools } from "@/lib/data";
-import { getAllArticles } from "@/lib/data";
+import { getAllTools, getPublishedArticles } from "@/lib/data";
 
 const BASE_URL = "https://gopick.ai";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const tools = getAllTools();
-  const articles = getAllArticles();
+  const articles = getPublishedArticles();
 
   // 静态页面
   const staticPages: MetadataRoute.Sitemap = [

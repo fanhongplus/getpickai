@@ -1,20 +1,22 @@
-import { getAllArticles } from "@/lib/data";
+import { getPublishedArticles } from "@/lib/data";
 import { ArticleCard } from "@/components/ArticleCard";
 import { Metadata } from "next";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
-  title: "博客 - AI 工具测评与教程",
+  title: "AI攻略 - AI 工具测评与教程",
   description: "深度 AI 工具测评、对比文章和使用教程，帮你做出更好的选择。",
 };
 
 export default function BlogPage() {
-  const articles = getAllArticles();
+  const articles = getPublishedArticles();
 
   return (
     <div className="animate-fade-in pt-24 pb-16 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-10">
-          <h1 className="text-3xl font-bold text-text leading-heading">博客</h1>
+          <h1 className="text-3xl font-bold text-text leading-heading">AI攻略</h1>
           <p className="mt-2 text-text-secondary">
             深度测评、对比文章和使用教程
           </p>

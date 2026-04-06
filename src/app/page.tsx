@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { getAllArticles, getFeaturedTools } from "@/lib/data";
+import { getPublishedArticles, getFeaturedTools } from "@/lib/data";
 import { scenes } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import { ZhenXiangModule } from "@/components/ZhenXiangModule";
@@ -49,9 +49,11 @@ function HotTags() {
   );
 }
 
+export const dynamic = "force-dynamic";
+
 export default function HomePage() {
   const featuredTools = getFeaturedTools();
-  const articles = getAllArticles();
+  const articles = getPublishedArticles();
 
   return (
     <div className="animate-fade-in">

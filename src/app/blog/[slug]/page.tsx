@@ -1,22 +1,19 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { Metadata } from "next";
-import { getArticleBySlug, getAllArticles, getAllTools } from "@/lib/data";
+import { getArticleBySlug, getPublishedArticles, getAllTools, isArticlePublished } from "@/lib/data";
 import { ToolCard } from "@/components/ToolCard";
 import { ArticleCard } from "@/components/ArticleCard";
+
+export const dynamic = "force-dynamic";
 
 interface Props {
   params: { slug: string };
 }
 
-export async function generateStaticParams() {
-  const articles = getAllArticles();
-  return articles.map((a) => ({ slug: a.slug }));
-}
-
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const article = getArticleBySlug(params.slug);
-  if (!article) return { title: "文章未找到" };
+  if (!article || !isArticlePublished(article)) return { title: "文章未找到" };
   return {
     title: article.title,
     description: article.excerpt,
@@ -25,10 +22,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default function ArticleDetailPage({ params }: Props) {
   const article = getArticleBySlug(params.slug);
-  if (!article) notFound();
+  if (!article || !isArticlePublished(article)) notFound();
 
   const allTools = getAllTools();
-  const allArticles = getAllArticles();
+  const allArticles = getPublishedArticles();
   const relatedTools = article.relatedTools
     .map((slug) => allTools.find((t) => t.slug === slug))
     .filter(Boolean);
@@ -101,7 +98,7 @@ export default function ArticleDetailPage({ params }: Props) {
 
         <div className="text-center pt-6">
           <Link href="/blog" className="text-sm text-accent hover:text-accent-hover transition-colors">
-            &larr; 返回博客列表
+            &larr; 返回AI攻略
           </Link>
         </div>
       </div>
