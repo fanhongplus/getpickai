@@ -13,11 +13,18 @@
       <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.1"/>
       <stop offset="100%" stop-color="#f59e0b" stop-opacity="0"/>
     </radialGradient>
+    <radialGradient id="glowRight" cx="900" cy="350" r="350" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
   </defs>
 
   <rect width="1200" height="630" fill="url(#bgGrad)"/>
   <rect width="1200" height="630" fill="url(#glowTop)"/>
   <rect width="1200" height="630" fill="url(#glowBottom)"/>
+  <rect width="1200" height="630" fill="url(#glowRight)"/>
+
+  <!-- ========== 左侧：文字内容（保持不变） ========== -->
 
   <!-- 顶部标签 -->
   <rect x="100" y="135" width="90" height="32" rx="16" fill="#06b6d4" fill-opacity="0.2"/>
@@ -31,7 +38,6 @@
 
   <!-- 主标题 -->
   <text x="100" y="245" fill="#ffffff" font-size="58" font-family="sans-serif" font-weight="800" letter-spacing="-1">跨境电商AI工具</text>
-
   <text x="100" y="320" fill="#22d3ee" font-size="58" font-family="sans-serif" font-weight="800" letter-spacing="-1">8大实测神器</text>
 
   <!-- 副标题 -->
@@ -60,6 +66,82 @@
   <text x="100" y="565" fill="#4f6ef7" font-size="20" font-family="sans-serif" font-weight="700">GoPick AI</text>
   <text x="205" y="565" fill="#4a5568" font-size="16" font-family="sans-serif">帮你挑出最值得用的 AI 工具</text>
 
-  <!-- 右侧装饰 -->
-  <text x="900" y="480" fill="#ffffff" fill-opacity="0.02" font-size="320" font-family="sans-serif" font-weight="900">🛒</text>
+  <!-- ========== 右侧：跨境电商视觉元素 ========== -->
+
+  <!-- 地球（中心装饰） -->
+  <circle cx="880" cy="280" r="120" fill="none" stroke="#06b6d4" stroke-opacity="0.15" stroke-width="1.5"/>
+  <circle cx="880" cy="280" r="90" fill="none" stroke="#06b6d4" stroke-opacity="0.1" stroke-width="1"/>
+  <circle cx="880" cy="280" r="60" fill="none" stroke="#06b6d4" stroke-opacity="0.08" stroke-width="1"/>
+  <!-- 地球经线 -->
+  <ellipse cx="880" cy="280" rx="45" ry="120" fill="none" stroke="#06b6d4" stroke-opacity="0.1" stroke-width="1"/>
+  <ellipse cx="880" cy="280" rx="90" ry="120" fill="none" stroke="#06b6d4" stroke-opacity="0.08" stroke-width="1"/>
+  <!-- 地球纬线 -->
+  <line x1="760" y1="250" x2="1000" y2="250" stroke="#06b6d4" stroke-opacity="0.07" stroke-width="1"/>
+  <line x1="760" y1="310" x2="1000" y2="310" stroke="#06b6d4" stroke-opacity="0.07" stroke-width="1"/>
+  <!-- 地球中心AI标识 -->
+  <circle cx="880" cy="280" r="28" fill="#06b6d4" fill-opacity="0.1"/>
+  <text x="880" y="288" text-anchor="middle" fill="#22d3ee" font-size="20" font-family="sans-serif" font-weight="700">AI</text>
+
+  <!-- 购物车卡片（右上） -->
+  <rect x="730" y="100" width="110" height="90" rx="14" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="785" y="148" text-anchor="middle" font-size="32">🛒</text>
+  <text x="785" y="175" text-anchor="middle" fill="#fbbf24" font-size="11" font-family="sans-serif" font-weight="600">选品分析</text>
+
+  <!-- 相机/图片卡片（右上远） -->
+  <rect x="870" y="80" width="110" height="90" rx="14" fill="#8b5cf6" fill-opacity="0.08" stroke="#8b5cf6" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="925" y="128" text-anchor="middle" font-size="32">📷</text>
+  <text x="925" y="155" text-anchor="middle" fill="#a78bfa" font-size="11" font-family="sans-serif" font-weight="600">商品图</text>
+
+  <!-- 文案卡片（最右上） -->
+  <rect x="1010" y="110" width="110" height="90" rx="14" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="1065" y="158" text-anchor="middle" font-size="32">📝</text>
+  <text x="1065" y="185" text-anchor="middle" fill="#34d399" font-size="11" font-family="sans-serif" font-weight="600">Listing文案</text>
+
+  <!-- 物流包裹卡片（右下） -->
+  <rect x="710" y="420" width="110" height="90" rx="14" fill="#ec4899" fill-opacity="0.08" stroke="#ec4899" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="765" y="468" text-anchor="middle" font-size="32">📦</text>
+  <text x="765" y="495" text-anchor="middle" fill="#f472b6" font-size="11" font-family="sans-serif" font-weight="600">物流发货</text>
+
+  <!-- 客服卡片（右下中） -->
+  <rect x="850" y="440" width="110" height="90" rx="14" fill="#06b6d4" fill-opacity="0.08" stroke="#06b6d4" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="905" y="488" text-anchor="middle" font-size="32">💬</text>
+  <text x="905" y="515" text-anchor="middle" fill="#22d3ee" font-size="11" font-family="sans-serif" font-weight="600">智能客服</text>
+
+  <!-- 多语言卡片（最右下） -->
+  <rect x="990" y="420" width="110" height="90" rx="14" fill="#f59e0b" fill-opacity="0.08" stroke="#f59e0b" stroke-opacity="0.2" stroke-width="1"/>
+  <text x="1045" y="460" text-anchor="middle" fill="#fbbf24" font-size="13" font-family="sans-serif" font-weight="700">EN</text>
+  <text x="1045" y="478" text-anchor="middle" fill="#22d3ee" font-size="13" font-family="sans-serif" font-weight="700">日本語</text>
+  <text x="1045" y="496" text-anchor="middle" fill="#34d399" font-size="13" font-family="sans-serif" font-weight="700">한국어</text>
+
+  <!-- 连接线：地球到各卡片 -->
+  <!-- 到购物车 -->
+  <line x1="830" y1="210" x2="785" y2="190" stroke="#f59e0b" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- 到相机 -->
+  <line x1="880" y1="190" x2="925" y2="170" stroke="#8b5cf6" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- 到文案 -->
+  <line x1="950" y1="220" x2="1065" y2="200" stroke="#10b981" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- 到物流 -->
+  <line x1="830" y1="360" x2="765" y2="420" stroke="#ec4899" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- 到客服 -->
+  <line x1="880" y1="370" x2="905" y2="440" stroke="#06b6d4" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4 3"/>
+  <!-- 到多语言 -->
+  <line x1="950" y1="350" x2="1045" y2="420" stroke="#f59e0b" stroke-opacity="0.15" stroke-width="1" stroke-dasharray="4 3"/>
+
+  <!-- 小圆点装饰（连接线端点） -->
+  <circle cx="785" cy="190" r="3" fill="#f59e0b" fill-opacity="0.4"/>
+  <circle cx="925" cy="170" r="3" fill="#8b5cf6" fill-opacity="0.4"/>
+  <circle cx="1065" cy="200" r="3" fill="#10b981" fill-opacity="0.4"/>
+  <circle cx="765" cy="420" r="3" fill="#ec4899" fill-opacity="0.4"/>
+  <circle cx="905" cy="440" r="3" fill="#06b6d4" fill-opacity="0.4"/>
+  <circle cx="1045" cy="420" r="3" fill="#f59e0b" fill-opacity="0.4"/>
+
+  <!-- 散布的小装饰元素 -->
+  <circle cx="1100" cy="300" r="4" fill="#22d3ee" fill-opacity="0.2"/>
+  <circle cx="720" cy="340" r="3" fill="#fbbf24" fill-opacity="0.2"/>
+  <circle cx="1050" cy="320" r="3" fill="#a78bfa" fill-opacity="0.15"/>
+  <circle cx="750" cy="260" r="2.5" fill="#34d399" fill-opacity="0.2"/>
+  <circle cx="1020" cy="260" r="2.5" fill="#f472b6" fill-opacity="0.15"/>
+  <circle cx="680" cy="180" r="2" fill="#22d3ee" fill-opacity="0.12"/>
+  <circle cx="1120" cy="200" r="2" fill="#fbbf24" fill-opacity="0.12"/>
+  <circle cx="1080" cy="380" r="2" fill="#34d399" fill-opacity="0.12"/>
 </svg>
