@@ -214,11 +214,6 @@ export default function ToolDetailPage({ params }: Props) {
             立即试用 {tool.name} &rarr;
           </Link>
         </div>
-
-        {/* Affiliate 声明 */}
-        <p className="text-xs text-text-muted text-center mt-4">
-          本页面含推广链接。当您通过链接购买时，我们可能获得佣金。这不影响我们的评测客观性。
-        </p>
       </div>
     </div>
   );
