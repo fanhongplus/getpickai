@@ -50,6 +50,15 @@ body {
   animation: fadeIn 300ms ease forwards;
 }
 
+/* 真香模块入场动画 */
+@keyframes zhenxiang-in {
+  from { opacity: 0; transform: translateY(16px) scale(0.95); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+.zx-step-1 { animation: zhenxiang-in 500ms ease forwards; animation-delay: 300ms; opacity: 0; }
+.zx-step-2 { animation: zhenxiang-in 500ms ease forwards; animation-delay: 600ms; opacity: 0; }
+.zx-step-3 { animation: zhenxiang-in 500ms ease forwards; animation-delay: 900ms; opacity: 0; }
+
 /* 文章正文样式 */
 .prose-custom h2 {
   font-size: 1.25rem;

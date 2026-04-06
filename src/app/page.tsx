@@ -7,7 +7,7 @@ import { ArticleCard } from "@/components/ArticleCard";
 // 搜索框组件（首页用）
 function SearchBox() {
   return (
-    <div className="w-full max-w-xl mx-auto">
+    <div className="w-full max-w-xl mx-auto md:mx-0">
       <Link href="/tools" className="block">
         <div className="flex items-center h-[52px] bg-bg border border-border rounded-card px-4 hover:border-accent/40 transition-colors cursor-pointer">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="text-text-muted mr-3 flex-shrink-0">
@@ -23,6 +23,44 @@ function SearchBox() {
   );
 }
 
+// 真香视觉模块
+function ZhenXiangModule() {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <div className="flex items-center gap-3 md:gap-5">
+        {/* 怀疑脸 */}
+        <div className="zx-step-1 flex flex-col items-center">
+          <div className="w-28 h-28 md:w-32 md:h-32 rounded-card bg-bg-muted border border-border flex flex-col items-center justify-center gap-1">
+            <span className="text-5xl md:text-6xl">😒</span>
+            <span className="text-xs md:text-sm text-text-muted font-medium">&ldquo;这能行？&rdquo;</span>
+          </div>
+        </div>
+
+        {/* 箭头 */}
+        <div className="zx-step-2 flex flex-col items-center gap-1">
+          <svg width="48" height="24" viewBox="0 0 48 24" fill="none" className="text-accent">
+            <path d="M0 12h40m0 0l-8-8m8 8l-8 8" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+          <span className="text-[10px] text-text-muted">试了一下</span>
+        </div>
+
+        {/* 真香脸 */}
+        <div className="zx-step-3 flex flex-col items-center">
+          <div className="w-28 h-28 md:w-32 md:h-32 rounded-card bg-accent/5 border border-accent/20 flex flex-col items-center justify-center gap-1">
+            <span className="text-5xl md:text-6xl">🤩</span>
+            <span className="text-xs md:text-sm text-accent font-bold">&ldquo;真香！&rdquo;</span>
+          </div>
+        </div>
+      </div>
+
+      {/* 底部文案 */}
+      <p className="zx-step-3 mt-4 text-sm text-text-secondary">
+        用过才知道，真香~
+      </p>
+    </div>
+  );
+}
+
 // 热门标签
 function HotTags() {
   const tags = [
@@ -34,7 +72,7 @@ function HotTags() {
   ];
 
   return (
-    <div className="flex flex-wrap justify-center gap-2 mt-4">
+    <div className="flex flex-wrap justify-center md:justify-start gap-2 mt-4">
       {tags.map((tag) => (
         <Link
           key={tag.label}
@@ -56,16 +94,23 @@ export default function HomePage() {
     <div className="animate-fade-in">
       {/* Hero 区域 */}
       <section className="pt-28 pb-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h1 className="text-3xl md:text-4xl font-bold text-text leading-heading">
-            帮你挑出最值得用的 AI 工具
-          </h1>
-          <p className="mt-4 text-text-secondary text-lg">
-            不做最全的，只做最适合你的。每个工具都经过真实测评。
-          </p>
-          <div className="mt-8">
-            <SearchBox />
-            <HotTags />
+        <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+          {/* 左侧文字 */}
+          <div className="flex-1 text-center md:text-left">
+            <h1 className="text-3xl md:text-4xl font-bold text-text leading-heading">
+              帮你挑出最值得用的 AI 工具
+            </h1>
+            <p className="mt-4 text-text-secondary text-lg">
+              不做最全的，只做最适合你的。每个工具都经过真实测评。
+            </p>
+            <div className="mt-8">
+              <SearchBox />
+              <HotTags />
+            </div>
+          </div>
+          {/* 右侧真香模块 */}
+          <div className="flex-shrink-0">
+            <ZhenXiangModule />
           </div>
         </div>
       </section>
