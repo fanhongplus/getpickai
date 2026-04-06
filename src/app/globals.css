@@ -50,14 +50,26 @@ body {
   animation: fadeIn 300ms ease forwards;
 }
 
-/* 真香模块入场动画 */
-@keyframes zhenxiang-in {
-  from { opacity: 0; transform: translateY(16px) scale(0.95); }
-  to { opacity: 1; transform: translateY(0) scale(1); }
+/* 真香模块 */
+.zx-module {
+  min-height: 240px;
 }
-.zx-step-1 { animation: zhenxiang-in 500ms ease forwards; animation-delay: 300ms; opacity: 0; }
-.zx-step-2 { animation: zhenxiang-in 500ms ease forwards; animation-delay: 600ms; opacity: 0; }
-.zx-step-3 { animation: zhenxiang-in 500ms ease forwards; animation-delay: 900ms; opacity: 0; }
+
+/* 星星散射动画 */
+@keyframes zx-sparkle-burst {
+  0% { opacity: 0; transform: translate(0, 0) scale(0.5); }
+  30% { opacity: 1; transform: scale(1); }
+  100% { opacity: 0; transform: scale(0.3); }
+}
+.zx-sparkle {
+  animation: zx-sparkle-burst 800ms ease-out forwards;
+}
+.zx-sparkle-1 { top: 8%; left: 10%; animation-delay: 0ms; animation-duration: 900ms; }
+.zx-sparkle-2 { top: 5%; right: 12%; animation-delay: 100ms; animation-duration: 700ms; }
+.zx-sparkle-3 { top: 25%; right: 5%; animation-delay: 200ms; animation-duration: 800ms; }
+.zx-sparkle-4 { bottom: 25%; left: 5%; animation-delay: 150ms; animation-duration: 750ms; }
+.zx-sparkle-5 { bottom: 10%; right: 15%; animation-delay: 250ms; animation-duration: 850ms; }
+.zx-sparkle-6 { top: 50%; left: 12%; animation-delay: 50ms; animation-duration: 700ms; }
 
 /* 文章正文样式 */
 .prose-custom h2 {
