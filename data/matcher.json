@@ -523,7 +523,7 @@
         },
         {
           "id": "product-photography",
-          "label": "AI 产品图生成",
+          "label": "AI 产品图与视频",
           "workflows": {
             "free": {
               "title": "一键去背景 → AI 换场景",
@@ -543,7 +543,7 @@
               ]
             },
             "paid": {
-              "title": "AI 换模特/场景 → 高清放大 → 批量出图",
+              "title": "AI 换场景 → 换模特 → 生成产品视频",
               "tools": [
                 {
                   "name": "Photoroom",
@@ -554,14 +554,14 @@
                 {
                   "name": "WeShop AI",
                   "slug": "weshop-ai",
-                  "step": "将 Photoroom 的产品图导入，AI 换模特/换场景生成真人穿搭图",
+                  "step": "将 Photoroom 产品图导入，AI 换模特/换场景生成真人穿搭图",
                   "cost": "按量计费"
                 },
                 {
-                  "name": "Magnific AI",
-                  "slug": "magnific-ai",
-                  "step": "将生成的图片上传做 AI 高清放大和细节增强，导出可用于详情页",
-                  "cost": "$39/月起"
+                  "name": "CreatorKit",
+                  "slug": "creatorkit",
+                  "step": "将成品图上传 CreatorKit，AI 自动生成产品展示视频可直接上架",
+                  "cost": "$29/月起"
                 }
               ]
             },
@@ -733,6 +733,69 @@
                   "name": "剪映 CapCut",
                   "slug": "capcut",
                   "step": "按选题拍摄后导入剪映，用爆款模板+AI字幕快速出片发布",
+                  "cost": "免费"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "review-insights",
+          "label": "客户评价洞察",
+          "workflows": {
+            "free": {
+              "title": "手动采集评价 → AI 分析洞察",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "粘贴竞品50条评价，GPT 分析高频好评卖点和差评槽点",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将分析结果发给 Claude，生成产品改进建议和 Listing 优化方案",
+                  "cost": "免费额度"
+                }
+              ]
+            },
+            "paid": {
+              "title": "批量抓取评价 → AI 情感分析 → 优化落地",
+              "tools": [
+                {
+                  "name": "Shulex VOC",
+                  "slug": "shulex-voc",
+                  "step": "输入竞品 ASIN，批量抓取评价并做 AI 情感分析和关键词提取",
+                  "cost": "$39/月起"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将 Shulex 报告上传，Claude 生成差异化洞察报告和改进优先级",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "按 Claude 的洞察重写五点描述和 A+页面文案，突出竞品弱点",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "cn-free": {
+              "title": "国产 AI 分析评价洞察",
+              "tools": [
+                {
+                  "name": "通义千问",
+                  "slug": "tongyi-qianwen",
+                  "step": "粘贴竞品评价，通义千问分析高频好评卖点和差评槽点",
+                  "cost": "免费"
+                },
+                {
+                  "name": "豆包",
+                  "slug": "doubao",
+                  "step": "将分析结果发给豆包，生成产品改进建议和 Listing 优化方案",
                   "cost": "免费"
                 }
               ]
@@ -2819,6 +2882,132 @@
                   "name": "Kimi",
                   "slug": "kimi",
                   "step": "将答案粘贴给 Kimi 做英文表达润色和逻辑优化后反复练习",
+                  "cost": "免费"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "active-study",
+          "label": "主动学习与备考",
+          "workflows": {
+            "free": {
+              "title": "AI 互动学习 → 自测巩固",
+              "tools": [
+                {
+                  "name": "NotebookLM",
+                  "slug": "notebooklm",
+                  "step": "上传课程资料，AI 自动总结重点并支持互动问答深度理解",
+                  "cost": "免费"
+                },
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "基于 NotebookLM 的总结生成闪卡和自测题，反复练习巩固",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "AI 学习助手 → 闪卡自测 → 模拟考试",
+              "tools": [
+                {
+                  "name": "NotebookLM",
+                  "slug": "notebooklm",
+                  "step": "上传全部课程资料，AI 深度学习后生成音频摘要和互动问答",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Quizlet",
+                  "slug": "quizlet",
+                  "step": "将 NotebookLM 的核心概念导入 Quizlet 制作闪卡，间隔重复记忆",
+                  "cost": "$8/月起"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传复习大纲，Claude 生成完整模拟考试+评分+薄弱点突破建议",
+                  "cost": "$20/月"
+                }
+              ]
+            },
+            "cn-free": {
+              "title": "国产 AI 互动学习 → 自测",
+              "tools": [
+                {
+                  "name": "Kimi",
+                  "slug": "kimi",
+                  "step": "上传课程资料，Kimi 互动问答帮你理解重难点并总结核心概念",
+                  "cost": "免费"
+                },
+                {
+                  "name": "豆包",
+                  "slug": "doubao",
+                  "step": "将 Kimi 的总结发给豆包，生成闪卡式自测题+详细答案解析",
+                  "cost": "免费"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "document-reading",
+          "label": "长文档阅读与理解",
+          "workflows": {
+            "free": {
+              "title": "AI 逐章总结 → 互动理解",
+              "tools": [
+                {
+                  "name": "PopAI",
+                  "slug": "popai",
+                  "step": "上传 PDF 论文或教材，AI 逐章总结关键信息并标注重点段落",
+                  "cost": "免费基础版"
+                },
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "将不理解的段落粘贴给 GPT，用通俗类比深度讲解帮你吃透",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "深度文档分析 → 结构化笔记 → 听觉复习",
+              "tools": [
+                {
+                  "name": "Microsoft Copilot",
+                  "slug": "microsoft-copilot",
+                  "step": "上传文档用 Copilot 做深度分析，交叉引用其他资料生成洞察",
+                  "cost": "$30/月"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将 Copilot 分析结果上传，Claude 生成结构化笔记+核心概念清单",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Speechify",
+                  "slug": "speechify",
+                  "step": "将重点段落导入 Speechify 转为音频，通勤路上反复听加深记忆",
+                  "cost": "$12/月起"
+                }
+              ]
+            },
+            "cn-free": {
+              "title": "国产 AI 阅读理解",
+              "tools": [
+                {
+                  "name": "Kimi",
+                  "slug": "kimi",
+                  "step": "上传长文档，Kimi 逐章总结+互动问答，中文界面体验最流畅",
+                  "cost": "免费"
+                },
+                {
+                  "name": "豆包",
+                  "slug": "doubao",
+                  "step": "将 Kimi 总结发给豆包，生成知识点清单+理解自测题巩固",
                   "cost": "免费"
                 }
               ]
