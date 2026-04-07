@@ -1,7 +1,10 @@
 import { MetadataRoute } from "next";
 import { getAllTools, getPublishedArticles } from "@/lib/data";
+import matcherJson from "../../data/matcher.json";
+import type { MatcherData, MatcherBudget } from "@/lib/types";
 
 const BASE_URL = "https://gopick.ai";
+const matcherData = matcherJson as MatcherData;
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const tools = getAllTools();
@@ -87,5 +90,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...toolPages, ...articlePages];
+  // 工作流页面（143 条动态生成）
+  const workflowPages: MetadataRoute.Sitemap = [];
+  const ALL_BUDGETS: MatcherBudget[] = ["free", "paid", "cn-free"];
+  for (const identity of matcherData.identities) {
+    for (const pp of identity.painpoints) {
+      for (const budget of ALL_BUDGETS) {
+        if (pp.workflows[budget]) {
+          workflowPages.push({
+            url: `${BASE_URL}/workflows/${identity.id}/${pp.id}/${budget}`,
+            lastModified: new Date(),
+            changeFrequency: "weekly" as const,
+            priority: 0.7,
+          });
+        }
+      }
+    }
+  }
+
+  return [...staticPages, ...toolPages, ...articlePages, ...workflowPages];
 }
