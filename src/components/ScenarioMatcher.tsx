@@ -12,7 +12,11 @@ import type { MatcherData, MatcherWorkflow } from "@/lib/types";
 
 const data = matcherJson as MatcherData;
 
-export default function ScenarioMatcher() {
+interface ScenarioMatcherProps {
+  hideHeader?: boolean;
+}
+
+export default function ScenarioMatcher({ hideHeader = false }: ScenarioMatcherProps = {}) {
   const [identityId, setIdentityId] = useState("");
   const [painpointId, setPainpointId] = useState("");
   const [budget, setBudget] = useState("");
@@ -57,14 +61,16 @@ export default function ScenarioMatcher() {
   return (
     <div data-testid="scenario-matcher" className="w-full">
       {/* Header */}
-      <div className="text-center mb-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-text leading-heading">
-          AI 实战场景匹配器
-        </h2>
-        <p className="mt-3 text-text-secondary text-sm md:text-base max-w-2xl mx-auto">
-          告诉我你是谁、要解决什么问题、预算多少，我给你一套即用的 AI 工作流方案。
-        </p>
-      </div>
+      {!hideHeader && (
+        <div className="text-center mb-8">
+          <h2 className="text-2xl md:text-3xl font-bold text-text leading-heading">
+            AI 实战场景匹配器
+          </h2>
+          <p className="mt-3 text-text-secondary text-sm md:text-base max-w-2xl mx-auto">
+            告诉我你是谁、要解决什么问题、预算多少，我给你一套即用的 AI 工作流方案。
+          </p>
+        </div>
+      )}
 
       {/* Selector card */}
       <div className="bg-bg-soft border border-border rounded-card p-5 md:p-6">
@@ -176,37 +182,45 @@ export default function ScenarioMatcher() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+          <div className="flex flex-col gap-4">
             {result.tools.map((tool, idx) => (
               <div
                 key={`${tool.slug}-${idx}`}
                 data-testid="tool-step"
-                className="bg-bg-soft border border-border rounded-card p-4 hover:border-accent/40 transition-colors flex flex-col"
+                className="bg-bg-soft border border-border rounded-card p-4 hover:border-accent/40 transition-colors flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4"
               >
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="w-8 h-8 rounded-full bg-accent/10 text-accent font-bold text-sm flex items-center justify-center flex-shrink-0">
-                    {idx + 1}
+                {/* 左侧：序号 + 工具名 + 步骤描述 */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className="w-8 h-8 rounded-full bg-accent/10 text-accent font-bold text-sm flex items-center justify-center flex-shrink-0">
+                      {idx + 1}
+                    </div>
+                    <Link
+                      href={`/tools/${tool.slug}`}
+                      className="font-semibold text-text hover:text-accent transition-colors"
+                    >
+                      {tool.name}
+                    </Link>
                   </div>
-                  <Link
-                    href={`/tools/${tool.slug}`}
-                    className="font-semibold text-text hover:text-accent transition-colors"
-                  >
-                    {tool.name}
-                  </Link>
+                  <p className="text-sm text-text-secondary leading-body">
+                    {tool.step}
+                  </p>
                 </div>
-                <p className="text-sm text-text-secondary leading-body mb-4 flex-1">
-                  {tool.step}
-                </p>
-                <div className="flex items-center justify-between gap-3 pt-3 border-t border-border">
-                  <span className="text-xs px-2 py-0.5 rounded-tag bg-accent/10 text-accent flex-shrink-0">
+                {/* 右侧：费用 + 按钮，纵向排列右对齐 */}
+                <div className="flex flex-col sm:items-end gap-2 sm:flex-shrink-0">
+                  <span className="text-xs px-2 py-0.5 rounded-tag bg-accent/10 text-accent self-start sm:self-end">
                     {tool.cost}
                   </span>
                   <Link
                     href={`/tools/${tool.slug}`}
-                    className="inline-flex items-center gap-1.5 text-sm font-medium text-accent hover:text-accent-hover transition-colors flex-shrink-0"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium bg-accent text-white hover:opacity-90 transition-opacity w-full sm:w-auto justify-center"
                   >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                      <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                    </svg>
                     了解详情
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M5 12h14" />
                       <path d="m12 5 7 7-7 7" />
                     </svg>
