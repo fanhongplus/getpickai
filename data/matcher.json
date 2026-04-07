@@ -1,0 +1,403 @@
+{
+  "identities": [
+    {
+      "id": "ecommerce",
+      "label": "跨境电商卖家",
+      "icon": "🛒",
+      "painpoints": [
+        {
+          "id": "product-desc",
+          "label": "独立站商品描述",
+          "workflows": {
+            "free": {
+              "title": "免费打造高转化商品描述",
+              "tools": [
+                {
+                  "name": "Copy.ai",
+                  "slug": "copy-ai",
+                  "step": "选 Product Description 模板，输入卖点关键词，生成 5 条备选文案",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Grammarly",
+                  "slug": "grammarly",
+                  "step": "粘贴英文描述，一键润色语法和专业度",
+                  "cost": "免费基础版"
+                }
+              ]
+            },
+            "paid": {
+              "title": "专业级品牌商品文案",
+              "tools": [
+                {
+                  "name": "Jasper AI",
+                  "slug": "jasper-ai",
+                  "step": "用品牌声音功能输入卖点和受众，生成符合品牌调性的描述",
+                  "cost": "$49/月"
+                },
+                {
+                  "name": "DeepL",
+                  "slug": "deepl",
+                  "step": "把中文描述精准翻译成多语言版本，覆盖海外市场",
+                  "cost": "$9/月"
+                },
+                {
+                  "name": "Writesonic",
+                  "slug": "writesonic",
+                  "step": "用 SEO 模板补充长尾关键词，提升独立站搜索排名",
+                  "cost": "$16/月"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "ad-creative",
+          "label": "广告素材制作",
+          "workflows": {
+            "free": {
+              "title": "零成本快速出广告图",
+              "tools": [
+                {
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "选社媒广告模板，替换产品图和文案，5 分钟出图",
+                  "cost": "免费"
+                },
+                {
+                  "name": "即梦 AI",
+                  "slug": "dreamina",
+                  "step": "用中文描述生成产品场景图，免费无限次",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "高转化广告素材生产线",
+              "tools": [
+                {
+                  "name": "Midjourney",
+                  "slug": "midjourney",
+                  "step": "生成创意场景图和概念视觉，质量业界天花板",
+                  "cost": "$10/月起"
+                },
+                {
+                  "name": "AdCreative.ai",
+                  "slug": "adcreative-ai",
+                  "step": "上传品牌素材，AI 生成多版本广告图并预测转化率",
+                  "cost": "$21/月起"
+                },
+                {
+                  "name": "Photoroom",
+                  "slug": "photoroom",
+                  "step": "手机拍产品图后一键去背景换场景，批量出白底图",
+                  "cost": "$10/月"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "customer-email",
+          "label": "客户邮件回复",
+          "workflows": {
+            "free": {
+              "title": "免费搞定多语言客服回复",
+              "tools": [
+                {
+                  "name": "Kimi",
+                  "slug": "kimi",
+                  "step": "粘贴客户邮件，让 AI 用专业友好的语气起草回复",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Grammarly",
+                  "slug": "grammarly",
+                  "step": "回复发送前检查英文语法和语气，避免低级错误",
+                  "cost": "免费基础版"
+                }
+              ]
+            },
+            "paid": {
+              "title": "专业客服自动化方案",
+              "tools": [
+                {
+                  "name": "Gorgias",
+                  "slug": "gorgias",
+                  "step": "整合 Shopify 订单数据，AI 自动生成带订单信息的回复",
+                  "cost": "$10/月起"
+                },
+                {
+                  "name": "SaleSmartly",
+                  "slug": "salesmartly",
+                  "step": "多渠道消息统一管理，AI 实时翻译解决多语言时差",
+                  "cost": "$16/月起"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "creator",
+      "label": "自媒体创作者",
+      "icon": "🎬",
+      "painpoints": [
+        {
+          "id": "video-script",
+          "label": "视频脚本生成",
+          "workflows": {
+            "free": {
+              "title": "免费写出抓人视频脚本",
+              "tools": [
+                {
+                  "name": "Kimi",
+                  "slug": "kimi",
+                  "step": "输入选题和受众，让 Kimi 写一份带 Hook 的视频脚本",
+                  "cost": "免费"
+                },
+                {
+                  "name": "豆包",
+                  "slug": "doubao",
+                  "step": "用豆包打磨开场白和金句，提升完播率",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "专业内容生产工作流",
+              "tools": [
+                {
+                  "name": "Jasper AI",
+                  "slug": "jasper-ai",
+                  "step": "用 Video Script 模板生成结构化脚本，含 Hook+主体+CTA",
+                  "cost": "$49/月"
+                },
+                {
+                  "name": "Writesonic",
+                  "slug": "writesonic",
+                  "step": "批量生成 5-10 个选题方向的脚本，再挑最好的精修",
+                  "cost": "$16/月起"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "thumbnail",
+          "label": "封面图设计",
+          "workflows": {
+            "free": {
+              "title": "零成本做出抓眼球封面",
+              "tools": [
+                {
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "选 YouTube/小红书封面模板，替换标题和图片即可",
+                  "cost": "免费"
+                },
+                {
+                  "name": "即梦 AI",
+                  "slug": "dreamina",
+                  "step": "用中文描述生成原创封面插图，免费无限用",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "专业级封面视觉",
+              "tools": [
+                {
+                  "name": "Midjourney",
+                  "slug": "midjourney",
+                  "step": "生成艺术感强的概念封面图，让你在信息流中脱颖而出",
+                  "cost": "$10/月起"
+                },
+                {
+                  "name": "Ideogram",
+                  "slug": "ideogram",
+                  "step": "AI 直接生成带标题文字的封面，无需后期 PS 排版",
+                  "cost": "$8/月起"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "multi-platform",
+          "label": "多平台分发",
+          "workflows": {
+            "free": {
+              "title": "免费做矩阵分发",
+              "tools": [
+                {
+                  "name": "剪映",
+                  "slug": "jianying",
+                  "step": "用 AI 字幕和智能剪辑快速产出适配不同平台的视频",
+                  "cost": "免费"
+                },
+                {
+                  "name": "CapCut",
+                  "slug": "capcut",
+                  "step": "国际版导出适配 TikTok/YouTube Shorts 的竖屏视频",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "专业矩阵分发流水线",
+              "tools": [
+                {
+                  "name": "Opus Clip",
+                  "slug": "opus-clip",
+                  "step": "上传长视频，AI 自动剪成 5-10 条带字幕的短视频",
+                  "cost": "$15/月起"
+                },
+                {
+                  "name": "Buffer",
+                  "slug": "buffer",
+                  "step": "一次编辑，定时分发到 YouTube/TikTok/Instagram 等平台",
+                  "cost": "$6/月起"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "student",
+      "label": "留学生",
+      "icon": "🎓",
+      "painpoints": [
+        {
+          "id": "paper-rewrite",
+          "label": "论文降重改写",
+          "workflows": {
+            "free": {
+              "title": "免费完成论文改写润色",
+              "tools": [
+                {
+                  "name": "QuillBot",
+                  "slug": "quillbot",
+                  "step": "用 Standard 模式改写段落，免费版支持 125 词/次",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Grammarly",
+                  "slug": "grammarly",
+                  "step": "改写后用 Grammarly 检查语法和学术表达",
+                  "cost": "免费基础版"
+                }
+              ]
+            },
+            "paid": {
+              "title": "专业级学术降重",
+              "tools": [
+                {
+                  "name": "QuillBot",
+                  "slug": "quillbot",
+                  "step": "用 Academic 学术模式深度改写，无字数限制",
+                  "cost": "$10/月"
+                },
+                {
+                  "name": "Writefull",
+                  "slug": "writefull",
+                  "step": "学术专用润色，给出符合期刊语体的改写建议",
+                  "cost": "$16/月起"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "literature-review",
+          "label": "文献综述辅助",
+          "workflows": {
+            "free": {
+              "title": "免费搞定文献综述",
+              "tools": [
+                {
+                  "name": "Google NotebookLM",
+                  "slug": "notebooklm",
+                  "step": "上传 10 篇 PDF 文献，AI 自动生成主题摘要和关键论点",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Semantic Scholar",
+                  "slug": "semantic-scholar",
+                  "step": "用 TLDR 功能一句话总结论文核心贡献，快速筛选",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Connected Papers",
+                  "slug": "connected-papers",
+                  "step": "输入核心论文，可视化展示相关文献网络",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "高效文献研究流水线",
+              "tools": [
+                {
+                  "name": "Consensus",
+                  "slug": "consensus",
+                  "step": "输入研究问题，AI 从 2 亿+ 论文中提取共识并附引用",
+                  "cost": "$10/月"
+                },
+                {
+                  "name": "Scholarcy",
+                  "slug": "scholarcy",
+                  "step": "AI 自动提取每篇论文的论点、方法和结论",
+                  "cost": "$10/月起"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "resume-polish",
+          "label": "简历优化",
+          "workflows": {
+            "free": {
+              "title": "免费打磨英文简历",
+              "tools": [
+                {
+                  "name": "Grammarly",
+                  "slug": "grammarly",
+                  "step": "检查简历语法、拼写和正式度，避免低级错误",
+                  "cost": "免费基础版"
+                },
+                {
+                  "name": "Hemingway Editor",
+                  "slug": "hemingway",
+                  "step": "高亮复杂句式和被动语态，让简历表达更简洁有力",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "专业级简历润色方案",
+              "tools": [
+                {
+                  "name": "Grammarly",
+                  "slug": "grammarly",
+                  "step": "Premium 版给出文风建议和清晰度评分",
+                  "cost": "$12/月"
+                },
+                {
+                  "name": "ProWritingAid",
+                  "slug": "prowritingaid",
+                  "step": "深度分析文章结构、风格和可读性",
+                  "cost": "$10/月起"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

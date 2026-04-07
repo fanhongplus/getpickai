@@ -4,6 +4,7 @@ import { getPublishedArticles, getFeaturedTools } from "@/lib/data";
 import { scenes } from "@/lib/constants";
 import { ArticleCard } from "@/components/ArticleCard";
 import { ZhenXiangModule } from "@/components/ZhenXiangModule";
+import ScenarioMatcher from "@/components/ScenarioMatcher";
 
 // 搜索框组件（首页用）
 function SearchBox() {
@@ -133,6 +134,11 @@ export default function HomePage() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* AI 实战场景匹配器 */}
+      <section className="w-full max-w-6xl mx-auto px-4 py-12 sm:py-16">
+        <ScenarioMatcher />
       </section>
 
       {/* AI 变现工作流 */}

@@ -60,3 +60,37 @@ export interface Scene {
   icon: string;
   description: string;
 }
+
+// ========== Scenario Matcher ==========
+
+export interface MatcherTool {
+  name: string;
+  slug: string;
+  step: string;
+  cost: string;
+}
+
+export interface MatcherWorkflow {
+  title: string;
+  tools: MatcherTool[];
+}
+
+export interface MatcherPainpoint {
+  id: string;
+  label: string;
+  workflows: {
+    free?: MatcherWorkflow;
+    paid?: MatcherWorkflow;
+  };
+}
+
+export interface MatcherIdentity {
+  id: string;
+  label: string;
+  icon: string;
+  painpoints: MatcherPainpoint[];
+}
+
+export interface MatcherData {
+  identities: MatcherIdentity[];
+}
