@@ -10,42 +10,42 @@
           "label": "独立站商品描述",
           "workflows": {
             "free": {
-              "title": "AI 生成多语言商品描述（零成本）",
+              "title": "AI 生成多语言商品描述",
               "tools": [
                 {
                   "name": "ChatGPT",
                   "slug": "chatgpt",
-                  "step": "用「角色扮演」Prompt 让 GPT 扮演资深电商文案，批量生成 5 种风格描述",
+                  "step": "输入产品卖点和目标市场，用电商文案 Prompt 生成5种风格的中文商品描述，复制最佳版本",
                   "cost": "免费"
                 },
                 {
                   "name": "DeepL",
                   "slug": "deepl",
-                  "step": "将中文描述精准翻译为英/日/韩多语种，翻译质量远超 Google 翻译",
-                  "cost": "免费基础版"
+                  "step": "将上一步的中文描述粘贴到 DeepL，一键翻译为英/日/韩等多语言版本，直接用于独立站",
+                  "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "专业电商文案自动化工作流",
+              "title": "电商文案生成 → 翻译 → SEO 校验",
               "tools": [
                 {
                   "name": "Jasper",
                   "slug": "jasper",
-                  "step": "选 Product Description 模板，输入品牌调性和关键词，一键生成 SEO 长描述",
+                  "step": "选择 Product Description 模板，输入品牌调性和关键词，AI 生成包含 SEO 关键词的商品长描述",
                   "cost": "$49/月"
                 },
                 {
-                  "name": "Copy.ai",
-                  "slug": "copy-ai",
-                  "step": "用电商描述工作流，输入 3 个核心卖点，自动输出标题+要点+详情三段式文案",
-                  "cost": "$49/月"
+                  "name": "DeepL",
+                  "slug": "deepl",
+                  "step": "将 Jasper 生成的描述粘贴到 DeepL，翻译为目标市场语言，逐句校对本地化表达",
+                  "cost": "$8.74/月起"
                 },
                 {
-                  "name": "Writesonic",
-                  "slug": "writesonic",
-                  "step": "打开 Amazon Product Descriptions 模板，粘贴信息生成 Listing 风格文案",
-                  "cost": "$19/月起"
+                  "name": "Surfer SEO",
+                  "slug": "surfer-seo",
+                  "step": "将翻译后的描述粘贴到 Surfer，检测关键词密度和 SEO 评分，按建议调整后发布上线",
+                  "cost": "$89/月起"
                 }
               ]
             }
@@ -56,42 +56,42 @@
           "label": "广告素材制作",
           "workflows": {
             "free": {
-              "title": "零预算出 Facebook/Google 广告素材",
+              "title": "AI 文案 → 模板出图",
               "tools": [
                 {
                   "name": "ChatGPT",
                   "slug": "chatgpt",
-                  "step": "输入产品特性和目标受众，一次生成 10 组广告标题+描述，直接用于 A/B 测试",
+                  "step": "输入产品特性和目标受众，一次生成10组广告标题+描述，复制最佳的3组备用",
                   "cost": "免费"
                 },
                 {
                   "name": "Canva",
                   "slug": "canva",
-                  "step": "选电商广告模板（Facebook/Google 尺寸），拖入产品图+文案，10 分钟出一套",
-                  "cost": "免费基础版"
+                  "step": "选择 Facebook/Google 广告模板，将 ChatGPT 的文案和产品图拖入模板，10分钟出一套素材",
+                  "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "AI 广告素材批量生产线",
+              "title": "竞品分析 → AI 批量创意 → 多平台适配",
               "tools": [
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传竞品广告截图，让 Claude 拆解对手卖点和文案策略，输出你的差异化广告方向",
+                  "cost": "$20/月"
+                },
                 {
                   "name": "AdCreative.ai",
                   "slug": "adcreative-ai",
-                  "step": "上传产品图和品牌素材，AI 自动生成数百个广告变体，并预测点击率",
+                  "step": "将 Claude 产出的文案策略上传，配合产品图，AI 自动生成数十个广告创意变体并预测点击率",
                   "cost": "$29/月起"
                 },
                 {
                   "name": "Canva Pro",
                   "slug": "canva",
-                  "step": "用 Magic Resize 一键适配 Facebook、Instagram、Google 全平台尺寸",
+                  "step": "选中最优变体，用 Magic Resize 一键适配 Facebook/Instagram/Google 全平台尺寸规格",
                   "cost": "$12.99/月"
-                },
-                {
-                  "name": "Claude",
-                  "slug": "claude",
-                  "step": "上传竞品广告截图，让 Claude 拆解对手卖点，生成差异化文案策略",
-                  "cost": "$20/月"
                 }
               ]
             }
@@ -102,42 +102,226 @@
           "label": "客户邮件回复",
           "workflows": {
             "free": {
-              "title": "30 秒搞定英文客户邮件",
+              "title": "AI 起草 → 语法把关",
               "tools": [
                 {
                   "name": "ChatGPT",
                   "slug": "chatgpt",
-                  "step": "粘贴客户来信，指定回复语气（专业/友好/强硬），30 秒生成得体回复",
+                  "step": "粘贴客户来信原文，指定回复语气（专业/友好），30秒生成一封得体的英文回复草稿",
                   "cost": "免费"
                 },
                 {
                   "name": "Grammarly",
                   "slug": "grammarly",
-                  "step": "将 AI 回复粘贴检查，修正语法+调整商务语气，确保正式场景零失误",
-                  "cost": "免费基础版"
+                  "step": "将 ChatGPT 生成的回复粘贴到 Grammarly，检查语法和商务语气，修正后直接发送",
+                  "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "客户邮件全自动化体系",
+              "title": "智能客诉处理 → 润色 → 自动化跟进",
               "tools": [
-                {
-                  "name": "GetResponse",
-                  "slug": "getresponse",
-                  "step": "设置自动化序列：新客欢迎→弃购挽回→售后跟进，按行为自动触发",
-                  "cost": "$19/月起"
-                },
                 {
                   "name": "Claude",
                   "slug": "claude",
-                  "step": "处理复杂客诉：上传订单截图+聊天记录，生成兼顾客户情绪的解决方案",
+                  "step": "上传订单截图+客户聊天记录，Claude 生成兼顾客户情绪和公司利益的解决方案邮件",
                   "cost": "$20/月"
                 },
                 {
                   "name": "Grammarly",
                   "slug": "grammarly",
-                  "step": "全员装浏览器插件，统一品牌语气，所有对外邮件自动检查语法",
-                  "cost": "$15/月/人"
+                  "step": "将 Claude 的回复粘贴到 Grammarly，统一品牌语气风格，确保措辞专业无硬伤",
+                  "cost": "$15/月"
+                },
+                {
+                  "name": "GetResponse",
+                  "slug": "getresponse",
+                  "step": "将润色后的优质回复存为模板，设置自动化序列：新客欢迎→弃购挽回→售后跟进自动触发",
+                  "cost": "$19/月起"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "seo-keywords",
+          "label": "SEO 关键词研究",
+          "workflows": {
+            "free": {
+              "title": "AI 挖词 → 数据验证",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入产品品类，用「买家搜索意图」Prompt 生成50个长尾关键词清单，按意图分类整理",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Ubersuggest",
+                  "slug": "ubersuggest",
+                  "step": "将 ChatGPT 的关键词逐一输入 Ubersuggest，查看月搜索量和竞争度，筛出高价值低竞争词",
+                  "cost": "免费（3次/天）"
+                }
+              ]
+            },
+            "paid": {
+              "title": "专业挖词 → 策略规划 → 内容优化",
+              "tools": [
+                {
+                  "name": "Ahrefs",
+                  "slug": "ahrefs",
+                  "step": "用 Keywords Explorer 输入种子词，批量导出搜索量、点击率和父主题数据，锁定蓝海关键词",
+                  "cost": "$99/月起"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将 Ahrefs 导出的关键词报告上传给 Claude，生成关键词分组策略和对应的内容选题计划",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Surfer SEO",
+                  "slug": "surfer-seo",
+                  "step": "按 Claude 的选题写内容时，用 Surfer 实时检测关键词密度和 SEO 评分，达标后发布",
+                  "cost": "$89/月起"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "competitor-analysis",
+          "label": "竞品分析与选品",
+          "workflows": {
+            "free": {
+              "title": "AI 调研 → 策略分析",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入品类关键词，让 GPT 联网搜索整理 Top 10 竞品清单，含核心卖点和价格区间",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将竞品清单粘贴给 Claude，做 SWOT 分析，输出差异化定位建议和定价策略报告",
+                  "cost": "免费额度"
+                }
+              ]
+            },
+            "paid": {
+              "title": "数据选品 → 流量透视 → 策略报告",
+              "tools": [
+                {
+                  "name": "Jungle Scout",
+                  "slug": "jungle-scout",
+                  "step": "输入品类查看亚马逊真实销量、利润率和季节趋势，导出 Top 50 选品数据报表",
+                  "cost": "$49/月起"
+                },
+                {
+                  "name": "SimilarWeb",
+                  "slug": "similarweb",
+                  "step": "输入竞品独立站域名，分析流量来源结构（搜索/社媒/广告占比）和热门落地页，截图保存",
+                  "cost": "免费基础版"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将 Jungle Scout 报表和 SimilarWeb 截图上传，Claude 生成完整选品报告和差异化打法方案",
+                  "cost": "$20/月"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "video-ad",
+          "label": "视频广告制作",
+          "workflows": {
+            "free": {
+              "title": "AI 写脚本 → 图文成片",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "用「痛点→方案→行动号召」框架，输入产品信息生成15秒/30秒视频广告脚本",
+                  "cost": "免费"
+                },
+                {
+                  "name": "剪映 CapCut",
+                  "slug": "capcut",
+                  "step": "将脚本导入剪映的图文成片功能，AI 自动匹配画面素材和字幕，导出可投放的视频",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "策略脚本 → AI 成片 → 多语言配音",
+              "tools": [
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传竞品广告视频截图，Claude 分析卖点后输出差异化脚本，含分镜和字幕文案",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Pictory",
+                  "slug": "pictory",
+                  "step": "将 Claude 的脚本粘贴到 Pictory，AI 自动匹配画面+字幕+转场，输出视频初版",
+                  "cost": "$23/月"
+                },
+                {
+                  "name": "ElevenLabs",
+                  "slug": "elevenlabs",
+                  "step": "将旁白文案粘贴到 ElevenLabs，生成英/西/日等多语言配音，替换原音轨后导出终版",
+                  "cost": "$5/月起"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "social-content",
+          "label": "社媒种草内容",
+          "workflows": {
+            "free": {
+              "title": "AI 策划内容 → 模板出图",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入产品+目标平台，生成一周7天的种草内容日历，含文案、话题标签和发布时间建议",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "按 ChatGPT 的内容日历，选择对应平台模板，逐条填入文案+产品图，批量导出配图",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "爆文分析 → 品牌出图 → 全平台排期",
+              "tools": [
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传行业热门帖子截图，Claude 分析爆文共性规律，输出30天内容计划含文案和配图方向",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Canva Pro",
+                  "slug": "canva",
+                  "step": "按 Claude 的计划批量出图，品牌套件锁定字体配色，Magic Resize 一图出多平台尺寸",
+                  "cost": "$12.99/月"
+                },
+                {
+                  "name": "Buffer",
+                  "slug": "buffer",
+                  "step": "将图文上传 Buffer，为每个平台设定最佳发布时间，一键排期自动发布",
+                  "cost": "$6/月/渠道"
                 }
               ]
             }
@@ -146,51 +330,51 @@
       ]
     },
     {
-      "id": "creator",
-      "label": "自媒体创作者",
+      "id": "video-creator",
+      "label": "视频创作者",
       "icon": "🎬",
       "painpoints": [
         {
           "id": "video-script",
-          "label": "视频脚本生成",
+          "label": "视频选题与脚本",
           "workflows": {
             "free": {
-              "title": "爆款视频脚本速成法",
+              "title": "AI 写脚本 → 一键成片",
               "tools": [
                 {
                   "name": "ChatGPT",
                   "slug": "chatgpt",
-                  "step": "输入选题+时长，用「钩子→冲突→解决→CTA」公式 Prompt，生成 3 版脚本",
+                  "step": "输入选题和目标时长，用「钩子→冲突→解决→CTA」公式生成完整脚本，复制全文",
                   "cost": "免费"
                 },
                 {
                   "name": "剪映 CapCut",
                   "slug": "capcut",
-                  "step": "将脚本导入图文成片，AI 自动匹配画面素材+生成字幕，零剪辑也能出片",
+                  "step": "将脚本粘贴到剪映图文成片，AI 自动匹配画面素材和字幕，预览后导出视频",
                   "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "专业级视频内容生产线",
+              "title": "风格化脚本 → AI 成片 → 专业配音",
               "tools": [
                 {
                   "name": "Claude",
                   "slug": "claude",
-                  "step": "上传过往爆款文稿，让 Claude 分析你的风格规律，批量生成同风格新脚本",
+                  "step": "上传你过往3-5个爆款文稿，Claude 分析风格规律后按此模式批量生成5个新脚本",
                   "cost": "$20/月"
                 },
                 {
                   "name": "Pictory",
                   "slug": "pictory",
-                  "step": "粘贴脚本或博客链接，AI 自动匹配画面、加字幕，输出带转场的短视频",
+                  "step": "将 Claude 的脚本粘贴到 Pictory，AI 匹配画面+字幕+转场，输出视频初剪版",
                   "cost": "$23/月"
                 },
                 {
-                  "name": "Writesonic",
-                  "slug": "writesonic",
-                  "step": "用 Article to Video Script 工作流，输入话题生成分镜脚本+旁白文稿",
-                  "cost": "$19/月起"
+                  "name": "ElevenLabs",
+                  "slug": "elevenlabs",
+                  "step": "将脚本旁白粘贴到 ElevenLabs，选择或克隆你的声音，生成配音替换初剪音轨",
+                  "cost": "$5/月起"
                 }
               ]
             }
@@ -198,45 +382,137 @@
         },
         {
           "id": "thumbnail",
-          "label": "封面图设计",
+          "label": "视频封面设计",
           "workflows": {
             "free": {
-              "title": "3 分钟做出高点击率封面",
+              "title": "一键抠图 → 模板排版",
               "tools": [
-                {
-                  "name": "Canva",
-                  "slug": "canva",
-                  "step": "选 YouTube/小红书封面模板，用 AI 文字排版生成吸睛标题，3 分钟出图",
-                  "cost": "免费基础版"
-                },
                 {
                   "name": "Remove.bg",
                   "slug": "remove-bg",
-                  "step": "上传人像一键去背景，拖入 Canva 模板做「人物+大字」爆款构图",
+                  "step": "上传人像照片一键抠图去背景，下载透明底 PNG 文件备用",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "选择 YouTube/小红书封面模板，将抠好的人像拖入，AI 排版标题，3分钟出封面",
                   "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "AI 生成独家视觉封面",
+              "title": "AI 素材生成 → 精修合成 → 品牌统一",
               "tools": [
                 {
                   "name": "Midjourney",
                   "slug": "midjourney",
-                  "step": "用 /imagine 输入频道风格关键词，生成独一无二的 AI 插画封面素材",
+                  "step": "用 /imagine 输入频道风格关键词，生成独一无二的 AI 插画背景素材，下载高清图",
                   "cost": "$10/月起"
-                },
-                {
-                  "name": "Canva Pro",
-                  "slug": "canva",
-                  "step": "用 Magic Edit 换背景+AI 扩图，品牌套件一键统一字体、配色、版式",
-                  "cost": "$12.99/月"
                 },
                 {
                   "name": "Adobe Firefly",
                   "slug": "adobe-firefly",
-                  "step": "用生成式填充精修细节，AI 文字效果+光影处理达到专业设计师水准",
+                  "step": "将 Midjourney 素材导入 Firefly，用生成式填充精修细节+文字效果+光影处理",
                   "cost": "$4.99/月起"
+                },
+                {
+                  "name": "Canva Pro",
+                  "slug": "canva",
+                  "step": "将精修素材导入 Canva Pro，品牌套件锁定字体/配色/版式，所有封面风格自动统一",
+                  "cost": "$12.99/月"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "short-video-batch",
+          "label": "短视频批量生产",
+          "workflows": {
+            "free": {
+              "title": "智能拆条 → 批量封面",
+              "tools": [
+                {
+                  "name": "剪映 CapCut",
+                  "slug": "capcut",
+                  "step": "导入长视频，用智能识别标记高光片段，一键拆为多条短视频并自动生成字幕",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "为剪映导出的每条短视频制作竖版封面缩略图，使用统一模板保持系列感",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "AI 拆条 → 多语言配音 → 全平台自动分发",
+              "tools": [
+                {
+                  "name": "Opus Clip",
+                  "slug": "opus-clip",
+                  "step": "上传长视频，AI 识别最有传播力的片段并评分排序，一键生成竖版短视频合集",
+                  "cost": "$19/月起"
+                },
+                {
+                  "name": "ElevenLabs",
+                  "slug": "elevenlabs",
+                  "step": "为 Opus Clip 导出的短视频生成英/中/西等多语言配音，触达更多语言受众",
+                  "cost": "$5/月起"
+                },
+                {
+                  "name": "Repurpose.io",
+                  "slug": "repurpose-io",
+                  "step": "连接平台账号，将配好音的短视频自动排期推送到 TikTok/Shorts/Reels 全平台",
+                  "cost": "$25/月"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "digital-avatar",
+          "label": "AI 数字人出镜",
+          "workflows": {
+            "free": {
+              "title": "写口播稿 → 数字人出镜",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入主题和时长，生成「对镜头讲述」口播脚本含停顿和语气标注，复制全文",
+                  "cost": "免费"
+                },
+                {
+                  "name": "HeyGen",
+                  "slug": "heygen",
+                  "step": "将脚本粘贴到 HeyGen，选择 AI 形象+语言，免费额度直接生成数字人口播视频",
+                  "cost": "免费额度"
+                }
+              ]
+            },
+            "paid": {
+              "title": "系列脚本 → 专属分身 → 后期包装",
+              "tools": [
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传频道定位和往期大纲，Claude 批量生成10期系列脚本，保持人设和内容递进",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "HeyGen",
+                  "slug": "heygen",
+                  "step": "上传真人录像训练专属分身，将 Claude 脚本逐条输入生成视频，支持多语言口型同步",
+                  "cost": "$29/月起"
+                },
+                {
+                  "name": "剪映 CapCut",
+                  "slug": "capcut",
+                  "step": "将 HeyGen 视频导入剪映，添加字幕、特效、背景音乐和品牌片头片尾，导出成品",
+                  "cost": "免费"
                 }
               ]
             }
@@ -244,45 +520,439 @@
         },
         {
           "id": "multi-platform",
-          "label": "多平台分发",
+          "label": "视频多平台分发",
           "workflows": {
             "free": {
-              "title": "一条内容发遍全平台（免费）",
+              "title": "多尺寸适配 → 定时排期",
               "tools": [
-                {
-                  "name": "Buffer",
-                  "slug": "buffer",
-                  "step": "免费版连接 3 个社媒账号，按平台最佳时间一键排期自动发布",
-                  "cost": "免费（3 账号）"
-                },
                 {
                   "name": "Canva",
                   "slug": "canva",
-                  "step": "用 Magic Resize 一键适配 TikTok 竖版/YouTube 横版/小红书方版多尺寸",
-                  "cost": "免费基础版"
+                  "step": "将视频封面用 Magic Resize 一键适配 TikTok 竖版、YouTube 横版、小红书方版",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Buffer",
+                  "slug": "buffer",
+                  "step": "免费版连接3个账号，上传视频设置各平台最佳发布时间，一键排期自动发布",
+                  "cost": "免费（3账号）"
                 }
               ]
             },
             "paid": {
-              "title": "全平台自动分发+数据追踪",
+              "title": "一稿多版 → 自动分发 → 数据追踪",
               "tools": [
                 {
-                  "name": "Metricool",
-                  "slug": "metricool",
-                  "step": "连接 TikTok/YouTube/IG/X 全平台，统一日历排期+跨平台数据对比",
-                  "cost": "$18/月起"
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将视频描述粘贴给 Claude，改写为 YouTube 描述/TikTok 文案/小红书种草文等多版本",
+                  "cost": "$20/月"
                 },
                 {
                   "name": "Repurpose.io",
                   "slug": "repurpose-io",
-                  "step": "设置规则：YouTube 发布后自动裁成竖版推送 TikTok+Reels，无人值守",
+                  "step": "设置自动化规则：YouTube 发布后自动裁剪竖版推送 TikTok+Reels，无需手动操作",
                   "cost": "$25/月"
+                },
+                {
+                  "name": "Metricool",
+                  "slug": "metricool",
+                  "step": "全平台数据汇总到仪表盘，对比各平台播放量和互动率，找出 ROI 最高的渠道",
+                  "cost": "$18/月起"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "podcaster",
+      "label": "播客主播",
+      "icon": "🎙️",
+      "painpoints": [
+        {
+          "id": "podcast-recording",
+          "label": "录制与音质处理",
+          "workflows": {
+            "free": {
+              "title": "高清录制 → AI 降噪",
+              "tools": [
+                {
+                  "name": "Riverside",
+                  "slug": "riverside",
+                  "step": "邀请嘉宾进入 Riverside 录音间，本地高清录制防断网，录完自动生成分轨音频文件",
+                  "cost": "免费（2小时/月）"
+                },
+                {
+                  "name": "Adobe Podcast",
+                  "slug": "adobe-podcast",
+                  "step": "将 Riverside 的分轨音频上传 Adobe Podcast，一键 AI 降噪，在家录出录音棚音质",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "专业录制 → 可视化剪辑 → 音质增强",
+              "tools": [
+                {
+                  "name": "Riverside",
+                  "slug": "riverside",
+                  "step": "Pro 版无限时长+4K 视频录制，自动分轨+实时转录，录完下载全部素材",
+                  "cost": "$24/月起"
+                },
+                {
+                  "name": "Descript",
+                  "slug": "descript",
+                  "step": "将 Riverside 音频导入 Descript，像编辑文档一样剪音频——删文字就删对应语音段",
+                  "cost": "$24/月"
+                },
+                {
+                  "name": "Adobe Podcast",
+                  "slug": "adobe-podcast",
+                  "step": "将 Descript 剪辑后的成品做最终 AI 增强——均衡音量+去除残余噪音，导出发布级音频",
+                  "cost": "免费"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "podcast-editing",
+          "label": "剪辑与 Show Notes",
+          "workflows": {
+            "free": {
+              "title": "录音转文字 → AI 生成 Show Notes",
+              "tools": [
+                {
+                  "name": "Otter.ai",
+                  "slug": "otter-ai",
+                  "step": "上传录音文件，Otter 自动转为带时间戳的逐字稿，标记说话人，下载文本",
+                  "cost": "免费（300分钟/月）"
+                },
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "将 Otter 逐字稿粘贴给 GPT，整理为结构化 Show Notes：章节标记+要点摘要+金句提取",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "可视化剪辑 → 深度 Show Notes → 品牌封面",
+              "tools": [
+                {
+                  "name": "Descript",
+                  "slug": "descript",
+                  "step": "导入录音看文字稿剪辑，自动去除嗯啊口头禅，导出干净终版音频和文字稿",
+                  "cost": "$24/月"
                 },
                 {
                   "name": "Claude",
                   "slug": "claude",
-                  "step": "将长内容喂给 Claude，改写为 Twitter 短文、小红书种草、LinkedIn 专业帖",
+                  "step": "将 Descript 终版文字稿上传，Claude 生成 Show Notes：章节目录+嘉宾观点+推荐资源列表",
                   "cost": "$20/月"
+                },
+                {
+                  "name": "Canva Pro",
+                  "slug": "canva",
+                  "step": "按 Claude 提炼的主题和金句制作每期封面图和推广卡片，品牌套件保持系列统一",
+                  "cost": "$12.99/月"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "podcast-promotion",
+          "label": "推广与听众增长",
+          "workflows": {
+            "free": {
+              "title": "AI 推广文案 → 社媒素材 → 排期发布",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入每期主题和亮点，GPT 一次生成 Twitter/微博/朋友圈等5种平台风格的推广文案",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "将 GPT 的推广金句放入音频波形模板或金句卡片模板，制作各平台分享图",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Buffer",
+                  "slug": "buffer",
+                  "step": "将推广图文上传 Buffer，每期分3波排期（预告→上线→精华回顾）自动发布",
+                  "cost": "免费（3账号）"
+                }
+              ]
+            },
+            "paid": {
+              "title": "增长策略 → 品牌素材 → 全平台推送",
+              "tools": [
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传过往10期播放数据，Claude 分析听众偏好趋势，输出增长策略和跨播客合作提案",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Canva Pro",
+                  "slug": "canva",
+                  "step": "按 Claude 策略制作系列推广素材：每期封面+金句卡+嘉宾海报，品牌视觉统一",
+                  "cost": "$12.99/月"
+                },
+                {
+                  "name": "Buffer",
+                  "slug": "buffer",
+                  "step": "上传素材到 Buffer，AI 建议各平台最佳时间，团队协作审批后自动推送",
+                  "cost": "$6/月/渠道"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "podcast-repurpose",
+          "label": "播客内容二创",
+          "workflows": {
+            "free": {
+              "title": "录音转文字 → 改写为图文内容",
+              "tools": [
+                {
+                  "name": "Otter.ai",
+                  "slug": "otter-ai",
+                  "step": "上传播客录音，Otter 自动生成完整逐字稿，下载文本文件备用",
+                  "cost": "免费（300分钟/月）"
+                },
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "将逐字稿粘贴给 GPT，一次改写为博客文章+Twitter Thread+Newsletter 摘要三种格式",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "AI 拆精华视频 → 多格式改写 → 配图分发",
+              "tools": [
+                {
+                  "name": "Opus Clip",
+                  "slug": "opus-clip",
+                  "step": "上传播客视频版，AI 提取最精彩的观点片段，生成竖版短视频用于社媒引流",
+                  "cost": "$19/月起"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将全集逐字稿上传，Claude 改写为长文+LinkedIn 帖+小红书笔记等多版本",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Canva Pro",
+                  "slug": "canva",
+                  "step": "为 Claude 的每种二创格式制作配图：文章头图、社媒卡片、引用海报，导出发布",
+                  "cost": "$12.99/月"
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "id": "writer",
+      "label": "图文博主",
+      "icon": "✍️",
+      "painpoints": [
+        {
+          "id": "seo-article",
+          "label": "SEO 长文写作",
+          "workflows": {
+            "free": {
+              "title": "选词 → AI 写长文 → 语法把关",
+              "tools": [
+                {
+                  "name": "Ubersuggest",
+                  "slug": "ubersuggest",
+                  "step": "输入话题关键词，免费查看搜索量和竞争度，选定1个主词+3个辅助词，截图保存",
+                  "cost": "免费（3次/天）"
+                },
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "将选定的关键词告诉 GPT，按「标题→大纲→逐节撰写」步骤生成2000字 SEO 长文",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Grammarly",
+                  "slug": "grammarly",
+                  "step": "将全文粘贴到 Grammarly 检查语法和可读性评分，修正后发布到博客",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "专业选词 → AI 撰文 → SEO 评分优化",
+              "tools": [
+                {
+                  "name": "Ahrefs",
+                  "slug": "ahrefs",
+                  "step": "用 Content Explorer 找行业高流量文章，分析关键词布局和结构，导出参考数据",
+                  "cost": "$99/月起"
+                },
+                {
+                  "name": "Writesonic",
+                  "slug": "writesonic",
+                  "step": "将 Ahrefs 的关键词和大纲输入 AI Article Writer，生成 SEO 优化的完整长文",
+                  "cost": "$19/月起"
+                },
+                {
+                  "name": "Surfer SEO",
+                  "slug": "surfer-seo",
+                  "step": "将 Writesonic 文章粘贴到 Surfer，实时检测 SEO 评分，按建议调整关键词密度后发布",
+                  "cost": "$89/月起"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "xiaohongshu",
+          "label": "小红书种草图文",
+          "workflows": {
+            "free": {
+              "title": "AI 写种草文案 → 模板出图",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入产品或话题，用小红书爆文 Prompt 生成种草文案：吸睛标题+正文+标签，复制备用",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "选小红书方版模板，将文案关键句排版为图片笔记（首图+内容页+尾图），导出发布",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "爆文分析 → AI 独家配图 → 品牌统一",
+              "tools": [
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传同品类10篇爆文截图，Claude 拆解标题公式和内容结构，输出30天种草选题计划",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Midjourney",
+                  "slug": "midjourney",
+                  "step": "按 Claude 选题为每篇生成独特 AI 配图，输入产品风格关键词获得无版权纠纷的原创素材",
+                  "cost": "$10/月起"
+                },
+                {
+                  "name": "Canva Pro",
+                  "slug": "canva",
+                  "step": "将 Midjourney 素材导入 Canva Pro，品牌套件统一字体/配色/水印，批量导出发布",
+                  "cost": "$12.99/月"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "newsletter",
+          "label": "Newsletter 写作",
+          "workflows": {
+            "free": {
+              "title": "AI 撰稿 → 设计头图",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入话题和读者画像，GPT 生成 Newsletter 全文：吸引人的标题+导语+正文+CTA",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "选择邮件头图模板，按文章核心观点制作头图和分隔插图，导出 PNG 嵌入邮件",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "数据驱动选题 → 专业润色 → 自动化发送",
+              "tools": [
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传过往几期的打开率和点击数据，Claude 分析读者偏好，推荐最佳选题方向和标题",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Grammarly",
+                  "slug": "grammarly",
+                  "step": "将文章粘贴到 Grammarly 全文润色，检查语法+语气+可读性，确保专业度达标",
+                  "cost": "$15/月"
+                },
+                {
+                  "name": "GetResponse",
+                  "slug": "getresponse",
+                  "step": "将润色文章导入 GetResponse 邮件模板，A/B 测试2个标题，按最佳时间自动发送",
+                  "cost": "$19/月起"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "social-copywriting",
+          "label": "社媒文案批量生产",
+          "workflows": {
+            "free": {
+              "title": "一次生成多平台文案",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入核心主题，用 Prompt 让 GPT 同时输出微博/Twitter/LinkedIn 三种风格文案版本",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "为每条文案选择对应平台模板制作配图，统一视觉风格后逐条发布",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "品牌调性批量文案 → 配图 → 定时发布",
+              "tools": [
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传品牌手册或过往优质帖子，Claude 学习调性后批量生成一个月的社媒文案计划",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Canva Pro",
+                  "slug": "canva",
+                  "step": "品牌套件锁定字体配色，按文案计划批量制作配图，Magic Resize 出多尺寸",
+                  "cost": "$12.99/月"
+                },
+                {
+                  "name": "Buffer",
+                  "slug": "buffer",
+                  "step": "一个月文案+配图上传 Buffer，AI 建议最佳时间，全平台一键排期自动发布",
+                  "cost": "$6/月/渠道"
                 }
               ]
             }
@@ -300,42 +970,42 @@
           "label": "论文降重改写",
           "workflows": {
             "free": {
-              "title": "免费降低论文重复率",
+              "title": "AI 改写 → 语法校验",
               "tools": [
                 {
                   "name": "QuillBot",
                   "slug": "quillbot",
-                  "step": "粘贴高重复段落，选 Standard 或 Fluency 模式，AI 自动替换同义词",
+                  "step": "粘贴高重复段落选 Standard 模式，AI 替换同义词+调整句式，复制改写结果",
                   "cost": "免费（125词/次）"
                 },
                 {
                   "name": "Grammarly",
                   "slug": "grammarly",
-                  "step": "改写后检查语法+学术语气，确保降重后文本仍通顺且符合学术规范",
-                  "cost": "免费基础版"
+                  "step": "将 QuillBot 改写后的文本粘贴到 Grammarly，检查语法和学术语气，修正后替换原文",
+                  "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "论文降重+润色+查重一站式",
+              "title": "深度改写 → 学术润色 → 查重验证",
               "tools": [
                 {
-                  "name": "QuillBot Premium",
+                  "name": "QuillBot",
                   "slug": "quillbot",
-                  "step": "解锁 Custom 模式+无字数限制，并排对比改写前后，精准控制改写程度",
+                  "step": "Premium 版解锁 Custom 模式+无字数限制，并排对比改写前后，精准控制每段改写程度",
                   "cost": "$9.95/月"
                 },
                 {
-                  "name": "Wordtune",
-                  "slug": "wordtune",
-                  "step": "选中任意句子获得 5-10 种改写建议，保留学术含义彻底更换表达方式",
-                  "cost": "$9.99/月"
+                  "name": "Grammarly",
+                  "slug": "grammarly",
+                  "step": "将 QuillBot 改写结果粘贴到 Grammarly Premium，全文学术语气微调+一致性检查",
+                  "cost": "$12/月"
                 },
                 {
-                  "name": "Grammarly Premium",
-                  "slug": "grammarly",
-                  "step": "全文一致性检查+学术语气微调+内置抄袭检测，改写润色一站完成",
-                  "cost": "$12/月"
+                  "name": "Copyleaks",
+                  "slug": "copyleaks",
+                  "step": "将润色完的论文上传 Copyleaks 跑查重，确认重复率降到学校要求线以下，生成检测报告",
+                  "cost": "$9.16/月起"
                 }
               ]
             }
@@ -346,41 +1016,41 @@
           "label": "文献综述辅助",
           "workflows": {
             "free": {
-              "title": "AI 辅助快速文献调研",
+              "title": "AI 检索论文 → 归纳分析",
               "tools": [
                 {
                   "name": "Semantic Scholar",
                   "slug": "semantic-scholar",
-                  "step": "输入研究关键词，AI 按引用量排序论文，生成核心摘要快速建立文献地图",
+                  "step": "输入研究关键词，AI 按引用量排序论文并生成核心摘要，选出 Top 10 下载",
                   "cost": "免费"
                 },
                 {
                   "name": "ChatGPT",
                   "slug": "chatgpt",
-                  "step": "将筛选出的 5-10 篇论文摘要粘贴给 GPT，按主题归纳识别研究空白点",
+                  "step": "将 Semantic Scholar 筛选的10篇摘要粘贴给 GPT，按主题分类并识别研究空白点",
                   "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "AI 深度文献分析工作流",
+              "title": "AI 深度检索 → 文献管理 → 综述初稿",
               "tools": [
                 {
                   "name": "Elicit",
                   "slug": "elicit",
-                  "step": "输入研究问题，AI 自动检索论文、提取关键发现、生成对比表格",
+                  "step": "输入研究问题，AI 自动检索论文、提取关键发现，生成论文对比表格并导出",
                   "cost": "$10/月"
                 },
                 {
                   "name": "Zotero",
                   "slug": "zotero",
-                  "step": "保存论文到文献库，配合 ZoteroGPT 对整个库提问，秒速定位引用",
+                  "step": "将 Elicit 筛选的论文一键存入 Zotero 文献库，分组管理，用插件对全库提问定位引用",
                   "cost": "免费+插件"
                 },
                 {
                   "name": "Claude",
                   "slug": "claude",
-                  "step": "上传 10-20 篇 PDF 论文，生成结构化综述初稿含主题分类和引用标注",
+                  "step": "将 Zotero 中核心论文 PDF 上传 Claude，生成综述初稿：主题分类+研究脉络+引用标注",
                   "cost": "$20/月"
                 }
               ]
@@ -392,41 +1062,225 @@
           "label": "简历优化",
           "workflows": {
             "free": {
-              "title": "AI 重写+排版简历（零花费）",
+              "title": "AI 重写经历 → 专业排版",
               "tools": [
                 {
                   "name": "ChatGPT",
                   "slug": "chatgpt",
-                  "step": "粘贴简历+目标 JD，用 Prompt 让 GPT 改写为 STAR 法则格式并量化成果",
+                  "step": "粘贴简历+目标 JD，GPT 用 STAR 法则重写每条经历并量化成果，复制全部结果",
                   "cost": "免费"
                 },
                 {
                   "name": "Canva",
                   "slug": "canva",
-                  "step": "选 ATS 友好的简洁单栏模板，填入优化后的文本，导出 PDF 直接投递",
+                  "step": "选 ATS 友好的简洁单栏模板，将 GPT 优化文本逐条填入，导出 PDF 直接投递",
                   "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "简历定制+ATS 优化+专业润色",
+              "title": "AI 定制简历 → 专业润色 → JD 匹配优化",
               "tools": [
                 {
                   "name": "Kickresume",
                   "slug": "kickresume",
-                  "step": "输入目标岗位，AI 生成针对性简历初稿，内置 ATS 评分检测通过率",
+                  "step": "输入目标岗位名称，AI 生成行业针对性简历初稿，内置 ATS 评分检测通过率",
                   "cost": "$19/月"
                 },
                 {
-                  "name": "Grammarly Premium",
+                  "name": "Grammarly",
                   "slug": "grammarly",
-                  "step": "简历英文深度润色：检查语法+语气检测确保措辞专业自信用词精准",
+                  "step": "将 Kickresume 简历文本粘贴到 Grammarly Premium，深度润色确保措辞专业自信",
                   "cost": "$12/月"
                 },
                 {
                   "name": "Claude",
                   "slug": "claude",
-                  "step": "上传目标 JD+现有简历，逐条对比给出修改建议和量化成果优化方案",
+                  "step": "上传目标 JD+润色后简历，Claude 逐条对比给出修改建议和关键词匹配度优化方案",
+                  "cost": "$20/月"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "personal-statement",
+          "label": "留学申请文书",
+          "workflows": {
+            "free": {
+              "title": "AI 挖掘故事线 → 语法把关",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入背景经历+目标学校，GPT 用「英雄之旅」叙事框架挖掘最有力的故事线",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Grammarly",
+                  "slug": "grammarly",
+                  "step": "初稿完成后粘贴到 Grammarly 检查语法和句式多样性，修正后请人 review",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "深度构思 → 初稿生成 → 母语级润色",
+              "tools": [
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传完整背景资料（简历+活动+经历），Claude 输出3个最有说服力的叙事角度供选择",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Writesonic",
+                  "slug": "writesonic",
+                  "step": "将 Claude 选定的角度+要点输入 Essay Writer 模板，快速生成结构完整的文书初稿",
+                  "cost": "$19/月起"
+                },
+                {
+                  "name": "Wordtune",
+                  "slug": "wordtune",
+                  "step": "将初稿逐句过 Wordtune，每句获得5-10种改写，将中式英语升级为母语者的自然表达",
+                  "cost": "$9.99/月"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "presentation-prep",
+          "label": "演讲与 PPT 准备",
+          "workflows": {
+            "free": {
+              "title": "AI 生成大纲 → 模板做 PPT",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入主题+时长+受众，GPT 生成结构化大纲含每页要点和过渡语，复制全文",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "选学术 PPT 模板，按 GPT 大纲逐页填充内容和数据图表，导出 PDF 演讲",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "AI 一键生成 PPT → 演讲稿 → 发音练习",
+              "tools": [
+                {
+                  "name": "Gamma",
+                  "slug": "gamma",
+                  "step": "粘贴论文摘要或大纲，Gamma AI 一键生成专业排版演示文稿含图表动效，下载 PPT",
+                  "cost": "$10/月"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将 Gamma PPT 要点上传 Claude，生成演讲稿含语速标注、停顿提示和过渡衔接语",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "ElevenLabs",
+                  "slug": "elevenlabs",
+                  "step": "将 Claude 演讲稿粘贴到 ElevenLabs，生成标准英文发音音频，跟读练习语调重音",
+                  "cost": "$5/月起"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "data-analysis",
+          "label": "数据分析作业",
+          "workflows": {
+            "free": {
+              "title": "AI 写代码分析 → 生成报告",
+              "tools": [
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "上传 CSV/Excel，用自然语言提问，GPT 自动写 Python 做清洗+统计+出图，下载结果",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将 ChatGPT 的分析结果和图表截图发给 Claude，生成「发现→解读→建议」结构的报告",
+                  "cost": "免费额度"
+                }
+              ]
+            },
+            "paid": {
+              "title": "自然语言分析 → 专业报告 → 交互式图表",
+              "tools": [
+                {
+                  "name": "Julius AI",
+                  "slug": "julius-ai",
+                  "step": "上传数据文件，用中/英文提问，AI 自动完成统计检验+回归分析，导出结果和代码",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将 Julius 结果上传，Claude 整理为专业报告：方法论说明+结果解读+局限性讨论",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Flourish",
+                  "slug": "flourish",
+                  "step": "将关键数据导入 Flourish，制作交互式动态图表（柱状/散点/热力图），嵌入 PPT 展示",
+                  "cost": "免费（公开项目）"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "id": "note-organization",
+          "label": "课堂笔记与复习",
+          "workflows": {
+            "free": {
+              "title": "录音转文字 → AI 整理笔记",
+              "tools": [
+                {
+                  "name": "Otter.ai",
+                  "slug": "otter-ai",
+                  "step": "课堂录音后上传 Otter，自动转为带时间戳的逐字稿并标记关键词，下载文本",
+                  "cost": "免费（300分钟/月）"
+                },
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "将 Otter 逐字稿粘贴给 GPT，整理为结构化笔记：重点标注+概念解释+课后疑问清单",
+                  "cost": "免费"
+                }
+              ]
+            },
+            "paid": {
+              "title": "实时转录 → 复习大纲 → 模拟考试",
+              "tools": [
+                {
+                  "name": "Otter.ai",
+                  "slug": "otter-ai",
+                  "step": "Pro 版课堂实时转录+自动标记重点+生成摘要，下载全学期笔记文件",
+                  "cost": "$16.99/月"
+                },
+                {
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "将 Otter 全部笔记粘贴给 GPT，整理为考试复习大纲+知识点清单+章节关联",
+                  "cost": "免费"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传 GPT 整理的复习大纲，Claude 生成模拟考题+详细答案+薄弱点分析，针对性突破",
                   "cost": "$20/月"
                 }
               ]
