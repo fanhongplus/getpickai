@@ -115,11 +115,13 @@ export default function HomePage() {
           <p className="mt-2 text-text-secondary text-center text-sm">
             按你的身份，获取定制化的工具推荐方案
           </p>
-          <div className="mt-section-title grid grid-cols-1 md:grid-cols-3 gap-5">
+          <div className="mt-section-title grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-5">
             {[
-              { icon: "🛒", title: "跨境电商卖家", desc: "从选品到投流，AI帮你全链路提效", href: "/for/ecommerce" },
-              { icon: "🎬", title: "自媒体创作者", desc: "从选题到发布，一个人就是一支团队", href: "/for/creator" },
-              { icon: "🎓", title: "留学生", desc: "写论文、做PPT、练口语，AI是你的学霸搭档", href: "/for/student" },
+              { icon: "🛒", title: "跨境电商卖家", desc: "从选品到投流，AI 全链路提效", href: "/for/ecommerce" },
+              { icon: "🎬", title: "视频创作者", desc: "选题、脚本、剪辑、配音一站式", href: "/for/video-creator" },
+              { icon: "🎙️", title: "播客主", desc: "录制、剪辑、二创、推广全流程", href: "/for/podcaster" },
+              { icon: "✍️", title: "图文博主", desc: "SEO 长文、小红书、Newsletter", href: "/for/writer" },
+              { icon: "🎓", title: "留学生", desc: "写论文、做 PPT、练口语好搭档", href: "/for/student" },
             ].map((item) => (
               <Link key={item.href} href={item.href}>
                 <div className="card-hover bg-bg border border-border rounded-card p-6 h-full hover:border-accent/30 cursor-pointer">

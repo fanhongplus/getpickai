@@ -13,6 +13,8 @@ export default function EcommercePage() {
       title="跨境电商卖家的 AI 工具箱"
       subtitle="从选品到投流，用 AI 把效率拉到极致"
       tools={[
+        { slug: "chatgpt", usage: "全能 AI 助手，写 Listing、回复客户邮件、做选品调研" },
+        { slug: "claude", usage: "长文本分析能力强，批量处理竞品 Review 和市场报告" },
         { slug: "jasper", usage: "写 Listing 文案、广告语和邮件营销内容，品牌声音功能保持风格统一" },
         { slug: "midjourney", usage: "生成高质量商品图、场景图和广告素材，省下大量拍摄成本" },
         { slug: "heygen", usage: "制作多语言产品视频，AI 数字人口播 + 自动翻译，一条视频卖全球" },
@@ -57,6 +59,15 @@ export default function EcommercePage() {
         { slug: "adcreative-ai", usage: "AI 广告素材生成，一键出高转化广告图" },
         { slug: "magnific-ai", usage: "AI 图片无损放大，低分辨率商品图变超清" },
         { slug: "remove-bg", usage: "一键 AI 抠图，5 秒去除背景生成白底图" },
+        { slug: "grammarly", usage: "英文 Listing 和邮件语法润色，避免低级错误" },
+        { slug: "surfer-seo", usage: "独立站 SEO 内容优化，实时检测关键词覆盖度" },
+        { slug: "pictory", usage: "脚本自动转产品视频，省去拍摄和粗剪" },
+        { slug: "elevenlabs", usage: "AI 配音做产品介绍视频，多语言一次出齐" },
+        { slug: "ahrefs", usage: "顶级 SEO 工具，分析竞品反向链接和关键词" },
+        { slug: "ubersuggest", usage: "Neil Patel SEO 工具，免费查关键词搜索量" },
+        { slug: "similarweb", usage: "竞品独立站流量分析，看清流量来源结构" },
+        { slug: "buffer", usage: "社媒帖子统一排期，多渠道一次发布" },
+        { slug: "getresponse", usage: "邮件营销自动化，弃购挽回和复购提醒" },
       ]}
       workflowTeaser={{
         title: "从选品到出单的 AI 全流程方案 —— 即将发布",

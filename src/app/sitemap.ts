@@ -40,7 +40,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.6,
     },
     {
-      url: `${BASE_URL}/for/creator`,
+      url: `${BASE_URL}/for/video-creator`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/for/podcaster`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/for/writer`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.6,

@@ -13,6 +13,8 @@ export default function StudentPage() {
       title="留学生的 AI 工具箱"
       subtitle="写论文、做 PPT、练口语，AI 是你的学霸搭档"
       tools={[
+        { slug: "chatgpt", usage: "全能 AI 助手，写论文初稿、解释概念、做翻译" },
+        { slug: "claude", usage: "长文本理解强，一次读完整本教材或多篇论文" },
         { slug: "jasper", usage: "润色英文论文和写作，提升学术写作质量" },
         { slug: "canva", usage: "做 PPT 和课堂展示，海量学术模板直接用" },
         { slug: "elevenlabs", usage: "练习听力和发音，AI 生成各种口音的英语语音" },
@@ -54,6 +56,11 @@ export default function StudentPage() {
         { slug: "socratic", usage: "Google AI 学习助手，拍照提问任何学科" },
         { slug: "popai", usage: "AI 文档分析，PDF 和论文智能问答总结" },
         { slug: "perplexity", usage: "AI 搜索引擎，带引用的结构化答案，调研利器" },
+        { slug: "copyleaks", usage: "AI 抄袭和 AI 内容检测，论文提交前最后一道防线" },
+        { slug: "wordtune", usage: "AI 句子改写，提供多种英文表达方式" },
+        { slug: "kickresume", usage: "AI 简历生成器，内置 ATS 评分检测求职通过率" },
+        { slug: "julius-ai", usage: "用自然语言做数据分析，统计作业和论文神器" },
+        { slug: "flourish", usage: "零代码做数据可视化，论文图表瞬间专业化" },
       ]}
       workflowTeaser={{
         title: "留学生 AI 学习全套工作流 —— 即将发布",

@@ -59,7 +59,7 @@ describe("组1: 正常匹配成功", () => {
     expect(lastTool.slug).toBe("copyleaks");
   });
 
-  test("1.3 播客主播 + 录制与音质处理 + free → 返回完整 workflow", () => {
+  test("1.3 播客主 + 录制与音质处理 + free → 返回完整 workflow", () => {
     const result = matchWorkflow(data, "podcaster", "podcast-recording", "free");
     expect(result).not.toBeNull();
     expect(result!.tools.length).toBeGreaterThanOrEqual(2);
