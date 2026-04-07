@@ -1,0 +1,20 @@
+{
+  "slug": "amazon-seller-ai-toolkit",
+  "title": "亚马逊卖家 AI 全家桶：选品到运营自动化指南",
+  "excerpt": "Helium 10 数据选品 + 卖家精灵竞争分析 + Claude 生成运营报告，亚马逊卖家从选品到运营的 AI 自动化工作流。",
+  "coverImage": "/articles/amazon-seller-ai-toolkit-cover.svg",
+  "category": "工作流",
+  "readTime": "9 分钟",
+  "publishedAt": "2026-04-14",
+  "content": "<h2>亚马逊选品还在靠直觉？</h2>\n<p>很多卖家选品的方式是逛 Best Sellers 榜单看什么卖得好，然后跟着做。问题是——等你看到 Best Sellers 的时候，这个品类早就红海了。真正赚钱的卖家在产品上榜<strong>之前</strong>就发现了它，靠的是数据，不是直觉。</p>\n\n<h2>工作流：数据选品 → 竞争分析 → 策略报告</h2>\n\n<h3>第一步：Helium 10 — 用数据发现蓝海品类</h3>\n<p>打开 <a href=\"/tools/helium-10\">Helium 10</a> 的 Black Box 工具。设置筛选条件：月销量 300-3000（有需求但不过度拥挤）、Review 数量 < 200（新品还有机会）、价格 $20-50（利润空间合理）。</p>\n<p>用 Cerebro 反查排名靠前的竞品：输入竞品 ASIN，看它靠哪些关键词获取流量，哪些关键词排名在 10-30 位（说明有搜索量但竞争不够激烈）。</p>\n<p>导出 Top 50 候选产品的数据报表。</p>\n\n<h3>第二步：卖家精灵 — 中国卖家竞争密度分析</h3>\n<p>Helium 10 看的是全球数据，但跨境卖家还需要知道<strong>中国卖家在这个品类里有多少</strong>。打开 <a href=\"/tools/sellersprite\">卖家精灵</a>，将 Helium 10 筛选出的品类逐一检索。</p>\n<p>卖家精灵的「市场分析」功能会显示该品类中国卖家的占比、平均利润率和最近 30 天的竞争变化趋势。如果中国卖家占比已经超过 70% 且利润率在下降，这个品类大概率要避开。</p>\n\n<h3>第三步：Claude — 生成决策报告</h3>\n<p>将 Helium 10 的选品报表和卖家精灵的竞争数据一起上传给 <a href=\"/tools/claude\">Claude</a>。Prompt：「请基于以上数据生成选品决策报告，包含：1）推荐入场的 3 个品类及理由；2）每个品类的预估启动资金和 ROI；3）避开的品类及原因；4）差异化定位建议。」</p>\n<p>Claude 不是替你做决定，而是把散乱的数据整理成一份你可以拿来开会讨论的报告。</p>\n\n<div style=\"margin-top:2rem;padding:1.5rem;border-radius:12px;background:var(--card-bg, #f8f9fa);\">\n<p style=\"font-weight:bold;margin-bottom:0.5rem;\">📋 查看完整工作流</p>\n<p><a href=\"/workflows/ecommerce/amazon-operation/paid\" style=\"color:var(--accent);\">跨境电商 · 亚马逊运营 · 付费方案 →</a></p>\n<p><a href=\"/workflows/ecommerce/amazon-operation/free\" style=\"color:var(--accent);\">跨境电商 · 亚马逊运营 · 免费方案 →</a></p>\n</div>",
+  "relatedTools": [
+    "helium-10",
+    "sellersprite",
+    "claude",
+    "jungle-scout",
+    "chatgpt"
+  ],
+  "relatedArticles": [
+    "ai-ecommerce-product-description"
+  ]
+}

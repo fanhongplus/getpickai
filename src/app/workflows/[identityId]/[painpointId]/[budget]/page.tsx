@@ -211,6 +211,29 @@ export default function WorkflowPage({ params }: PageProps) {
           })}
         </div>
 
+        {/* 深度攻略文章 */}
+        {workflow.articleSlug && (
+          <section className="border-t border-border pt-8 mb-8">
+            <h2 className="text-lg font-bold text-text mb-4 leading-heading">
+              📖 深度攻略
+            </h2>
+            <Link
+              href={`/blog/${workflow.articleSlug}`}
+              className="card-hover block bg-accent/5 border border-accent/20 rounded-card p-5 hover:border-accent/50"
+            >
+              <div className="flex items-center justify-between gap-4">
+                <div className="flex-1">
+                  <p className="text-sm text-text-secondary mb-1">GoPick 编辑部实战文章</p>
+                  <p className="font-semibold text-text">查看完整教程和使用技巧</p>
+                </div>
+                <span className="text-sm text-accent font-medium flex-shrink-0">
+                  阅读文章 →
+                </span>
+              </div>
+            </Link>
+          </section>
+        )}
+
         {/* 其他预算方案 */}
         {otherBudgets.length > 0 && (
           <section className="border-t border-border pt-8 mb-8">

@@ -1,0 +1,20 @@
+{
+  "slug": "ai-resume-optimization-guide",
+  "title": "AI 简历优化实战：ATS 通过率从 30% 提升到 85%",
+  "excerpt": "Kickresume AI 定制简历 + Grammarly 英文润色 + Claude JD 匹配度分析，留学生求职简历的三步优化工作流。",
+  "coverImage": "/articles/ai-resume-optimization-guide-cover.svg",
+  "category": "工作流",
+  "readTime": "7 分钟",
+  "publishedAt": "2026-04-16",
+  "content": "<h2>你的简历可能根本没被人看过</h2>\n<p>大公司用 ATS（Applicant Tracking System）自动筛选简历。如果你的简历格式不对或关键词不匹配，它在被人眼看到之前就被机器过滤掉了。研究显示，<strong>超过 70% 的简历在 ATS 阶段就被淘汰</strong>。</p>\n\n<h2>工作流：AI 定制 → 英文润色 → JD 匹配</h2>\n\n<h3>第一步：Kickresume — AI 生成针对性简历</h3>\n<p>打开 <a href=\"/tools/kickresume\">Kickresume</a>，输入你的目标岗位名称（比如「Product Manager at Google」）。AI 会基于该岗位的典型要求，生成一份结构化的简历初稿。</p>\n<p>Kickresume 的内置 ATS 评分功能会告诉你当前简历能不能通过主流 ATS 系统。低于 70 分就需要调整。</p>\n\n<h3>第二步：Grammarly Premium — 英文深度润色</h3>\n<p>将 Kickresume 生成的简历文本粘贴到 <a href=\"/tools/grammarly\">Grammarly</a> Premium。重点检查两件事：</p>\n<p>1）<strong>动词力度</strong>：把 \"was responsible for\" 改成 \"led\"、\"spearheaded\"、\"delivered\"。简历的每个 bullet point 都应该以强动词开头。</p>\n<p>2）<strong>一致性</strong>：时态是否统一（过去的经历用过去式，现在的用现在式）、格式是否一致（日期格式、缩写风格）。</p>\n\n<h3>第三步：Claude — JD 匹配度深度优化</h3>\n<p>上传目标岗位的 JD 和你润色后的简历给 <a href=\"/tools/claude\">Claude</a>。Prompt：「请逐条对比 JD 要求和我的简历内容，指出：1）JD 中哪些关键词我的简历没有覆盖；2）我的哪些经历可以更好地匹配 JD 要求；3）给出具体的修改建议。」</p>\n<p>Claude 会像一个经验丰富的 Career Coach 一样，告诉你「JD 要求 cross-functional collaboration，但你的简历里完全没有体现跨部门合作的经历——你可以把第二段经历改写为...」</p>\n\n<h2>免费替代方案</h2>\n<p>用 ChatGPT（免费）做 STAR 法则改写 + Canva 免费简历模板排版。效果差在没有 ATS 评分和 JD 匹配分析，但基础的内容优化可以完成。</p>\n\n<div style=\"margin-top:2rem;padding:1.5rem;border-radius:12px;background:var(--card-bg, #f8f9fa);\">\n<p style=\"font-weight:bold;margin-bottom:0.5rem;\">📋 查看完整工作流</p>\n<p><a href=\"/workflows/student/resume-polish/paid\" style=\"color:var(--accent);\">留学生 · 简历优化 · 付费方案 →</a></p>\n<p><a href=\"/workflows/student/resume-polish/free\" style=\"color:var(--accent);\">留学生 · 简历优化 · 免费方案 →</a></p>\n</div>",
+  "relatedTools": [
+    "kickresume",
+    "grammarly",
+    "claude",
+    "chatgpt",
+    "canva"
+  ],
+  "relatedArticles": [
+    "ai-paper-rewrite-guide"
+  ]
+}

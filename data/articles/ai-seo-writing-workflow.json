@@ -1,0 +1,20 @@
+{
+  "slug": "ai-seo-writing-workflow",
+  "title": "AI 写作 + SEO 一条龙：博主长文效率翻 3 倍",
+  "excerpt": "用 Ahrefs 选关键词 + Writesonic 生成长文 + Surfer SEO 实时优化评分，图文博主的 SEO 内容生产工作流。",
+  "coverImage": "/articles/ai-seo-writing-workflow-cover.svg",
+  "category": "工作流",
+  "readTime": "7 分钟",
+  "publishedAt": "2026-04-13",
+  "content": "<h2>为什么你的文章没有流量？</h2>\n<p>大部分博主的问题不是写得不好，而是选题不对。你花 5 小时写了一篇深度好文，但没人搜这个话题——自然没有流量。反过来，如果你先找到有搜索量但竞争不激烈的关键词，再围绕它写文章，流量是自然来的。</p>\n<p>AI 工具能帮你在 <strong>2 小时内</strong>完成从选词到发布的全流程。</p>\n\n<h2>工作流：选词 → 写作 → 优化</h2>\n\n<h3>第一步：Ahrefs — 找到值得写的关键词</h3>\n<p>打开 <a href=\"/tools/ahrefs\">Ahrefs</a> 的 Content Explorer，输入你的领域关键词。按「低竞争+有流量」排序，找到 KD（关键词难度）低于 30 且月搜索量大于 500 的词。</p>\n<p><strong>进阶技巧</strong>：看排名前 10 的文章的 Domain Rating。如果前 10 里有 DR 低于 40 的网站，说明你也有机会排上去。如果全是 DR 80+ 的大站，换一个词。</p>\n\n<h3>第二步：Writesonic — AI 生成 SEO 长文</h3>\n<p>将 Ahrefs 选定的关键词和竞品文章的大纲结构输入 <a href=\"/tools/writesonic\">Writesonic</a> 的 AI Article Writer。Writesonic 会生成一篇 2000-3000 字的完整长文，包含标题、小标题、正文段落和结论。</p>\n<p><strong>关键</strong>：不要直接发布 AI 生成的初稿。至少花 30 分钟加入你自己的观点、个人经验和独特见解。Google 越来越看重「经验性内容」（EEAT），纯 AI 生成的文章排名会吃亏。</p>\n\n<h3>第三步：Surfer SEO — 实时评分优化</h3>\n<p>将修改后的文章粘贴到 <a href=\"/tools/surfer-seo\">Surfer SEO</a> 的 Content Editor。Surfer 会实时显示你的 SEO 评分，并给出具体建议：哪些关键词用得不够、哪些小标题需要调整、文章长度是否达标。</p>\n<p>目标是把评分调到 70 分以上再发布。</p>\n\n<h2>免费替代方案</h2>\n<p>用 <a href=\"/tools/ubersuggest\">Ubersuggest</a> 免费版（每天 3 次查询）替代 Ahrefs 选词，用 ChatGPT 替代 Writesonic 写文章，发布前用 Grammarly 免费版做基础语法检查。效果不如付费版精准，但零成本可以起步。</p>\n\n<div style=\"margin-top:2rem;padding:1.5rem;border-radius:12px;background:var(--card-bg, #f8f9fa);\">\n<p style=\"font-weight:bold;margin-bottom:0.5rem;\">📋 查看完整工作流</p>\n<p><a href=\"/workflows/writer/seo-article/paid\" style=\"color:var(--accent);\">图文博主 · SEO 长文写作 · 付费方案 →</a></p>\n<p><a href=\"/workflows/writer/seo-article/free\" style=\"color:var(--accent);\">图文博主 · SEO 长文写作 · 免费方案 →</a></p>\n</div>",
+  "relatedTools": [
+    "ahrefs",
+    "writesonic",
+    "surfer-seo",
+    "ubersuggest",
+    "grammarly"
+  ],
+  "relatedArticles": [
+    "best-ai-tools-2026"
+  ]
+}

@@ -74,6 +74,7 @@ export interface MatcherTool {
 
 export interface MatcherWorkflow {
   title: string;
+  articleSlug?: string;
   tools: MatcherTool[];
 }
 

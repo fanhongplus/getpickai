@@ -1,0 +1,20 @@
+{
+  "slug": "ai-literature-review-workflow",
+  "title": "AI 文献综述工作流：从检索到初稿的完整教程",
+  "excerpt": "用 Elicit 智能检索 + Zotero 文献管理 + Claude 生成综述初稿，留学生写 Literature Review 的效率翻倍指南。",
+  "coverImage": "/articles/ai-literature-review-workflow-cover.svg",
+  "category": "工作流",
+  "readTime": "8 分钟",
+  "publishedAt": "2026-04-12",
+  "content": "<h2>文献综述为什么这么痛苦？</h2>\n<p>不是因为写不出来，而是因为前期工作太耗时——找论文、读论文、分类归纳、发现研究空白。这些「预处理」工作占了文献综述 80% 的时间，真正写作只占 20%。AI 工具能把前 80% 的时间压缩掉一大半。</p>\n\n<h2>工作流：检索 → 管理 → 生成初稿</h2>\n\n<h3>第一步：Elicit — AI 智能检索</h3>\n<p>打开 <a href=\"/tools/elicit\">Elicit</a>，输入你的研究问题（用完整的英文问句，比如「How does social media affect adolescent mental health?」）。</p>\n<p>Elicit 会自动检索相关论文，并提取每篇的关键发现。最强大的功能是<strong>对比表格</strong>——它把多篇论文的方法、样本量、结论并排列出来，一眼就能看出研究趋势和矛盾点。</p>\n<p>选出最相关的 15-20 篇论文，导出为 CSV。</p>\n\n<h3>补充步骤：Connected Papers — 可视化引用网络</h3>\n<p>把你的核心论文（最重要的那 2-3 篇）输入 <a href=\"/tools/connected-papers\">Connected Papers</a>，它会生成一张<strong>引用关系图谱</strong>——你能直观看到哪些论文被引用最多（领域奠基作）、哪些是最新的延伸研究。这比 Elicit 的列表视图多了一个「空间感」，帮你理解整个研究脉络。</p>\n\n<h3>第二步：Zotero — 文献管理</h3>\n<p>将 Elicit 和 Connected Papers 筛选出的论文一键保存到 <a href=\"/tools/zotero\">Zotero</a> 文献库。按主题建立分组（比如「方法论」「实证研究」「理论框架」）。</p>\n<p><strong>技巧</strong>：安装 ZoteroGPT 插件，你可以对整个文献库提问——比如「哪些论文用了定量方法？」「关于样本量超过 1000 的研究有哪些？」——直接定位到需要引用的论文。</p>\n\n<h3>第三步：Claude — 生成综述初稿</h3>\n<p>将 Zotero 中的核心论文 PDF（10-20 篇）上传给 <a href=\"/tools/claude\">Claude</a>。用以下 Prompt：</p>\n<p>「请基于上传的论文生成一份文献综述初稿，要求：1）按主题（而非按时间）组织结构；2）每个主题下总结主要发现和争议点；3）标注具体引用（作者+年份）；4）最后一段识别研究空白和未来方向。」</p>\n<p>Claude 生成的初稿不是终稿——它是一个<strong>有结构、有引用、有逻辑</strong>的起点。你在这个基础上修改、补充、润色，比从白纸开始快太多了。</p>\n\n<div style=\"margin-top:2rem;padding:1.5rem;border-radius:12px;background:var(--card-bg, #f8f9fa);\">\n<p style=\"font-weight:bold;margin-bottom:0.5rem;\">📋 查看完整工作流</p>\n<p><a href=\"/workflows/student/literature-review/paid\" style=\"color:var(--accent);\">留学生 · 文献综述 · 付费方案 →</a></p>\n<p><a href=\"/workflows/student/literature-review/free\" style=\"color:var(--accent);\">留学生 · 文献综述 · 免费方案 →</a></p>\n</div>",
+  "relatedTools": [
+    "elicit",
+    "connected-papers",
+    "zotero",
+    "claude",
+    "semantic-scholar"
+  ],
+  "relatedArticles": [
+    "ai-paper-rewrite-guide"
+  ]
+}

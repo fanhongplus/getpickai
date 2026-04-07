@@ -28,6 +28,7 @@
             },
             "paid": {
               "title": "电商文案生成 → 翻译 → SEO 校验",
+              "articleSlug": "ai-ecommerce-product-description",
               "tools": [
                 {
                   "name": "Jasper",
@@ -452,6 +453,7 @@
             },
             "paid": {
               "title": "数据选品 → Listing 优化 → 排名监控",
+              "articleSlug": "amazon-seller-ai-toolkit",
               "tools": [
                 {
                   "name": "Helium 10",
@@ -705,6 +707,7 @@
             },
             "paid": {
               "title": "数据选品 → 内容策略 → 批量出片",
+              "articleSlug": "tiktok-ecommerce-ai-workflow",
               "tools": [
                 {
                   "name": "蝉妈妈",
@@ -1102,6 +1105,7 @@
           "workflows": {
             "free": {
               "title": "文字描述 → AI 生成视频片段",
+              "articleSlug": "ai-video-generation-tools-2026",
               "tools": [
                 {
                   "name": "ChatGPT",
@@ -1367,6 +1371,7 @@
             },
             "paid": {
               "title": "专业录制 → 可视化剪辑 → 音质增强",
+              "articleSlug": "ai-podcast-production-guide",
               "tools": [
                 {
                   "name": "Riverside",
@@ -1684,6 +1689,7 @@
             },
             "paid": {
               "title": "专业选词 → AI 撰文 → SEO 评分优化",
+              "articleSlug": "ai-seo-writing-workflow",
               "tools": [
                 {
                   "name": "Ahrefs",
@@ -2178,6 +2184,7 @@
             },
             "paid": {
               "title": "深度改写 → 学术润色 → 查重验证",
+              "articleSlug": "ai-paper-rewrite-guide",
               "tools": [
                 {
                   "name": "QuillBot",
@@ -2241,6 +2248,7 @@
             },
             "paid": {
               "title": "AI 深度检索 → 文献管理 → 综述初稿",
+              "articleSlug": "ai-literature-review-workflow",
               "tools": [
                 {
                   "name": "Elicit",
@@ -2310,6 +2318,7 @@
             },
             "paid": {
               "title": "AI 定制简历 → 专业润色 → JD 匹配优化",
+              "articleSlug": "ai-resume-optimization-guide",
               "tools": [
                 {
                   "name": "Kickresume",
@@ -3068,6 +3077,7 @@
             },
             "paid": {
               "title": "智能编程 → 深度 Review → 文档生成",
+              "articleSlug": "ai-coding-tools-comparison-2026",
               "tools": [
                 {
                   "name": "Cursor",

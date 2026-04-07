@@ -1,0 +1,20 @@
+{
+  "slug": "ai-podcast-production-guide",
+  "title": "AI 播客制作全流程：录制→剪辑→发布完整指南",
+  "excerpt": "Riverside 高清录制 + Descript 可视化剪辑 + Adobe Podcast AI 降噪，播客主从零到发布的完整工作流。",
+  "coverImage": "/articles/ai-podcast-production-guide-cover.svg",
+  "category": "工作流",
+  "readTime": "8 分钟",
+  "publishedAt": "2026-04-15",
+  "content": "<h2>为什么你的播客听起来不专业？</h2>\n<p>大部分新播客主的第一个问题不是内容不好，而是<strong>音质太差</strong>。背景噪音、回声、音量忽高忽低——听众会在 30 秒内关掉。好消息是 2026 年的 AI 工具已经能解决 90% 的音质问题，而且不需要你买任何硬件设备。</p>\n\n<h2>工作流：录制 → 剪辑 → 降噪增强</h2>\n\n<h3>第一步：Riverside — 高清远程录制</h3>\n<p><a href=\"/tools/riverside\">Riverside</a> 的核心优势是<strong>本地录制</strong>——音频在你和嘉宾各自的电脑上录制，不受网络波动影响。即使中途网络断了几秒，录音不会受影响。</p>\n<p>录完后下载分轨文件——你的声音和嘉宾的声音各一轨，后期可以单独调整音量。Pro 版还支持 4K 视频录制，方便后续做视频版播客。</p>\n\n<h3>第二步：Descript — 像编辑文档一样剪音频</h3>\n<p>把 Riverside 的音频导入 <a href=\"/tools/descript\">Descript</a>。它会自动生成逐字稿，然后你可以<strong>在文字上直接编辑</strong>——选中一段文字按删除键，对应的音频就被剪掉了。</p>\n<p>这比传统音频剪辑软件直观 100 倍。你不需要在波形图上找剪切点，看着文字就能剪。</p>\n<p>Descript 还有自动去除「嗯」「啊」等口头禅的功能，一键就能让对话听起来更干净流畅。</p>\n\n<h3>第三步：Adobe Podcast — AI 终极降噪</h3>\n<p>剪辑完成后，将音频上传到 <a href=\"/tools/adobe-podcast\">Adobe Podcast</a> 的 Enhance Speech 功能。一键处理，AI 会去除所有残余背景噪音、均衡音量、减少回声。</p>\n<p>处理前后的差异非常明显——在家用普通耳机麦克风录的音频，处理后听起来像在专业录音棚录的。而且这个功能是<strong>免费的</strong>。</p>\n\n<h2>发布后做什么？</h2>\n<p>录制和后期只是第一步。用 <a href=\"/tools/otter-ai\">Otter.ai</a> 生成逐字稿，再让 <a href=\"/tools/claude\">Claude</a> 基于逐字稿生成 Show Notes、社媒推广文案和博客文章——一期播客的内容可以二创出 5-6 种格式。</p>\n\n<div style=\"margin-top:2rem;padding:1.5rem;border-radius:12px;background:var(--card-bg, #f8f9fa);\">\n<p style=\"font-weight:bold;margin-bottom:0.5rem;\">📋 查看完整工作流</p>\n<p><a href=\"/workflows/podcaster/podcast-recording/paid\" style=\"color:var(--accent);\">播客主 · 录制与音质处理 · 付费方案 →</a></p>\n<p><a href=\"/workflows/podcaster/podcast-recording/free\" style=\"color:var(--accent);\">播客主 · 录制与音质处理 · 免费方案 →</a></p>\n</div>",
+  "relatedTools": [
+    "riverside",
+    "descript",
+    "adobe-podcast",
+    "otter-ai",
+    "claude"
+  ],
+  "relatedArticles": [
+    "best-ai-tools-2026"
+  ]
+}

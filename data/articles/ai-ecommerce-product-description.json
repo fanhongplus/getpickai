@@ -1,0 +1,19 @@
+{
+  "slug": "ai-ecommerce-product-description",
+  "title": "跨境电商 AI 文案指南：3 步自动生成多语言商品描述",
+  "excerpt": "用 Jasper 生成 SEO 文案 + DeepL 多语言翻译 + Surfer SEO 关键词校验，跨境卖家的商品描述自动化工作流。",
+  "coverImage": "/articles/ai-ecommerce-product-description-cover.svg",
+  "category": "工作流",
+  "readTime": "7 分钟",
+  "publishedAt": "2026-04-10",
+  "content": "<h2>写一条商品描述要多久？</h2>\n<p>如果你做跨境电商，一个 SKU 需要英文描述、日文描述、韩文描述各一套。每套包含标题、五点描述、长描述。手写一条要 30 分钟，10 个 SKU 就是 5 个小时，还不算翻译时间。</p>\n<p>用 AI 工作流，同样的工作量可以压缩到 <strong>1 小时以内</strong>，而且自带 SEO 优化。</p>\n\n<h2>工作流：生成 → 翻译 → SEO 校验</h2>\n\n<h3>第一步：Jasper — 生成 SEO 友好的英文描述</h3>\n<p>打开 <a href=\"/tools/jasper\">Jasper</a> 的 Product Description 模板。输入产品名称、核心卖点（3-5 个）、目标客群和品牌调性。</p>\n<p><strong>Prompt 技巧</strong>：在「Tone of voice」里写具体的品牌参考，比如「像 Apple 官网一样简洁专业」或「像 Anker 一样强调数据和测试结果」。这比写「professional」效果好 10 倍。</p>\n<p>Jasper 会同时生成标题、要点列表和详情段落。生成 3 个版本，挑最好的一个进入下一步。</p>\n\n<h3>第二步：DeepL — 高质量多语言翻译</h3>\n<p>将 Jasper 生成的英文描述粘贴到 <a href=\"/tools/deepl\">DeepL</a>。选择目标语言（日文、韩文、德文等）。</p>\n<p><strong>为什么不直接让 Jasper 生成多语言？</strong> 因为 AI 生成的非英语文本质量参差不齐，尤其是日韩文的敬语和商业用语很容易出错。DeepL 的翻译质量在电商场景下远超 Google 翻译，更接近母语者的表达习惯。</p>\n<p>翻译后通读一遍，重点检查产品专有名词和规格参数有没有被错误翻译。</p>\n\n<h3>第三步：Surfer SEO — 关键词密度校验</h3>\n<p>将英文版描述粘贴到 <a href=\"/tools/surfer-seo\">Surfer SEO</a> 的 Content Editor。输入你的目标关键词（比如「wireless earbuds noise canceling」）。</p>\n<p>Surfer 会实时显示当前文本的关键词密度、内容评分和优化建议。按建议调整用词直到评分达到绿色区间（70+ 分），然后再发布到独立站。</p>\n\n<h2>免费替代方案</h2>\n<p>预算有限？用 ChatGPT（免费）替代 Jasper 生成描述，用有道翻译（免费）替代 DeepL 做翻译。效果差 20-30%，但零成本，适合刚起步的卖家。</p>\n\n<div style=\"margin-top:2rem;padding:1.5rem;border-radius:12px;background:var(--card-bg, #f8f9fa);\">\n<p style=\"font-weight:bold;margin-bottom:0.5rem;\">📋 查看完整工作流</p>\n<p><a href=\"/workflows/ecommerce/product-desc/paid\" style=\"color:var(--accent);\">跨境电商 · 商品描述 · 付费方案 →</a></p>\n<p><a href=\"/workflows/ecommerce/product-desc/free\" style=\"color:var(--accent);\">跨境电商 · 商品描述 · 免费方案 →</a></p>\n<p><a href=\"/workflows/ecommerce/product-desc/cn-free\" style=\"color:var(--accent);\">跨境电商 · 商品描述 · 中文免费方案 →</a></p>\n</div>",
+  "relatedTools": [
+    "jasper",
+    "deepl",
+    "surfer-seo",
+    "chatgpt"
+  ],
+  "relatedArticles": [
+    "best-ai-tools-2026"
+  ]
+}
