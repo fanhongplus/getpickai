@@ -3,29 +3,85 @@
   "name": "Helium 10",
   "logo": "/logos/helium-10.svg",
   "tagline": "亚马逊卖家全能运营工具，集选品、关键词、广告优化于一体",
-  "scenes": ["提效率"],
+  "scenes": [
+    "提效率"
+  ],
   "pricingType": "paid",
   "priceLabel": "$29起/月",
   "rating": 4.6,
   "affiliateUrl": "",
   "websiteUrl": "https://www.helium10.com",
   "editorReview": "Helium 10 是亚马逊卖家工具里功能最全面的一个，从选品到关键词到广告优化到库存管理，一个订阅全覆盖。它的 Cerebro 关键词反查和 Black Box 选品工具是业内标杆。\n\n最近加入的 AI 功能让 Listing 优化变得更智能，可以自动生成和优化标题、五点描述和后台搜索词。数据准确度和 Jungle Scout 不相上下。\n\n$29/月的入门版功能有限，真正好用的得 $79/月的 Diamond 版。价格不低但工具确实全面，适合认真做亚马逊的卖家。",
-  "goodFor": ["亚马逊卖家", "多站点运营卖家", "需要全套工具的卖家"],
-  "notGoodFor": ["预算有限的新手", "非亚马逊平台卖家", "只需单一功能的用户"],
-  "pros": ["功能最全面的亚马逊工具", "关键词反查精准", "AI Listing 优化", "Chrome 插件好用", "教程资源丰富"],
-  "cons": ["价格不便宜", "英文界面", "功能太多上手需要时间"],
-  "pricingPlans": [
-    {"name": "Starter", "price": "$29/月", "features": ["基础选品工具", "有限关键词查询", "Chrome 插件"]},
-    {"name": "Diamond", "price": "$79/月", "features": ["全部工具解锁", "AI Listing 优化", "广告管理", "无限关键词查询"]},
-    {"name": "Elite", "price": "$229/月", "features": ["所有 Diamond 功能", "私人培训", "高级支持"]}
+  "goodFor": [
+    "亚马逊卖家",
+    "多站点运营卖家",
+    "需要全套工具的卖家"
   ],
-  "quickStart": ["注册 Helium 10 账号", "安装 Chrome 浏览器插件", "用 Black Box 筛选潜力产品", "用 Cerebro 分析竞品关键词", "用 AI 优化你的 Listing 文案"],
-  "relatedTools": ["jungle-scout", "sellersprite"],
+  "notGoodFor": [
+    "预算有限的新手",
+    "非亚马逊平台卖家",
+    "只需单一功能的用户"
+  ],
+  "pros": [
+    "功能最全面的亚马逊工具",
+    "关键词反查精准",
+    "AI Listing 优化",
+    "Chrome 插件好用",
+    "教程资源丰富"
+  ],
+  "cons": [
+    "价格不便宜",
+    "英文界面",
+    "功能太多上手需要时间"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Starter",
+      "price": "$29/月",
+      "features": [
+        "基础选品工具",
+        "有限关键词查询",
+        "Chrome 插件"
+      ]
+    },
+    {
+      "name": "Diamond",
+      "price": "$79/月",
+      "features": [
+        "全部工具解锁",
+        "AI Listing 优化",
+        "广告管理",
+        "无限关键词查询"
+      ]
+    },
+    {
+      "name": "Elite",
+      "price": "$229/月",
+      "features": [
+        "所有 Diamond 功能",
+        "私人培训",
+        "高级支持"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Helium 10 账号",
+    "安装 Chrome 浏览器插件",
+    "用 Black Box 筛选潜力产品",
+    "用 Cerebro 分析竞品关键词",
+    "用 AI 优化你的 Listing 文案"
+  ],
+  "relatedTools": [
+    "jungle-scout",
+    "sellersprite"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

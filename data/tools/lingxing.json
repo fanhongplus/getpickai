@@ -3,27 +3,66 @@
   "name": "领星ERP",
   "logo": "/logos/lingxing.svg",
   "tagline": "国产亚马逊 ERP 系统，内置 AI 文案生成和智能广告优化功能",
-  "scenes": ["提效率"],
+  "scenes": [
+    "提效率"
+  ],
   "pricingType": "paid",
   "priceLabel": "按需报价",
   "rating": 4.3,
   "affiliateUrl": "",
   "websiteUrl": "https://www.lingxing.com",
   "editorReview": "领星 ERP 是国内亚马逊卖家用得比较多的 ERP 系统之一，在财务核算和广告管理方面做得特别好。最近接入 AI 功能后，可以自动生成 Listing 文案和优化广告出价策略。\n\n财务利润报表是它的强项，可以精确到每个 SKU 的真实利润，帮卖家及时砍掉亏损产品。AI 广告优化可以自动调整竞价，节省广告费。\n\n按需报价的模式意味着费用根据你的店铺规模而定，适合有一定体量的卖家。",
-  "goodFor": ["亚马逊中大型卖家", "需要精细财务管理的卖家", "广告投放量大的卖家"],
-  "notGoodFor": ["刚起步的小卖家", "非亚马逊卖家", "预算有限的用户"],
-  "pros": ["财务核算精准", "AI 广告优化", "AI 文案生成", "多店铺管理"],
-  "cons": ["价格不透明", "上手有门槛", "主要服务亚马逊"],
-  "pricingPlans": [
-    {"name": "按需定价", "price": "联系销售", "features": ["全功能 ERP", "AI 文案", "AI 广告优化", "财务报表"]}
+  "goodFor": [
+    "亚马逊中大型卖家",
+    "需要精细财务管理的卖家",
+    "广告投放量大的卖家"
   ],
-  "quickStart": ["联系领星销售团队", "绑定亚马逊店铺", "导入历史数据", "配置财务和广告模块", "开启 AI 辅助功能"],
-  "relatedTools": ["dianxiaomi-ai", "helium-10"],
+  "notGoodFor": [
+    "刚起步的小卖家",
+    "非亚马逊卖家",
+    "预算有限的用户"
+  ],
+  "pros": [
+    "财务核算精准",
+    "AI 广告优化",
+    "AI 文案生成",
+    "多店铺管理"
+  ],
+  "cons": [
+    "价格不透明",
+    "上手有门槛",
+    "主要服务亚马逊"
+  ],
+  "pricingPlans": [
+    {
+      "name": "按需定价",
+      "price": "联系销售",
+      "features": [
+        "全功能 ERP",
+        "AI 文案",
+        "AI 广告优化",
+        "财务报表"
+      ]
+    }
+  ],
+  "quickStart": [
+    "联系领星销售团队",
+    "绑定亚马逊店铺",
+    "导入历史数据",
+    "配置财务和广告模块",
+    "开启 AI 辅助功能"
+  ],
+  "relatedTools": [
+    "dianxiaomi-ai",
+    "helium-10"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

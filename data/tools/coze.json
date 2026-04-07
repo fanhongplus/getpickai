@@ -1,1 +1,59 @@
-{"slug":"coze","name":"扣子","logo":"/logos/coze.svg","tagline":"字节跳动出品的 AI Bot 构建平台，零代码搭建自己的 AI 应用和工作流","scenes":["提效率"],"pricingType":"free","priceLabel":"免费","rating":4.5,"affiliateUrl":"","websiteUrl":"https://www.coze.com","editorReview":"扣子 是一款实用的 AI 工具。字节跳动出品的 AI Bot 构建平台，零代码搭建自己的 AI 应用和工作流。\n\n在特定场景下表现出色，值得体验。","goodFor":["所有用户","目标人群"],"notGoodFor":["不需要该功能的用户"],"pros":["零代码搭建","功能强大","字节出品","完全免费"],"cons":["学习曲线","中文文档不够全"],"pricingPlans":[{"name":"基础版","price":"免费","features":["核心功能"]}],"quickStart":["访问官网注册","选择功能","开始使用"],"relatedTools":["dify","doubao"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "coze",
+  "name": "扣子",
+  "logo": "/logos/coze.svg",
+  "tagline": "字节跳动出品的 AI Bot 构建平台，零代码搭建自己的 AI 应用和工作流",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "free",
+  "priceLabel": "免费",
+  "rating": 4.5,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.coze.com",
+  "editorReview": "扣子 是一款实用的 AI 工具。字节跳动出品的 AI Bot 构建平台，零代码搭建自己的 AI 应用和工作流。\n\n在特定场景下表现出色，值得体验。",
+  "goodFor": [
+    "所有用户",
+    "目标人群"
+  ],
+  "notGoodFor": [
+    "不需要该功能的用户"
+  ],
+  "pros": [
+    "零代码搭建",
+    "功能强大",
+    "字节出品",
+    "完全免费"
+  ],
+  "cons": [
+    "学习曲线",
+    "中文文档不够全"
+  ],
+  "pricingPlans": [
+    {
+      "name": "基础版",
+      "price": "免费",
+      "features": [
+        "核心功能"
+      ]
+    }
+  ],
+  "quickStart": [
+    "访问官网注册",
+    "选择功能",
+    "开始使用"
+  ],
+  "relatedTools": [
+    "dify",
+    "doubao"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

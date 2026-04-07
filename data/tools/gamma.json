@@ -3,29 +3,88 @@
   "name": "Gamma",
   "logo": "/logos/gamma.svg",
   "tagline": "AI 一键生成 PPT 演示文稿，输入主题自动生成精美幻灯片",
-  "scenes": ["做PPT"],
+  "scenes": [
+    "做PPT"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费基础版 / $10起/月",
   "rating": 4.5,
   "affiliateUrl": "",
   "websiteUrl": "https://gamma.app",
   "editorReview": "Gamma 彻底改变了做 PPT 的方式。输入一个主题或大纲，AI 自动生成包含文字、图片和布局的完整演示文稿，效果比大部分人手动做的 PPT 好看得多。\n\n对留学生来说简直是救命工具——课堂 presentation、小组汇报、毕业答辩，输入要点就能出一份专业级 PPT。支持导出 PDF 和 PPTX 格式。\n\n免费版每月有一定的 AI 生成额度，$10/月的 Plus 版解锁无限生成和更多主题。比起花几个小时调 PPT 格式，这个投资太值了。",
-  "goodFor": ["留学生", "职场人士", "自媒体创作者", "需要频繁做 PPT 的人"],
-  "notGoodFor": ["需要极度定制化设计的场景", "专业设计师", "不需要做演示的人"],
-  "pros": ["AI 生成 PPT 质量高", "上手极简单", "设计美观专业", "支持多种导出格式", "免费版够体验"],
-  "cons": ["自定义空间有限", "部分模板风格偏西式", "免费版有生成限制"],
-  "pricingPlans": [
-    {"name": "Free", "price": "免费", "features": ["有限 AI 生成", "基础主题", "在线演示"]},
-    {"name": "Plus", "price": "$10/月", "features": ["无限 AI 生成", "全部主题", "PDF/PPTX 导出", "去除水印"]},
-    {"name": "Pro", "price": "$20/月", "features": ["所有 Plus 功能", "自定义品牌", "分析数据", "优先支持"]}
+  "goodFor": [
+    "留学生",
+    "职场人士",
+    "自媒体创作者",
+    "需要频繁做 PPT 的人"
   ],
-  "quickStart": ["打开 gamma.app 注册账号", "输入演示主题或粘贴大纲", "AI 自动生成完整 PPT", "微调内容和样式", "导出 PPTX 或在线分享"],
-  "relatedTools": ["canva", "notion-ai", "jasper"],
+  "notGoodFor": [
+    "需要极度定制化设计的场景",
+    "专业设计师",
+    "不需要做演示的人"
+  ],
+  "pros": [
+    "AI 生成 PPT 质量高",
+    "上手极简单",
+    "设计美观专业",
+    "支持多种导出格式",
+    "免费版够体验"
+  ],
+  "cons": [
+    "自定义空间有限",
+    "部分模板风格偏西式",
+    "免费版有生成限制"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "有限 AI 生成",
+        "基础主题",
+        "在线演示"
+      ]
+    },
+    {
+      "name": "Plus",
+      "price": "$10/月",
+      "features": [
+        "无限 AI 生成",
+        "全部主题",
+        "PDF/PPTX 导出",
+        "去除水印"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$20/月",
+      "features": [
+        "所有 Plus 功能",
+        "自定义品牌",
+        "分析数据",
+        "优先支持"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 gamma.app 注册账号",
+    "输入演示主题或粘贴大纲",
+    "AI 自动生成完整 PPT",
+    "微调内容和样式",
+    "导出 PPTX 或在线分享"
+  ],
+  "relatedTools": [
+    "canva",
+    "notion-ai",
+    "jasper"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

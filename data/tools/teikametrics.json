@@ -1,1 +1,73 @@
-{"slug":"teikametrics","name":"Teikametrics","logo":"/logos/teikametrics.svg","tagline":"AI 驱动的亚马逊和沃尔玛广告优化平台，自动调整竞价策略最大化利润","scenes":["提效率"],"pricingType":"freemium","priceLabel":"免费试用 / 按广告支出比例收费","rating":4.3,"affiliateUrl":"","websiteUrl":"https://www.teikametrics.com","editorReview":"Teikametrics 专注 AI 广告优化，自动调整亚马逊和沃尔玛的广告竞价策略。比手动调广告效率高很多，AI 可以根据实时数据 24 小时优化。\n\n按广告支出比例收费的模式意味着它和你的利益绑定——帮你赚更多它才赚更多。适合广告预算较大的卖家。","goodFor":["广告投放量大的卖家","亚马逊/沃尔玛卖家","需要自动化广告管理"],"notGoodFor":["广告预算很小的新手","不投广告的卖家"],"pros":["AI 广告优化精准","24 小时自动调价","支持亚马逊和沃尔玛","利益绑定模式"],"cons":["按比例收费可能贵","上手有门槛","主要服务广告场景"],"pricingPlans":[{"name":"免费试用","price":"免费","features":["基础数据分析"]},{"name":"AI Powered","price":"按广告支出比例","features":["AI 自动竞价","全渠道优化","数据报表"]}],"quickStart":["注册 Teikametrics","绑定亚马逊卖家账号","导入广告数据","设置优化目标","AI 自动开始优化竞价"],"relatedTools":["helium-10","jungle-scout"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "teikametrics",
+  "name": "Teikametrics",
+  "logo": "/logos/teikametrics.svg",
+  "tagline": "AI 驱动的亚马逊和沃尔玛广告优化平台，自动调整竞价策略最大化利润",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / 按广告支出比例收费",
+  "rating": 4.3,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.teikametrics.com",
+  "editorReview": "Teikametrics 专注 AI 广告优化，自动调整亚马逊和沃尔玛的广告竞价策略。比手动调广告效率高很多，AI 可以根据实时数据 24 小时优化。\n\n按广告支出比例收费的模式意味着它和你的利益绑定——帮你赚更多它才赚更多。适合广告预算较大的卖家。",
+  "goodFor": [
+    "广告投放量大的卖家",
+    "亚马逊/沃尔玛卖家",
+    "需要自动化广告管理"
+  ],
+  "notGoodFor": [
+    "广告预算很小的新手",
+    "不投广告的卖家"
+  ],
+  "pros": [
+    "AI 广告优化精准",
+    "24 小时自动调价",
+    "支持亚马逊和沃尔玛",
+    "利益绑定模式"
+  ],
+  "cons": [
+    "按比例收费可能贵",
+    "上手有门槛",
+    "主要服务广告场景"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费试用",
+      "price": "免费",
+      "features": [
+        "基础数据分析"
+      ]
+    },
+    {
+      "name": "AI Powered",
+      "price": "按广告支出比例",
+      "features": [
+        "AI 自动竞价",
+        "全渠道优化",
+        "数据报表"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Teikametrics",
+    "绑定亚马逊卖家账号",
+    "导入广告数据",
+    "设置优化目标",
+    "AI 自动开始优化竞价"
+  ],
+  "relatedTools": [
+    "helium-10",
+    "jungle-scout"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

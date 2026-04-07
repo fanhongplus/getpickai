@@ -1,1 +1,70 @@
-{"slug":"adobe-podcast","name":"Adobe Podcast","logo":"/logos/adobe-podcast.svg","tagline":"Adobe 出品的 AI 音频增强工具——一键录音棚级降噪","scenes":["做视频"],"pricingType":"free","priceLabel":"免费（含 Adobe Creative Cloud）","rating":4.6,"affiliateUrl":"","websiteUrl":"https://podcast.adobe.com","editorReview":"Adobe Podcast（原 Project Shasta）提供 AI 驱动的音频增强功能，是 Adobe 最近几年推出的免费神器之一。\n\n核心功能 Enhanced Speech 可一键去除背景噪音、回声和杂音，让在家录制的音频达到专业录音棚效果。实测对比：同一段在咖啡馆录制的嘈杂音频，经过 Enhanced Speech 处理后几乎听不出背景噪音，人声清晰度和 Adobe Audition 专业降噪处理的结果接近。\n\n支持在线录制、音频转录和自动剪辑。完全免费使用，只需要一个 Adobe 账号。对播客创作者、教育工作者和远程会议录音来说是必备工具。","goodFor":["播客创作者","自媒体视频博主","在线教育","远程会议录音"],"notGoodFor":["需要复杂后期的专业音频工程师","不做音频内容的用户"],"pros":["完全免费","AI 降噪效果惊艳","在线即用无需安装","音频转录支持","Adobe 品质保证"],"cons":["仅支持人声优化","不支持音乐降噪","需要 Adobe 账号"],"pricingPlans":[{"name":"免费版","price":"免费","features":["Enhanced Speech 降噪","在线录制","音频转录","基础剪辑"]}],"quickStart":["访问 podcast.adobe.com 登录 Adobe 账号","上传需要处理的音频文件","点击 Enhance Speech 按钮","等待 AI 处理完成","下载增强后的音频"],"relatedTools":["elevenlabs","fish-audio","riverside"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-07","verifiedAt":"2026-04"}
+{
+  "slug": "adobe-podcast",
+  "name": "Adobe Podcast",
+  "logo": "/logos/adobe-podcast.svg",
+  "tagline": "Adobe 出品的 AI 音频增强工具——一键录音棚级降噪",
+  "scenes": [
+    "做视频"
+  ],
+  "pricingType": "free",
+  "priceLabel": "免费（含 Adobe Creative Cloud）",
+  "rating": 4.6,
+  "affiliateUrl": "",
+  "websiteUrl": "https://podcast.adobe.com",
+  "editorReview": "Adobe Podcast（原 Project Shasta）提供 AI 驱动的音频增强功能，是 Adobe 最近几年推出的免费神器之一。\n\n核心功能 Enhanced Speech 可一键去除背景噪音、回声和杂音，让在家录制的音频达到专业录音棚效果。实测对比：同一段在咖啡馆录制的嘈杂音频，经过 Enhanced Speech 处理后几乎听不出背景噪音，人声清晰度和 Adobe Audition 专业降噪处理的结果接近。\n\n支持在线录制、音频转录和自动剪辑。完全免费使用，只需要一个 Adobe 账号。对播客创作者、教育工作者和远程会议录音来说是必备工具。",
+  "goodFor": [
+    "播客创作者",
+    "自媒体视频博主",
+    "在线教育",
+    "远程会议录音"
+  ],
+  "notGoodFor": [
+    "需要复杂后期的专业音频工程师",
+    "不做音频内容的用户"
+  ],
+  "pros": [
+    "完全免费",
+    "AI 降噪效果惊艳",
+    "在线即用无需安装",
+    "音频转录支持",
+    "Adobe 品质保证"
+  ],
+  "cons": [
+    "仅支持人声优化",
+    "不支持音乐降噪",
+    "需要 Adobe 账号"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "Enhanced Speech 降噪",
+        "在线录制",
+        "音频转录",
+        "基础剪辑"
+      ]
+    }
+  ],
+  "quickStart": [
+    "访问 podcast.adobe.com 登录 Adobe 账号",
+    "上传需要处理的音频文件",
+    "点击 Enhance Speech 按钮",
+    "等待 AI 处理完成",
+    "下载增强后的音频"
+  ],
+  "relatedTools": [
+    "elevenlabs",
+    "fish-audio",
+    "riverside"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-07",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

@@ -11,6 +11,7 @@ export function Navbar() {
   const navLinks = [
     { href: "/", label: "首页" },
     { href: "/tools", label: "找工具" },
+    { href: "/compare", label: "工具横评" },
     { href: "/blog", label: "AI攻略" },
   ];
 

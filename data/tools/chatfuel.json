@@ -1,1 +1,75 @@
-{"slug":"chatfuel","name":"Chatfuel","logo":"/logos/chatfuel.svg","tagline":"AI 聊天机器人构建平台，支持 WhatsApp/Instagram/Facebook 自动营销和客服","scenes":["提效率"],"pricingType":"freemium","priceLabel":"免费试用 / $15起/月","rating":4.3,"affiliateUrl":"","websiteUrl":"https://chatfuel.com","editorReview":"Chatfuel 是社交媒体聊天机器人的头部工具，可以在 WhatsApp、Instagram、Facebook 上搭建自动营销和客服机器人。\n\n拖拽式界面零代码构建聊天流程，AI 可以理解用户意图自动回复。对做社媒营销和独立站引流的卖家来说很实用。","goodFor":["社媒营销","独立站引流","自动客服","WhatsApp 营销"],"notGoodFor":["不做社媒的用户","纯亚马逊卖家"],"pros":["支持主流社媒","零代码搭建","AI 意图理解","营销自动化"],"cons":["免费版功能有限","复杂流程需学习"],"pricingPlans":[{"name":"免费试用","price":"免费","features":["有限对话"]},{"name":"Business","price":"$15/月","features":["无限对话","AI 回复","多渠道","自动化"]}],"quickStart":["注册 Chatfuel","连接 WhatsApp 或 Instagram","用拖拽编辑器搭建聊天流程","配置 AI 自动回复","上线运行"],"relatedTools":["tidio","salesmartly","gorgias"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "chatfuel",
+  "name": "Chatfuel",
+  "logo": "/logos/chatfuel.svg",
+  "tagline": "AI 聊天机器人构建平台，支持 WhatsApp/Instagram/Facebook 自动营销和客服",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $15起/月",
+  "rating": 4.3,
+  "affiliateUrl": "",
+  "websiteUrl": "https://chatfuel.com",
+  "editorReview": "Chatfuel 是社交媒体聊天机器人的头部工具，可以在 WhatsApp、Instagram、Facebook 上搭建自动营销和客服机器人。\n\n拖拽式界面零代码构建聊天流程，AI 可以理解用户意图自动回复。对做社媒营销和独立站引流的卖家来说很实用。",
+  "goodFor": [
+    "社媒营销",
+    "独立站引流",
+    "自动客服",
+    "WhatsApp 营销"
+  ],
+  "notGoodFor": [
+    "不做社媒的用户",
+    "纯亚马逊卖家"
+  ],
+  "pros": [
+    "支持主流社媒",
+    "零代码搭建",
+    "AI 意图理解",
+    "营销自动化"
+  ],
+  "cons": [
+    "免费版功能有限",
+    "复杂流程需学习"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费试用",
+      "price": "免费",
+      "features": [
+        "有限对话"
+      ]
+    },
+    {
+      "name": "Business",
+      "price": "$15/月",
+      "features": [
+        "无限对话",
+        "AI 回复",
+        "多渠道",
+        "自动化"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Chatfuel",
+    "连接 WhatsApp 或 Instagram",
+    "用拖拽编辑器搭建聊天流程",
+    "配置 AI 自动回复",
+    "上线运行"
+  ],
+  "relatedTools": [
+    "tidio",
+    "salesmartly",
+    "gorgias"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

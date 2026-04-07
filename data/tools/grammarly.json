@@ -3,29 +3,89 @@
   "name": "Grammarly",
   "logo": "/logos/grammarly.svg",
   "tagline": "全球最知名的英文写作辅助工具，AI 驱动的语法检查和文风优化",
-  "scenes": ["写文案"],
+  "scenes": [
+    "写文案"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费基础版 / $12起/月",
   "rating": 4.7,
   "affiliateUrl": "",
   "websiteUrl": "https://www.grammarly.com",
   "editorReview": "Grammarly 是英文写作领域的绝对王者，全球用户超过 3000 万。它不只是检查语法错误，更能优化你的写作风格、调整语气、提升可读性。\n\n对留学生来说，写论文、发邮件、做 presentation 都离不开它。浏览器插件装上之后，所有英文输入场景都会自动检查，像有一个私人英文编辑随时待命。\n\n免费版的基础语法检查已经很实用，Premium $12/月增加了文风优化、改写建议和抄袭检测，对学术写作需求大的留学生强烈推荐。",
-  "goodFor": ["留学生", "英文写作者", "自媒体创作者", "商务邮件写作"],
-  "notGoodFor": ["中文写作为主的用户", "不需要英文写作的用户", "预算紧张只需基础检查的用户"],
-  "pros": ["英文语法检查准确率极高", "文风和语气优化智能", "浏览器插件随时随地可用", "抄袭检测功能实用", "免费版就很好用"],
-  "cons": ["中文不支持", "Premium 价格不低", "偶尔过度修改简单句子"],
-  "pricingPlans": [
-    {"name": "Free", "price": "免费", "features": ["基础语法检查", "拼写纠正", "标点修正"]},
-    {"name": "Premium", "price": "$12/月", "features": ["高级语法检查", "文风优化", "语气调整", "抄袭检测", "改写建议"]},
-    {"name": "Business", "price": "$15/月/人", "features": ["所有 Premium 功能", "品牌风格指南", "团队分析", "优先支持"]}
+  "goodFor": [
+    "留学生",
+    "英文写作者",
+    "自媒体创作者",
+    "商务邮件写作"
   ],
-  "quickStart": ["注册 Grammarly 账号", "安装浏览器插件或桌面客户端", "开始写英文内容", "AI 自动标注语法和风格问题", "一键应用修改建议"],
-  "relatedTools": ["quillbot", "jasper", "xiezuocat"],
+  "notGoodFor": [
+    "中文写作为主的用户",
+    "不需要英文写作的用户",
+    "预算紧张只需基础检查的用户"
+  ],
+  "pros": [
+    "英文语法检查准确率极高",
+    "文风和语气优化智能",
+    "浏览器插件随时随地可用",
+    "抄袭检测功能实用",
+    "免费版就很好用"
+  ],
+  "cons": [
+    "中文不支持",
+    "Premium 价格不低",
+    "偶尔过度修改简单句子"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "基础语法检查",
+        "拼写纠正",
+        "标点修正"
+      ]
+    },
+    {
+      "name": "Premium",
+      "price": "$12/月",
+      "features": [
+        "高级语法检查",
+        "文风优化",
+        "语气调整",
+        "抄袭检测",
+        "改写建议"
+      ]
+    },
+    {
+      "name": "Business",
+      "price": "$15/月/人",
+      "features": [
+        "所有 Premium 功能",
+        "品牌风格指南",
+        "团队分析",
+        "优先支持"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Grammarly 账号",
+    "安装浏览器插件或桌面客户端",
+    "开始写英文内容",
+    "AI 自动标注语法和风格问题",
+    "一键应用修改建议"
+  ],
+  "relatedTools": [
+    "quillbot",
+    "jasper",
+    "xiezuocat"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

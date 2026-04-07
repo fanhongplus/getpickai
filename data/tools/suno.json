@@ -1,1 +1,77 @@
-{"slug":"suno","name":"Suno","logo":"/logos/suno.svg","tagline":"AI 音乐生成平台，输入文字描述即可创作完整歌曲","scenes":["做音乐"],"pricingType":"freemium","priceLabel":"免费试用 / $10起/月","rating":4.6,"affiliateUrl":"","websiteUrl":"https://suno.com","editorReview":"Suno 是目前 AI 音乐生成做得最好的平台。输入一段文字描述（比如「欢快的电子舞曲，节奏感强」），AI 就能生成一首包含人声和乐器的完整歌曲，效果好到让人惊叹。\n\n对自媒体创作者来说，再也不用为视频配乐头疼了。生成的音乐版权可商用（付费版），质量远超传统的免版权音乐库。\n\n免费版每天有生成次数限制，$10/月解锁更多次数和商用授权。性价比极高。","goodFor":["自媒体创作者","视频配乐","播客片头音乐","音乐爱好者"],"notGoodFor":["专业音乐制作人","需要精确控制的场景","对音质要求极高的录音项目"],"pros":["AI 音乐质量惊人","操作极简单","支持人声生成","付费版可商用"],"cons":["精确控制有限","免费版次数限制","偶尔生成效果不稳定"],"pricingPlans":[{"name":"Free","price":"免费","features":["有限生成次数/天","非商用"]},{"name":"Pro","price":"$10/月","features":["更多生成次数","商用授权","优先生成"]}],"quickStart":["打开 suno.com 注册","输入音乐风格描述","可选：输入歌词","AI 生成完整歌曲","试听并下载满意的版本"],"relatedTools":["udio","elevenlabs","fish-audio"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "suno",
+  "name": "Suno",
+  "logo": "/logos/suno.svg",
+  "tagline": "AI 音乐生成平台，输入文字描述即可创作完整歌曲",
+  "scenes": [
+    "做音乐"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $10起/月",
+  "rating": 4.6,
+  "affiliateUrl": "",
+  "websiteUrl": "https://suno.com",
+  "editorReview": "Suno 是目前 AI 音乐生成做得最好的平台。输入一段文字描述（比如「欢快的电子舞曲，节奏感强」），AI 就能生成一首包含人声和乐器的完整歌曲，效果好到让人惊叹。\n\n对自媒体创作者来说，再也不用为视频配乐头疼了。生成的音乐版权可商用（付费版），质量远超传统的免版权音乐库。\n\n免费版每天有生成次数限制，$10/月解锁更多次数和商用授权。性价比极高。",
+  "goodFor": [
+    "自媒体创作者",
+    "视频配乐",
+    "播客片头音乐",
+    "音乐爱好者"
+  ],
+  "notGoodFor": [
+    "专业音乐制作人",
+    "需要精确控制的场景",
+    "对音质要求极高的录音项目"
+  ],
+  "pros": [
+    "AI 音乐质量惊人",
+    "操作极简单",
+    "支持人声生成",
+    "付费版可商用"
+  ],
+  "cons": [
+    "精确控制有限",
+    "免费版次数限制",
+    "偶尔生成效果不稳定"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "有限生成次数/天",
+        "非商用"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$10/月",
+      "features": [
+        "更多生成次数",
+        "商用授权",
+        "优先生成"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 suno.com 注册",
+    "输入音乐风格描述",
+    "可选：输入歌词",
+    "AI 生成完整歌曲",
+    "试听并下载满意的版本"
+  ],
+  "relatedTools": [
+    "udio",
+    "elevenlabs",
+    "fish-audio"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

@@ -1,1 +1,78 @@
-{"slug":"perplexity","name":"Perplexity AI","logo":"/logos/perplexity.svg","tagline":"AI 搜索引擎，实时联网搜索并给出带引用的结构化答案","scenes":["提效率"],"pricingType":"freemium","priceLabel":"免费基础版 / $20/月","rating":4.7,"affiliateUrl":"","websiteUrl":"https://www.perplexity.ai","editorReview":"Perplexity 是目前最好的 AI 搜索引擎，在英文世界的口碑极好。它的回答总是附带信息来源链接，让你可以验证信息的准确性。\n\n实时联网能力意味着它知道最新发生的事情，这是 ChatGPT 等对话工具做不到的。结构化的回答格式让信息一目了然。\n\n免费版就非常好用，$20/月的 Pro 版解锁更强的模型和无限搜索。推荐给所有需要深度搜索的用户。","goodFor":["深度研究","学术调研","时事信息","事实核查"],"notGoodFor":["中文搜索为主的用户","不需要搜索的用户","创意写作"],"pros":["搜索质量极高","带引用来源","实时联网","免费版好用","结构化回答"],"cons":["中文搜索不如秘塔","$20/月偏贵","国内访问可能不稳定"],"pricingPlans":[{"name":"Free","price":"免费","features":["基础搜索","带引用回答","有限次数"]},{"name":"Pro","price":"$20/月","features":["无限搜索","更强模型","文件上传","API 接入"]}],"quickStart":["打开 perplexity.ai","输入搜索问题","查看结构化回答和引用","点击来源链接深入了解"],"relatedTools":["metaso","kimi"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "perplexity",
+  "name": "Perplexity AI",
+  "logo": "/logos/perplexity.svg",
+  "tagline": "AI 搜索引擎，实时联网搜索并给出带引用的结构化答案",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $20/月",
+  "rating": 4.7,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.perplexity.ai",
+  "editorReview": "Perplexity 是目前最好的 AI 搜索引擎，在英文世界的口碑极好。它的回答总是附带信息来源链接，让你可以验证信息的准确性。\n\n实时联网能力意味着它知道最新发生的事情，这是 ChatGPT 等对话工具做不到的。结构化的回答格式让信息一目了然。\n\n免费版就非常好用，$20/月的 Pro 版解锁更强的模型和无限搜索。推荐给所有需要深度搜索的用户。",
+  "goodFor": [
+    "深度研究",
+    "学术调研",
+    "时事信息",
+    "事实核查"
+  ],
+  "notGoodFor": [
+    "中文搜索为主的用户",
+    "不需要搜索的用户",
+    "创意写作"
+  ],
+  "pros": [
+    "搜索质量极高",
+    "带引用来源",
+    "实时联网",
+    "免费版好用",
+    "结构化回答"
+  ],
+  "cons": [
+    "中文搜索不如秘塔",
+    "$20/月偏贵",
+    "国内访问可能不稳定"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "基础搜索",
+        "带引用回答",
+        "有限次数"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$20/月",
+      "features": [
+        "无限搜索",
+        "更强模型",
+        "文件上传",
+        "API 接入"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 perplexity.ai",
+    "输入搜索问题",
+    "查看结构化回答和引用",
+    "点击来源链接深入了解"
+  ],
+  "relatedTools": [
+    "metaso",
+    "kimi"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

@@ -25,6 +25,8 @@ export interface Tool {
   cookieDuration: string;
   createdAt: string;
   verifiedAt?: string;
+  lastVerified?: string;
+  healthStatus?: "active" | "watch" | "deprecated";
   prompts?: ToolPrompt[];
 }
 

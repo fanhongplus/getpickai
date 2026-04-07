@@ -1,1 +1,74 @@
-{"slug":"amzscout","name":"AMZScout","logo":"/logos/amzscout.svg","tagline":"亚马逊选品和市场分析工具，Chrome 插件一键查看产品数据","scenes":["提效率"],"pricingType":"freemium","priceLabel":"免费试用 / $29起/月","rating":4.4,"affiliateUrl":"","websiteUrl":"https://amzscout.net","editorReview":"AMZScout 是亚马逊选品工具中性价比不错的选择，Chrome 插件在亚马逊搜索页直接显示每个产品的预估销量、利润和竞争度。\n\n界面比 Helium 10 简洁，上手更快。Product Database 功能可以按条件筛选潜力产品，对新手卖家很友好。\n\n$29/月的价格在同类工具中属于中等偏下，适合预算有限的卖家。","goodFor":["亚马逊新手卖家","选品调研","预算有限的卖家"],"notGoodFor":["需要全套运营工具的大卖","非亚马逊卖家"],"pros":["界面简洁易上手","Chrome 插件好用","价格合理","选品数据库实用"],"cons":["功能不如 Helium 10 全","高级功能有限","英文界面"],"pricingPlans":[{"name":"免费试用","price":"免费","features":["有限次数体验"]},{"name":"Basic","price":"$29/月","features":["Chrome 插件","产品数据库","关键词工具"]}],"quickStart":["注册 AMZScout","安装 Chrome 插件","在亚马逊搜索页查看数据","使用产品数据库筛选","分析竞品数据"],"relatedTools":["jungle-scout","sellersprite","helium-10"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "amzscout",
+  "name": "AMZScout",
+  "logo": "/logos/amzscout.svg",
+  "tagline": "亚马逊选品和市场分析工具，Chrome 插件一键查看产品数据",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $29起/月",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://amzscout.net",
+  "editorReview": "AMZScout 是亚马逊选品工具中性价比不错的选择，Chrome 插件在亚马逊搜索页直接显示每个产品的预估销量、利润和竞争度。\n\n界面比 Helium 10 简洁，上手更快。Product Database 功能可以按条件筛选潜力产品，对新手卖家很友好。\n\n$29/月的价格在同类工具中属于中等偏下，适合预算有限的卖家。",
+  "goodFor": [
+    "亚马逊新手卖家",
+    "选品调研",
+    "预算有限的卖家"
+  ],
+  "notGoodFor": [
+    "需要全套运营工具的大卖",
+    "非亚马逊卖家"
+  ],
+  "pros": [
+    "界面简洁易上手",
+    "Chrome 插件好用",
+    "价格合理",
+    "选品数据库实用"
+  ],
+  "cons": [
+    "功能不如 Helium 10 全",
+    "高级功能有限",
+    "英文界面"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费试用",
+      "price": "免费",
+      "features": [
+        "有限次数体验"
+      ]
+    },
+    {
+      "name": "Basic",
+      "price": "$29/月",
+      "features": [
+        "Chrome 插件",
+        "产品数据库",
+        "关键词工具"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 AMZScout",
+    "安装 Chrome 插件",
+    "在亚马逊搜索页查看数据",
+    "使用产品数据库筛选",
+    "分析竞品数据"
+  ],
+  "relatedTools": [
+    "jungle-scout",
+    "sellersprite",
+    "helium-10"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

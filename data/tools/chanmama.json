@@ -1,1 +1,77 @@
-{"slug":"chanmama","name":"蝉妈妈","logo":"/logos/chanmama.svg","tagline":"抖音/TikTok 数据分析平台，AI 选品和达人匹配","scenes":["提效率"],"pricingType":"freemium","priceLabel":"免费基础版 / 付费版","rating":4.4,"affiliateUrl":"","websiteUrl":"https://www.chanmama.com","editorReview":"蝉妈妈是抖音电商数据分析的头部工具，如果你做抖音带货或 TikTok Shop，这是必备工具。可以看到每个商品的销量、每个达人的带货数据、热门视频的数据趋势。\n\nAI 选品功能可以自动推荐潜力商品，达人匹配功能帮你找到最适合推广你产品的达人。对做直播电商的卖家特别有价值。\n\n免费版基础数据够看，深度分析和导出需要付费。做抖音/TikTok 电商的不可或缺。","goodFor":["抖音电商卖家","TikTok Shop 卖家","直播带货","达人合作"],"notGoodFor":["不做抖音的用户","纯亚马逊卖家","不做直播的用户"],"pros":["抖音数据最全面","AI 选品实用","达人匹配精准","热门趋势追踪"],"cons":["深度功能需付费","主要服务抖音生态","价格不透明"],"pricingPlans":[{"name":"免费版","price":"免费","features":["基础数据","热门商品浏览"]},{"name":"付费版","price":"按需定价","features":["深度数据分析","AI 选品","达人匹配","数据导出"]}],"quickStart":["注册蝉妈妈账号","搜索你关注的品类","查看热销商品和达人数据","用 AI 选品功能发现机会","联系达人合作推广"],"relatedTools":["newrank","sellersprite"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "chanmama",
+  "name": "蝉妈妈",
+  "logo": "/logos/chanmama.svg",
+  "tagline": "抖音/TikTok 数据分析平台，AI 选品和达人匹配",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / 付费版",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.chanmama.com",
+  "editorReview": "蝉妈妈是抖音电商数据分析的头部工具，如果你做抖音带货或 TikTok Shop，这是必备工具。可以看到每个商品的销量、每个达人的带货数据、热门视频的数据趋势。\n\nAI 选品功能可以自动推荐潜力商品，达人匹配功能帮你找到最适合推广你产品的达人。对做直播电商的卖家特别有价值。\n\n免费版基础数据够看，深度分析和导出需要付费。做抖音/TikTok 电商的不可或缺。",
+  "goodFor": [
+    "抖音电商卖家",
+    "TikTok Shop 卖家",
+    "直播带货",
+    "达人合作"
+  ],
+  "notGoodFor": [
+    "不做抖音的用户",
+    "纯亚马逊卖家",
+    "不做直播的用户"
+  ],
+  "pros": [
+    "抖音数据最全面",
+    "AI 选品实用",
+    "达人匹配精准",
+    "热门趋势追踪"
+  ],
+  "cons": [
+    "深度功能需付费",
+    "主要服务抖音生态",
+    "价格不透明"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "基础数据",
+        "热门商品浏览"
+      ]
+    },
+    {
+      "name": "付费版",
+      "price": "按需定价",
+      "features": [
+        "深度数据分析",
+        "AI 选品",
+        "达人匹配",
+        "数据导出"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册蝉妈妈账号",
+    "搜索你关注的品类",
+    "查看热销商品和达人数据",
+    "用 AI 选品功能发现机会",
+    "联系达人合作推广"
+  ],
+  "relatedTools": [
+    "newrank",
+    "sellersprite"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

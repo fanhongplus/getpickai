@@ -3,28 +3,77 @@
   "name": "Shulex VOC",
   "logo": "/logos/shulex-voc.svg",
   "tagline": "AI 驱动的电商用户评论分析工具，自动挖掘消费者痛点和竞品弱点",
-  "scenes": ["提效率"],
+  "scenes": [
+    "提效率"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费基础版 / $39起/月",
   "rating": 4.4,
   "affiliateUrl": "",
   "websiteUrl": "https://voc.ai",
   "editorReview": "Shulex VOC 用 AI 分析电商平台上的用户评论，自动提取消费者痛点、竞品弱点和产品改进方向。手动看几百条 Review 要一整天，它几分钟就能给你结构化的分析报告。\n\n对选品和产品优化特别有价值——知道消费者在骂什么，你就知道该怎么做差异化。支持亚马逊、沃尔玛等主流平台。\n\n免费版基础分析够用，$39/月解锁深度分析和批量处理。是跨境卖家做竞品调研的利器。",
-  "goodFor": ["跨境电商卖家", "产品经理", "竞品调研", "选品分析"],
-  "notGoodFor": ["不做电商的用户", "产品线极少的卖家", "不关注用户反馈的卖家"],
-  "pros": ["AI 评论分析精准", "自动提取痛点", "支持多平台", "节省大量调研时间", "免费版够体验"],
-  "cons": ["深度分析需付费", "部分分析需人工验证", "小语种支持有限"],
-  "pricingPlans": [
-    {"name": "Free", "price": "免费", "features": ["基础评论分析", "有限次数"]},
-    {"name": "Pro", "price": "$39/月", "features": ["深度分析", "批量处理", "竞品对比", "导出报告"]}
+  "goodFor": [
+    "跨境电商卖家",
+    "产品经理",
+    "竞品调研",
+    "选品分析"
   ],
-  "quickStart": ["注册 Shulex VOC 账号", "输入产品 ASIN 或链接", "AI 自动抓取和分析评论", "查看消费者痛点报告", "根据分析优化产品或选品方向"],
-  "relatedTools": ["jungle-scout", "sellersprite", "helium-10"],
+  "notGoodFor": [
+    "不做电商的用户",
+    "产品线极少的卖家",
+    "不关注用户反馈的卖家"
+  ],
+  "pros": [
+    "AI 评论分析精准",
+    "自动提取痛点",
+    "支持多平台",
+    "节省大量调研时间",
+    "免费版够体验"
+  ],
+  "cons": [
+    "深度分析需付费",
+    "部分分析需人工验证",
+    "小语种支持有限"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "基础评论分析",
+        "有限次数"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$39/月",
+      "features": [
+        "深度分析",
+        "批量处理",
+        "竞品对比",
+        "导出报告"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Shulex VOC 账号",
+    "输入产品 ASIN 或链接",
+    "AI 自动抓取和分析评论",
+    "查看消费者痛点报告",
+    "根据分析优化产品或选品方向"
+  ],
+  "relatedTools": [
+    "jungle-scout",
+    "sellersprite",
+    "helium-10"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

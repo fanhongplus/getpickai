@@ -3,28 +3,80 @@
   "name": "CapCut",
   "logo": "/logos/capcut.svg",
   "tagline": "字节跳动出品的 AI 视频剪辑工具，功能强大且免费，AI 字幕和智能剪辑一键搞定",
-  "scenes": ["做视频"],
+  "scenes": [
+    "做视频"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费 / Pro $8起/月",
   "rating": 4.7,
   "affiliateUrl": "",
   "websiteUrl": "https://www.capcut.com",
   "editorReview": "CapCut（剪映国际版）是目前免费视频剪辑工具里功能最强的，没有之一。AI 自动字幕、智能剪辑、一键去背景、文字转语音，这些在其他工具里要付费的功能它全免费。\n\n对自媒体创作者来说，CapCut 几乎可以覆盖 80% 的剪辑需求。模板库丰富，特效和转场质量高，手机端和电脑端体验都很流畅。\n\n Pro 版 $8/月增加了更多 AI 功能和高清导出，但免费版已经足够大部分创作者使用。如果你还在用付费剪辑软件，真的可以试试 CapCut。",
-  "goodFor": ["自媒体创作者", "短视频博主", "TikTok/YouTube 创作者", "视频剪辑新手"],
-  "notGoodFor": ["专业影视后期", "需要高级调色的用户", "企业级视频制作"],
-  "pros": ["免费版功能极其强大", "AI 字幕准确率高", "模板和特效库丰富", "手机电脑双端流畅", "上手极简单"],
-  "cons": ["Pro 版部分地区价格不同", "导出可能有水印（免费版）", "高级功能不如 Premiere"],
-  "pricingPlans": [
-    {"name": "Free", "price": "免费", "features": ["基础剪辑功能", "AI 字幕", "丰富模板", "720p 导出"]},
-    {"name": "Pro", "price": "$8/月", "features": ["所有免费功能", "4K 导出", "更多 AI 功能", "无水印", "云存储"]}
+  "goodFor": [
+    "自媒体创作者",
+    "短视频博主",
+    "TikTok/YouTube 创作者",
+    "视频剪辑新手"
   ],
-  "quickStart": ["下载 CapCut 或打开网页版", "导入你的视频素材", "使用 AI 自动生成字幕", "选择模板添加特效和转场", "导出并发布到社交媒体"],
-  "relatedTools": ["heygen", "runway", "canva"],
+  "notGoodFor": [
+    "专业影视后期",
+    "需要高级调色的用户",
+    "企业级视频制作"
+  ],
+  "pros": [
+    "免费版功能极其强大",
+    "AI 字幕准确率高",
+    "模板和特效库丰富",
+    "手机电脑双端流畅",
+    "上手极简单"
+  ],
+  "cons": [
+    "Pro 版部分地区价格不同",
+    "导出可能有水印（免费版）",
+    "高级功能不如 Premiere"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "基础剪辑功能",
+        "AI 字幕",
+        "丰富模板",
+        "720p 导出"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$8/月",
+      "features": [
+        "所有免费功能",
+        "4K 导出",
+        "更多 AI 功能",
+        "无水印",
+        "云存储"
+      ]
+    }
+  ],
+  "quickStart": [
+    "下载 CapCut 或打开网页版",
+    "导入你的视频素材",
+    "使用 AI 自动生成字幕",
+    "选择模板添加特效和转场",
+    "导出并发布到社交媒体"
+  ],
+  "relatedTools": [
+    "heygen",
+    "runway",
+    "canva"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

@@ -1,1 +1,79 @@
-{"slug":"stable-diffusion","name":"Stable Diffusion","logo":"/logos/stable-diffusion.svg","tagline":"开源 AI 图片生成模型，本地部署免费使用，自由度和可控性最高","scenes":["画图片"],"pricingType":"free","priceLabel":"开源免费 / 云端版按量计费","rating":4.6,"affiliateUrl":"","websiteUrl":"https://stability.ai","editorReview":"Stable Diffusion 是开源 AI 绘图的代表，最大优势是完全开源免费，可以本地部署无限生成。自由度和可控性是所有 AI 绘图工具中最高的。\n\n社区生态极其丰富，各种模型、LoRA、ControlNet 让你可以精确控制生成效果。适合有一定技术基础、追求极致自定义的用户。\n\n本地部署需要一张显存 8G 以上的显卡。如果没有合适的显卡，也可以用在线云端版本。","goodFor":["技术向用户","追求自由度的创作者","本地部署需求","社区模型爱好者"],"notGoodFor":["零基础用户","没有显卡的用户","追求简单易用的用户"],"pros":["开源免费","自由度最高","社区生态丰富","本地无限生成","精确控制"],"cons":["上手门槛高","需要显卡","配置复杂"],"pricingPlans":[{"name":"开源版","price":"免费","features":["本地部署","无限生成","完全自定义"]},{"name":"云端版","price":"按量计费","features":["无需显卡","在线使用","API 接入"]}],"quickStart":["安装 Python 环境和显卡驱动","下载 Stable Diffusion WebUI","配置模型文件","启动 WebUI 界面","输入提示词生成图片"],"relatedTools":["midjourney","dall-e","ideogram"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "stable-diffusion",
+  "name": "Stable Diffusion",
+  "logo": "/logos/stable-diffusion.svg",
+  "tagline": "开源 AI 图片生成模型，本地部署免费使用，自由度和可控性最高",
+  "scenes": [
+    "画图片"
+  ],
+  "pricingType": "free",
+  "priceLabel": "开源免费 / 云端版按量计费",
+  "rating": 4.6,
+  "affiliateUrl": "",
+  "websiteUrl": "https://stability.ai",
+  "editorReview": "Stable Diffusion 是开源 AI 绘图的代表，最大优势是完全开源免费，可以本地部署无限生成。自由度和可控性是所有 AI 绘图工具中最高的。\n\n社区生态极其丰富，各种模型、LoRA、ControlNet 让你可以精确控制生成效果。适合有一定技术基础、追求极致自定义的用户。\n\n本地部署需要一张显存 8G 以上的显卡。如果没有合适的显卡，也可以用在线云端版本。",
+  "goodFor": [
+    "技术向用户",
+    "追求自由度的创作者",
+    "本地部署需求",
+    "社区模型爱好者"
+  ],
+  "notGoodFor": [
+    "零基础用户",
+    "没有显卡的用户",
+    "追求简单易用的用户"
+  ],
+  "pros": [
+    "开源免费",
+    "自由度最高",
+    "社区生态丰富",
+    "本地无限生成",
+    "精确控制"
+  ],
+  "cons": [
+    "上手门槛高",
+    "需要显卡",
+    "配置复杂"
+  ],
+  "pricingPlans": [
+    {
+      "name": "开源版",
+      "price": "免费",
+      "features": [
+        "本地部署",
+        "无限生成",
+        "完全自定义"
+      ]
+    },
+    {
+      "name": "云端版",
+      "price": "按量计费",
+      "features": [
+        "无需显卡",
+        "在线使用",
+        "API 接入"
+      ]
+    }
+  ],
+  "quickStart": [
+    "安装 Python 环境和显卡驱动",
+    "下载 Stable Diffusion WebUI",
+    "配置模型文件",
+    "启动 WebUI 界面",
+    "输入提示词生成图片"
+  ],
+  "relatedTools": [
+    "midjourney",
+    "dall-e",
+    "ideogram"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

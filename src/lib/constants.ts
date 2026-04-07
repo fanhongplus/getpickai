@@ -33,3 +33,30 @@ export const priceColorMap: Record<string, { bg: string; text: string; label: st
   freemium: { bg: "bg-price-trial/10", text: "text-price-trial", label: "免费试用" },
   paid: { bg: "bg-price-paid/10", text: "text-price-paid", label: "付费" },
 };
+
+// 品类对比页：中文 scene → URL slug 映射
+export interface CompareSceneInfo {
+  slug: string;
+  label: string;
+  title: string;
+  icon: string;
+}
+
+export const SCENE_MAP: Record<string, CompareSceneInfo> = {
+  "写文案": { slug: "ai-writing", label: "AI 写作", title: "2026 AI 写作工具横评", icon: "✍️" },
+  "画图片": { slug: "ai-image", label: "AI 绘图", title: "2026 AI 绘图工具横评", icon: "🎨" },
+  "做视频": { slug: "ai-video", label: "AI 视频", title: "2026 AI 视频工具横评", icon: "🎬" },
+  "提效率": { slug: "ai-efficiency", label: "AI 效率", title: "2026 AI 效率工具横评", icon: "⚡" },
+  "写代码": { slug: "ai-coding", label: "AI 编程", title: "2026 AI 编程工具横评", icon: "💻" },
+  "做营销": { slug: "ai-marketing", label: "AI 营销", title: "2026 AI 营销工具横评", icon: "📢" },
+  "做设计": { slug: "ai-design", label: "AI 设计", title: "2026 AI 设计工具横评", icon: "🎭" },
+  "做音乐": { slug: "ai-music", label: "AI 音乐", title: "2026 AI 音乐工具横评", icon: "🎵" },
+  "做PPT": { slug: "ai-ppt", label: "AI PPT", title: "2026 AI PPT 工具横评", icon: "📊" },
+  "学语言": { slug: "ai-language", label: "AI 语言学习", title: "2026 AI 语言学习横评", icon: "🌍" },
+  "写博客": { slug: "ai-blog", label: "AI 博客写作", title: "2026 AI 博客工具横评", icon: "📝" },
+};
+
+// 反向映射：slug → scene 中文名
+export const SCENE_SLUG_TO_CN: Record<string, string> = Object.fromEntries(
+  Object.entries(SCENE_MAP).map(([cn, info]) => [info.slug, cn])
+);

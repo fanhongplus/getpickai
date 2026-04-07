@@ -1,1 +1,59 @@
-{"slug":"vidu","name":"Vidu","logo":"/logos/vidu.svg","tagline":"生数科技出品的 AI 视频生成工具，国产视频生成质量领先，支持多种风格","scenes":["做视频"],"pricingType":"freemium","priceLabel":"免费试用 / 会员制","rating":4.4,"affiliateUrl":"","websiteUrl":"https://www.vidu.studio","editorReview":"Vidu 是一款实用的 AI 工具。生数科技出品的 AI 视频生成工具，国产视频生成质量领先，支持多种风格。\n\n在特定场景下表现出色，值得体验。","goodFor":["所有用户","目标人群"],"notGoodFor":["不需要该功能的用户"],"pros":["视频质量领先","多种风格","国产领先","免费试用"],"cons":["会员价格不透明","等待时间"],"pricingPlans":[{"name":"基础版","price":"免费试用 / 会员制","features":["核心功能"]}],"quickStart":["访问官网注册","选择功能","开始使用"],"relatedTools":["kling-ai","hailuo-ai"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "vidu",
+  "name": "Vidu",
+  "logo": "/logos/vidu.svg",
+  "tagline": "生数科技出品的 AI 视频生成工具，国产视频生成质量领先，支持多种风格",
+  "scenes": [
+    "做视频"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / 会员制",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.vidu.studio",
+  "editorReview": "Vidu 是一款实用的 AI 工具。生数科技出品的 AI 视频生成工具，国产视频生成质量领先，支持多种风格。\n\n在特定场景下表现出色，值得体验。",
+  "goodFor": [
+    "所有用户",
+    "目标人群"
+  ],
+  "notGoodFor": [
+    "不需要该功能的用户"
+  ],
+  "pros": [
+    "视频质量领先",
+    "多种风格",
+    "国产领先",
+    "免费试用"
+  ],
+  "cons": [
+    "会员价格不透明",
+    "等待时间"
+  ],
+  "pricingPlans": [
+    {
+      "name": "基础版",
+      "price": "免费试用 / 会员制",
+      "features": [
+        "核心功能"
+      ]
+    }
+  ],
+  "quickStart": [
+    "访问官网注册",
+    "选择功能",
+    "开始使用"
+  ],
+  "relatedTools": [
+    "kling-ai",
+    "hailuo-ai"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

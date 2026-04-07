@@ -1,1 +1,68 @@
-{"slug":"printful","name":"Printful","logo":"/logos/printful.svg","tagline":"按需印刷和代发货平台，零库存做跨境电商，AI 辅助设计产品","scenes":["提效率"],"pricingType":"freemium","priceLabel":"免费注册 / 按单收费","rating":4.4,"affiliateUrl":"","websiteUrl":"https://www.printful.com","editorReview":"Printful 是 POD（按需印刷）领域的头部平台。你只需要上传设计图，客户下单后 Printful 负责印刷、包装和发货。零库存零风险做跨境电商。\n\nAI 设计工具可以帮你快速生成产品图案，和 Shopify/Etsy 等平台无缝对接。适合想轻资产创业的人。","goodFor":["轻资产创业者","设计师","Shopify 卖家","Etsy 卖家"],"notGoodFor":["需要大批量生产的卖家","追求极低成本的卖家"],"pros":["零库存零风险","AI 设计辅助","多平台对接","全球发货"],"cons":["单件成本较高","利润空间有限","交付周期较长"],"pricingPlans":[{"name":"免费注册","price":"免费","features":["按单收费","AI 设计","多平台对接"]}],"quickStart":["注册 Printful","连接 Shopify 或 Etsy 店铺","上传或用 AI 设计产品图案","设置零售价","客户下单后自动生产发货"],"relatedTools":["spocket","shopify-magic","canva"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "printful",
+  "name": "Printful",
+  "logo": "/logos/printful.svg",
+  "tagline": "按需印刷和代发货平台，零库存做跨境电商，AI 辅助设计产品",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费注册 / 按单收费",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.printful.com",
+  "editorReview": "Printful 是 POD（按需印刷）领域的头部平台。你只需要上传设计图，客户下单后 Printful 负责印刷、包装和发货。零库存零风险做跨境电商。\n\nAI 设计工具可以帮你快速生成产品图案，和 Shopify/Etsy 等平台无缝对接。适合想轻资产创业的人。",
+  "goodFor": [
+    "轻资产创业者",
+    "设计师",
+    "Shopify 卖家",
+    "Etsy 卖家"
+  ],
+  "notGoodFor": [
+    "需要大批量生产的卖家",
+    "追求极低成本的卖家"
+  ],
+  "pros": [
+    "零库存零风险",
+    "AI 设计辅助",
+    "多平台对接",
+    "全球发货"
+  ],
+  "cons": [
+    "单件成本较高",
+    "利润空间有限",
+    "交付周期较长"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费注册",
+      "price": "免费",
+      "features": [
+        "按单收费",
+        "AI 设计",
+        "多平台对接"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Printful",
+    "连接 Shopify 或 Etsy 店铺",
+    "上传或用 AI 设计产品图案",
+    "设置零售价",
+    "客户下单后自动生产发货"
+  ],
+  "relatedTools": [
+    "spocket",
+    "shopify-magic",
+    "canva"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

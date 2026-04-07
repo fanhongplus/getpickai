@@ -7,6 +7,8 @@ import { sceneColorMap, priceColorMap } from "@/lib/constants";
 import { ToolCard } from "@/components/ToolCard";
 import { PromptCopyBlock } from "@/components/PromptCopyBlock";
 import BackButton from "@/components/BackButton";
+import ToolWorkflows from "@/components/ToolWorkflows";
+import { SCENE_MAP } from "@/lib/constants";
 
 interface Props {
   params: { slug: string };
@@ -44,6 +46,37 @@ export default function ToolDetailPage({ params }: Props) {
 
         {/* 返回按钮 */}
         <BackButton />
+
+        {/* Deprecated 横幅 */}
+        {tool.healthStatus === "deprecated" && (() => {
+          const primaryScene = tool.scenes?.find((s) => SCENE_MAP[s]);
+          const compareSlug = primaryScene ? SCENE_MAP[primaryScene].slug : null;
+          return (
+            <div className="mb-6 p-4 rounded-card border border-tag-video/40 bg-tag-video/5">
+              <div className="flex items-start gap-3">
+                <div className="text-xl flex-shrink-0">⚠️</div>
+                <div className="flex-1 text-sm">
+                  <p className="font-semibold text-text mb-1">该工具已停止推荐</p>
+                  <p className="text-text-secondary">
+                    此工具目前不再进入 GoPick 的实战工作流推荐。
+                    {compareSlug && (
+                      <>
+                        {" "}
+                        查看同类替代 →{" "}
+                        <Link
+                          href={`/compare/${compareSlug}`}
+                          className="text-accent hover:underline font-medium"
+                        >
+                          {SCENE_MAP[primaryScene!].label}工具横评
+                        </Link>
+                      </>
+                    )}
+                  </p>
+                </div>
+              </div>
+            </div>
+          );
+        })()}
 
         {/* 顶部信息栏 */}
         <div className="flex flex-col md:flex-row md:items-center gap-4 mb-10 pb-8 border-b border-border">
@@ -209,15 +242,20 @@ export default function ToolDetailPage({ params }: Props) {
           </section>
         )}
 
+        {/* ToolWorkflows - 工作流关联 */}
+        <ToolWorkflows toolSlug={tool.slug} toolScenes={tool.scenes || []} />
+
         {/* 底部 CTA */}
-        <div className="text-center py-8 border-t border-border">
-          <Link
-            href={`/go/${tool.slug}`}
-            className="inline-flex items-center gap-2 h-12 px-8 bg-accent text-white font-medium rounded-btn hover:bg-accent-hover transition-colors"
-          >
-            立即试用 {tool.name} &rarr;
-          </Link>
-        </div>
+        {tool.healthStatus !== "deprecated" && (
+          <div className="text-center py-8 border-t border-border mt-8">
+            <Link
+              href={`/go/${tool.slug}`}
+              className="inline-flex items-center gap-2 h-12 px-8 bg-accent text-white font-medium rounded-btn hover:bg-accent-hover transition-colors"
+            >
+              立即试用 {tool.name} &rarr;
+            </Link>
+          </div>
+        )}
       </div>
     </div>
   );

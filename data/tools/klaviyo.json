@@ -1,1 +1,75 @@
-{"slug":"klaviyo","name":"Klaviyo","logo":"/logos/klaviyo.svg","tagline":"电商邮件和短信营销平台，AI 个性化推荐和自动化营销流程","scenes":["提效率"],"pricingType":"freemium","priceLabel":"免费基础版 / $20起/月","rating":4.5,"affiliateUrl":"","websiteUrl":"https://www.klaviyo.com","editorReview":"Klaviyo 是 Shopify 生态中最强的邮件+短信营销工具。比 Mailchimp 更懂电商——AI 可以根据用户购买行为自动触发个性化邮件和短信。\n\n弃购挽回、复购提醒、新品推荐，这些自动化流程配置好后就自动运行。对提升独立站复购率效果显著。","goodFor":["Shopify 卖家","独立站运营","电商邮件营销"],"notGoodFor":["不做独立站的卖家","邮件量很小的用户"],"pros":["电商数据整合深","AI 个性化推荐","自动化流程强","Shopify 原生集成"],"cons":["比 Mailchimp 贵","学习曲线较陡"],"pricingPlans":[{"name":"Free","price":"免费","features":["250 订阅者","500 封/月"]},{"name":"Email","price":"$20/月","features":["更多订阅者","AI 推荐","自动化流程","A/B 测试"]}],"quickStart":["注册 Klaviyo","连接 Shopify 店铺","导入客户数据","配置自动化邮件流程","AI 自动运行营销"],"relatedTools":["mailchimp","getresponse","shopify-magic"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "klaviyo",
+  "name": "Klaviyo",
+  "logo": "/logos/klaviyo.svg",
+  "tagline": "电商邮件和短信营销平台，AI 个性化推荐和自动化营销流程",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $20起/月",
+  "rating": 4.5,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.klaviyo.com",
+  "editorReview": "Klaviyo 是 Shopify 生态中最强的邮件+短信营销工具。比 Mailchimp 更懂电商——AI 可以根据用户购买行为自动触发个性化邮件和短信。\n\n弃购挽回、复购提醒、新品推荐，这些自动化流程配置好后就自动运行。对提升独立站复购率效果显著。",
+  "goodFor": [
+    "Shopify 卖家",
+    "独立站运营",
+    "电商邮件营销"
+  ],
+  "notGoodFor": [
+    "不做独立站的卖家",
+    "邮件量很小的用户"
+  ],
+  "pros": [
+    "电商数据整合深",
+    "AI 个性化推荐",
+    "自动化流程强",
+    "Shopify 原生集成"
+  ],
+  "cons": [
+    "比 Mailchimp 贵",
+    "学习曲线较陡"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "250 订阅者",
+        "500 封/月"
+      ]
+    },
+    {
+      "name": "Email",
+      "price": "$20/月",
+      "features": [
+        "更多订阅者",
+        "AI 推荐",
+        "自动化流程",
+        "A/B 测试"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Klaviyo",
+    "连接 Shopify 店铺",
+    "导入客户数据",
+    "配置自动化邮件流程",
+    "AI 自动运行营销"
+  ],
+  "relatedTools": [
+    "mailchimp",
+    "getresponse",
+    "shopify-magic"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

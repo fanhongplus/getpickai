@@ -3,27 +3,67 @@
   "name": "通义翻译",
   "logo": "/logos/tongyi-translate.svg",
   "tagline": "阿里出品的 AI 翻译工具，电商场景优化，支持文档和图片翻译",
-  "scenes": ["写文案"],
+  "scenes": [
+    "写文案"
+  ],
   "pricingType": "free",
   "priceLabel": "免费",
   "rating": 4.2,
   "affiliateUrl": "",
   "websiteUrl": "https://translate.alibaba.com",
   "editorReview": "通义翻译是阿里出品的 AI 翻译工具，最大的特点是对电商场景做了专门优化。翻译商品标题和描述时，用词更贴合电商平台的习惯。\n\n支持文档翻译和图片翻译，把产品说明书拍张照就能翻译，对跨境卖家来说很方便。和 DeepL 比翻译质量略逊一筹，但完全免费这一点很有竞争力。\n\n如果你是阿里系平台（速卖通、国际站）的卖家，通义翻译是最自然的选择。",
-  "goodFor": ["跨境电商卖家", "阿里系平台卖家", "预算有限的用户"],
-  "notGoodFor": ["对翻译质量要求极高的场景", "非电商翻译需求", "需要本地化服务的品牌"],
-  "pros": ["完全免费", "电商场景优化", "支持图片翻译", "阿里系平台适配好", "中文界面"],
-  "cons": ["翻译质量不如 DeepL", "小语种覆盖有限", "品牌知名度不高"],
-  "pricingPlans": [
-    {"name": "免费版", "price": "免费", "features": ["全部翻译功能", "文档翻译", "图片翻译", "电商场景优化"]}
+  "goodFor": [
+    "跨境电商卖家",
+    "阿里系平台卖家",
+    "预算有限的用户"
   ],
-  "quickStart": ["打开 translate.alibaba.com", "粘贴需要翻译的文本", "选择目标语言", "查看翻译结果", "复制使用"],
-  "relatedTools": ["deepl", "dianxiaomi-ai"],
+  "notGoodFor": [
+    "对翻译质量要求极高的场景",
+    "非电商翻译需求",
+    "需要本地化服务的品牌"
+  ],
+  "pros": [
+    "完全免费",
+    "电商场景优化",
+    "支持图片翻译",
+    "阿里系平台适配好",
+    "中文界面"
+  ],
+  "cons": [
+    "翻译质量不如 DeepL",
+    "小语种覆盖有限",
+    "品牌知名度不高"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "全部翻译功能",
+        "文档翻译",
+        "图片翻译",
+        "电商场景优化"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 translate.alibaba.com",
+    "粘贴需要翻译的文本",
+    "选择目标语言",
+    "查看翻译结果",
+    "复制使用"
+  ],
+  "relatedTools": [
+    "deepl",
+    "dianxiaomi-ai"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

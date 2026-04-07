@@ -1,1 +1,78 @@
-{"slug":"chuangkit","name":"创客贴","logo":"/logos/chuangkit.svg","tagline":"国产在线设计平台，AI 智能设计 + 海量模板，零基础做出专业设计","scenes":["画图片","做设计"],"pricingType":"freemium","priceLabel":"免费基础版 / 会员¥199起/年","rating":4.3,"affiliateUrl":"","websiteUrl":"https://www.chuangkit.com","editorReview":"创客贴是国内在线设计工具的头部产品，和稿定设计是直接竞争对手。AI 智能设计功能可以一键生成海报、社媒图和电商主图。\n\n模板库非常丰富，覆盖各种国内平台尺寸。和稿定设计相比，创客贴在团队协作和品牌管理功能上做得更好一些。\n\n免费版基础功能够用，会员 ¥199/年解锁全部模板和 AI 功能。适合个人创作者和小团队。","goodFor":["自媒体创作者","新媒体运营","小型设计团队","电商运营"],"notGoodFor":["专业设计师","国际市场为主的用户","需要矢量设计的场景"],"pros":["中文模板丰富","AI 智能设计","团队协作功能好","价格合理"],"cons":["国际化不如 Canva","高级功能有限","部分模板质量参差"],"pricingPlans":[{"name":"免费版","price":"免费","features":["基础模板","基础编辑"]},{"name":"会员","price":"¥199/年","features":["全部模板","AI 设计","去水印","高清导出"]}],"quickStart":["打开 chuangkit.com 注册","选择设计类型和尺寸","从模板库选择模板","替换内容并调整","导出使用"],"relatedTools":["gaoding","canva"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "chuangkit",
+  "name": "创客贴",
+  "logo": "/logos/chuangkit.svg",
+  "tagline": "国产在线设计平台，AI 智能设计 + 海量模板，零基础做出专业设计",
+  "scenes": [
+    "画图片",
+    "做设计"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / 会员¥199起/年",
+  "rating": 4.3,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.chuangkit.com",
+  "editorReview": "创客贴是国内在线设计工具的头部产品，和稿定设计是直接竞争对手。AI 智能设计功能可以一键生成海报、社媒图和电商主图。\n\n模板库非常丰富，覆盖各种国内平台尺寸。和稿定设计相比，创客贴在团队协作和品牌管理功能上做得更好一些。\n\n免费版基础功能够用，会员 ¥199/年解锁全部模板和 AI 功能。适合个人创作者和小团队。",
+  "goodFor": [
+    "自媒体创作者",
+    "新媒体运营",
+    "小型设计团队",
+    "电商运营"
+  ],
+  "notGoodFor": [
+    "专业设计师",
+    "国际市场为主的用户",
+    "需要矢量设计的场景"
+  ],
+  "pros": [
+    "中文模板丰富",
+    "AI 智能设计",
+    "团队协作功能好",
+    "价格合理"
+  ],
+  "cons": [
+    "国际化不如 Canva",
+    "高级功能有限",
+    "部分模板质量参差"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "基础模板",
+        "基础编辑"
+      ]
+    },
+    {
+      "name": "会员",
+      "price": "¥199/年",
+      "features": [
+        "全部模板",
+        "AI 设计",
+        "去水印",
+        "高清导出"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 chuangkit.com 注册",
+    "选择设计类型和尺寸",
+    "从模板库选择模板",
+    "替换内容并调整",
+    "导出使用"
+  ],
+  "relatedTools": [
+    "gaoding",
+    "canva"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

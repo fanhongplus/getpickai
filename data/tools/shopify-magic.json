@@ -3,27 +3,69 @@
   "name": "Shopify Magic",
   "logo": "/logos/shopify-magic.svg",
   "tagline": "Shopify 内置的 AI 功能套件，自动生成产品描述、邮件和店铺主题",
-  "scenes": ["写文案", "提效率"],
+  "scenes": [
+    "写文案",
+    "提效率"
+  ],
   "pricingType": "freemium",
   "priceLabel": "随 Shopify 订阅使用",
   "rating": 4.3,
   "affiliateUrl": "",
   "websiteUrl": "https://www.shopify.com/magic",
   "editorReview": "Shopify Magic 是 Shopify 平台内置的 AI 功能，对 Shopify 卖家来说是零额外成本的 AI 工具。它可以自动生成产品描述、营销邮件内容、店铺公告，还能帮你优化 SEO 标题。\n\n最大的优势是无缝集成——不需要切换工具，直接在 Shopify 后台就能用 AI。生成的产品描述质量不错，基本可以直接使用或稍作修改。\n\n如果你已经在用 Shopify 开店，这个功能不用白不用。虽然不如 Jasper 等专业文案工具强大，但胜在方便和免费。",
-  "goodFor": ["Shopify 独立站卖家", "跨境电商新手", "需要快速出产品描述的卖家"],
-  "notGoodFor": ["非 Shopify 平台卖家", "需要高度定制文案的品牌", "纯亚马逊卖家"],
-  "pros": ["Shopify 原生集成", "无额外费用", "产品描述生成快", "SEO 优化方便", "上手零门槛"],
-  "cons": ["只限 Shopify 平台", "文案能力不如专业工具", "功能相对基础"],
-  "pricingPlans": [
-    {"name": "随 Shopify 使用", "price": "免费（需 Shopify 订阅）", "features": ["产品描述生成", "邮件内容生成", "SEO 标题优化", "店铺公告生成"]}
+  "goodFor": [
+    "Shopify 独立站卖家",
+    "跨境电商新手",
+    "需要快速出产品描述的卖家"
   ],
-  "quickStart": ["登录 Shopify 后台", "在产品编辑页点击 AI 生成按钮", "输入产品关键信息", "AI 自动生成产品描述", "审核修改后保存发布"],
-  "relatedTools": ["jasper", "writesonic", "tidio"],
+  "notGoodFor": [
+    "非 Shopify 平台卖家",
+    "需要高度定制文案的品牌",
+    "纯亚马逊卖家"
+  ],
+  "pros": [
+    "Shopify 原生集成",
+    "无额外费用",
+    "产品描述生成快",
+    "SEO 优化方便",
+    "上手零门槛"
+  ],
+  "cons": [
+    "只限 Shopify 平台",
+    "文案能力不如专业工具",
+    "功能相对基础"
+  ],
+  "pricingPlans": [
+    {
+      "name": "随 Shopify 使用",
+      "price": "免费（需 Shopify 订阅）",
+      "features": [
+        "产品描述生成",
+        "邮件内容生成",
+        "SEO 标题优化",
+        "店铺公告生成"
+      ]
+    }
+  ],
+  "quickStart": [
+    "登录 Shopify 后台",
+    "在产品编辑页点击 AI 生成按钮",
+    "输入产品关键信息",
+    "AI 自动生成产品描述",
+    "审核修改后保存发布"
+  ],
+  "relatedTools": [
+    "jasper",
+    "writesonic",
+    "tidio"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

@@ -3,28 +3,76 @@
   "name": "WeShop AI",
   "logo": "/logos/weshop-ai.svg",
   "tagline": "国产 AI 商拍工具，一张商品图生成多种模特和场景图，无需真人拍摄",
-  "scenes": ["画图片"],
+  "scenes": [
+    "画图片"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费试用 / 按量计费",
   "rating": 4.4,
   "affiliateUrl": "",
   "websiteUrl": "https://www.weshop.com",
   "editorReview": "WeShop AI 是国内做 AI 商拍做得最好的工具之一。上传一张商品图，AI 自动生成不同模特穿搭效果、不同场景背景，省去了真人模特拍摄的高昂费用。\n\n特别适合服装、配饰类跨境卖家，AI 模特的自然度已经很高了，用在电商副图和社交媒体推广完全没问题。\n\n免费试用有一定额度，按量计费的价格也很合理。对比请一次模特拍摄几千块的费用，AI 商拍的性价比太高了。",
-  "goodFor": ["服装跨境卖家", "配饰电商卖家", "需要模特图的卖家"],
-  "notGoodFor": ["非服装品类卖家", "对模特效果要求极高的品牌", "只需要白底图的用户"],
-  "pros": ["AI 模特自然度高", "一图生成多种方案", "省去真人拍摄费用", "支持多种场景", "免费试用"],
-  "cons": ["主要适合服装配饰", "细节偶尔不够完美", "高端品牌可能需要真人"],
-  "pricingPlans": [
-    {"name": "免费试用", "price": "免费", "features": ["有限免费额度", "基础AI商拍"]},
-    {"name": "按量计费", "price": "按使用量", "features": ["全部功能", "AI模特换装", "场景生成", "批量处理"]}
+  "goodFor": [
+    "服装跨境卖家",
+    "配饰电商卖家",
+    "需要模特图的卖家"
   ],
-  "quickStart": ["注册 WeShop AI 账号", "上传你的商品图片", "选择模特和场景风格", "AI 自动生成多种方案", "下载满意的图片用于店铺"],
-  "relatedTools": ["photoroom", "pic-copilot", "midjourney"],
+  "notGoodFor": [
+    "非服装品类卖家",
+    "对模特效果要求极高的品牌",
+    "只需要白底图的用户"
+  ],
+  "pros": [
+    "AI 模特自然度高",
+    "一图生成多种方案",
+    "省去真人拍摄费用",
+    "支持多种场景",
+    "免费试用"
+  ],
+  "cons": [
+    "主要适合服装配饰",
+    "细节偶尔不够完美",
+    "高端品牌可能需要真人"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费试用",
+      "price": "免费",
+      "features": [
+        "有限免费额度",
+        "基础AI商拍"
+      ]
+    },
+    {
+      "name": "按量计费",
+      "price": "按使用量",
+      "features": [
+        "全部功能",
+        "AI模特换装",
+        "场景生成",
+        "批量处理"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 WeShop AI 账号",
+    "上传你的商品图片",
+    "选择模特和场景风格",
+    "AI 自动生成多种方案",
+    "下载满意的图片用于店铺"
+  ],
+  "relatedTools": [
+    "photoroom",
+    "pic-copilot",
+    "midjourney"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

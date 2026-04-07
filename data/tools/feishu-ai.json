@@ -1,1 +1,76 @@
-{"slug":"feishu-ai","name":"飞书AI","logo":"/logos/feishu-ai.svg","tagline":"字节跳动出品的 AI 办公平台，智能会议纪要、文档写作和项目管理","scenes":["写文案","提效率"],"pricingType":"freemium","priceLabel":"免费基础版 / 企业版","rating":4.4,"affiliateUrl":"","websiteUrl":"https://www.feishu.cn","editorReview":"飞书 AI 把 AI 能力深度整合进了办公全流程——会议自动生成纪要、文档 AI 写作助手、多维表格智能分析、项目管理自动化。\n\n对团队协作来说特别好用，AI 会议纪要可以自动总结讨论要点和待办事项。文档 AI 可以帮你快速起草各种文档。\n\n免费版基础功能够用，企业版解锁更多 AI 能力。字节内部就在用飞书，产品成熟度很高。","goodFor":["团队协作","企业办公","会议管理","项目管理"],"notGoodFor":["个人用户","不需要协作的场景","已用其他办公平台的团队"],"pros":["AI 会议纪要强大","文档 AI 好用","团队协作优秀","字节技术支撑"],"cons":["生态锁定","个人版功能有限","学习曲线"],"pricingPlans":[{"name":"免费版","price":"免费","features":["基础办公功能","AI 写作助手"]},{"name":"企业版","price":"按需定价","features":["全部 AI 功能","高级协作","管理后台"]}],"quickStart":["下载飞书或打开网页版","创建团队空间","使用 AI 写作和会议功能","管理项目和文档"],"relatedTools":["wps-ai","notion-ai"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "feishu-ai",
+  "name": "飞书AI",
+  "logo": "/logos/feishu-ai.svg",
+  "tagline": "字节跳动出品的 AI 办公平台，智能会议纪要、文档写作和项目管理",
+  "scenes": [
+    "写文案",
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / 企业版",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.feishu.cn",
+  "editorReview": "飞书 AI 把 AI 能力深度整合进了办公全流程——会议自动生成纪要、文档 AI 写作助手、多维表格智能分析、项目管理自动化。\n\n对团队协作来说特别好用，AI 会议纪要可以自动总结讨论要点和待办事项。文档 AI 可以帮你快速起草各种文档。\n\n免费版基础功能够用，企业版解锁更多 AI 能力。字节内部就在用飞书，产品成熟度很高。",
+  "goodFor": [
+    "团队协作",
+    "企业办公",
+    "会议管理",
+    "项目管理"
+  ],
+  "notGoodFor": [
+    "个人用户",
+    "不需要协作的场景",
+    "已用其他办公平台的团队"
+  ],
+  "pros": [
+    "AI 会议纪要强大",
+    "文档 AI 好用",
+    "团队协作优秀",
+    "字节技术支撑"
+  ],
+  "cons": [
+    "生态锁定",
+    "个人版功能有限",
+    "学习曲线"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "基础办公功能",
+        "AI 写作助手"
+      ]
+    },
+    {
+      "name": "企业版",
+      "price": "按需定价",
+      "features": [
+        "全部 AI 功能",
+        "高级协作",
+        "管理后台"
+      ]
+    }
+  ],
+  "quickStart": [
+    "下载飞书或打开网页版",
+    "创建团队空间",
+    "使用 AI 写作和会议功能",
+    "管理项目和文档"
+  ],
+  "relatedTools": [
+    "wps-ai",
+    "notion-ai"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

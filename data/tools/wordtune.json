@@ -1,1 +1,79 @@
-{"slug":"wordtune","name":"Wordtune","logo":"/logos/wordtune.svg","tagline":"AI 句子改写工具，选中任意英文句子获得多种改写建议，学术写作神器","scenes":["写文案"],"pricingType":"freemium","priceLabel":"免费基础版 / $9.99/月","rating":4.5,"affiliateUrl":"","websiteUrl":"https://www.wordtune.com","editorReview":"Wordtune 是以色列 AI21 Labs 出品的句子改写工具，在留学生和英文写作者圈子里口碑极好。核心功能很聚焦：选中任意一句话，AI 给你 5-10 种不同的改写建议，覆盖 Casual/Formal/Shorten/Expand 等多种风格。\n\n对论文写作特别有用——你写出一句表达不太地道的英文，选中后 Wordtune 会给你多个更自然的版本选择。和 Grammarly 的区别是：Grammarly 主要改语法错误，Wordtune 是换表达方式。\n\n$9.99/月的价格和 QuillBot 相当，和 Grammarly 配合使用是英文写作的黄金组合。","goodFor":["留学生","英文写作者","学术论文","英文内容创作"],"notGoodFor":["中文写作用户","只需要语法检查的用户"],"pros":["改写建议多样","保留原意能力强","学术场景适用","浏览器插件方便","操作简单"],"cons":["免费版次数有限","中文不支持","需要英文基础才能判断最佳版本"],"pricingPlans":[{"name":"Free","price":"免费","features":["每天 10 次改写","2 种模式","浏览器插件"]},{"name":"Premium","price":"$9.99/月","features":["无限改写","5 种模式","AI 助手","Wordtune Read"]}],"quickStart":["安装 Wordtune 浏览器插件","在任意英文文档中选中一句话","查看 Wordtune 的改写建议","选择最符合你意图的版本","一键替换原句"],"relatedTools":["quillbot","grammarly","writefull"],"screenshots":[],"isFeatured":false,"isNew":false,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "wordtune",
+  "name": "Wordtune",
+  "logo": "/logos/wordtune.svg",
+  "tagline": "AI 句子改写工具，选中任意英文句子获得多种改写建议，学术写作神器",
+  "scenes": [
+    "写文案"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $9.99/月",
+  "rating": 4.5,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.wordtune.com",
+  "editorReview": "Wordtune 是以色列 AI21 Labs 出品的句子改写工具，在留学生和英文写作者圈子里口碑极好。核心功能很聚焦：选中任意一句话，AI 给你 5-10 种不同的改写建议，覆盖 Casual/Formal/Shorten/Expand 等多种风格。\n\n对论文写作特别有用——你写出一句表达不太地道的英文，选中后 Wordtune 会给你多个更自然的版本选择。和 Grammarly 的区别是：Grammarly 主要改语法错误，Wordtune 是换表达方式。\n\n$9.99/月的价格和 QuillBot 相当，和 Grammarly 配合使用是英文写作的黄金组合。",
+  "goodFor": [
+    "留学生",
+    "英文写作者",
+    "学术论文",
+    "英文内容创作"
+  ],
+  "notGoodFor": [
+    "中文写作用户",
+    "只需要语法检查的用户"
+  ],
+  "pros": [
+    "改写建议多样",
+    "保留原意能力强",
+    "学术场景适用",
+    "浏览器插件方便",
+    "操作简单"
+  ],
+  "cons": [
+    "免费版次数有限",
+    "中文不支持",
+    "需要英文基础才能判断最佳版本"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "每天 10 次改写",
+        "2 种模式",
+        "浏览器插件"
+      ]
+    },
+    {
+      "name": "Premium",
+      "price": "$9.99/月",
+      "features": [
+        "无限改写",
+        "5 种模式",
+        "AI 助手",
+        "Wordtune Read"
+      ]
+    }
+  ],
+  "quickStart": [
+    "安装 Wordtune 浏览器插件",
+    "在任意英文文档中选中一句话",
+    "查看 Wordtune 的改写建议",
+    "选择最符合你意图的版本",
+    "一键替换原句"
+  ],
+  "relatedTools": [
+    "quillbot",
+    "grammarly",
+    "writefull"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

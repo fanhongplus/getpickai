@@ -1,1 +1,89 @@
-{"slug":"ahrefs","name":"Ahrefs","logo":"/logos/ahrefs.svg","tagline":"全球顶级 SEO 工具套件——反向链接、关键词、竞品分析一站搞定","scenes":["提效率","写文案"],"pricingType":"paid","priceLabel":"$99/月起","rating":4.8,"affiliateUrl":"","websiteUrl":"https://ahrefs.com","editorReview":"Ahrefs 是跨境电商和内容营销领域最权威的 SEO 工具之一，在专业 SEO 圈子里口碑无可撼动。\n\n核心功能包括：Site Explorer（竞品反向链接和流量分析）、Keywords Explorer（海量关键词数据库）、Content Explorer（热门内容发现）和 Rank Tracker（排名监控）。数据库覆盖数十亿网页，每日更新。\n\n价格不便宜，$99/月的 Lite 版是入门门槛，但对严肃做 SEO 的独立站卖家来说，Ahrefs 提供的数据质量和分析深度远超同类工具。如果你依赖 Google 自然流量做生意，这笔钱花得值。","goodFor":["独立站卖家","SEO 专业人员","内容营销团队","竞品调研"],"notGoodFor":["个人博主","预算有限的新手","不做 SEO 的用户"],"pros":["数据库业内最全","反向链接分析最强","关键词数据准确","竞品流量透视深入","品牌口碑最好"],"cons":["价格偏高","功能多上手有门槛","按 Report Credits 计费需注意"],"pricingPlans":[{"name":"Lite","price":"$99/月","features":["基础 SEO 功能","500 报告/月","1 个项目"]},{"name":"Standard","price":"$199/月","features":["所有 Lite 功能","2000 报告/月","10 个项目"]},{"name":"Advanced","price":"$399/月","features":["所有 Standard 功能","10000 报告/月","25 个项目"]}],"quickStart":["注册 Ahrefs 账号","添加你的网站到 Dashboard","用 Site Explorer 分析竞品","用 Keywords Explorer 找关键词","用 Rank Tracker 监控排名"],"relatedTools":["semrush","ubersuggest","surfer-seo"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-07","verifiedAt":"2026-04"}
+{
+  "slug": "ahrefs",
+  "name": "Ahrefs",
+  "logo": "/logos/ahrefs.svg",
+  "tagline": "全球顶级 SEO 工具套件——反向链接、关键词、竞品分析一站搞定",
+  "scenes": [
+    "提效率",
+    "写文案"
+  ],
+  "pricingType": "paid",
+  "priceLabel": "$99/月起",
+  "rating": 4.8,
+  "affiliateUrl": "",
+  "websiteUrl": "https://ahrefs.com",
+  "editorReview": "Ahrefs 是跨境电商和内容营销领域最权威的 SEO 工具之一，在专业 SEO 圈子里口碑无可撼动。\n\n核心功能包括：Site Explorer（竞品反向链接和流量分析）、Keywords Explorer（海量关键词数据库）、Content Explorer（热门内容发现）和 Rank Tracker（排名监控）。数据库覆盖数十亿网页，每日更新。\n\n价格不便宜，$99/月的 Lite 版是入门门槛，但对严肃做 SEO 的独立站卖家来说，Ahrefs 提供的数据质量和分析深度远超同类工具。如果你依赖 Google 自然流量做生意，这笔钱花得值。",
+  "goodFor": [
+    "独立站卖家",
+    "SEO 专业人员",
+    "内容营销团队",
+    "竞品调研"
+  ],
+  "notGoodFor": [
+    "个人博主",
+    "预算有限的新手",
+    "不做 SEO 的用户"
+  ],
+  "pros": [
+    "数据库业内最全",
+    "反向链接分析最强",
+    "关键词数据准确",
+    "竞品流量透视深入",
+    "品牌口碑最好"
+  ],
+  "cons": [
+    "价格偏高",
+    "功能多上手有门槛",
+    "按 Report Credits 计费需注意"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Lite",
+      "price": "$99/月",
+      "features": [
+        "基础 SEO 功能",
+        "500 报告/月",
+        "1 个项目"
+      ]
+    },
+    {
+      "name": "Standard",
+      "price": "$199/月",
+      "features": [
+        "所有 Lite 功能",
+        "2000 报告/月",
+        "10 个项目"
+      ]
+    },
+    {
+      "name": "Advanced",
+      "price": "$399/月",
+      "features": [
+        "所有 Standard 功能",
+        "10000 报告/月",
+        "25 个项目"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Ahrefs 账号",
+    "添加你的网站到 Dashboard",
+    "用 Site Explorer 分析竞品",
+    "用 Keywords Explorer 找关键词",
+    "用 Rank Tracker 监控排名"
+  ],
+  "relatedTools": [
+    "semrush",
+    "ubersuggest",
+    "surfer-seo"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-07",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

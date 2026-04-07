@@ -3,28 +3,79 @@
   "name": "店小秘AI",
   "logo": "/logos/dianxiaomi-ai.svg",
   "tagline": "超 130 万跨境卖家在用的 ERP 系统，已接入 DeepSeek 和 ChatGPT 等 AI 大模型",
-  "scenes": ["提效率"],
+  "scenes": [
+    "提效率"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费基础版",
   "rating": 4.3,
   "affiliateUrl": "",
   "websiteUrl": "https://www.dianxiaomi.com",
   "editorReview": "店小秘是国内跨境电商 ERP 的老牌选手，130 万卖家的用户基数说明一切。最近接入了 DeepSeek 和 ChatGPT 大模型后，在 AI 辅助方面有了质的提升。\n\n现在可以用 AI 一键生成多语言 Listing 文案、自动翻译客服消息、智能推荐发货方案。对于日常运营的效率提升很明显，特别是多平台多店铺的卖家。\n\n免费版的基础 ERP 功能就已经很实用了，AI 功能是额外的加分项。如果你已经在用店小秘，升级体验一下 AI 功能不亏。",
-  "goodFor": ["多平台跨境卖家", "中小型电商团队", "需要 ERP 管理的卖家", "速卖通/虾皮/亚马逊卖家"],
-  "notGoodFor": ["只做单平台的小卖家", "不需要 ERP 的卖家", "纯独立站卖家"],
-  "pros": ["130 万卖家验证，稳定可靠", "免费版功能够用", "接入主流 AI 大模型", "多平台多店铺统一管理", "中文界面和客服"],
-  "cons": ["AI 功能还在完善中", "界面比较传统", "高级功能学习曲线较陡"],
-  "pricingPlans": [
-    {"name": "免费版", "price": "免费", "features": ["基础 ERP 功能", "订单管理", "库存管理", "基础 AI 功能"]},
-    {"name": "高级版", "price": "按需定价", "features": ["全部 AI 功能", "高级数据分析", "多仓管理", "优先客服"]}
+  "goodFor": [
+    "多平台跨境卖家",
+    "中小型电商团队",
+    "需要 ERP 管理的卖家",
+    "速卖通/虾皮/亚马逊卖家"
   ],
-  "quickStart": ["注册店小秘账号", "绑定你的电商平台店铺", "导入商品和订单数据", "开启 AI 辅助功能", "用 AI 生成 Listing 文案和客服话术"],
-  "relatedTools": ["sellersprite", "salesmartly", "deepl"],
+  "notGoodFor": [
+    "只做单平台的小卖家",
+    "不需要 ERP 的卖家",
+    "纯独立站卖家"
+  ],
+  "pros": [
+    "130 万卖家验证，稳定可靠",
+    "免费版功能够用",
+    "接入主流 AI 大模型",
+    "多平台多店铺统一管理",
+    "中文界面和客服"
+  ],
+  "cons": [
+    "AI 功能还在完善中",
+    "界面比较传统",
+    "高级功能学习曲线较陡"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "基础 ERP 功能",
+        "订单管理",
+        "库存管理",
+        "基础 AI 功能"
+      ]
+    },
+    {
+      "name": "高级版",
+      "price": "按需定价",
+      "features": [
+        "全部 AI 功能",
+        "高级数据分析",
+        "多仓管理",
+        "优先客服"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册店小秘账号",
+    "绑定你的电商平台店铺",
+    "导入商品和订单数据",
+    "开启 AI 辅助功能",
+    "用 AI 生成 Listing 文案和客服话术"
+  ],
+  "relatedTools": [
+    "sellersprite",
+    "salesmartly",
+    "deepl"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

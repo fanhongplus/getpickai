@@ -1,1 +1,70 @@
-{"slug":"tongyi-qianwen","name":"通义千问","logo":"/logos/tongyi-qianwen.svg","tagline":"阿里出品的 AI 大模型，支持对话、写作、编程、图片理解","scenes":["写文案","提效率"],"pricingType":"free","priceLabel":"免费","rating":4.5,"affiliateUrl":"","websiteUrl":"https://tongyi.aliyun.com","editorReview":"通义千问是阿里巴巴推出的大语言模型，能力全面覆盖对话、写作、编程和图片理解。在国产 AI 大模型中属于第一梯队。\n\n中文理解和生成能力优秀，编程辅助能力也不错。支持文档分析和图片理解，功能覆盖面广。和 Kimi 相比各有千秋，通义千问在多模态能力上更强。\n\n完全免费使用，对所有用户开放。推荐作为日常 AI 助手使用。","goodFor":["所有需要 AI 助手的用户","编程辅助","文档分析","日常写作"],"notGoodFor":["对英文能力要求极高的用户","需要专业垂直功能的用户"],"pros":["完全免费","多模态能力强","中文理解优秀","阿里技术支撑","功能全面"],"cons":["英文能力不如 ChatGPT","知名度不如 Kimi","部分场景不够深入"],"pricingPlans":[{"name":"免费版","price":"免费","features":["全部对话功能","写作辅助","编程辅助","图片理解"]}],"quickStart":["打开 tongyi.aliyun.com","注册阿里云账号","开始对话","上传文件或图片进行分析"],"relatedTools":["kimi","doubao","wenxin-yiyan"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "tongyi-qianwen",
+  "name": "通义千问",
+  "logo": "/logos/tongyi-qianwen.svg",
+  "tagline": "阿里出品的 AI 大模型，支持对话、写作、编程、图片理解",
+  "scenes": [
+    "写文案",
+    "提效率"
+  ],
+  "pricingType": "free",
+  "priceLabel": "免费",
+  "rating": 4.5,
+  "affiliateUrl": "",
+  "websiteUrl": "https://tongyi.aliyun.com",
+  "editorReview": "通义千问是阿里巴巴推出的大语言模型，能力全面覆盖对话、写作、编程和图片理解。在国产 AI 大模型中属于第一梯队。\n\n中文理解和生成能力优秀，编程辅助能力也不错。支持文档分析和图片理解，功能覆盖面广。和 Kimi 相比各有千秋，通义千问在多模态能力上更强。\n\n完全免费使用，对所有用户开放。推荐作为日常 AI 助手使用。",
+  "goodFor": [
+    "所有需要 AI 助手的用户",
+    "编程辅助",
+    "文档分析",
+    "日常写作"
+  ],
+  "notGoodFor": [
+    "对英文能力要求极高的用户",
+    "需要专业垂直功能的用户"
+  ],
+  "pros": [
+    "完全免费",
+    "多模态能力强",
+    "中文理解优秀",
+    "阿里技术支撑",
+    "功能全面"
+  ],
+  "cons": [
+    "英文能力不如 ChatGPT",
+    "知名度不如 Kimi",
+    "部分场景不够深入"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "全部对话功能",
+        "写作辅助",
+        "编程辅助",
+        "图片理解"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 tongyi.aliyun.com",
+    "注册阿里云账号",
+    "开始对话",
+    "上传文件或图片进行分析"
+  ],
+  "relatedTools": [
+    "kimi",
+    "doubao",
+    "wenxin-yiyan"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

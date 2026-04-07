@@ -1,1 +1,88 @@
-{"slug":"copyleaks","name":"Copyleaks","logo":"/logos/copyleaks.svg","tagline":"AI 驱动的抄袭检测与内容原创性验证平台","scenes":["写文案","提效率"],"pricingType":"freemium","priceLabel":"免费试用 / $9.16/月起","rating":4.6,"affiliateUrl":"","websiteUrl":"https://copyleaks.com","editorReview":"Copyleaks 是专业的 AI 内容检测平台，支持论文查重、AI 生成内容识别和多语言抄袭检测。覆盖 100+ 种语言，被全球高校和企业广泛采用。\n\n对留学生来说，它既能查重（防止论文被认定抄袭），又能检测 AI 生成内容（防止被判定为使用 ChatGPT 作弊）。双向保护是它和普通查重工具最大的区别。\n\n支持批量检测和 LMS 集成，教育机构可以一键对接 Canvas/Blackboard 等系统。个人版 $9.16/月的价格比同类工具便宜不少，是留学生写论文前的最后一道保险。","goodFor":["留学生","学术研究者","教育机构","内容团队"],"notGoodFor":["只需要简单语法检查的用户","纯中文写作（中文库相对有限）"],"pros":["100+ 语言支持","AI 内容检测能力强","学术查重库庞大","批量检测高效","LMS 集成方便"],"cons":["按 credits 计费需注意","高级功能需付费","中文查重库不如英文全"],"pricingPlans":[{"name":"免费试用","price":"免费","features":["基础检测次数","体验核心功能"]},{"name":"Monthly","price":"$9.16/月","features":["100 credits/月","AI 内容检测","学术查重","详细报告"]},{"name":"Annual","price":"$8.33/月","features":["所有 Monthly 功能","年付优惠","优先支持"]}],"quickStart":["注册 Copyleaks 账号","上传论文或粘贴文本","选择检测模式（查重/AI 检测）","查看详细匹配报告","根据建议修改内容"],"relatedTools":["quillbot","grammarly","writefull"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-07","verifiedAt":"2026-04"}
+{
+  "slug": "copyleaks",
+  "name": "Copyleaks",
+  "logo": "/logos/copyleaks.svg",
+  "tagline": "AI 驱动的抄袭检测与内容原创性验证平台",
+  "scenes": [
+    "写文案",
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $9.16/月起",
+  "rating": 4.6,
+  "affiliateUrl": "",
+  "websiteUrl": "https://copyleaks.com",
+  "editorReview": "Copyleaks 是专业的 AI 内容检测平台，支持论文查重、AI 生成内容识别和多语言抄袭检测。覆盖 100+ 种语言，被全球高校和企业广泛采用。\n\n对留学生来说，它既能查重（防止论文被认定抄袭），又能检测 AI 生成内容（防止被判定为使用 ChatGPT 作弊）。双向保护是它和普通查重工具最大的区别。\n\n支持批量检测和 LMS 集成，教育机构可以一键对接 Canvas/Blackboard 等系统。个人版 $9.16/月的价格比同类工具便宜不少，是留学生写论文前的最后一道保险。",
+  "goodFor": [
+    "留学生",
+    "学术研究者",
+    "教育机构",
+    "内容团队"
+  ],
+  "notGoodFor": [
+    "只需要简单语法检查的用户",
+    "纯中文写作（中文库相对有限）"
+  ],
+  "pros": [
+    "100+ 语言支持",
+    "AI 内容检测能力强",
+    "学术查重库庞大",
+    "批量检测高效",
+    "LMS 集成方便"
+  ],
+  "cons": [
+    "按 credits 计费需注意",
+    "高级功能需付费",
+    "中文查重库不如英文全"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费试用",
+      "price": "免费",
+      "features": [
+        "基础检测次数",
+        "体验核心功能"
+      ]
+    },
+    {
+      "name": "Monthly",
+      "price": "$9.16/月",
+      "features": [
+        "100 credits/月",
+        "AI 内容检测",
+        "学术查重",
+        "详细报告"
+      ]
+    },
+    {
+      "name": "Annual",
+      "price": "$8.33/月",
+      "features": [
+        "所有 Monthly 功能",
+        "年付优惠",
+        "优先支持"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Copyleaks 账号",
+    "上传论文或粘贴文本",
+    "选择检测模式（查重/AI 检测）",
+    "查看详细匹配报告",
+    "根据建议修改内容"
+  ],
+  "relatedTools": [
+    "quillbot",
+    "grammarly",
+    "writefull"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-07",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

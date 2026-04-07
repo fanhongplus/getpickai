@@ -1,1 +1,90 @@
-{"slug":"claude","name":"Claude","logo":"/logos/claude.svg","tagline":"Anthropic 出品的 AI 助手，长文本理解和代码能力业内顶尖，写作最自然","scenes":["写文案","提效率","写代码"],"pricingType":"freemium","priceLabel":"免费基础版 / Pro $20/月","rating":4.9,"affiliateUrl":"","websiteUrl":"https://claude.ai","editorReview":"Claude 是 Anthropic 出品的 AI 助手，在专业用户圈子里口碑极好。最突出的两个能力：一是写作质量——文风自然、逻辑严谨，不像 ChatGPT 那样模板化；二是代码质量——被开发者社区公认为'代码写得最漂亮'的 AI。\n\n200K tokens 的超长上下文意味着你可以把一整篇论文、一本书、十几个代码文件一次性丢给它分析，在长文档处理场景下表现稳定优秀。\n\n2026 年最新的 Claude Opus 4 在推理、写作、编程等核心能力上全面领先。Pro 版 $20/月解锁无限使用和 Projects 功能，对专业用户来说是必备工具。","goodFor":["专业写作者","开发者","学术研究","长文档分析","深度思考场景"],"notGoodFor":["需要图片生成的用户","中文对话偏好国产的用户"],"pros":["写作质量业内最高","代码能力天花板","长上下文处理稳定","思考深度出色","Projects 功能好用"],"cons":["不支持图片生成","国内访问需科学上网","免费版限额较紧"],"pricingPlans":[{"name":"Free","price":"免费","features":["Sonnet 模型限量","基础对话","文件上传"]},{"name":"Pro","price":"$20/月","features":["Opus 4 无限使用","Projects 功能","更长上下文"]},{"name":"Team","price":"$25/月/人","features":["所有 Pro 功能","团队协作","集中账单"]}],"quickStart":["访问 claude.ai 注册","选择 Opus 或 Sonnet 模型","上传文件或粘贴内容","提出你的需求","AI 给出深度回答"],"relatedTools":["chatgpt","kimi","cursor"],"screenshots":[],"isFeatured":true,"isNew":false,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "claude",
+  "name": "Claude",
+  "logo": "/logos/claude.svg",
+  "tagline": "Anthropic 出品的 AI 助手，长文本理解和代码能力业内顶尖，写作最自然",
+  "scenes": [
+    "写文案",
+    "提效率",
+    "写代码"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / Pro $20/月",
+  "rating": 4.9,
+  "affiliateUrl": "",
+  "websiteUrl": "https://claude.ai",
+  "editorReview": "Claude 是 Anthropic 出品的 AI 助手，在专业用户圈子里口碑极好。最突出的两个能力：一是写作质量——文风自然、逻辑严谨，不像 ChatGPT 那样模板化；二是代码质量——被开发者社区公认为'代码写得最漂亮'的 AI。\n\n200K tokens 的超长上下文意味着你可以把一整篇论文、一本书、十几个代码文件一次性丢给它分析，在长文档处理场景下表现稳定优秀。\n\n2026 年最新的 Claude Opus 4 在推理、写作、编程等核心能力上全面领先。Pro 版 $20/月解锁无限使用和 Projects 功能，对专业用户来说是必备工具。",
+  "goodFor": [
+    "专业写作者",
+    "开发者",
+    "学术研究",
+    "长文档分析",
+    "深度思考场景"
+  ],
+  "notGoodFor": [
+    "需要图片生成的用户",
+    "中文对话偏好国产的用户"
+  ],
+  "pros": [
+    "写作质量业内最高",
+    "代码能力天花板",
+    "长上下文处理稳定",
+    "思考深度出色",
+    "Projects 功能好用"
+  ],
+  "cons": [
+    "不支持图片生成",
+    "国内访问需科学上网",
+    "免费版限额较紧"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "Sonnet 模型限量",
+        "基础对话",
+        "文件上传"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$20/月",
+      "features": [
+        "Opus 4 无限使用",
+        "Projects 功能",
+        "更长上下文"
+      ]
+    },
+    {
+      "name": "Team",
+      "price": "$25/月/人",
+      "features": [
+        "所有 Pro 功能",
+        "团队协作",
+        "集中账单"
+      ]
+    }
+  ],
+  "quickStart": [
+    "访问 claude.ai 注册",
+    "选择 Opus 或 Sonnet 模型",
+    "上传文件或粘贴内容",
+    "提出你的需求",
+    "AI 给出深度回答"
+  ],
+  "relatedTools": [
+    "chatgpt",
+    "kimi",
+    "cursor"
+  ],
+  "screenshots": [],
+  "isFeatured": true,
+  "isNew": false,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

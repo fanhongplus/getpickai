@@ -1,1 +1,76 @@
-{"slug":"ideogram","name":"Ideogram","logo":"/logos/ideogram.svg","tagline":"AI 图片生成工具，文字渲染能力出色，做海报和 Logo 特别好用","scenes":["画图片"],"pricingType":"freemium","priceLabel":"免费试用 / $8起/月","rating":4.5,"affiliateUrl":"","websiteUrl":"https://ideogram.ai","editorReview":"Ideogram 在 AI 绘图工具中有一个独特优势——文字渲染能力特别强。其他 AI 绘图工具（包括 Midjourney）生成图片里的文字经常乱码，但 Ideogram 可以准确渲染英文文字。\n\n这让它特别适合做海报、Logo、社媒图等需要文字的设计。生成质量整体也很高，和 Midjourney 同一梯队。\n\n免费试用有次数限制，$8/月的价格非常亲民。如果你经常需要带文字的 AI 图片，Ideogram 是最佳选择。","goodFor":["海报设计","Logo 设计","社媒配图","需要文字渲染的场景"],"notGoodFor":["纯艺术创作","不需要文字的场景","中文文字渲染"],"pros":["文字渲染能力最强","图片质量高","价格亲民","操作简单"],"cons":["中文渲染能力一般","免费版限制","风格不如 Midjourney 多"],"pricingPlans":[{"name":"Free","price":"免费","features":["有限生成次数"]},{"name":"Basic","price":"$8/月","features":["更多生成次数","高清导出","优先生成"]}],"quickStart":["打开 ideogram.ai 注册","输入图片描述（含需要的文字）","选择风格","AI 生成图片","下载使用"],"relatedTools":["midjourney","leonardo-ai","canva"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "ideogram",
+  "name": "Ideogram",
+  "logo": "/logos/ideogram.svg",
+  "tagline": "AI 图片生成工具，文字渲染能力出色，做海报和 Logo 特别好用",
+  "scenes": [
+    "画图片"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $8起/月",
+  "rating": 4.5,
+  "affiliateUrl": "",
+  "websiteUrl": "https://ideogram.ai",
+  "editorReview": "Ideogram 在 AI 绘图工具中有一个独特优势——文字渲染能力特别强。其他 AI 绘图工具（包括 Midjourney）生成图片里的文字经常乱码，但 Ideogram 可以准确渲染英文文字。\n\n这让它特别适合做海报、Logo、社媒图等需要文字的设计。生成质量整体也很高，和 Midjourney 同一梯队。\n\n免费试用有次数限制，$8/月的价格非常亲民。如果你经常需要带文字的 AI 图片，Ideogram 是最佳选择。",
+  "goodFor": [
+    "海报设计",
+    "Logo 设计",
+    "社媒配图",
+    "需要文字渲染的场景"
+  ],
+  "notGoodFor": [
+    "纯艺术创作",
+    "不需要文字的场景",
+    "中文文字渲染"
+  ],
+  "pros": [
+    "文字渲染能力最强",
+    "图片质量高",
+    "价格亲民",
+    "操作简单"
+  ],
+  "cons": [
+    "中文渲染能力一般",
+    "免费版限制",
+    "风格不如 Midjourney 多"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "有限生成次数"
+      ]
+    },
+    {
+      "name": "Basic",
+      "price": "$8/月",
+      "features": [
+        "更多生成次数",
+        "高清导出",
+        "优先生成"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 ideogram.ai 注册",
+    "输入图片描述（含需要的文字）",
+    "选择风格",
+    "AI 生成图片",
+    "下载使用"
+  ],
+  "relatedTools": [
+    "midjourney",
+    "leonardo-ai",
+    "canva"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

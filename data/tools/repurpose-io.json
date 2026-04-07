@@ -1,1 +1,78 @@
-{"slug":"repurpose-io","name":"Repurpose.io","logo":"/logos/repurpose-io.svg","tagline":"内容自动化分发工具，YouTube 视频自动裁成 TikTok/Reels 竖版并推送","scenes":["提效率"],"pricingType":"paid","priceLabel":"$25/月起","rating":4.4,"affiliateUrl":"","websiteUrl":"https://repurpose.io","editorReview":"Repurpose.io 解决了自媒体创作者的一个核心痛点：一次创作、多平台分发。它的核心玩法是规则自动化——你设置好工作流规则（比如'YouTube 发布后自动裁成竖版发布到 TikTok 和 Reels'），之后一切自动运行。\n\n对做矩阵分发的创作者来说，这个工具能省下大量重复操作时间。一个 30 分钟的 YouTube 长视频发布后，Repurpose 可以自动把它裁剪成多条短视频，同步发布到 TikTok、Instagram Reels、YouTube Shorts 等竖版平台。\n\n$25/月起的价格对严肃做矩阵的创作者来说很合理。","goodFor":["YouTube 创作者","短视频矩阵运营","播客创作者","品牌内容分发"],"notGoodFor":["只做单平台的用户","刚起步没内容的新手","预算极紧的用户"],"pros":["自动化规则强大","节省大量重复工作","多平台支持全","设置一次长期受益"],"cons":["价格不便宜","初始设置需要时间","部分平台接入有限制"],"pricingPlans":[{"name":"Content Marketer","price":"$25/月","features":["5 个发布目的地","无限内容","自动化规则"]},{"name":"Agency","price":"$100/月","features":["20 个发布目的地","团队协作","优先支持"]}],"quickStart":["注册 Repurpose.io 账号","连接你的 YouTube 和社媒账号","创建自动化工作流规则","定义源平台和目标平台","发布后自动触发分发"],"relatedTools":["buffer","metricool","opus-clip"],"screenshots":[],"isFeatured":false,"isNew":false,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "repurpose-io",
+  "name": "Repurpose.io",
+  "logo": "/logos/repurpose-io.svg",
+  "tagline": "内容自动化分发工具，YouTube 视频自动裁成 TikTok/Reels 竖版并推送",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "paid",
+  "priceLabel": "$25/月起",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://repurpose.io",
+  "editorReview": "Repurpose.io 解决了自媒体创作者的一个核心痛点：一次创作、多平台分发。它的核心玩法是规则自动化——你设置好工作流规则（比如'YouTube 发布后自动裁成竖版发布到 TikTok 和 Reels'），之后一切自动运行。\n\n对做矩阵分发的创作者来说，这个工具能省下大量重复操作时间。一个 30 分钟的 YouTube 长视频发布后，Repurpose 可以自动把它裁剪成多条短视频，同步发布到 TikTok、Instagram Reels、YouTube Shorts 等竖版平台。\n\n$25/月起的价格对严肃做矩阵的创作者来说很合理。",
+  "goodFor": [
+    "YouTube 创作者",
+    "短视频矩阵运营",
+    "播客创作者",
+    "品牌内容分发"
+  ],
+  "notGoodFor": [
+    "只做单平台的用户",
+    "刚起步没内容的新手",
+    "预算极紧的用户"
+  ],
+  "pros": [
+    "自动化规则强大",
+    "节省大量重复工作",
+    "多平台支持全",
+    "设置一次长期受益"
+  ],
+  "cons": [
+    "价格不便宜",
+    "初始设置需要时间",
+    "部分平台接入有限制"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Content Marketer",
+      "price": "$25/月",
+      "features": [
+        "5 个发布目的地",
+        "无限内容",
+        "自动化规则"
+      ]
+    },
+    {
+      "name": "Agency",
+      "price": "$100/月",
+      "features": [
+        "20 个发布目的地",
+        "团队协作",
+        "优先支持"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Repurpose.io 账号",
+    "连接你的 YouTube 和社媒账号",
+    "创建自动化工作流规则",
+    "定义源平台和目标平台",
+    "发布后自动触发分发"
+  ],
+  "relatedTools": [
+    "buffer",
+    "metricool",
+    "opus-clip"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

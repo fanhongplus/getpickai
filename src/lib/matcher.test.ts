@@ -1,5 +1,5 @@
 // src/lib/matcher.test.ts
-// 适配版本：6 身份 × 55 痛点 × 3 预算 × 152 工作流
+// 适配版本：6 身份 × 55 痛点 × 3 预算 × 152 工作流 × 108 工具
 
 import {
   validateMatcherData,
@@ -29,6 +29,7 @@ describe("组1: 正常匹配成功", () => {
     const r = matchWorkflow(data, "ecommerce", "product-desc", "free");
     expect(r).not.toBeNull();
     expect(r!.tools.length).toBeGreaterThanOrEqual(2);
+    expect(r!.tools.length).toBeLessThanOrEqual(4);
     r!.tools.forEach((t) => {
       expect(t.name).toBeTruthy();
       expect(t.slug).toMatch(/^[a-z0-9-]+$/);
@@ -55,7 +56,7 @@ describe("组1: 正常匹配成功", () => {
     expect(r!.tools.some((t) => ["kling-ai", "dreamina", "hailuo-ai", "capcut", "jianying"].includes(t.slug))).toBe(true);
   });
 
-  test("1.5 电商+客户评价洞察+paid → 含 Shulex VOC", () => {
+  test("1.5 电商+评价洞察+paid → 含 Shulex VOC", () => {
     const r = matchWorkflow(data, "ecommerce", "review-insights", "paid");
     expect(r).not.toBeNull();
     expect(r!.tools.some((t) => t.slug === "shulex-voc")).toBe(true);
@@ -73,14 +74,26 @@ describe("组1: 正常匹配成功", () => {
     expect(r!.tools.some((t) => t.slug === "popai")).toBe(true);
   });
 
-  test("1.8 同一痛点三种预算返回不同方案", () => {
+  test("1.8 留学生+文献综述+free → 含 Connected Papers", () => {
+    const r = matchWorkflow(data, "student", "literature-review", "free");
+    expect(r).not.toBeNull();
+    expect(r!.tools.some((t) => t.slug === "connected-papers")).toBe(true);
+  });
+
+  test("1.9 留学生+数学理科+free → 含 Socratic", () => {
+    const r = matchWorkflow(data, "student", "math-science", "free");
+    expect(r).not.toBeNull();
+    expect(r!.tools.some((t) => t.slug === "socratic")).toBe(true);
+  });
+
+  test("1.10 同一痛点三种预算返回不同方案", () => {
     const f = matchWorkflow(data, "ecommerce", "product-desc", "free");
     const p = matchWorkflow(data, "ecommerce", "product-desc", "paid");
     const c = matchWorkflow(data, "ecommerce", "product-desc", "cn-free");
     expect(new Set([f!.title, p!.title, c!.title]).size).toBe(3);
   });
 
-  test("1.9 所有痛点至少有一种预算方案", () => {
+  test("1.11 所有痛点至少有一种预算方案", () => {
     getIdentities(data).forEach((i) => {
       getPainpointsByIdentity(data, i.id).forEach((pp) => {
         const f = matchWorkflow(data, i.id, pp.id, "free");
@@ -91,7 +104,7 @@ describe("组1: 正常匹配成功", () => {
     });
   });
 
-  test("1.10 所有 slug 格式合法", () => {
+  test("1.12 所有 slug 格式合法", () => {
     getIdentities(data).forEach((i) => {
       getPainpointsByIdentity(data, i.id).forEach((pp) => {
         (["free", "paid", "cn-free"] as const).forEach((b) => {
@@ -163,14 +176,22 @@ describe("组5: 数据与函数交叉完整性", () => {
       (["free", "paid", "cn-free"] as const).forEach((b) => { const wf = matchWorkflow(data, i.id, p.id, b); if (wf) wf.tools.forEach((t) => expect(t.step.length).toBeLessThanOrEqual(80)); });
     }); });
   });
-  test("5.5 全遍历不抛异常", () => {
+  test("5.5 每条工作流 2-4 个工具", () => {
+    getIdentities(data).forEach((i) => { getPainpointsByIdentity(data, i.id).forEach((p) => {
+      (["free", "paid", "cn-free"] as const).forEach((b) => { const wf = matchWorkflow(data, i.id, p.id, b); if (wf) {
+        expect(wf.tools.length).toBeGreaterThanOrEqual(2);
+        expect(wf.tools.length).toBeLessThanOrEqual(4);
+      }});
+    }); });
+  });
+  test("5.6 全遍历不抛异常", () => {
     [...getIdentities(data).map((i) => i.id), "fake"].forEach((iid) => {
       [...getPainpointsByIdentity(data, iid).map((p) => p.id), "fake"].forEach((pid) => {
         ["free", "paid", "cn-free", "invalid"].forEach((b) => { expect(() => matchWorkflow(data, iid, pid, b as unknown as "free")).not.toThrow(); });
       });
     });
   });
-  test("5.6 无非法 slug 重复", () => {
+  test("5.7 无非法 slug 重复", () => {
     getIdentities(data).forEach((i) => { getPainpointsByIdentity(data, i.id).forEach((p) => {
       (["free", "paid", "cn-free"] as const).forEach((b) => { const wf = matchWorkflow(data, i.id, p.id, b); if (wf) {
         const slugs = wf.tools.map((t) => t.slug);
@@ -178,12 +199,12 @@ describe("组5: 数据与函数交叉完整性", () => {
       }});
     }); });
   });
-  test("5.7 cn-free ≥ 35 个痛点", () => {
+  test("5.8 cn-free ≥ 35 个痛点", () => {
     let c = 0;
     getIdentities(data).forEach((i) => { getPainpointsByIdentity(data, i.id).forEach((p) => { if (matchWorkflow(data, i.id, p.id, "cn-free")) c++; }); });
     expect(c).toBeGreaterThanOrEqual(35);
   });
-  test("5.8 全链路畅通", () => {
+  test("5.9 全链路畅通", () => {
     expect(validateMatcherData(data).valid).toBe(true);
     getIdentities(data).forEach((i) => {
       const pps = getPainpointsByIdentity(data, i.id);

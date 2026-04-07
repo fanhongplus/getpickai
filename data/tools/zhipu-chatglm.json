@@ -1,1 +1,68 @@
-{"slug":"zhipu-chatglm","name":"智谱清言","logo":"/logos/zhipu-chatglm.svg","tagline":"智谱 AI 出品的对话助手，支持联网搜索、文档分析和代码生成","scenes":["写文案","提效率"],"pricingType":"free","priceLabel":"免费","rating":4.3,"affiliateUrl":"","websiteUrl":"https://chatglm.cn","editorReview":"智谱清言是智谱 AI 基于 GLM 模型打造的 AI 助手。在学术和技术领域的表现尤其出色，对论文分析和代码理解能力强。\n\n支持联网搜索、文档上传分析、代码生成等功能。中文学术场景是它的强项。\n\n完全免费使用，适合学生和研究人员。","goodFor":["学生和研究人员","编程学习","文档分析","学术写作"],"notGoodFor":["对英文要求极高的用户","需要图片生成的用户"],"pros":["完全免费","学术能力强","联网搜索","代码生成好"],"cons":["通用对话不如 Kimi","知名度有限","图片功能较弱"],"pricingPlans":[{"name":"免费版","price":"免费","features":["AI 对话","联网搜索","文档分析","代码生成"]}],"quickStart":["打开 chatglm.cn","注册账号","开始对话或上传文档","使用联网搜索功能"],"relatedTools":["kimi","tongyi-qianwen"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "zhipu-chatglm",
+  "name": "智谱清言",
+  "logo": "/logos/zhipu-chatglm.svg",
+  "tagline": "智谱 AI 出品的对话助手，支持联网搜索、文档分析和代码生成",
+  "scenes": [
+    "写文案",
+    "提效率"
+  ],
+  "pricingType": "free",
+  "priceLabel": "免费",
+  "rating": 4.3,
+  "affiliateUrl": "",
+  "websiteUrl": "https://chatglm.cn",
+  "editorReview": "智谱清言是智谱 AI 基于 GLM 模型打造的 AI 助手。在学术和技术领域的表现尤其出色，对论文分析和代码理解能力强。\n\n支持联网搜索、文档上传分析、代码生成等功能。中文学术场景是它的强项。\n\n完全免费使用，适合学生和研究人员。",
+  "goodFor": [
+    "学生和研究人员",
+    "编程学习",
+    "文档分析",
+    "学术写作"
+  ],
+  "notGoodFor": [
+    "对英文要求极高的用户",
+    "需要图片生成的用户"
+  ],
+  "pros": [
+    "完全免费",
+    "学术能力强",
+    "联网搜索",
+    "代码生成好"
+  ],
+  "cons": [
+    "通用对话不如 Kimi",
+    "知名度有限",
+    "图片功能较弱"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "AI 对话",
+        "联网搜索",
+        "文档分析",
+        "代码生成"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 chatglm.cn",
+    "注册账号",
+    "开始对话或上传文档",
+    "使用联网搜索功能"
+  ],
+  "relatedTools": [
+    "kimi",
+    "tongyi-qianwen"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

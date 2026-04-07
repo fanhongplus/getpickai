@@ -1,1 +1,70 @@
-{"slug":"adcreative-ai","name":"AdCreative.ai","logo":"/logos/adcreative-ai.svg","tagline":"AI 广告素材生成平台，一键生成高转化率的广告图和文案","scenes":["画图片","写文案"],"pricingType":"paid","priceLabel":"$21起/月","rating":4.4,"affiliateUrl":"","websiteUrl":"https://www.adcreative.ai","editorReview":"AdCreative.ai 专注一件事：用 AI 生成高转化率的广告素材。上传品牌素材和产品信息，AI 自动生成多种广告图和文案变体，还能预测每个版本的转化率。\n\n对跨境卖家来说，做 Facebook/Google 广告时不用再纠结素材了。AI 一次生成几十个版本，选效果最好的投放。","goodFor":["广告投放","跨境电商卖家","社媒营销","品牌推广"],"notGoodFor":["不投广告的用户","追求极致创意的品牌"],"pros":["广告素材专精","转化率预测","批量生成高效","多平台适配"],"cons":["$21/月起步","只做广告素材","创意有模板感"],"pricingPlans":[{"name":"Starter","price":"$21/月","features":["10 个下载/月","广告图生成","文案生成","转化率评分"]}],"quickStart":["注册 AdCreative.ai","上传品牌 Logo 和色彩","输入产品信息","AI 生成多种广告素材","选择高分版本投放"],"relatedTools":["canva","creatorkit","midjourney"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "adcreative-ai",
+  "name": "AdCreative.ai",
+  "logo": "/logos/adcreative-ai.svg",
+  "tagline": "AI 广告素材生成平台，一键生成高转化率的广告图和文案",
+  "scenes": [
+    "画图片",
+    "写文案"
+  ],
+  "pricingType": "paid",
+  "priceLabel": "$21起/月",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.adcreative.ai",
+  "editorReview": "AdCreative.ai 专注一件事：用 AI 生成高转化率的广告素材。上传品牌素材和产品信息，AI 自动生成多种广告图和文案变体，还能预测每个版本的转化率。\n\n对跨境卖家来说，做 Facebook/Google 广告时不用再纠结素材了。AI 一次生成几十个版本，选效果最好的投放。",
+  "goodFor": [
+    "广告投放",
+    "跨境电商卖家",
+    "社媒营销",
+    "品牌推广"
+  ],
+  "notGoodFor": [
+    "不投广告的用户",
+    "追求极致创意的品牌"
+  ],
+  "pros": [
+    "广告素材专精",
+    "转化率预测",
+    "批量生成高效",
+    "多平台适配"
+  ],
+  "cons": [
+    "$21/月起步",
+    "只做广告素材",
+    "创意有模板感"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Starter",
+      "price": "$21/月",
+      "features": [
+        "10 个下载/月",
+        "广告图生成",
+        "文案生成",
+        "转化率评分"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 AdCreative.ai",
+    "上传品牌 Logo 和色彩",
+    "输入产品信息",
+    "AI 生成多种广告素材",
+    "选择高分版本投放"
+  ],
+  "relatedTools": [
+    "canva",
+    "creatorkit",
+    "midjourney"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

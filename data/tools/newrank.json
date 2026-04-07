@@ -1,2 +1,77 @@
-{"slug":"newrank","name":"新榜","logo":"/logos/newrank.svg","tagline":"自媒体数据分析平台，AI 驱动的内容趋势分析和账号监测","scenes":["提效率"],"pricingType":"freemium","priceLabel":"免费基础版 / 付费版","rating":4.3,"affiliateUrl":"","websiteUrl":"https://www.newrank.cn","editorReview":"新榜是国内自媒体数据分析的老牌平台，覆盖微信公众号、抖音、小红书、B 站等几乎所有国内内容平台。AI 驱动的内容趋势分析可以帮你发现热门选题。\n\n对自媒体创作者来说，最实用的功能是看同领域头部账号在发什么内容、什么选题数据好、什么时间发布效果最佳。知己知彼才能做出爆款内容。\n\n免费版基础数据够看，深度分析需要付费。做国内自媒体的必备工具。","goodFor":["国内自媒体创作者","MCN 机构","品牌营销团队","内容运营"],"notGoodFor":["做海外市场的用户","不做国内平台的用户","个人爱好者"],"pros":["平台覆盖全面","内容趋势分析实用","账号监测方便","行业数据报告"],
-"cons":["深度功能需付费","主要服务国内平台","数据偶有延迟"],"pricingPlans":[{"name":"免费版","price":"免费","features":["基础数据查看","热门内容浏览"]},{"name":"付费版","price":"按需定价","features":["深度数据分析","账号监测","趋势报告","API 接入"]}],"quickStart":["注册新榜账号","搜索你关注的领域或账号","查看热门内容和趋势","分析头部账号的选题策略","用数据指导你的内容创作"],"relatedTools":["chanmama","gaoding"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "newrank",
+  "name": "新榜",
+  "logo": "/logos/newrank.svg",
+  "tagline": "自媒体数据分析平台，AI 驱动的内容趋势分析和账号监测",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / 付费版",
+  "rating": 4.3,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.newrank.cn",
+  "editorReview": "新榜是国内自媒体数据分析的老牌平台，覆盖微信公众号、抖音、小红书、B 站等几乎所有国内内容平台。AI 驱动的内容趋势分析可以帮你发现热门选题。\n\n对自媒体创作者来说，最实用的功能是看同领域头部账号在发什么内容、什么选题数据好、什么时间发布效果最佳。知己知彼才能做出爆款内容。\n\n免费版基础数据够看，深度分析需要付费。做国内自媒体的必备工具。",
+  "goodFor": [
+    "国内自媒体创作者",
+    "MCN 机构",
+    "品牌营销团队",
+    "内容运营"
+  ],
+  "notGoodFor": [
+    "做海外市场的用户",
+    "不做国内平台的用户",
+    "个人爱好者"
+  ],
+  "pros": [
+    "平台覆盖全面",
+    "内容趋势分析实用",
+    "账号监测方便",
+    "行业数据报告"
+  ],
+  "cons": [
+    "深度功能需付费",
+    "主要服务国内平台",
+    "数据偶有延迟"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "基础数据查看",
+        "热门内容浏览"
+      ]
+    },
+    {
+      "name": "付费版",
+      "price": "按需定价",
+      "features": [
+        "深度数据分析",
+        "账号监测",
+        "趋势报告",
+        "API 接入"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册新榜账号",
+    "搜索你关注的领域或账号",
+    "查看热门内容和趋势",
+    "分析头部账号的选题策略",
+    "用数据指导你的内容创作"
+  ],
+  "relatedTools": [
+    "chanmama",
+    "gaoding"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

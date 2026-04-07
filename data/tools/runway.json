@@ -96,5 +96,7 @@
   "affiliateCommission": "20% recurring",
   "cookieDuration": "30 days",
   "createdAt": "2026-04-04",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

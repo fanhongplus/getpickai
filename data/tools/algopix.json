@@ -3,29 +3,82 @@
   "name": "Algopix",
   "logo": "/logos/algopix.svg",
   "tagline": "AI 驱动的多市场选品分析工具，一键对比不同国家市场的利润和竞争",
-  "scenes": ["提效率"],
+  "scenes": [
+    "提效率"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费试用 / $28起/月",
   "rating": 4.2,
   "affiliateUrl": "",
   "websiteUrl": "https://www.algopix.com",
   "editorReview": "Algopix 的特色是多市场对比分析——输入一个产品，它能同时分析在美国、英国、德国等多个市场的销售数据、利润和竞争情况，帮你找到最佳上架市场。\n\n对做多站点的跨境卖家来说这功能很实用，省去了逐个市场手动调研的时间。AI 推荐功能会自动建议最适合销售的市场。\n\n免费试用有次数限制，$28/月起的价格在同类工具中算中等。适合计划拓展多个站点的卖家。",
-  "goodFor": ["多站点跨境卖家", "计划拓展新市场的卖家", "需要跨市场对比的用户"],
-  "notGoodFor": ["只做单一市场的卖家", "纯独立站卖家", "预算有限的新手"],
-  "pros": ["多市场对比分析", "AI 市场推荐", "利润计算精准", "界面直观"],
-  "cons": ["免费版次数有限", "数据覆盖不如 Helium 10", "价格中等偏上"],
-  "pricingPlans": [
-    {"name": "免费试用", "price": "免费", "features": ["有限分析次数"]},
-    {"name": "Basic", "price": "$28/月", "features": ["多市场分析", "利润计算", "AI 推荐"]},
-    {"name": "Pro", "price": "$56/月", "features": ["全部功能", "批量分析", "API 接入"]}
+  "goodFor": [
+    "多站点跨境卖家",
+    "计划拓展新市场的卖家",
+    "需要跨市场对比的用户"
   ],
-  "quickStart": ["注册 Algopix 账号", "输入产品名称或 ASIN", "查看多市场对比数据", "根据 AI 推荐选择最佳市场", "导出分析报告"],
-  "relatedTools": ["jungle-scout", "helium-10", "sellersprite"],
+  "notGoodFor": [
+    "只做单一市场的卖家",
+    "纯独立站卖家",
+    "预算有限的新手"
+  ],
+  "pros": [
+    "多市场对比分析",
+    "AI 市场推荐",
+    "利润计算精准",
+    "界面直观"
+  ],
+  "cons": [
+    "免费版次数有限",
+    "数据覆盖不如 Helium 10",
+    "价格中等偏上"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费试用",
+      "price": "免费",
+      "features": [
+        "有限分析次数"
+      ]
+    },
+    {
+      "name": "Basic",
+      "price": "$28/月",
+      "features": [
+        "多市场分析",
+        "利润计算",
+        "AI 推荐"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$56/月",
+      "features": [
+        "全部功能",
+        "批量分析",
+        "API 接入"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Algopix 账号",
+    "输入产品名称或 ASIN",
+    "查看多市场对比数据",
+    "根据 AI 推荐选择最佳市场",
+    "导出分析报告"
+  ],
+  "relatedTools": [
+    "jungle-scout",
+    "helium-10",
+    "sellersprite"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

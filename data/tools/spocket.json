@@ -1,1 +1,74 @@
-{"slug":"spocket","name":"Spocket","logo":"/logos/spocket.svg","tagline":"Dropshipping 供应商平台，AI 推荐热销产品，一键同步到 Shopify","scenes":["提效率"],"pricingType":"freemium","priceLabel":"免费试用 / $40起/月","rating":4.3,"affiliateUrl":"","websiteUrl":"https://www.spocket.co","editorReview":"Spocket 是做 Dropshipping 的好工具，主打欧美供应商（发货快），AI 推荐热销产品功能帮你发现趋势品。\n\n和 Shopify 深度集成，一键导入产品到店铺，客户下单后自动转发给供应商。比传统 1688 采购+自发货的模式轻松很多。","goodFor":["Dropshipping 新手","Shopify 卖家","轻资产电商"],"notGoodFor":["做自有品牌的卖家","追求极低采购价","亚马逊卖家"],"pros":["欧美供应商发货快","AI 选品推荐","Shopify 一键对接","操作简单"],"cons":["$40/月不便宜","产品利润空间有限","供应商数量有限"],"pricingPlans":[{"name":"免费试用","price":"免费","features":["浏览供应商"]},{"name":"Starter","price":"$40/月","features":["无限产品导入","AI 推荐","自动订单处理"]}],"quickStart":["注册 Spocket","浏览 AI 推荐的热销产品","一键导入到 Shopify 店铺","设置零售价","客户下单自动转发供应商"],"relatedTools":["printful","shopify-magic"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "spocket",
+  "name": "Spocket",
+  "logo": "/logos/spocket.svg",
+  "tagline": "Dropshipping 供应商平台，AI 推荐热销产品，一键同步到 Shopify",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $40起/月",
+  "rating": 4.3,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.spocket.co",
+  "editorReview": "Spocket 是做 Dropshipping 的好工具，主打欧美供应商（发货快），AI 推荐热销产品功能帮你发现趋势品。\n\n和 Shopify 深度集成，一键导入产品到店铺，客户下单后自动转发给供应商。比传统 1688 采购+自发货的模式轻松很多。",
+  "goodFor": [
+    "Dropshipping 新手",
+    "Shopify 卖家",
+    "轻资产电商"
+  ],
+  "notGoodFor": [
+    "做自有品牌的卖家",
+    "追求极低采购价",
+    "亚马逊卖家"
+  ],
+  "pros": [
+    "欧美供应商发货快",
+    "AI 选品推荐",
+    "Shopify 一键对接",
+    "操作简单"
+  ],
+  "cons": [
+    "$40/月不便宜",
+    "产品利润空间有限",
+    "供应商数量有限"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费试用",
+      "price": "免费",
+      "features": [
+        "浏览供应商"
+      ]
+    },
+    {
+      "name": "Starter",
+      "price": "$40/月",
+      "features": [
+        "无限产品导入",
+        "AI 推荐",
+        "自动订单处理"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Spocket",
+    "浏览 AI 推荐的热销产品",
+    "一键导入到 Shopify 店铺",
+    "设置零售价",
+    "客户下单自动转发供应商"
+  ],
+  "relatedTools": [
+    "printful",
+    "shopify-magic"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

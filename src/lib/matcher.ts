@@ -60,9 +60,9 @@ function validateWorkflow(
     errors.push(`${path}.tools: 必须是数组`);
     return false;
   }
-  if (workflow.tools.length < 2 || workflow.tools.length > 3) {
+  if (workflow.tools.length < 2 || workflow.tools.length > 4) {
     errors.push(
-      `${path}.tools: 长度必须为 2-3，当前为 ${workflow.tools.length}`
+      `${path}.tools: 长度必须为 2-4，当前为 ${workflow.tools.length}`
     );
     ok = false;
   }

@@ -3,28 +3,79 @@
   "name": "Accio Work",
   "logo": "/logos/accio-work.svg",
   "tagline": "阿里国际推出的跨境电商 AI Agent 平台，30 分钟完成从选品到开店全流程",
-  "scenes": ["提效率"],
+  "scenes": [
+    "提效率"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费试用 / 按量计费",
   "rating": 4.2,
   "affiliateUrl": "",
   "websiteUrl": "https://accio.com/work",
   "editorReview": "Accio Work 是阿里国际最新推出的 AI Agent 平台，定位非常明确：帮新手卖家在 30 分钟内完成从选品到开店的全流程。背靠阿里 10 亿+ 商品数据，AI 推荐的选品方向确实有数据支撑。\n\n它不只是一个工具，更像一个 AI 跨境电商顾问。可以帮你分析市场、推荐供应商、生成产品描述、甚至自动配置店铺。对于零经验入局跨境电商的新手来说，降低了巨大的门槛。\n\n目前还在早期阶段，功能在快速迭代中。免费试用期间值得体验一下，看看 AI 能帮你做到什么程度。",
-  "goodFor": ["跨境电商新手", "想快速开店的卖家", "阿里系平台卖家", "需要选品建议的卖家"],
-  "notGoodFor": ["经验丰富的大卖家", "非阿里系平台用户", "需要精细化运营的场景"],
-  "pros": ["30 分钟快速开店", "背靠阿里 10 亿+ 商品数据", "AI 全流程辅助", "新手友好度极高", "免费试用"],
-  "cons": ["产品还在早期阶段", "主要服务阿里系平台", "高级运营功能有限", "AI 推荐仍需人工判断"],
-  "pricingPlans": [
-    {"name": "免费试用", "price": "免费", "features": ["基础 AI 选品", "店铺配置", "产品描述生成"]},
-    {"name": "按量计费", "price": "按使用量", "features": ["全部 AI Agent 功能", "供应商推荐", "批量操作", "数据分析"]}
+  "goodFor": [
+    "跨境电商新手",
+    "想快速开店的卖家",
+    "阿里系平台卖家",
+    "需要选品建议的卖家"
   ],
-  "quickStart": ["访问 accio.com/work 注册账号", "告诉 AI 你想卖什么品类", "AI 自动推荐选品方向和供应商", "一键生成产品描述和店铺配置", "审核确认后即可上架销售"],
-  "relatedTools": ["sellersprite", "pic-copilot", "dianxiaomi-ai"],
+  "notGoodFor": [
+    "经验丰富的大卖家",
+    "非阿里系平台用户",
+    "需要精细化运营的场景"
+  ],
+  "pros": [
+    "30 分钟快速开店",
+    "背靠阿里 10 亿+ 商品数据",
+    "AI 全流程辅助",
+    "新手友好度极高",
+    "免费试用"
+  ],
+  "cons": [
+    "产品还在早期阶段",
+    "主要服务阿里系平台",
+    "高级运营功能有限",
+    "AI 推荐仍需人工判断"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费试用",
+      "price": "免费",
+      "features": [
+        "基础 AI 选品",
+        "店铺配置",
+        "产品描述生成"
+      ]
+    },
+    {
+      "name": "按量计费",
+      "price": "按使用量",
+      "features": [
+        "全部 AI Agent 功能",
+        "供应商推荐",
+        "批量操作",
+        "数据分析"
+      ]
+    }
+  ],
+  "quickStart": [
+    "访问 accio.com/work 注册账号",
+    "告诉 AI 你想卖什么品类",
+    "AI 自动推荐选品方向和供应商",
+    "一键生成产品描述和店铺配置",
+    "审核确认后即可上架销售"
+  ],
+  "relatedTools": [
+    "sellersprite",
+    "pic-copilot",
+    "dianxiaomi-ai"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

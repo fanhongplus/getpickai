@@ -1,1 +1,86 @@
-{"slug":"metricool","name":"Metricool","logo":"/logos/metricool.svg","tagline":"全平台社媒管理和数据分析工具，支持 TikTok/YouTube/IG/X 统一排期","scenes":["提效率"],"pricingType":"freemium","priceLabel":"免费基础版 / $18/月起","rating":4.5,"affiliateUrl":"","websiteUrl":"https://metricool.com","editorReview":"Metricool 是西班牙出品的社媒管理工具，在欧美创作者圈子里口碑很好。最大的优势是平台覆盖全——TikTok、YouTube、Instagram、Facebook、X、LinkedIn、Pinterest 等主流社媒一网打尽。\n\n统一的内容日历让你可以一次编辑、多平台定时发布。跨平台数据分析面板能直接对比各平台的表现，帮你优化内容策略。\n\n$18/月起的价格在同类工具中属于中等，比 Buffer 便宜又比免费方案功能全面。适合做矩阵运营的自媒体创作者。","goodFor":["多平台自媒体创作者","社媒运营团队","品牌营销","跨平台数据分析"],"notGoodFor":["只做单一平台的用户","预算极紧的新手"],"pros":["平台覆盖全面","数据分析深入","日历界面直观","价格合理","团队协作好"],"cons":["中文界面缺失","部分平台分析深度不如专业工具","上手有学习曲线"],"pricingPlans":[{"name":"Free","price":"免费","features":["5 个社媒账号","50 条定时帖子","基础分析"]},{"name":"Starter","price":"$18/月","features":["无限定时","竞品分析","日历视图"]},{"name":"Advanced","price":"$42/月","features":["所有 Starter 功能","广告分析","团队协作"]}],"quickStart":["注册 Metricool 账号","连接你的社媒账号","创建内容日历","设置自动发布时间","查看跨平台数据对比"],"relatedTools":["buffer","repurpose-io"],"screenshots":[],"isFeatured":false,"isNew":false,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "metricool",
+  "name": "Metricool",
+  "logo": "/logos/metricool.svg",
+  "tagline": "全平台社媒管理和数据分析工具，支持 TikTok/YouTube/IG/X 统一排期",
+  "scenes": [
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $18/月起",
+  "rating": 4.5,
+  "affiliateUrl": "",
+  "websiteUrl": "https://metricool.com",
+  "editorReview": "Metricool 是西班牙出品的社媒管理工具，在欧美创作者圈子里口碑很好。最大的优势是平台覆盖全——TikTok、YouTube、Instagram、Facebook、X、LinkedIn、Pinterest 等主流社媒一网打尽。\n\n统一的内容日历让你可以一次编辑、多平台定时发布。跨平台数据分析面板能直接对比各平台的表现，帮你优化内容策略。\n\n$18/月起的价格在同类工具中属于中等，比 Buffer 便宜又比免费方案功能全面。适合做矩阵运营的自媒体创作者。",
+  "goodFor": [
+    "多平台自媒体创作者",
+    "社媒运营团队",
+    "品牌营销",
+    "跨平台数据分析"
+  ],
+  "notGoodFor": [
+    "只做单一平台的用户",
+    "预算极紧的新手"
+  ],
+  "pros": [
+    "平台覆盖全面",
+    "数据分析深入",
+    "日历界面直观",
+    "价格合理",
+    "团队协作好"
+  ],
+  "cons": [
+    "中文界面缺失",
+    "部分平台分析深度不如专业工具",
+    "上手有学习曲线"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "5 个社媒账号",
+        "50 条定时帖子",
+        "基础分析"
+      ]
+    },
+    {
+      "name": "Starter",
+      "price": "$18/月",
+      "features": [
+        "无限定时",
+        "竞品分析",
+        "日历视图"
+      ]
+    },
+    {
+      "name": "Advanced",
+      "price": "$42/月",
+      "features": [
+        "所有 Starter 功能",
+        "广告分析",
+        "团队协作"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Metricool 账号",
+    "连接你的社媒账号",
+    "创建内容日历",
+    "设置自动发布时间",
+    "查看跨平台数据对比"
+  ],
+  "relatedTools": [
+    "buffer",
+    "repurpose-io"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": false,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

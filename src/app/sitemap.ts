@@ -2,6 +2,7 @@ import { MetadataRoute } from "next";
 import { getAllTools, getPublishedArticles } from "@/lib/data";
 import matcherJson from "../../data/matcher.json";
 import type { MatcherData, MatcherBudget } from "@/lib/types";
+import { SCENE_MAP } from "@/lib/constants";
 
 const BASE_URL = "https://gopick.ai";
 const matcherData = matcherJson as MatcherData;
@@ -90,7 +91,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  // 工作流页面（143 条动态生成）
+  // 品类对比页
+  const comparePages: MetadataRoute.Sitemap = [
+    {
+      url: `${BASE_URL}/compare`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    },
+    ...Object.values(SCENE_MAP).map((info) => ({
+      url: `${BASE_URL}/compare/${info.slug}`,
+      lastModified: new Date(),
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+    })),
+  ];
+
+  // 工作流页面（动态生成）
   const workflowPages: MetadataRoute.Sitemap = [];
   const ALL_BUDGETS: MatcherBudget[] = ["free", "paid", "cn-free"];
   for (const identity of matcherData.identities) {
@@ -108,5 +125,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
   }
 
-  return [...staticPages, ...toolPages, ...articlePages, ...workflowPages];
+  return [...staticPages, ...comparePages, ...toolPages, ...articlePages, ...workflowPages];
 }

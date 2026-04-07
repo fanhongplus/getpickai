@@ -1,1 +1,77 @@
-{"slug":"pika","name":"Pika","logo":"/logos/pika.svg","tagline":"AI 视频生成工具，文字和图片快速生成短视频片段","scenes":["做视频"],"pricingType":"freemium","priceLabel":"免费试用 / $8起/月","rating":4.4,"affiliateUrl":"","websiteUrl":"https://pika.art","editorReview":"Pika 是 AI 视频生成领域的明星产品，可以用文字描述或图片生成短视频片段。生成质量在同类工具中属于第一梯队，和 Runway 各有千秋。\n\n$8/月的价格是同类工具里最亲民的，生成速度也很快。适合做社媒内容、广告素材和创意短视频。\n\n对自媒体创作者来说，Pika 可以快速出片头、转场和创意片段，省去大量拍摄工作。","goodFor":["自媒体创作者","短视频制作","广告素材","创意视频"],"notGoodFor":["需要长视频的用户","对画质要求极高的专业场景","纯文字内容创作"],"pros":["视频生成质量高","价格亲民","生成速度快","操作简单"],"cons":["视频时长有限","偶尔效果不稳定","高级控制不如专业软件"],"pricingPlans":[{"name":"免费试用","price":"免费","features":["有限生成次数","基础分辨率"]},{"name":"Standard","price":"$8/月","features":["更多生成次数","高清分辨率","去水印"]}],"quickStart":["打开 pika.art 注册账号","输入文字描述或上传图片","设置视频风格和参数","点击生成等待几分钟","下载视频使用"],"relatedTools":["runway","luma-ai","capcut"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "pika",
+  "name": "Pika",
+  "logo": "/logos/pika.svg",
+  "tagline": "AI 视频生成工具，文字和图片快速生成短视频片段",
+  "scenes": [
+    "做视频"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费试用 / $8起/月",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://pika.art",
+  "editorReview": "Pika 是 AI 视频生成领域的明星产品，可以用文字描述或图片生成短视频片段。生成质量在同类工具中属于第一梯队，和 Runway 各有千秋。\n\n$8/月的价格是同类工具里最亲民的，生成速度也很快。适合做社媒内容、广告素材和创意短视频。\n\n对自媒体创作者来说，Pika 可以快速出片头、转场和创意片段，省去大量拍摄工作。",
+  "goodFor": [
+    "自媒体创作者",
+    "短视频制作",
+    "广告素材",
+    "创意视频"
+  ],
+  "notGoodFor": [
+    "需要长视频的用户",
+    "对画质要求极高的专业场景",
+    "纯文字内容创作"
+  ],
+  "pros": [
+    "视频生成质量高",
+    "价格亲民",
+    "生成速度快",
+    "操作简单"
+  ],
+  "cons": [
+    "视频时长有限",
+    "偶尔效果不稳定",
+    "高级控制不如专业软件"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费试用",
+      "price": "免费",
+      "features": [
+        "有限生成次数",
+        "基础分辨率"
+      ]
+    },
+    {
+      "name": "Standard",
+      "price": "$8/月",
+      "features": [
+        "更多生成次数",
+        "高清分辨率",
+        "去水印"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 pika.art 注册账号",
+    "输入文字描述或上传图片",
+    "设置视频风格和参数",
+    "点击生成等待几分钟",
+    "下载视频使用"
+  ],
+  "relatedTools": [
+    "runway",
+    "luma-ai",
+    "capcut"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

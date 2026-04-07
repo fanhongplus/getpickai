@@ -1,1 +1,77 @@
-{"slug":"replit-ai","name":"Replit AI","logo":"/logos/replit-ai.svg","tagline":"AI 在线编程平台，对话式创建和部署应用，零基础也能做 App","scenes":["写代码"],"pricingType":"freemium","priceLabel":"免费基础版 / $15起/月","rating":4.4,"affiliateUrl":"","websiteUrl":"https://replit.com","editorReview":"Replit 是在线编程平台的标杆，AI 功能让零基础用户也能通过对话创建应用。你描述想要什么功能，AI 自动写代码、部署上线。\n\n对非技术用户来说，这是最快的建站和做工具的方式。对开发者来说，在线 IDE + AI 辅助的效率也很高。\n\n免费版可以创建和运行项目，$15/月解锁更强 AI 和更多资源。","goodFor":["编程初学者","快速原型开发","非技术创业者","学生"],"notGoodFor":["需要本地开发的用户","大型项目","对性能要求高的应用"],"pros":["在线 IDE 即开即用","AI 对话式编程","零基础友好","一键部署"],"cons":["免费版资源有限","复杂项目支持不够","在线 IDE 有延迟"],"pricingPlans":[{"name":"Free","price":"免费","features":["基础项目","AI 辅助（有限）"]},{"name":"Replit Core","price":"$15/月","features":["更强 AI","更多资源","自定义域名"]}],"quickStart":["打开 replit.com 注册","描述你想创建的应用","AI 自动生成代码","预览和测试","一键部署上线"],"relatedTools":["cursor","v0-dev","tongyi-lingma"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "replit-ai",
+  "name": "Replit AI",
+  "logo": "/logos/replit-ai.svg",
+  "tagline": "AI 在线编程平台，对话式创建和部署应用，零基础也能做 App",
+  "scenes": [
+    "写代码"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $15起/月",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://replit.com",
+  "editorReview": "Replit 是在线编程平台的标杆，AI 功能让零基础用户也能通过对话创建应用。你描述想要什么功能，AI 自动写代码、部署上线。\n\n对非技术用户来说，这是最快的建站和做工具的方式。对开发者来说，在线 IDE + AI 辅助的效率也很高。\n\n免费版可以创建和运行项目，$15/月解锁更强 AI 和更多资源。",
+  "goodFor": [
+    "编程初学者",
+    "快速原型开发",
+    "非技术创业者",
+    "学生"
+  ],
+  "notGoodFor": [
+    "需要本地开发的用户",
+    "大型项目",
+    "对性能要求高的应用"
+  ],
+  "pros": [
+    "在线 IDE 即开即用",
+    "AI 对话式编程",
+    "零基础友好",
+    "一键部署"
+  ],
+  "cons": [
+    "免费版资源有限",
+    "复杂项目支持不够",
+    "在线 IDE 有延迟"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "基础项目",
+        "AI 辅助（有限）"
+      ]
+    },
+    {
+      "name": "Replit Core",
+      "price": "$15/月",
+      "features": [
+        "更强 AI",
+        "更多资源",
+        "自定义域名"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 replit.com 注册",
+    "描述你想创建的应用",
+    "AI 自动生成代码",
+    "预览和测试",
+    "一键部署上线"
+  ],
+  "relatedTools": [
+    "cursor",
+    "v0-dev",
+    "tongyi-lingma"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
+}

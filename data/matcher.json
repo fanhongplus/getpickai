@@ -59,9 +59,9 @@
                   "cost": "免费"
                 },
                 {
-                  "name": "有道翻译",
-                  "slug": "youdao",
-                  "step": "将豆包的描述粘贴到有道翻译，一键翻译为英/日/韩多语言版本",
+                  "name": "通义翻译",
+                  "slug": "tongyi-translate",
+                  "step": "将豆包描述粘贴到通义翻译，翻译为英/日/韩多语言电商版本",
                   "cost": "免费"
                 }
               ]
@@ -569,9 +569,9 @@
               "title": "国产 AI 生成产品图",
               "tools": [
                 {
-                  "name": "即梦AI",
-                  "slug": "dreamina",
-                  "step": "上传产品实拍图，用即梦 AI 生成不同场景的商拍效果图",
+                  "name": "Pic Copilot",
+                  "slug": "pic-copilot",
+                  "step": "上传产品图，阿里出品的 AI 自动生成电商场景化商拍效果图",
                   "cost": "免费"
                 },
                 {
@@ -654,6 +654,12 @@
             "paid": {
               "title": "AI 建站 → 品牌设计 → 文案填充",
               "tools": [
+                {
+                  "name": "Shopify Magic",
+                  "slug": "shopify-magic",
+                  "step": "Shopify 后台直接用 AI 生成产品描述、邮件模板和 FAQ 内容",
+                  "cost": "随 Shopify 订阅"
+                },
                 {
                   "name": "Framer",
                   "slug": "framer-ai",
@@ -2220,10 +2226,10 @@
               "title": "AI 检索论文 → 归纳分析",
               "tools": [
                 {
-                  "name": "Semantic Scholar",
-                  "slug": "semantic-scholar",
-                  "step": "输入关键词，AI 按引用量排序并生成核心摘要，选 Top 10",
-                  "cost": "免费"
+                  "name": "Connected Papers",
+                  "slug": "connected-papers",
+                  "step": "输入核心论文标题，可视化引用图谱找出最相关的研究脉络",
+                  "cost": "免费基础版"
                 },
                 {
                   "name": "ChatGPT",
@@ -2241,6 +2247,12 @@
                   "slug": "elicit",
                   "step": "输入研究问题，AI 自动检索提取关键发现，生成论文对比表",
                   "cost": "$10/月"
+                },
+                {
+                  "name": "Scholarcy",
+                  "slug": "scholarcy",
+                  "step": "将 Elicit 筛选的论文导入 Scholarcy，生成每篇的闪卡式核心摘要",
+                  "cost": "$10/月起"
                 },
                 {
                   "name": "Zotero",
@@ -2392,9 +2404,9 @@
                   "cost": "免费"
                 },
                 {
-                  "name": "通义千问",
-                  "slug": "tongyi-qianwen",
-                  "step": "将初稿粘贴给通义千问做英文表达润色，提升母语感",
+                  "name": "腾讯翻译君",
+                  "slug": "tencent-translate",
+                  "step": "将初稿粘贴到腾讯翻译做英文学术表达润色，比通用AI翻译更专业",
                   "cost": "免费"
                 }
               ]
@@ -2413,6 +2425,12 @@
                   "slug": "chatgpt",
                   "step": "输入主题+时长+受众，生成结构化大纲含每页要点和过渡语",
                   "cost": "免费"
+                },
+                {
+                  "name": "Napkin AI",
+                  "slug": "napkin-ai",
+                  "step": "将 ChatGPT 大纲粘贴到 Napkin，一键转为可视化流程图和图表",
+                  "cost": "免费基础版"
                 },
                 {
                   "name": "Canva",
@@ -2455,10 +2473,10 @@
                   "cost": "免费"
                 },
                 {
-                  "name": "WPS AI",
-                  "slug": "wps-ai",
-                  "step": "将大纲导入 WPS AI，一键生成 PPT 含排版和图表",
-                  "cost": "免费试用"
+                  "name": "iSlide",
+                  "slug": "islide",
+                  "step": "将大纲导入 iSlide 插件，智能排版+专业图表模板一键生成 PPT",
+                  "cost": "免费基础版"
                 }
               ]
             }
@@ -2598,10 +2616,10 @@
               "title": "拍照解题 → AI 讲解过程",
               "tools": [
                 {
-                  "name": "Photomath",
-                  "slug": "photomath",
-                  "step": "拍照或输入数学题，AI 自动识别并给出详细分步解题过程",
-                  "cost": "免费基础版"
+                  "name": "Socratic",
+                  "slug": "socratic",
+                  "step": "拍照或输入数学/理科题，Google AI 自动识别并给出分步讲解",
+                  "cost": "免费"
                 },
                 {
                   "name": "ChatGPT",
@@ -2711,6 +2729,12 @@
                   "slug": "chatgpt",
                   "step": "输入论文大纲和要求，GPT 逐节生成学术风格的英文初稿",
                   "cost": "免费"
+                },
+                {
+                  "name": "Hemingway Editor",
+                  "slug": "hemingway",
+                  "step": "将初稿粘贴到 Hemingway 检测可读性和句子复杂度，简化过长句子",
+                  "cost": "免费在线版"
                 },
                 {
                   "name": "Grammarly",

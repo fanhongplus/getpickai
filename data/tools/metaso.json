@@ -3,27 +3,68 @@
   "name": "秘塔AI搜索",
   "logo": "/logos/metaso.svg",
   "tagline": "国产 AI 搜索引擎，无广告直接给答案，学术搜索能力强",
-  "scenes": ["提效率"],
+  "scenes": [
+    "提效率"
+  ],
   "pricingType": "free",
   "priceLabel": "免费",
   "rating": 4.5,
   "affiliateUrl": "",
   "websiteUrl": "https://metaso.cn",
   "editorReview": "秘塔 AI 搜索是目前国产 AI 搜索做得最好的产品。和百度最大的区别是——没有广告，直接给你要的答案，并且标注信息来源。\n\n学术搜索能力特别强，可以搜论文、搜专利、搜学术观点，对留学生写论文找参考文献非常有用。普通搜索也很实用，问问题直接给结构化的答案，不用自己翻十几个网页。\n\n完全免费，这一点就已经碾压大部分竞品了。如果你受够了搜索引擎里满屏广告和无效信息，秘塔 AI 搜索是目前最好的替代方案。",
-  "goodFor": ["留学生查文献", "需要深度搜索的用户", "受够广告的用户", "学术研究"],
-  "notGoodFor": ["习惯 Google 的用户", "需要英文搜索为主的用户", "对搜索引擎无所谓的用户"],
-  "pros": ["完全免费无广告", "直接给结构化答案", "学术搜索能力强", "标注信息来源", "搜索质量高"],
-  "cons": ["英文搜索不如 Google", "部分领域覆盖还在扩展", "知名度还不够高"],
-  "pricingPlans": [
-    {"name": "免费版", "price": "免费", "features": ["全部搜索功能", "学术搜索", "AI 总结", "来源标注"]}
+  "goodFor": [
+    "留学生查文献",
+    "需要深度搜索的用户",
+    "受够广告的用户",
+    "学术研究"
   ],
-  "quickStart": ["打开 metaso.cn", "输入你的搜索问题", "查看 AI 生成的结构化答案", "点击来源链接查看原文", "切换到学术模式搜索论文"],
-  "relatedTools": ["kimi", "doubao"],
+  "notGoodFor": [
+    "习惯 Google 的用户",
+    "需要英文搜索为主的用户",
+    "对搜索引擎无所谓的用户"
+  ],
+  "pros": [
+    "完全免费无广告",
+    "直接给结构化答案",
+    "学术搜索能力强",
+    "标注信息来源",
+    "搜索质量高"
+  ],
+  "cons": [
+    "英文搜索不如 Google",
+    "部分领域覆盖还在扩展",
+    "知名度还不够高"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "全部搜索功能",
+        "学术搜索",
+        "AI 总结",
+        "来源标注"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 metaso.cn",
+    "输入你的搜索问题",
+    "查看 AI 生成的结构化答案",
+    "点击来源链接查看原文",
+    "切换到学术模式搜索论文"
+  ],
+  "relatedTools": [
+    "kimi",
+    "doubao"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }

@@ -3,28 +3,79 @@
   "name": "稿定设计",
   "logo": "/logos/gaoding.svg",
   "tagline": "国产在线设计工具，AI 抠图、海量模板，适合自媒体封面和营销图制作",
-  "scenes": ["画图片", "做设计"],
+  "scenes": [
+    "画图片",
+    "做设计"
+  ],
   "pricingType": "freemium",
   "priceLabel": "免费基础版 / 会员¥199起/年",
   "rating": 4.3,
   "affiliateUrl": "",
   "websiteUrl": "https://www.gaoding.com",
   "editorReview": "稿定设计是国内版的 Canva，但在中文模板和国内平台适配上做得更好。模板覆盖公众号封面、小红书配图、抖音封面、电商主图等国内主流平台尺寸。\n\nAI 抠图功能是它的一大亮点，准确度很高，速度也快。对于跨境电商卖家来说，快速做产品图和营销海报非常方便。\n\n免费版模板够用，年费 ¥199 解锁全部模板和 AI 功能，价格比 Canva Pro 便宜不少。如果你的内容主要面向国内平台，稿定设计比 Canva 更合适。",
-  "goodFor": ["自媒体创作者", "电商卖家", "新媒体运营", "小型设计团队"],
-  "notGoodFor": ["专业设计师", "国际市场为主的用户", "需要矢量设计的场景"],
-  "pros": ["中文模板极其丰富", "AI 抠图效果好", "国内平台尺寸全覆盖", "价格比 Canva 便宜", "上手零门槛"],
-  "cons": ["国际化模板不如 Canva", "高级设计功能有限", "导出格式选择较少"],
-  "pricingPlans": [
-    {"name": "免费版", "price": "免费", "features": ["基础模板", "AI 抠图（有限次）", "标准导出"]},
-    {"name": "会员", "price": "¥199/年", "features": ["全部模板", "无限 AI 抠图", "高清导出", "去水印"]}
+  "goodFor": [
+    "自媒体创作者",
+    "电商卖家",
+    "新媒体运营",
+    "小型设计团队"
   ],
-  "quickStart": ["打开 gaoding.com 注册账号", "选择你需要的设计类型和尺寸", "从海量模板中选择一个", "替换文字和图片素材", "导出并发布"],
-  "relatedTools": ["canva", "photoroom", "pic-copilot"],
+  "notGoodFor": [
+    "专业设计师",
+    "国际市场为主的用户",
+    "需要矢量设计的场景"
+  ],
+  "pros": [
+    "中文模板极其丰富",
+    "AI 抠图效果好",
+    "国内平台尺寸全覆盖",
+    "价格比 Canva 便宜",
+    "上手零门槛"
+  ],
+  "cons": [
+    "国际化模板不如 Canva",
+    "高级设计功能有限",
+    "导出格式选择较少"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "基础模板",
+        "AI 抠图（有限次）",
+        "标准导出"
+      ]
+    },
+    {
+      "name": "会员",
+      "price": "¥199/年",
+      "features": [
+        "全部模板",
+        "无限 AI 抠图",
+        "高清导出",
+        "去水印"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 gaoding.com 注册账号",
+    "选择你需要的设计类型和尺寸",
+    "从海量模板中选择一个",
+    "替换文字和图片素材",
+    "导出并发布"
+  ],
+  "relatedTools": [
+    "canva",
+    "photoroom",
+    "pic-copilot"
+  ],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
   "affiliateCommission": "",
   "cookieDuration": "",
   "createdAt": "2026-04-06",
-  "verifiedAt": "2026-04"
+  "verifiedAt": "2026-04",
+  "lastVerified": "2026-04-07",
+  "healthStatus": "active"
 }
