@@ -1,1 +1,68 @@
-{"slug":"dreamina","name":"即梦AI","logo":"/logos/dreamina.svg","tagline":"字节跳动出品的 AI 绘图工具，支持文生图、图生图，中文理解能力强","scenes":["画图片"],"pricingType":"free","priceLabel":"免费","rating":4.4,"affiliateUrl":"","websiteUrl":"https://jimeng.jianying.com","editorReview":"即梦 AI（Dreamina）是字节跳动推出的 AI 绘图工具，最大的优势是对中文提示词的理解能力很强。你可以直接用中文描述想要的画面，不需要写英文 Prompt。\n\n支持文生图和图生图，生成质量不错，风格覆盖也比较全面。和 Midjourney 比还有差距，但胜在免费和中文友好。\n\n完全免费使用，对不想学英文 Prompt 的中国用户来说是最好的 AI 绘图入门工具。","goodFor":["中文用户","AI 绘图入门","自媒体配图","不想学英文 Prompt 的用户"],"notGoodFor":["追求极致画质的用户","商业级设计需求","需要精确控制的场景"],"pros":["完全免费","中文理解能力强","上手零门槛","风格多样"],"cons":["画质不如 Midjourney","精细控制有限","商用授权不明确"],"pricingPlans":[{"name":"免费版","price":"免费","features":["文生图","图生图","多种风格"]}],"quickStart":["打开 jimeng.jianying.com","用中文描述想要的图片","选择风格","AI 生成图片","下载使用"],"relatedTools":["midjourney","ideogram","leonardo-ai"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "dreamina",
+  "name": "即梦AI",
+  "logo": "/logos/dreamina.svg",
+  "tagline": "字节跳动出品的 AI 绘图工具，支持文生图、图生图，中文理解能力强",
+  "scenes": [
+    "画图片",
+    "做视频"
+  ],
+  "pricingType": "free",
+  "priceLabel": "免费",
+  "rating": 4.4,
+  "affiliateUrl": "",
+  "websiteUrl": "https://jimeng.jianying.com",
+  "editorReview": "即梦 AI（Dreamina）是字节跳动推出的 AI 绘图工具，最大的优势是对中文提示词的理解能力很强。你可以直接用中文描述想要的画面，不需要写英文 Prompt。\n\n支持文生图和图生图，生成质量不错，风格覆盖也比较全面。和 Midjourney 比还有差距，但胜在免费和中文友好。\n\n完全免费使用，对不想学英文 Prompt 的中国用户来说是最好的 AI 绘图入门工具。",
+  "goodFor": [
+    "中文用户",
+    "AI 绘图入门",
+    "自媒体配图",
+    "不想学英文 Prompt 的用户"
+  ],
+  "notGoodFor": [
+    "追求极致画质的用户",
+    "商业级设计需求",
+    "需要精确控制的场景"
+  ],
+  "pros": [
+    "完全免费",
+    "中文理解能力强",
+    "上手零门槛",
+    "风格多样"
+  ],
+  "cons": [
+    "画质不如 Midjourney",
+    "精细控制有限",
+    "商用授权不明确"
+  ],
+  "pricingPlans": [
+    {
+      "name": "免费版",
+      "price": "免费",
+      "features": [
+        "文生图",
+        "图生图",
+        "多种风格"
+      ]
+    }
+  ],
+  "quickStart": [
+    "打开 jimeng.jianying.com",
+    "用中文描述想要的图片",
+    "选择风格",
+    "AI 生成图片",
+    "下载使用"
+  ],
+  "relatedTools": [
+    "midjourney",
+    "ideogram",
+    "leonardo-ai"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}

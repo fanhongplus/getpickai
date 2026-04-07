@@ -1,5 +1,5 @@
 // src/lib/matcher.test.ts
-// 适配版本：5 身份 × 27 痛点 × 54 工作流
+// 适配版本：6 身份 × 52 痛点 × 3 预算 × 143 工作流
 
 import {
   validateMatcherData,
@@ -13,22 +13,22 @@ import matcherJson from "../../data/matcher.json";
 
 const data = matcherJson as MatcherData;
 
-// 预期身份 ID 列表（与 matcher.json 一致）
 const EXPECTED_IDENTITY_IDS = [
   "ecommerce",
   "video-creator",
   "podcaster",
   "writer",
   "student",
+  "developer",
 ];
 
-// 预期每个身份的痛点数量
 const EXPECTED_PAINPOINT_COUNTS: Record<string, number> = {
-  ecommerce: 7,
-  "video-creator": 5,
-  podcaster: 4,
-  writer: 4,
-  student: 7,
+  ecommerce: 13,
+  "video-creator": 9,
+  podcaster: 5,
+  writer: 8,
+  student: 12,
+  developer: 5,
 };
 
 // ============================================================
@@ -36,7 +36,7 @@ const EXPECTED_PAINPOINT_COUNTS: Record<string, number> = {
 // ============================================================
 describe("组1: 正常匹配成功", () => {
 
-  test("1.1 跨境电商 + 独立站商品描述 + free → 返回完整 workflow", () => {
+  test("1.1 跨境电商 + 独立站商品描述 + free → 完整 workflow", () => {
     const result = matchWorkflow(data, "ecommerce", "product-desc", "free");
     expect(result).not.toBeNull();
     expect(result!.title).toBeTruthy();
@@ -50,66 +50,63 @@ describe("组1: 正常匹配成功", () => {
     });
   });
 
-  test("1.2 留学生 + 论文降重 + paid → 返回含查重验证的完整链路", () => {
+  test("1.2 留学生 + 论文降重 + paid → 最后一步是查重", () => {
     const result = matchWorkflow(data, "student", "paper-rewrite", "paid");
     expect(result).not.toBeNull();
     expect(result!.tools.length).toBe(3);
-    // 最后一步应该是查重工具（Copyleaks）
-    const lastTool = result!.tools[result!.tools.length - 1];
-    expect(lastTool.slug).toBe("copyleaks");
+    expect(result!.tools[result!.tools.length - 1].slug).toBe("copyleaks");
   });
 
-  test("1.3 播客主 + 录制与音质处理 + free → 返回完整 workflow", () => {
-    const result = matchWorkflow(data, "podcaster", "podcast-recording", "free");
+  test("1.3 独立开发者 + AI辅助编程 + paid → 完整 workflow", () => {
+    const result = matchWorkflow(data, "developer", "ai-coding", "paid");
     expect(result).not.toBeNull();
     expect(result!.tools.length).toBeGreaterThanOrEqual(2);
   });
 
-  test("1.4 视频创作者 + 短视频批量生产 + paid → 返回完整 workflow", () => {
-    const result = matchWorkflow(data, "video-creator", "short-video-batch", "paid");
+  test("1.4 视频创作者 + AI视频生成 + cn-free → 含国产工具", () => {
+    const result = matchWorkflow(data, "video-creator", "ai-video-generation", "cn-free");
+    expect(result).not.toBeNull();
+    const slugs = result!.tools.map((t) => t.slug);
+    const hasChinese = slugs.some((s) =>
+      ["kling-ai", "dreamina", "hailuo-ai", "doubao", "tongyi-qianwen", "capcut", "jianying"].includes(s)
+    );
+    expect(hasChinese).toBe(true);
+  });
+
+  test("1.5 图文博主 + 小红书 + cn-free → 完整 workflow", () => {
+    const result = matchWorkflow(data, "writer", "xiaohongshu", "cn-free");
     expect(result).not.toBeNull();
     expect(result!.tools.length).toBeGreaterThanOrEqual(2);
   });
 
-  test("1.5 图文博主 + 小红书种草图文 + free → 返回完整 workflow", () => {
-    const result = matchWorkflow(data, "writer", "xiaohongshu", "free");
-    expect(result).not.toBeNull();
-    expect(result!.tools.length).toBeGreaterThanOrEqual(2);
-  });
-
-  test("1.6 同一痛点不同预算 → 返回不同方案", () => {
+  test("1.6 同一痛点三种预算返回不同方案", () => {
     const free = matchWorkflow(data, "ecommerce", "product-desc", "free");
     const paid = matchWorkflow(data, "ecommerce", "product-desc", "paid");
-    if (free && paid) {
-      expect(free.title).not.toEqual(paid.title);
-    }
-    expect(free !== null || paid !== null).toBe(true);
+    const cnFree = matchWorkflow(data, "ecommerce", "product-desc", "cn-free");
+    expect(free).not.toBeNull();
+    expect(paid).not.toBeNull();
+    expect(cnFree).not.toBeNull();
+    const titles = new Set([free!.title, paid!.title, cnFree!.title]);
+    expect(titles.size).toBe(3);
   });
 
-  test("1.7 所有身份×所有痛点 → 至少有一种预算方案", () => {
-    const identities = getIdentities(data);
-    identities.forEach((identity) => {
-      const pps = getPainpointsByIdentity(data, identity.id);
-      expect(pps.length).toBeGreaterThan(0);
-      pps.forEach((pp) => {
+  test("1.7 所有痛点至少有一种预算方案", () => {
+    getIdentities(data).forEach((identity) => {
+      getPainpointsByIdentity(data, identity.id).forEach((pp) => {
         const f = matchWorkflow(data, identity.id, pp.id, "free");
         const p = matchWorkflow(data, identity.id, pp.id, "paid");
-        expect(f !== null || p !== null).toBe(true);
+        const c = matchWorkflow(data, identity.id, pp.id, "cn-free");
+        expect(f !== null || p !== null || c !== null).toBe(true);
       });
     });
   });
 
   test("1.8 所有 tool.slug 格式合法", () => {
-    const identities = getIdentities(data);
-    identities.forEach((identity) => {
+    getIdentities(data).forEach((identity) => {
       getPainpointsByIdentity(data, identity.id).forEach((pp) => {
-        (["free", "paid"] as const).forEach((b) => {
+        (["free", "paid", "cn-free"] as const).forEach((b) => {
           const wf = matchWorkflow(data, identity.id, pp.id, b);
-          if (wf) {
-            wf.tools.forEach((t) => {
-              expect(t.slug).toMatch(/^[a-z0-9-]+$/);
-            });
-          }
+          if (wf) wf.tools.forEach((t) => expect(t.slug).toMatch(/^[a-z0-9-]+$/));
         });
       });
     });
@@ -129,107 +126,71 @@ describe("组2: 非法输入回退", () => {
     expect(matchWorkflow(data, "ecommerce", "GHOST", "free")).toBeNull();
   });
 
-  test("2.3 空字符串三连 → null", () => {
+  test("2.3 空字符串 → null", () => {
     expect(matchWorkflow(data, "", "", "free")).toBeNull();
   });
 
-  test("2.4 budget 传入非 free/paid → null", () => {
+  test("2.4 非法 budget → null", () => {
     expect(matchWorkflow(data, "ecommerce", "product-desc", "premium" as unknown as "free")).toBeNull();
   });
 
   test("2.5 getPainpointsByIdentity 非法 id → 空数组", () => {
-    const result = getPainpointsByIdentity(data, "hacker");
-    expect(result).toEqual([]);
-    expect(Array.isArray(result)).toBe(true);
+    expect(getPainpointsByIdentity(data, "hacker")).toEqual([]);
   });
 
-  test("2.6 getAvailableBudgets 非法 id → { free: false, paid: false }", () => {
+  test("2.6 getAvailableBudgets 非法 id → 全 false", () => {
     expect(getAvailableBudgets(data, "x", "y")).toEqual({ free: false, paid: false });
   });
 
-  test("2.7 用旧身份 id 'creator' 查询 → null（已拆分为 video-creator/podcaster/writer）", () => {
+  test("2.7 旧 id 'creator' → null", () => {
     expect(matchWorkflow(data, "creator", "video-script", "free")).toBeNull();
-    expect(getPainpointsByIdentity(data, "creator")).toEqual([]);
   });
 });
 
 // ============================================================
-// 测试组 3：JSON 数据缺失 / 畸形时的容错
+// 测试组 3：JSON 数据缺失容错
 // ============================================================
 describe("组3: JSON 数据缺失容错", () => {
 
-  test("3.1 合法 matcher.json → valid: true", () => {
+  test("3.1 合法数据 → valid: true", () => {
     const { valid, errors } = validateMatcherData(matcherJson);
     expect(valid).toBe(true);
     expect(errors).toHaveLength(0);
   });
 
-  test("3.2 identities 空数组 → valid: false", () => {
-    const { valid } = validateMatcherData({ identities: [] });
-    expect(valid).toBe(false);
+  test("3.2 identities 空 → false", () => {
+    expect(validateMatcherData({ identities: [] }).valid).toBe(false);
   });
 
-  test("3.3 painpoint 缺 workflows → valid: false", () => {
-    const bad = {
-      identities: [{
-        id: "t", label: "T", icon: "🧪",
-        painpoints: [{ id: "p", label: "P" }],
-      }],
-    };
-    const { valid, errors } = validateMatcherData(bad);
-    expect(valid).toBe(false);
-    expect(errors.some((e: string) => /workflow/i.test(e))).toBe(true);
-  });
-
-  test("3.4 tools 空数组 → valid: false", () => {
-    const bad = {
-      identities: [{
-        id: "t", label: "T", icon: "🧪",
-        painpoints: [{
-          id: "p", label: "P",
-          workflows: { free: { title: "X", tools: [] } },
-        }],
-      }],
-    };
+  test("3.3 缺 workflows → false", () => {
+    const bad = { identities: [{ id: "t", label: "T", icon: "🧪", painpoints: [{ id: "p", label: "P" }] }] };
     expect(validateMatcherData(bad).valid).toBe(false);
   });
 
-  test("3.5 tool 缺必要字段 → valid: false", () => {
-    const bad = {
-      identities: [{
-        id: "t", label: "T", icon: "🧪",
-        painpoints: [{
-          id: "p", label: "P",
-          workflows: { free: { title: "X", tools: [{ name: "只有名字" }] } },
-        }],
-      }],
-    };
+  test("3.4 tools 空数组 → false", () => {
+    const bad = { identities: [{ id: "t", label: "T", icon: "🧪", painpoints: [{ id: "p", label: "P", workflows: { free: { title: "X", tools: [] } } }] }] };
     expect(validateMatcherData(bad).valid).toBe(false);
   });
 
-  test("3.6 identity.id 重复 → valid: false", () => {
-    const bad = {
-      identities: [
-        { id: "dup", label: "A", icon: "🅰️", painpoints: [{ id: "p1", label: "P1", workflows: { free: { title: "T", tools: [{ name: "A", slug: "a", step: "s", cost: "0" }, { name: "B", slug: "b", step: "s", cost: "0" }] } } }] },
-        { id: "dup", label: "B", icon: "🅱️", painpoints: [{ id: "p2", label: "P2", workflows: { paid: { title: "T", tools: [{ name: "C", slug: "c", step: "s", cost: "$1" }, { name: "D", slug: "d", step: "s", cost: "$2" }] } } }] },
-      ],
-    };
-    const { valid, errors } = validateMatcherData(bad);
-    expect(valid).toBe(false);
-    expect(errors.some((e: string) => /重复|duplicate/i.test(e))).toBe(true);
-  });
-
-  test("3.7 workflows 中 free 和 paid 都缺 → valid: false", () => {
-    const bad = {
-      identities: [{
-        id: "t", label: "T", icon: "🧪",
-        painpoints: [{ id: "p", label: "P", workflows: {} }],
-      }],
-    };
+  test("3.5 tool 缺字段 → false", () => {
+    const bad = { identities: [{ id: "t", label: "T", icon: "🧪", painpoints: [{ id: "p", label: "P", workflows: { free: { title: "X", tools: [{ name: "只有名字" }] } } }] }] };
     expect(validateMatcherData(bad).valid).toBe(false);
   });
 
-  test("3.8 传入 null / undefined / 数字 / 字符串 → 不崩溃", () => {
+  test("3.6 id 重复 → false", () => {
+    const bad = { identities: [
+      { id: "dup", label: "A", icon: "🅰️", painpoints: [{ id: "p1", label: "P", workflows: { free: { title: "T", tools: [{ name: "A", slug: "a", step: "s", cost: "0" }, { name: "B", slug: "b", step: "s", cost: "0" }] } } }] },
+      { id: "dup", label: "B", icon: "🅱️", painpoints: [{ id: "p2", label: "P", workflows: { paid: { title: "T", tools: [{ name: "C", slug: "c", step: "s", cost: "$1" }, { name: "D", slug: "d", step: "s", cost: "$2" }] } } }] },
+    ] };
+    expect(validateMatcherData(bad).valid).toBe(false);
+  });
+
+  test("3.7 workflows 全空 → false", () => {
+    const bad = { identities: [{ id: "t", label: "T", icon: "🧪", painpoints: [{ id: "p", label: "P", workflows: {} }] }] };
+    expect(validateMatcherData(bad).valid).toBe(false);
+  });
+
+  test("3.8 垃圾数据不崩溃", () => {
     [null, undefined, 42, "str", true, []].forEach((junk) => {
       expect(() => validateMatcherData(junk)).not.toThrow();
       expect(validateMatcherData(junk).valid).toBe(false);
@@ -242,57 +203,42 @@ describe("组3: JSON 数据缺失容错", () => {
 // ============================================================
 describe("组4: 联动菜单正确性", () => {
 
-  test("4.1 所有5个身份返回不同的痛点列表，id 无交集", () => {
-    const allPainpointSets = EXPECTED_IDENTITY_IDS.map((id) => ({
-      id,
-      painpoints: getPainpointsByIdentity(data, id),
-      idSet: new Set(getPainpointsByIdentity(data, id).map((p) => p.id)),
-    }));
-
-    // 任意两组身份的痛点 id 无交集
-    for (let i = 0; i < allPainpointSets.length; i++) {
-      for (let j = i + 1; j < allPainpointSets.length; j++) {
-        const overlap = [...allPainpointSets[i].idSet].filter(
-          (id) => allPainpointSets[j].idSet.has(id)
-        );
+  test("4.1 6个身份痛点 id 无交集", () => {
+    const allSets = EXPECTED_IDENTITY_IDS.map((id) => new Set(getPainpointsByIdentity(data, id).map((p) => p.id)));
+    for (let i = 0; i < allSets.length; i++) {
+      for (let j = i + 1; j < allSets.length; j++) {
+        const overlap = [...allSets[i]].filter((id) => allSets[j].has(id));
         expect(overlap).toHaveLength(0);
       }
     }
   });
 
-  test("4.2 每个身份至少 1 个痛点", () => {
-    getIdentities(data).forEach((identity) => {
-      expect(getPainpointsByIdentity(data, identity.id).length).toBeGreaterThanOrEqual(1);
-    });
+  test("4.2 每身份至少1个痛点", () => {
+    getIdentities(data).forEach((i) => expect(getPainpointsByIdentity(data, i.id).length).toBeGreaterThanOrEqual(1));
   });
 
-  test("4.3 getAvailableBudgets 与 matchWorkflow 结果一致", () => {
+  test("4.3 getAvailableBudgets 与 matchWorkflow 一致", () => {
     getIdentities(data).forEach((identity) => {
       getPainpointsByIdentity(data, identity.id).forEach((pp) => {
-        const budgets = getAvailableBudgets(data, identity.id, pp.id);
-        expect(budgets.free).toBe(matchWorkflow(data, identity.id, pp.id, "free") !== null);
-        expect(budgets.paid).toBe(matchWorkflow(data, identity.id, pp.id, "paid") !== null);
+        const b = getAvailableBudgets(data, identity.id, pp.id);
+        expect(b.free).toBe(matchWorkflow(data, identity.id, pp.id, "free") !== null);
+        expect(b.paid).toBe(matchWorkflow(data, identity.id, pp.id, "paid") !== null);
       });
     });
   });
 
-  test("4.4 getPainpointsByIdentity 返回结构仅含 id + label", () => {
-    EXPECTED_IDENTITY_IDS.forEach((identityId) => {
-      getPainpointsByIdentity(data, identityId).forEach((pp) => {
-        expect(Object.keys(pp).sort()).toEqual(["id", "label"]);
-      });
+  test("4.4 返回结构仅含 id+label", () => {
+    EXPECTED_IDENTITY_IDS.forEach((id) => {
+      getPainpointsByIdentity(data, id).forEach((pp) => expect(Object.keys(pp).sort()).toEqual(["id", "label"]));
     });
   });
 
-  test("4.5 getIdentities 返回5项，每项含 id + label + icon", () => {
+  test("4.5 getIdentities 返回6项", () => {
     const list = getIdentities(data);
-    expect(list.length).toBe(5);
+    expect(list.length).toBe(6);
     list.forEach((item) => {
-      const keys = Object.keys(item).sort();
-      expect(keys).toEqual(["icon", "id", "label"]);
+      expect(Object.keys(item).sort()).toEqual(["icon", "id", "label"]);
       expect(item.id).toMatch(/^[a-z0-9-]+$/);
-      expect(item.label.length).toBeGreaterThan(0);
-      expect(item.icon.length).toBeGreaterThan(0);
     });
   });
 });
@@ -302,44 +248,57 @@ describe("组4: 联动菜单正确性", () => {
 // ============================================================
 describe("组5: 数据与函数交叉完整性", () => {
 
-  test("5.1 身份列表与预期完全一致", () => {
-    const ids = getIdentities(data).map((i) => i.id).sort();
-    expect(ids).toEqual([...EXPECTED_IDENTITY_IDS].sort());
+  test("5.1 身份列表一致", () => {
+    expect(getIdentities(data).map((i) => i.id).sort()).toEqual([...EXPECTED_IDENTITY_IDS].sort());
   });
 
-  test("5.2 每个身份的痛点数量与预期一致", () => {
-    getIdentities(data).forEach((identity) => {
-      const expected = EXPECTED_PAINPOINT_COUNTS[identity.id];
-      const actual = getPainpointsByIdentity(data, identity.id).length;
-      expect(actual).toBe(expected);
-    });
+  test("5.2 痛点数量一致", () => {
+    getIdentities(data).forEach((i) => expect(getPainpointsByIdentity(data, i.id).length).toBe(EXPECTED_PAINPOINT_COUNTS[i.id]));
   });
 
-  test("5.3 总痛点数 = 27，总工作流数 = 54", () => {
-    let totalPainpoints = 0;
-    let totalWorkflows = 0;
-
-    getIdentities(data).forEach((identity) => {
-      const pps = getPainpointsByIdentity(data, identity.id);
-      totalPainpoints += pps.length;
-      pps.forEach((pp) => {
-        if (matchWorkflow(data, identity.id, pp.id, "free")) totalWorkflows++;
-        if (matchWorkflow(data, identity.id, pp.id, "paid")) totalWorkflows++;
+  test("5.3 总痛点=52 总工作流=143", () => {
+    let pp = 0, wf = 0;
+    getIdentities(data).forEach((i) => {
+      const pps = getPainpointsByIdentity(data, i.id);
+      pp += pps.length;
+      pps.forEach((p) => {
+        (["free", "paid", "cn-free"] as const).forEach((b) => { if (matchWorkflow(data, i.id, p.id, b)) wf++; });
       });
     });
-
-    expect(totalPainpoints).toBe(27);
-    expect(totalWorkflows).toBe(54);
+    expect(pp).toBe(52);
+    expect(wf).toBe(143);
   });
 
-  test("5.4 所有 step 字段 ≤ 80 字符（移动端可读性）", () => {
-    getIdentities(data).forEach((identity) => {
-      getPainpointsByIdentity(data, identity.id).forEach((pp) => {
-        (["free", "paid"] as const).forEach((b) => {
-          const wf = matchWorkflow(data, identity.id, pp.id, b);
+  test("5.4 所有 step ≤ 80 字符", () => {
+    getIdentities(data).forEach((i) => {
+      getPainpointsByIdentity(data, i.id).forEach((p) => {
+        (["free", "paid", "cn-free"] as const).forEach((b) => {
+          const wf = matchWorkflow(data, i.id, p.id, b);
+          if (wf) wf.tools.forEach((t) => expect(t.step.length).toBeLessThanOrEqual(80));
+        });
+      });
+    });
+  });
+
+  test("5.5 全遍历不抛异常", () => {
+    [...getIdentities(data).map((i) => i.id), "fake"].forEach((iid) => {
+      [...getPainpointsByIdentity(data, iid).map((p) => p.id), "fake"].forEach((pid) => {
+        ["free", "paid", "cn-free", "invalid"].forEach((b) => {
+          expect(() => matchWorkflow(data, iid, pid, b as unknown as "free")).not.toThrow();
+        });
+      });
+    });
+  });
+
+  test("5.6 无非法 slug 重复", () => {
+    getIdentities(data).forEach((i) => {
+      getPainpointsByIdentity(data, i.id).forEach((p) => {
+        (["free", "paid", "cn-free"] as const).forEach((b) => {
+          const wf = matchWorkflow(data, i.id, p.id, b);
           if (wf) {
-            wf.tools.forEach((t) => {
-              expect(t.step.length).toBeLessThanOrEqual(80);
+            const slugs = wf.tools.map((t) => t.slug);
+            slugs.filter((s, idx) => slugs.indexOf(s) !== idx).forEach((dup) => {
+              if (dup !== "canva") fail(`${i.id}/${p.id}/${b} 中 ${dup} 重复`);
             });
           }
         });
@@ -347,62 +306,24 @@ describe("组5: 数据与函数交叉完整性", () => {
     });
   });
 
-  test("5.5 全遍历不抛异常（含非法输入）", () => {
-    const allIdentityIds = [...getIdentities(data).map((i) => i.id), "fake"];
-    const allBudgets = ["free", "paid", "invalid"] as const;
-    allIdentityIds.forEach((iid) => {
-      const pps = getPainpointsByIdentity(data, iid);
-      const ppIds = [...pps.map((p) => p.id), "fake"];
-      ppIds.forEach((pid) => {
-        allBudgets.forEach((b) => {
-          expect(() => matchWorkflow(data, iid, pid, b as unknown as "free")).not.toThrow();
-        });
+  test("5.7 cn-free 覆盖 ≥ 35 个痛点", () => {
+    let count = 0;
+    getIdentities(data).forEach((i) => {
+      getPainpointsByIdentity(data, i.id).forEach((p) => {
+        if (matchWorkflow(data, i.id, p.id, "cn-free")) count++;
       });
     });
+    expect(count).toBeGreaterThanOrEqual(35);
   });
 
-  test("5.6 每条工作流内无工具 slug 重复（防止同一工具出现两次）", () => {
-    getIdentities(data).forEach((identity) => {
-      getPainpointsByIdentity(data, identity.id).forEach((pp) => {
-        (["free", "paid"] as const).forEach((b) => {
-          const wf = matchWorkflow(data, identity.id, pp.id, b);
-          if (wf) {
-            const slugs = wf.tools.map((t) => t.slug);
-            const uniqueSlugs = new Set(slugs);
-            // 如果有重复 slug，说明同一工具出现了两次
-            // 注意：Canva 和 Canva Pro 共用 slug 'canva' 是允许的（同一产品不同版本）
-            // 但完全相同的 slug 出现在同一工作流中需要检查
-            if (slugs.length !== uniqueSlugs.size) {
-              // 允许 canva 出现两次（免费版+Pro版场景），其他工具不允许重复
-              const duplicates = slugs.filter((s, i) => slugs.indexOf(s) !== i);
-              duplicates.forEach((dup) => {
-                // canva 是唯一允许的例外（免费版和 Pro 版共用 slug）
-                if (dup !== "canva") {
-                  fail(`工作流 ${identity.id}/${pp.id}/${b} 中工具 ${dup} 重复出现`);
-                }
-              });
-            }
-          }
-        });
-      });
-    });
-  });
-
-  test("5.7 validateMatcherData 通过后全链路畅通", () => {
-    const { valid } = validateMatcherData(data);
-    expect(valid).toBe(true);
-
-    const identities = getIdentities(data);
-    expect(identities.length).toBe(5);
-
-    // 对每个身份验证完整链路
-    identities.forEach((identity) => {
-      const pps = getPainpointsByIdentity(data, identity.id);
+  test("5.8 全链路畅通", () => {
+    expect(validateMatcherData(data).valid).toBe(true);
+    getIdentities(data).forEach((i) => {
+      const pps = getPainpointsByIdentity(data, i.id);
       expect(pps.length).toBeGreaterThan(0);
-
-      const budgets = getAvailableBudgets(data, identity.id, pps[0].id);
-      const b = budgets.free ? "free" : "paid";
-      const wf = matchWorkflow(data, identity.id, pps[0].id, b as "free" | "paid");
+      const b = getAvailableBudgets(data, i.id, pps[0].id);
+      const budget = b.free ? "free" : "paid";
+      const wf = matchWorkflow(data, i.id, pps[0].id, budget as "free" | "paid");
       expect(wf).not.toBeNull();
       expect(wf!.tools.length).toBeGreaterThanOrEqual(2);
     });

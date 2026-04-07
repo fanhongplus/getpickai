@@ -75,12 +75,15 @@ export interface MatcherWorkflow {
   tools: MatcherTool[];
 }
 
+export type MatcherBudget = "free" | "paid" | "cn-free";
+
 export interface MatcherPainpoint {
   id: string;
   label: string;
   workflows: {
     free?: MatcherWorkflow;
     paid?: MatcherWorkflow;
+    "cn-free"?: MatcherWorkflow;
   };
 }
 

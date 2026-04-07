@@ -5,7 +5,8 @@
   "tagline": "免费额度最慷慨的 AI 绘图工具，游戏素材和角色设计的首选",
   "scenes": [
     "画图片",
-    "做设计"
+    "做设计",
+    "做视频"
   ],
   "pricingType": "freemium",
   "priceLabel": "免费 / $12/月起",

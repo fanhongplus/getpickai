@@ -8,7 +8,7 @@ import {
   getPainpointsByIdentity,
   matchWorkflow,
 } from "@/lib/matcher";
-import type { MatcherData, MatcherWorkflow } from "@/lib/types";
+import type { MatcherData, MatcherWorkflow, MatcherBudget } from "@/lib/types";
 
 const data = matcherJson as MatcherData;
 
@@ -50,7 +50,7 @@ export default function ScenarioMatcher({ hideHeader = false }: ScenarioMatcherP
       data,
       identityId,
       painpointId,
-      budget as "free" | "paid"
+      budget as MatcherBudget
     );
     setResult(wf);
     setShowResult(true);
@@ -136,8 +136,9 @@ export default function ScenarioMatcher({ hideHeader = false }: ScenarioMatcherP
               <option value="" disabled>
                 请选择预算...
               </option>
-              <option value="free">免费</option>
-              <option value="paid">付费</option>
+              <option value="free">免费方案</option>
+              <option value="paid">付费方案</option>
+              <option value="cn-free">🇨🇳 中文免费方案</option>
             </select>
           </div>
         </div>

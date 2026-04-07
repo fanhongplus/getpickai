@@ -1,7 +1,7 @@
 // Scenario Matcher 纯函数模块
 // 此文件无 fs 依赖，客户端组件可直接 import
 
-import type { MatcherData, MatcherWorkflow } from "./types";
+import type { MatcherData, MatcherWorkflow, MatcherBudget } from "./types";
 
 const ID_PATTERN = /^[a-z0-9-]+$/;
 
@@ -168,10 +168,11 @@ export function validateMatcherData(data: unknown): {
 
       const hasFree = painpoint.workflows.free !== undefined;
       const hasPaid = painpoint.workflows.paid !== undefined;
+      const hasCnFree = painpoint.workflows["cn-free"] !== undefined;
 
-      if (!hasFree && !hasPaid) {
+      if (!hasFree && !hasPaid && !hasCnFree) {
         errors.push(
-          `${ppPath}.workflows: 必须至少包含 free 或 paid workflow`
+          `${ppPath}.workflows: 必须至少包含 free、paid 或 cn-free workflow`
         );
         return;
       }
@@ -187,6 +188,13 @@ export function validateMatcherData(data: unknown): {
         validateWorkflow(
           painpoint.workflows.paid,
           `${ppPath}.workflows.paid`,
+          errors
+        );
+      }
+      if (hasCnFree) {
+        validateWorkflow(
+          painpoint.workflows["cn-free"],
+          `${ppPath}.workflows.cn-free`,
           errors
         );
       }
@@ -230,9 +238,9 @@ export function matchWorkflow(
   data: MatcherData,
   identityId: string,
   painpointId: string,
-  budget: "free" | "paid"
+  budget: MatcherBudget
 ): MatcherWorkflow | null {
-  if (budget !== "free" && budget !== "paid") return null;
+  if (budget !== "free" && budget !== "paid" && budget !== "cn-free") return null;
   if (!data || !Array.isArray(data.identities)) return null;
   const identity = data.identities.find((i) => i.id === identityId);
   if (!identity) return null;

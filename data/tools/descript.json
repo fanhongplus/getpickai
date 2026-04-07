@@ -1,1 +1,77 @@
-{"slug":"descript","name":"Descript","logo":"/logos/descript.svg","tagline":"AI 视频和播客编辑工具，像编辑文档一样编辑视频","scenes":["做视频"],"pricingType":"freemium","priceLabel":"免费基础版 / $24起/月","rating":4.6,"affiliateUrl":"","websiteUrl":"https://www.descript.com","editorReview":"Descript 最革命性的功能是「像编辑文本一样编辑视频」——AI 自动生成字幕，你直接在文字稿里删改文字，对应的视频片段就自动裁剪了。这对播客和访谈类视频创作者来说简直是神器。\n\nAI 去除填充词（嗯、啊）、AI 换声、AI 生成摘要等功能也很实用。整体思路是把视频编辑的门槛降到和编辑 Word 文档一样低。\n\n免费版可以导出 720p 视频，$24/月的 Pro 版解锁 4K 和全部 AI 功能。对播客和自媒体创作者强烈推荐。","goodFor":["播客创作者","访谈类视频博主","自媒体创作者","会议录制编辑"],"notGoodFor":["需要复杂特效的用户","纯图片设计需求","短视频剪辑为主的用户"],"pros":["文本式视频编辑革命性","AI 去填充词好用","播客编辑效率极高","免费版功能不错"],"cons":["复杂特效不如 Premiere","中文支持不如英文","免费版有水印"],"pricingPlans":[{"name":"Free","price":"免费","features":["720p 导出","1小时转录/月","基础编辑"]},{"name":"Pro","price":"$24/月","features":["4K 导出","10小时转录/月","全部 AI 功能","去水印"]}],"quickStart":["注册 Descript 账号","导入视频或音频文件","AI 自动生成文字稿","在文字稿中编辑内容","导出编辑后的视频"],"relatedTools":["capcut","opus-clip"],"screenshots":[],"isFeatured":false,"isNew":true,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "descript",
+  "name": "Descript",
+  "logo": "/logos/descript.svg",
+  "tagline": "AI 视频和播客编辑工具，像编辑文档一样编辑视频",
+  "scenes": [
+    "做视频",
+    "提效率"
+  ],
+  "pricingType": "freemium",
+  "priceLabel": "免费基础版 / $24起/月",
+  "rating": 4.6,
+  "affiliateUrl": "",
+  "websiteUrl": "https://www.descript.com",
+  "editorReview": "Descript 最革命性的功能是「像编辑文本一样编辑视频」——AI 自动生成字幕，你直接在文字稿里删改文字，对应的视频片段就自动裁剪了。这对播客和访谈类视频创作者来说简直是神器。\n\nAI 去除填充词（嗯、啊）、AI 换声、AI 生成摘要等功能也很实用。整体思路是把视频编辑的门槛降到和编辑 Word 文档一样低。\n\n免费版可以导出 720p 视频，$24/月的 Pro 版解锁 4K 和全部 AI 功能。对播客和自媒体创作者强烈推荐。",
+  "goodFor": [
+    "播客创作者",
+    "访谈类视频博主",
+    "自媒体创作者",
+    "会议录制编辑"
+  ],
+  "notGoodFor": [
+    "需要复杂特效的用户",
+    "纯图片设计需求",
+    "短视频剪辑为主的用户"
+  ],
+  "pros": [
+    "文本式视频编辑革命性",
+    "AI 去填充词好用",
+    "播客编辑效率极高",
+    "免费版功能不错"
+  ],
+  "cons": [
+    "复杂特效不如 Premiere",
+    "中文支持不如英文",
+    "免费版有水印"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Free",
+      "price": "免费",
+      "features": [
+        "720p 导出",
+        "1小时转录/月",
+        "基础编辑"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$24/月",
+      "features": [
+        "4K 导出",
+        "10小时转录/月",
+        "全部 AI 功能",
+        "去水印"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册 Descript 账号",
+    "导入视频或音频文件",
+    "AI 自动生成文字稿",
+    "在文字稿中编辑内容",
+    "导出编辑后的视频"
+  ],
+  "relatedTools": [
+    "capcut",
+    "opus-clip"
+  ],
+  "screenshots": [],
+  "isFeatured": false,
+  "isNew": true,
+  "affiliateCommission": "",
+  "cookieDuration": "",
+  "createdAt": "2026-04-06",
+  "verifiedAt": "2026-04"
+}
