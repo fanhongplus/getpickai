@@ -20,7 +20,7 @@
     {"name": "高级版", "price": "$79/月", "features": ["所有标准版功能", "更多查询次数", "批量操作", "API 接入"]}
   ],
   "quickStart": ["注册卖家精灵账号", "安装浏览器插件", "打开亚马逊页面查看实时数据", "使用选品精灵筛选潜力产品", "导出关键词列表优化 Listing"],
-  "relatedTools": ["jungle-scout", "jasper-ai", "writesonic"],
+  "relatedTools": ["jungle-scout", "jasper", "writesonic"],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,

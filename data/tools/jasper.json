@@ -1,1 +1,106 @@
-{"slug":"jasper","name":"Jasper","logo":"/logos/jasper.svg","tagline":"企业级 AI 营销文案平台，Brand Voice 功能保持品牌调性一致","scenes":["写文案"],"pricingType":"paid","priceLabel":"$49/月起","rating":4.6,"affiliateUrl":"","websiteUrl":"https://jasper.ai","editorReview":"Jasper 是企业营销文案领域的标杆 AI 工具，全球数千家品牌在用。最核心的优势是 Brand Voice 功能——你可以训练它学习品牌调性，之后生成的所有内容都会保持一致风格。\n\n50+ 个预设模板覆盖博客文章、产品描述、广告文案、邮件营销、社媒帖子等各类场景，免去了自己写 Prompt 的时间。集成 Surfer SEO 后可以直接出 SEO 优化的长文。\n\n$49/月的价格不便宜，但对有品牌意识、需要统一调性和规模化产出的团队来说，投资回报率很高。","goodFor":["品牌营销团队","跨境电商卖家","SEO 内容营销","多人协作场景"],"notGoodFor":["个人偶尔写文案","预算有限的用户","中文内容为主的场景"],"pros":["Brand Voice 功能强大","模板库丰富","SEO 集成好","团队协作优秀","输出质量高"],"cons":["价格偏高","中文能力不如专用中文工具","免费试用期短"],"pricingPlans":[{"name":"Creator","price":"$49/月","features":["1 个 Brand Voice","50+ 模板","SEO 模式"]},{"name":"Pro","price":"$69/月","features":["3 个 Brand Voice","团队协作","优先客服"]},{"name":"Business","price":"定制","features":["无限 Brand Voice","API 接入","SSO"]}],"quickStart":["注册 Jasper 账号","配置 Brand Voice 上传品牌素材","选择模板和场景","输入关键信息","AI 生成文案后编辑使用"],"relatedTools":["jasper-ai","writesonic","copy-ai"],"screenshots":[],"isFeatured":false,"isNew":false,"affiliateCommission":"","cookieDuration":"","createdAt":"2026-04-06","verifiedAt":"2026-04"}
+{
+  "slug": "jasper",
+  "name": "Jasper",
+  "logo": "/logos/jasper.svg",
+  "tagline": "AI 营销文案生成工具，帮你 10 倍速写出高转化文案",
+  "scenes": [
+    "写文案",
+    "做营销",
+    "写博客"
+  ],
+  "pricingType": "paid",
+  "priceLabel": "$49/月起",
+  "rating": 4.8,
+  "affiliateUrl": "https://jasper.ai?ref=gopickai",
+  "websiteUrl": "https://jasper.ai",
+  "editorReview": "如果你每天需要写大量营销文案，Jasper 是目前最值得花钱的工具。它不是最便宜的，但出稿质量确实比其他工具高一个档次。尤其是英文文案，Jasper 几乎可以直接用，稍微改改就能发。\n\n不过说实话，如果你只是偶尔写写个人博客，$49/月的价格确实偏贵。Jasper 的核心优势在于它的「品牌声音」功能——你可以训练它按照你的品牌调性来写，这对企业用户来说是杀手级功能。\n\n中文生成质量比英文差一些，但也在可用范围内。如果你的主要工作语言是英文，那强烈推荐。",
+  "goodFor": [
+    "营销团队",
+    "内容代理商",
+    "跨境电商卖家",
+    "英文内容创作者"
+  ],
+  "notGoodFor": [
+    "偶尔写作的个人用户",
+    "预算有限的学生",
+    "主要写中文内容的用户"
+  ],
+  "pros": [
+    "文案质量是同类工具中最高的",
+    "支持 30+ 语言，包括中文",
+    "模板丰富，覆盖广告、邮件、社交媒体等场景",
+    "品牌声音定制功能强大",
+    "SEO 优化模式好用"
+  ],
+  "cons": [
+    "价格偏高，$49/月起步",
+    "免费版功能极其有限",
+    "中文生成质量不如英文"
+  ],
+  "pricingPlans": [
+    {
+      "name": "Creator",
+      "price": "$49/月",
+      "features": [
+        "1 个品牌声音",
+        "SEO 模式",
+        "浏览器扩展",
+        "50+ 模板"
+      ]
+    },
+    {
+      "name": "Pro",
+      "price": "$69/月",
+      "features": [
+        "3 个品牌声音",
+        "协作功能",
+        "AI 图片生成",
+        "优先支持"
+      ]
+    },
+    {
+      "name": "Business",
+      "price": "定制",
+      "features": [
+        "无限品牌声音",
+        "API 接入",
+        "专属客户经理",
+        "自定义工作流"
+      ]
+    }
+  ],
+  "quickStart": [
+    "注册账号并选择套餐（有 7 天免费试用）",
+    "设置品牌声音（输入品牌描述和风格偏好）",
+    "选择模板（如 Blog Post、Ad Copy、Email）",
+    "输入关键信息，点击生成",
+    "编辑优化后导出使用"
+  ],
+  "relatedTools": [
+    "heygen",
+    "midjourney",
+    "copy-ai",
+    "writesonic"
+  ],
+  "screenshots": [],
+  "isFeatured": true,
+  "isNew": false,
+  "affiliateCommission": "30% recurring",
+  "cookieDuration": "90 days",
+  "createdAt": "2026-04-04",
+  "verifiedAt": "2026-04",
+  "prompts": [
+    {
+      "title": "写亚马逊商品五点描述",
+      "prompt": "你是一个资深亚马逊运营专家。请根据以下产品信息，写出5条吸引买家的 Bullet Points（五点描述）。要求：每条以核心卖点开头，全大写；然后用1-2句话展开说明；融入关键词但要自然；语气专业但有说服力。\n\n产品信息：[在此粘贴你的产品信息]"
+    },
+    {
+      "title": "写社交媒体推广文案",
+      "prompt": "你是一个社交媒体营销专家。请为以下产品写3条不同风格的 Instagram/TikTok 推广文案。要求：第1条走「痛点+解决方案」路线；第2条走「用户故事/好评」路线；第3条走「限时优惠/紧迫感」路线。每条不超过150字，包含3-5个相关 hashtag。\n\n产品信息：[在此粘贴你的产品信息]"
+    },
+    {
+      "title": "生成品牌声音描述",
+      "prompt": "请帮我定义一个品牌声音（Brand Voice）。我的品牌是[品牌名]，面向[目标受众]，我们的产品是[产品描述]。请从以下维度定义我的品牌声音：1) 语气（正式/轻松/幽默等）2) 用词偏好 3) 禁止使用的词汇 4) 3个品牌声音示例句子。"
+    }
+  ]
+}

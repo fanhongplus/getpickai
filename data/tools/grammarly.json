@@ -20,7 +20,7 @@
     {"name": "Business", "price": "$15/月/人", "features": ["所有 Premium 功能", "品牌风格指南", "团队分析", "优先支持"]}
   ],
   "quickStart": ["注册 Grammarly 账号", "安装浏览器插件或桌面客户端", "开始写英文内容", "AI 自动标注语法和风格问题", "一键应用修改建议"],
-  "relatedTools": ["quillbot", "jasper-ai", "xiezuocat"],
+  "relatedTools": ["quillbot", "jasper", "xiezuocat"],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,

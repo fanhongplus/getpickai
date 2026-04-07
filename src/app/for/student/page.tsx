@@ -13,7 +13,7 @@ export default function StudentPage() {
       title="留学生的 AI 工具箱"
       subtitle="写论文、做 PPT、练口语，AI 是你的学霸搭档"
       tools={[
-        { slug: "jasper-ai", usage: "润色英文论文和写作，提升学术写作质量" },
+        { slug: "jasper", usage: "润色英文论文和写作，提升学术写作质量" },
         { slug: "canva", usage: "做 PPT 和课堂展示，海量学术模板直接用" },
         { slug: "elevenlabs", usage: "练习听力和发音，AI 生成各种口音的英语语音" },
         { slug: "writesonic", usage: "润色英文写作、生成摘要和大纲，学术写作好帮手" },

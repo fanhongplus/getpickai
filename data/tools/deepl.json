@@ -20,7 +20,7 @@
     {"name": "Advanced", "price": "$29/月", "features": ["所有 Starter 功能", "无限术语表", "CAT 工具集成", "团队协作"]}
   ],
   "quickStart": ["打开 deepl.com 或下载桌面客户端", "粘贴或输入需要翻译的文本", "选择目标语言", "根据需要调整翻译结果", "复制翻译后的文案到你的 Listing"],
-  "relatedTools": ["jasper-ai", "writesonic"],
+  "relatedTools": ["jasper", "writesonic"],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,

@@ -18,7 +18,7 @@
     {"name": "随 Shopify 使用", "price": "免费（需 Shopify 订阅）", "features": ["产品描述生成", "邮件内容生成", "SEO 标题优化", "店铺公告生成"]}
   ],
   "quickStart": ["登录 Shopify 后台", "在产品编辑页点击 AI 生成按钮", "输入产品关键信息", "AI 自动生成产品描述", "审核修改后保存发布"],
-  "relatedTools": ["jasper-ai", "writesonic", "tidio"],
+  "relatedTools": ["jasper", "writesonic", "tidio"],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,

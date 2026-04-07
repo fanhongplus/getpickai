@@ -20,7 +20,7 @@
     {"name": "Enterprise", "price": "定制报价", "features": ["所有 Pro 功能", "专属客服经理", "API 接入", "数据分析报表"]}
   ],
   "quickStart": ["注册 SaleSmartly 账号", "绑定你的社交媒体和电商平台", "配置 AI 自动回复规则", "设置常见问题话术库", "开始统一管理所有客户消息"],
-  "relatedTools": ["deepl", "jasper-ai"],
+  "relatedTools": ["deepl", "jasper"],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,

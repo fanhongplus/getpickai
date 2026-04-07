@@ -19,7 +19,7 @@
     {"name": "Premium", "price": "$10/月", "features": ["无限改写", "全部 7 种模式", "无字数限制", "语法检查"]}
   ],
   "quickStart": ["打开 quillbot.com 或安装浏览器插件", "粘贴需要改写的英文段落", "选择改写模式（推荐学术模式）", "点击改写，查看结果", "微调不满意的部分后复制使用"],
-  "relatedTools": ["grammarly", "jasper-ai", "writesonic"],
+  "relatedTools": ["grammarly", "jasper", "writesonic"],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,

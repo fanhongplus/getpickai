@@ -20,7 +20,7 @@
     {"name": "Pro", "price": "$20/月", "features": ["所有 Plus 功能", "自定义品牌", "分析数据", "优先支持"]}
   ],
   "quickStart": ["打开 gamma.app 注册账号", "输入演示主题或粘贴大纲", "AI 自动生成完整 PPT", "微调内容和样式", "导出 PPTX 或在线分享"],
-  "relatedTools": ["canva", "notion-ai", "jasper-ai"],
+  "relatedTools": ["canva", "notion-ai", "jasper"],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,

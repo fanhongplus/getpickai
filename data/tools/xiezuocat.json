@@ -19,7 +19,7 @@
     {"name": "会员", "price": "会员制", "features": ["无限使用", "高级润色", "风格转换", "全文改写"]}
   ],
   "quickStart": ["打开 xiezuocat.com 注册账号", "粘贴你的文章初稿", "选择纠错、润色或改写功能", "AI 自动标注修改建议", "一键应用修改并导出"],
-  "relatedTools": ["jasper-ai", "writesonic", "grammarly"],
+  "relatedTools": ["jasper", "writesonic", "grammarly"],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,

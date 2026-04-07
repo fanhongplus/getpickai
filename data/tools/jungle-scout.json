@@ -20,7 +20,7 @@
     {"name": "Professional", "price": "$84/月", "features": ["所有 Suite 功能", "历史数据", "高级筛选", "6 个用户"]}
   ],
   "quickStart": ["注册 Jungle Scout 账号", "安装 Chrome 浏览器插件", "在亚马逊页面查看实时销量数据", "使用产品数据库筛选潜力产品", "用 AI Assist 分析市场趋势"],
-  "relatedTools": ["sellersprite", "jasper-ai", "writesonic"],
+  "relatedTools": ["sellersprite", "jasper", "writesonic"],
   "screenshots": [],
   "isFeatured": false,
   "isNew": true,
