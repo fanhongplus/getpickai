@@ -10,42 +10,42 @@
           "label": "独立站商品描述",
           "workflows": {
             "free": {
-              "title": "免费打造高转化商品描述",
+              "title": "AI 生成多语言商品描述（零成本）",
               "tools": [
                 {
-                  "name": "Copy.ai",
-                  "slug": "copy-ai",
-                  "step": "选 Product Description 模板，输入卖点关键词，生成 5 条备选文案",
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "用「角色扮演」Prompt 让 GPT 扮演资深电商文案，批量生成 5 种风格描述",
                   "cost": "免费"
                 },
                 {
-                  "name": "Grammarly",
-                  "slug": "grammarly",
-                  "step": "粘贴英文描述，一键润色语法和专业度",
+                  "name": "DeepL",
+                  "slug": "deepl",
+                  "step": "将中文描述精准翻译为英/日/韩多语种，翻译质量远超 Google 翻译",
                   "cost": "免费基础版"
                 }
               ]
             },
             "paid": {
-              "title": "专业级品牌商品文案",
+              "title": "专业电商文案自动化工作流",
               "tools": [
                 {
-                  "name": "Jasper AI",
-                  "slug": "jasper-ai",
-                  "step": "用品牌声音功能输入卖点和受众，生成符合品牌调性的描述",
+                  "name": "Jasper",
+                  "slug": "jasper",
+                  "step": "选 Product Description 模板，输入品牌调性和关键词，一键生成 SEO 长描述",
                   "cost": "$49/月"
                 },
                 {
-                  "name": "DeepL",
-                  "slug": "deepl",
-                  "step": "把中文描述精准翻译成多语言版本，覆盖海外市场",
-                  "cost": "$9/月"
+                  "name": "Copy.ai",
+                  "slug": "copy-ai",
+                  "step": "用电商描述工作流，输入 3 个核心卖点，自动输出标题+要点+详情三段式文案",
+                  "cost": "$49/月"
                 },
                 {
                   "name": "Writesonic",
                   "slug": "writesonic",
-                  "step": "用 SEO 模板补充长尾关键词，提升独立站搜索排名",
-                  "cost": "$16/月"
+                  "step": "打开 Amazon Product Descriptions 模板，粘贴信息生成 Listing 风格文案",
+                  "cost": "$19/月起"
                 }
               ]
             }
@@ -56,42 +56,42 @@
           "label": "广告素材制作",
           "workflows": {
             "free": {
-              "title": "零成本快速出广告图",
+              "title": "零预算出 Facebook/Google 广告素材",
               "tools": [
                 {
-                  "name": "Canva",
-                  "slug": "canva",
-                  "step": "选社媒广告模板，替换产品图和文案，5 分钟出图",
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入产品特性和目标受众，一次生成 10 组广告标题+描述，直接用于 A/B 测试",
                   "cost": "免费"
                 },
                 {
-                  "name": "即梦 AI",
-                  "slug": "dreamina",
-                  "step": "用中文描述生成产品场景图，免费无限次",
-                  "cost": "免费"
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "选电商广告模板（Facebook/Google 尺寸），拖入产品图+文案，10 分钟出一套",
+                  "cost": "免费基础版"
                 }
               ]
             },
             "paid": {
-              "title": "高转化广告素材生产线",
+              "title": "AI 广告素材批量生产线",
               "tools": [
-                {
-                  "name": "Midjourney",
-                  "slug": "midjourney",
-                  "step": "生成创意场景图和概念视觉，质量业界天花板",
-                  "cost": "$10/月起"
-                },
                 {
                   "name": "AdCreative.ai",
                   "slug": "adcreative-ai",
-                  "step": "上传品牌素材，AI 生成多版本广告图并预测转化率",
-                  "cost": "$21/月起"
+                  "step": "上传产品图和品牌素材，AI 自动生成数百个广告变体，并预测点击率",
+                  "cost": "$29/月起"
                 },
                 {
-                  "name": "Photoroom",
-                  "slug": "photoroom",
-                  "step": "手机拍产品图后一键去背景换场景，批量出白底图",
-                  "cost": "$10/月"
+                  "name": "Canva Pro",
+                  "slug": "canva",
+                  "step": "用 Magic Resize 一键适配 Facebook、Instagram、Google 全平台尺寸",
+                  "cost": "$12.99/月"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传竞品广告截图，让 Claude 拆解对手卖点，生成差异化文案策略",
+                  "cost": "$20/月"
                 }
               ]
             }
@@ -102,36 +102,42 @@
           "label": "客户邮件回复",
           "workflows": {
             "free": {
-              "title": "免费搞定多语言客服回复",
+              "title": "30 秒搞定英文客户邮件",
               "tools": [
                 {
-                  "name": "Kimi",
-                  "slug": "kimi",
-                  "step": "粘贴客户邮件，让 AI 用专业友好的语气起草回复",
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "粘贴客户来信，指定回复语气（专业/友好/强硬），30 秒生成得体回复",
                   "cost": "免费"
                 },
                 {
                   "name": "Grammarly",
                   "slug": "grammarly",
-                  "step": "回复发送前检查英文语法和语气，避免低级错误",
+                  "step": "将 AI 回复粘贴检查，修正语法+调整商务语气，确保正式场景零失误",
                   "cost": "免费基础版"
                 }
               ]
             },
             "paid": {
-              "title": "专业客服自动化方案",
+              "title": "客户邮件全自动化体系",
               "tools": [
                 {
-                  "name": "Gorgias",
-                  "slug": "gorgias",
-                  "step": "整合 Shopify 订单数据，AI 自动生成带订单信息的回复",
-                  "cost": "$10/月起"
+                  "name": "GetResponse",
+                  "slug": "getresponse",
+                  "step": "设置自动化序列：新客欢迎→弃购挽回→售后跟进，按行为自动触发",
+                  "cost": "$19/月起"
                 },
                 {
-                  "name": "SaleSmartly",
-                  "slug": "salesmartly",
-                  "step": "多渠道消息统一管理，AI 实时翻译解决多语言时差",
-                  "cost": "$16/月起"
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "处理复杂客诉：上传订单截图+聊天记录，生成兼顾客户情绪的解决方案",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Grammarly",
+                  "slug": "grammarly",
+                  "step": "全员装浏览器插件，统一品牌语气，所有对外邮件自动检查语法",
+                  "cost": "$15/月/人"
                 }
               ]
             }
@@ -149,36 +155,42 @@
           "label": "视频脚本生成",
           "workflows": {
             "free": {
-              "title": "免费写出抓人视频脚本",
+              "title": "爆款视频脚本速成法",
               "tools": [
                 {
-                  "name": "Kimi",
-                  "slug": "kimi",
-                  "step": "输入选题和受众，让 Kimi 写一份带 Hook 的视频脚本",
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "输入选题+时长，用「钩子→冲突→解决→CTA」公式 Prompt，生成 3 版脚本",
                   "cost": "免费"
                 },
                 {
-                  "name": "豆包",
-                  "slug": "doubao",
-                  "step": "用豆包打磨开场白和金句，提升完播率",
+                  "name": "剪映 CapCut",
+                  "slug": "capcut",
+                  "step": "将脚本导入图文成片，AI 自动匹配画面素材+生成字幕，零剪辑也能出片",
                   "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "专业内容生产工作流",
+              "title": "专业级视频内容生产线",
               "tools": [
                 {
-                  "name": "Jasper AI",
-                  "slug": "jasper-ai",
-                  "step": "用 Video Script 模板生成结构化脚本，含 Hook+主体+CTA",
-                  "cost": "$49/月"
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传过往爆款文稿，让 Claude 分析你的风格规律，批量生成同风格新脚本",
+                  "cost": "$20/月"
+                },
+                {
+                  "name": "Pictory",
+                  "slug": "pictory",
+                  "step": "粘贴脚本或博客链接，AI 自动匹配画面、加字幕，输出带转场的短视频",
+                  "cost": "$23/月"
                 },
                 {
                   "name": "Writesonic",
                   "slug": "writesonic",
-                  "step": "批量生成 5-10 个选题方向的脚本，再挑最好的精修",
-                  "cost": "$16/月起"
+                  "step": "用 Article to Video Script 工作流，输入话题生成分镜脚本+旁白文稿",
+                  "cost": "$19/月起"
                 }
               ]
             }
@@ -189,36 +201,42 @@
           "label": "封面图设计",
           "workflows": {
             "free": {
-              "title": "零成本做出抓眼球封面",
+              "title": "3 分钟做出高点击率封面",
               "tools": [
                 {
                   "name": "Canva",
                   "slug": "canva",
-                  "step": "选 YouTube/小红书封面模板，替换标题和图片即可",
-                  "cost": "免费"
+                  "step": "选 YouTube/小红书封面模板，用 AI 文字排版生成吸睛标题，3 分钟出图",
+                  "cost": "免费基础版"
                 },
                 {
-                  "name": "即梦 AI",
-                  "slug": "dreamina",
-                  "step": "用中文描述生成原创封面插图，免费无限用",
+                  "name": "Remove.bg",
+                  "slug": "remove-bg",
+                  "step": "上传人像一键去背景，拖入 Canva 模板做「人物+大字」爆款构图",
                   "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "专业级封面视觉",
+              "title": "AI 生成独家视觉封面",
               "tools": [
                 {
                   "name": "Midjourney",
                   "slug": "midjourney",
-                  "step": "生成艺术感强的概念封面图，让你在信息流中脱颖而出",
+                  "step": "用 /imagine 输入频道风格关键词，生成独一无二的 AI 插画封面素材",
                   "cost": "$10/月起"
                 },
                 {
-                  "name": "Ideogram",
-                  "slug": "ideogram",
-                  "step": "AI 直接生成带标题文字的封面，无需后期 PS 排版",
-                  "cost": "$8/月起"
+                  "name": "Canva Pro",
+                  "slug": "canva",
+                  "step": "用 Magic Edit 换背景+AI 扩图，品牌套件一键统一字体、配色、版式",
+                  "cost": "$12.99/月"
+                },
+                {
+                  "name": "Adobe Firefly",
+                  "slug": "adobe-firefly",
+                  "step": "用生成式填充精修细节，AI 文字效果+光影处理达到专业设计师水准",
+                  "cost": "$4.99/月起"
                 }
               ]
             }
@@ -229,36 +247,42 @@
           "label": "多平台分发",
           "workflows": {
             "free": {
-              "title": "免费做矩阵分发",
+              "title": "一条内容发遍全平台（免费）",
               "tools": [
                 {
-                  "name": "剪映",
-                  "slug": "jianying",
-                  "step": "用 AI 字幕和智能剪辑快速产出适配不同平台的视频",
-                  "cost": "免费"
+                  "name": "Buffer",
+                  "slug": "buffer",
+                  "step": "免费版连接 3 个社媒账号，按平台最佳时间一键排期自动发布",
+                  "cost": "免费（3 账号）"
                 },
                 {
-                  "name": "CapCut",
-                  "slug": "capcut",
-                  "step": "国际版导出适配 TikTok/YouTube Shorts 的竖屏视频",
-                  "cost": "免费"
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "用 Magic Resize 一键适配 TikTok 竖版/YouTube 横版/小红书方版多尺寸",
+                  "cost": "免费基础版"
                 }
               ]
             },
             "paid": {
-              "title": "专业矩阵分发流水线",
+              "title": "全平台自动分发+数据追踪",
               "tools": [
                 {
-                  "name": "Opus Clip",
-                  "slug": "opus-clip",
-                  "step": "上传长视频，AI 自动剪成 5-10 条带字幕的短视频",
-                  "cost": "$15/月起"
+                  "name": "Metricool",
+                  "slug": "metricool",
+                  "step": "连接 TikTok/YouTube/IG/X 全平台，统一日历排期+跨平台数据对比",
+                  "cost": "$18/月起"
                 },
                 {
-                  "name": "Buffer",
-                  "slug": "buffer",
-                  "step": "一次编辑，定时分发到 YouTube/TikTok/Instagram 等平台",
-                  "cost": "$6/月起"
+                  "name": "Repurpose.io",
+                  "slug": "repurpose-io",
+                  "step": "设置规则：YouTube 发布后自动裁成竖版推送 TikTok+Reels，无人值守",
+                  "cost": "$25/月"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "将长内容喂给 Claude，改写为 Twitter 短文、小红书种草、LinkedIn 专业帖",
+                  "cost": "$20/月"
                 }
               ]
             }
@@ -276,36 +300,42 @@
           "label": "论文降重改写",
           "workflows": {
             "free": {
-              "title": "免费完成论文改写润色",
+              "title": "免费降低论文重复率",
               "tools": [
                 {
                   "name": "QuillBot",
                   "slug": "quillbot",
-                  "step": "用 Standard 模式改写段落，免费版支持 125 词/次",
-                  "cost": "免费"
+                  "step": "粘贴高重复段落，选 Standard 或 Fluency 模式，AI 自动替换同义词",
+                  "cost": "免费（125词/次）"
                 },
                 {
                   "name": "Grammarly",
                   "slug": "grammarly",
-                  "step": "改写后用 Grammarly 检查语法和学术表达",
+                  "step": "改写后检查语法+学术语气，确保降重后文本仍通顺且符合学术规范",
                   "cost": "免费基础版"
                 }
               ]
             },
             "paid": {
-              "title": "专业级学术降重",
+              "title": "论文降重+润色+查重一站式",
               "tools": [
                 {
-                  "name": "QuillBot",
+                  "name": "QuillBot Premium",
                   "slug": "quillbot",
-                  "step": "用 Academic 学术模式深度改写，无字数限制",
-                  "cost": "$10/月"
+                  "step": "解锁 Custom 模式+无字数限制，并排对比改写前后，精准控制改写程度",
+                  "cost": "$9.95/月"
                 },
                 {
-                  "name": "Writefull",
-                  "slug": "writefull",
-                  "step": "学术专用润色，给出符合期刊语体的改写建议",
-                  "cost": "$16/月起"
+                  "name": "Wordtune",
+                  "slug": "wordtune",
+                  "step": "选中任意句子获得 5-10 种改写建议，保留学术含义彻底更换表达方式",
+                  "cost": "$9.99/月"
+                },
+                {
+                  "name": "Grammarly Premium",
+                  "slug": "grammarly",
+                  "step": "全文一致性检查+学术语气微调+内置抄袭检测，改写润色一站完成",
+                  "cost": "$12/月"
                 }
               ]
             }
@@ -316,42 +346,42 @@
           "label": "文献综述辅助",
           "workflows": {
             "free": {
-              "title": "免费搞定文献综述",
+              "title": "AI 辅助快速文献调研",
               "tools": [
-                {
-                  "name": "Google NotebookLM",
-                  "slug": "notebooklm",
-                  "step": "上传 10 篇 PDF 文献，AI 自动生成主题摘要和关键论点",
-                  "cost": "免费"
-                },
                 {
                   "name": "Semantic Scholar",
                   "slug": "semantic-scholar",
-                  "step": "用 TLDR 功能一句话总结论文核心贡献，快速筛选",
+                  "step": "输入研究关键词，AI 按引用量排序论文，生成核心摘要快速建立文献地图",
                   "cost": "免费"
                 },
                 {
-                  "name": "Connected Papers",
-                  "slug": "connected-papers",
-                  "step": "输入核心论文，可视化展示相关文献网络",
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "将筛选出的 5-10 篇论文摘要粘贴给 GPT，按主题归纳识别研究空白点",
                   "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "高效文献研究流水线",
+              "title": "AI 深度文献分析工作流",
               "tools": [
                 {
-                  "name": "Consensus",
-                  "slug": "consensus",
-                  "step": "输入研究问题，AI 从 2 亿+ 论文中提取共识并附引用",
+                  "name": "Elicit",
+                  "slug": "elicit",
+                  "step": "输入研究问题，AI 自动检索论文、提取关键发现、生成对比表格",
                   "cost": "$10/月"
                 },
                 {
-                  "name": "Scholarcy",
-                  "slug": "scholarcy",
-                  "step": "AI 自动提取每篇论文的论点、方法和结论",
-                  "cost": "$10/月起"
+                  "name": "Zotero",
+                  "slug": "zotero",
+                  "step": "保存论文到文献库，配合 ZoteroGPT 对整个库提问，秒速定位引用",
+                  "cost": "免费+插件"
+                },
+                {
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传 10-20 篇 PDF 论文，生成结构化综述初稿含主题分类和引用标注",
+                  "cost": "$20/月"
                 }
               ]
             }
@@ -362,36 +392,42 @@
           "label": "简历优化",
           "workflows": {
             "free": {
-              "title": "免费打磨英文简历",
+              "title": "AI 重写+排版简历（零花费）",
               "tools": [
                 {
-                  "name": "Grammarly",
-                  "slug": "grammarly",
-                  "step": "检查简历语法、拼写和正式度，避免低级错误",
-                  "cost": "免费基础版"
+                  "name": "ChatGPT",
+                  "slug": "chatgpt",
+                  "step": "粘贴简历+目标 JD，用 Prompt 让 GPT 改写为 STAR 法则格式并量化成果",
+                  "cost": "免费"
                 },
                 {
-                  "name": "Hemingway Editor",
-                  "slug": "hemingway",
-                  "step": "高亮复杂句式和被动语态，让简历表达更简洁有力",
+                  "name": "Canva",
+                  "slug": "canva",
+                  "step": "选 ATS 友好的简洁单栏模板，填入优化后的文本，导出 PDF 直接投递",
                   "cost": "免费"
                 }
               ]
             },
             "paid": {
-              "title": "专业级简历润色方案",
+              "title": "简历定制+ATS 优化+专业润色",
               "tools": [
                 {
-                  "name": "Grammarly",
+                  "name": "Kickresume",
+                  "slug": "kickresume",
+                  "step": "输入目标岗位，AI 生成针对性简历初稿，内置 ATS 评分检测通过率",
+                  "cost": "$19/月"
+                },
+                {
+                  "name": "Grammarly Premium",
                   "slug": "grammarly",
-                  "step": "Premium 版给出文风建议和清晰度评分",
+                  "step": "简历英文深度润色：检查语法+语气检测确保措辞专业自信用词精准",
                   "cost": "$12/月"
                 },
                 {
-                  "name": "ProWritingAid",
-                  "slug": "prowritingaid",
-                  "step": "深度分析文章结构、风格和可读性",
-                  "cost": "$10/月起"
+                  "name": "Claude",
+                  "slug": "claude",
+                  "step": "上传目标 JD+现有简历，逐条对比给出修改建议和量化成果优化方案",
+                  "cost": "$20/月"
                 }
               ]
             }
