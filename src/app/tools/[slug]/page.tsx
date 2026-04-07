@@ -6,6 +6,7 @@ import { getToolBySlug, getAllTools } from "@/lib/data";
 import { sceneColorMap, priceColorMap } from "@/lib/constants";
 import { ToolCard } from "@/components/ToolCard";
 import { PromptCopyBlock } from "@/components/PromptCopyBlock";
+import BackButton from "@/components/BackButton";
 
 interface Props {
   params: { slug: string };
@@ -40,6 +41,9 @@ export default function ToolDetailPage({ params }: Props) {
   return (
     <div className="animate-fade-in pt-24 pb-16 px-4">
       <div className="max-w-4xl mx-auto">
+
+        {/* 返回按钮 */}
+        <BackButton />
 
         {/* 顶部信息栏 */}
         <div className="flex flex-col md:flex-row md:items-center gap-4 mb-10 pb-8 border-b border-border">

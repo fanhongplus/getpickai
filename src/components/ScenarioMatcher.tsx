@@ -174,7 +174,7 @@ export default function ScenarioMatcher({ hideHeader = false }: ScenarioMatcherP
             <div className="text-2xl">✨</div>
             <div>
               <div className="text-xs text-accent font-medium mb-1">
-                为你推荐的方案
+                为你推荐的工作流
               </div>
               <h3 className="text-lg md:text-xl font-bold text-text leading-heading">
                 {result.title}
@@ -183,7 +183,10 @@ export default function ScenarioMatcher({ hideHeader = false }: ScenarioMatcherP
           </div>
 
           <div className="flex flex-col gap-4">
-            {result.tools.map((tool, idx) => (
+            {result.tools.map((tool, idx) => {
+              const stepLabels = ["第一步", "第二步", "第三步"];
+              const stepLabel = stepLabels[idx] || `第${idx + 1}步`;
+              return (
               <div
                 key={`${tool.slug}-${idx}`}
                 data-testid="tool-step"
@@ -192,9 +195,9 @@ export default function ScenarioMatcher({ hideHeader = false }: ScenarioMatcherP
                 {/* 左侧：序号 + 工具名 + 步骤描述 */}
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-3 mb-2">
-                    <div className="w-8 h-8 rounded-full bg-accent/10 text-accent font-bold text-sm flex items-center justify-center flex-shrink-0">
-                      {idx + 1}
-                    </div>
+                    <span className="text-xs font-bold px-2.5 py-1 rounded-full bg-accent text-white whitespace-nowrap flex-shrink-0">
+                      {stepLabel}
+                    </span>
                     <Link
                       href={`/tools/${tool.slug}`}
                       className="font-semibold text-text hover:text-accent transition-colors"
@@ -227,7 +230,8 @@ export default function ScenarioMatcher({ hideHeader = false }: ScenarioMatcherP
                   </Link>
                 </div>
               </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       )}
