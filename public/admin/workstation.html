@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="googlebot" content="noindex, nofollow">
+<title>GoPick 发布工作台</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Noto Sans SC", sans-serif;
+    background: #f5f6f8;
+    color: #1a1f36;
+    line-height: 1.6;
+    padding: 20px 15px 80px;
+  }
+  .container { max-width: 900px; margin: 0 auto; }
+
+  /* 顶部标题 */
+  .header {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .header h1 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+  }
+  .header h1 span { color: #4f6ef7; }
+  .header .sub { color: #64748b; font-size: 13px; margin-top: 4px; }
+
+  /* SOP 提示条 */
+  .sop-bar {
+    background: linear-gradient(135deg, #e8efff 0%, #f5e8ff 100%);
+    border: 1px solid #c7d6ff;
+    border-radius: 12px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #4a5568;
+    line-height: 1.7;
+  }
+  .sop-bar strong { color: #4f6ef7; }
+
+  /* Day 滑轨 */
+  .day-rail-wrap {
+    background: #fff;
+    border-radius: 14px;
+    padding: 12px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    position: sticky;
+    top: 10px;
+    z-index: 10;
+    backdrop-filter: blur(8px);
+  }
+  .day-rail {
+    display: flex;
+    gap: 8px;
+    overflow-x: auto;
+    padding: 4px 0;
+    scrollbar-width: thin;
+  }
+  .day-rail::-webkit-scrollbar { height: 6px; }
+  .day-rail::-webkit-scrollbar-thumb { background: #cbd5e0; border-radius: 3px; }
+  .day-btn {
+    flex-shrink: 0;
+    min-width: 64px;
+    padding: 8px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    background: #fff;
+    cursor: pointer;
+    text-align: center;
+    font-size: 12px;
+    color: #64748b;
+    transition: all 0.15s;
+  }
+  .day-btn:hover { border-color: #4f6ef7; color: #4f6ef7; }
+  .day-btn .d-num { font-size: 16px; font-weight: 700; color: #1a1f36; }
+  .day-btn .d-date { font-size: 11px; margin-top: 2px; opacity: 0.7; }
+  .day-btn.active {
+    background: #4f6ef7;
+    border-color: #4f6ef7;
+    color: #fff;
+  }
+  .day-btn.active .d-num { color: #fff; }
+  .day-btn.done { background: #ecfdf5; border-color: #10b981; }
+  .day-btn.done .d-num::after { content: " ✓"; color: #10b981; }
+  .day-btn.today { box-shadow: 0 0 0 2px #fbbf24; }
+
+  /* 日期标题 */
+  .day-header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    padding: 0 4px;
+  }
+  .day-header h2 { font-size: 18px; font-weight: 700; }
+  .day-header .date { color: #64748b; font-size: 13px; }
+
+  /* 任务卡片 */
+  .task-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    border: 1px solid #e8ecf5;
+    position: relative;
+  }
+  .task-card.done {
+    opacity: 0.55;
+    background: #f5f6f8;
+  }
+  .task-card.done::after {
+    content: "✓ 已完成";
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #10b981;
+    color: #fff;
+    font-size: 11px;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-weight: 600;
+  }
+
+  .task-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+  }
+  .task-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .label-xhs { background: #fff1f2; color: #f43f5e; }
+  .label-zh { background: #e8f4ff; color: #0084ff; }
+
+  .task-action {
+    font-size: 12px;
+    color: #64748b;
+  }
+
+  .check-btn {
+    background: #fff;
+    border: 1.5px solid #e2e8f0;
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+    transition: all 0.15s;
+  }
+  .check-btn:hover { border-color: #10b981; color: #10b981; }
+  .task-card.done .check-btn {
+    background: #10b981;
+    border-color: #10b981;
+    color: #fff;
+  }
+
+  .section-label {
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 600;
+    margin: 14px 0 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .title-block {
+    background: #f8f9fc;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-weight: 600;
+    color: #1a1f36;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .content-block {
+    background: #f8f9fc;
+    border-radius: 8px;
+    padding: 14px;
+    font-size: 13.5px;
+    color: #2d3748;
+    white-space: pre-wrap;
+    max-height: 300px;
+    overflow-y: auto;
+    line-height: 1.75;
+  }
+
+  .prompt-block {
+    background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 13px;
+    color: #7c2d12;
+    line-height: 1.6;
+  }
+
+  .image-desc {
+    background: #f5f3ff;
+    border-left: 3px solid #a78bfa;
+    border-radius: 6px;
+    padding: 10px 12px;
+    font-size: 12px;
+    color: #6d28d9;
+    line-height: 1.6;
+  }
+
+  .btn-row {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+  }
+  .btn {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .btn-primary { background: #4f6ef7; color: #fff; }
+  .btn-primary:hover { background: #3d5bd9; }
+  .btn-secondary { background: #fff; color: #4f6ef7; border: 1.5px solid #4f6ef7; }
+  .btn-secondary:hover { background: #eef1fe; }
+  .btn-amber { background: #f59e0b; color: #fff; }
+  .btn-amber:hover { background: #d97706; }
+  .btn.copied { background: #10b981 !important; color: #fff !important; border-color: #10b981 !important; }
+
+  /* 底部导航 */
+  .bottom-nav {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+    position: sticky;
+    bottom: 0;
+    padding: 16px 0;
+    background: linear-gradient(to top, #f5f6f8 60%, rgba(245,246,248,0));
+  }
+  .nav-btn {
+    flex: 1;
+    padding: 12px 18px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    color: #4a5568;
+    transition: all 0.15s;
+  }
+  .nav-btn:hover:not(:disabled) { border-color: #4f6ef7; color: #4f6ef7; }
+  .nav-btn:disabled { opacity: 0.4; cursor: not-allowed; }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%) translateY(20px);
+    background: #1a1f36;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.25s;
+    pointer-events: none;
+    z-index: 100;
+    white-space: nowrap;
+  }
+  .toast.show {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+
+  .progress {
+    font-size: 12px;
+    color: #64748b;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 12px 10px 80px; }
+    .task-card { padding: 14px; }
+    .header h1 { font-size: 20px; }
+    .day-btn { min-width: 56px; }
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Go<span>Pick</span> 发布工作台</h1>
+      <p class="sub">30 天 × 45 条内容 · 一键复制 · 配图 Prompt 就绪</p>
+    </div>
+
+    <div class="sop-bar">
+      <strong>📋 SOP</strong>：复制正文 → 粘贴到小红书/知乎 → 复制配图 Prompt → 打开 <strong>即梦AI</strong> 生图 → <strong>Canva</strong> 加标题 → 发布 → 打勾 ✓
+    </div>
+
+    <div class="day-rail-wrap">
+      <div class="day-rail" id="dayRail"></div>
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <div class="day-header">
+      <h2 id="dayTitle">Day 1</h2>
+      <span class="date" id="dayDate"></span>
+    </div>
+
+    <div id="taskList"></div>
+
+    <div class="bottom-nav">
+      <button class="nav-btn" id="prevBtn">← 前一天</button>
+      <button class="nav-btn" id="nextBtn">后一天 →</button>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">已复制</div>
+
+<script>
+const DATA = [{"day": 1, "date": "2026-04-08", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "📝 留学生必看！AI 论文降重三步法（35%→8%）", "content": "❌ 你还在手动改词降重？一改就是三天，重复率只降了7%？\n\n✅ 这套 AI 工作流，30 分钟搞定：\n\n𝟭. QuillBot → 智能改写\n选 Custom 模式（不要 Standard，改得太轻）\n滑块拉到 60-70%，语义不跑偏又能大幅降重\n\n𝟮. Grammarly → 学术润色\n设置目标受众 Expert + 学术语气\n修掉 QuillBot 改写后的不自然表达\n\n𝟯. Copyleaks → 查重验证\n不要浪费学校查重次数！\n先用 Copyleaks 确认降到目标线以下\n\n💰 总成本：$31/月（一篇论文用一个月就够）\n⏱ 总耗时：1-2 小时（VS 手动改 3 天）\n\n🔗 完整操作指南+工具链接在主页\n\n#留学生 #论文降重 #AI工具 #论文查重 #留学干货 #研究生 #毕业论文", "image_desc": "左侧三个工具logo纵向排列（QuillBot→Grammarly→Copyleaks），右侧大字「35%→8%」，底部GoPick水印", "time": "5分钟（复制粘贴+配图）", "image_prompt": "简洁科技风格插画，三个软件图标纵向排列用箭头连接，旁边百分比数字从35降到8，绿色渐变背景，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：论文查重降重工具推荐」", "title": "", "content": "做了一个月的测试，分享一下结论。\n\n直接说答案：QuillBot + Grammarly + Copyleaks 三步走，$31/月，1-2 小时搞定一篇。\n\n具体怎么操作：\n\n1. QuillBot Premium：粘贴高重复段落，选 Custom 模式（不要 Standard，改得太轻）。滑块拉到 60-70%，并排对比确认语义没跑偏。\n\n2. Grammarly Premium：将改写后的文本全部粘贴进去。目标受众设为 Expert，写作风格设为 Academic。重点看 Clarity 建议。\n\n3. Copyleaks：润色完上传跑查重。不要浪费学校的查重次数，先用 Copyleaks 确认降到目标线以下。\n\n零预算版：QuillBot 免费版（每次 125 词）+ Grammarly 免费版。效率低但能用。\n\n国产免费版：秘塔写作猫 + Kimi。完全免费，中文界面友好。\n\n我把三种方案的完整操作步骤和 Prompt 模板放在了这里：[gopick.ai]\n\n每种方案都包含具体的操作截图和注意事项。", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 2, "date": "2026-04-09", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🎓 AI 写文献综述，2 小时搞定一周的活", "content": "导师说「下周交 Literature Review」，你是不是慌了？\n\n别慌，这套 AI 工作流帮你从零到初稿只要 2 小时 👇\n\n𝟭. Elicit → 智能检索\n输入研究问题，AI 自动找论文+提取关键发现\n最强功能：自动生成论文对比表格！\n\n𝟮. Zotero → 文献管理\n一键保存论文到库，按主题分组\n装 ZoteroGPT 插件，对整个库提问找引用\n\n𝟯. Claude → 生成初稿\n上传 10-20 篇 PDF\nPrompt：「按主题组织综述，标注引用，识别研究空白」\n\n⚠️ Claude 出的是初稿不是终稿，你还得改！\n但比从白纸开始快太多了\n\n🔗 完整工作流+Prompt 模板在主页\n\n#留学生 #文献综述 #LiteratureReview #AI工具 #论文写作 #研究生", "image_desc": "流程图：Elicit(检索)→Zotero(管理)→Claude(初稿)，学术风格配色", "time": "5分钟（复制粘贴+配图）", "image_prompt": "学术研究插画，三个圆形图标代表搜索管理写作，虚线箭头连接，淡蓝色渐变，3:4竖版"}]}, {"day": 3, "date": "2026-04-10", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "💼 你的简历可能根本没被人看过（ATS 通过率 30%→85%）", "content": "投了 50 份简历零回复？\n不是你不够好，是你的简历被机器淘汰了 🤖\n\n大公司用 ATS 自动筛简历\n超过 70% 的简历在被人眼看到之前就被过滤掉了\n\n✅ 三步 AI 优化：\n\n𝟭. Kickresume → AI 定制简历\n输入目标岗位，AI 生成针对性简历\n内置 ATS 评分，低于 70 分就要改\n\n𝟮. Grammarly → 英文深度润色\n把 was responsible for 改成 led / spearheaded\n每个 bullet point 用强动词开头\n\n𝟯. Claude → JD 匹配分析\n上传 JD + 简历，逐条对比\n告诉你哪些关键词没覆盖、怎么改\n\n💰 总成本：约 $51/月\n🆓 零预算版：ChatGPT(改写) + Canva(排版)\n\n🔗 完整教程在主页\n\n#留学生 #简历优化 #求职 #ATS #留学生求职 #面试", "image_desc": "简历before/after对比，左边红色ATS 30%，右边绿色ATS 85%", "time": "5分钟（复制粘贴+配图）", "image_prompt": "简历主题插画，左边简历红色叉号右边绿色对勾，中间AI机器人，科技蓝，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：跨境电商AI工具 / AI写商品描述」", "title": "", "content": "做跨境电商 3 年，今年把 AI 工具系统整理了一遍，分享几个最实用的工作流。\n\n商品描述自动化：\nJasper（生成 SEO 描述）→ DeepL（多语言翻译）→ Surfer SEO（关键词校验）。一个 SKU 从中文卖点到英/日/韩多语言描述，15 分钟搞定。\n\n亚马逊选品：\nHelium 10（数据选品）→ 卖家精灵（中国卖家竞争密度）→ Claude（生成选品报告）。不靠直觉靠数据。\n\n客户邮件：\nChatGPT（起草回复）→ Grammarly（语法润色）。30 秒出一封得体的英文回复。\n\n产品图：\nPhotoroom（AI 换场景）→ WeShop AI（换模特）→ CreatorKit（生成产品视频）。不用请摄影师。\n\n零预算的替代方案也有，用国产免费 AI（豆包/通义千问）+ 稿定设计。\n\n我整理了 14 个跨境电商场景的完整工作流（每个都有免费/付费/国产免费三种方案），放在这里：[gopick.ai]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 4, "date": "2026-04-11", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🔢 数学作业不会做？拍个照 AI 帮你分步讲解", "content": "看到题目发呆 30 分钟还没思路？\n\n试试这个组合 👇\n\n𝟭. Socratic (Google出品) → 拍照解题\n拍照/输入题目，AI 自动识别\n不只给答案，给完整的分步讲解！\n\n𝟮. ChatGPT → 用大白话再讲一遍\n把 Socratic 的解题步骤粘贴给 GPT\n「用最通俗的语言和类比帮我理解」\n\n💰 成本：完全免费！\n\n⚠️ 重要提醒：\n不是让你抄答案！\n是帮你理解解题思路，下次自己会做\n\n🔗 更多留学生 AI 工具在主页\n\n#留学生 #数学 #AI解题 #作业 #学习方法", "image_desc": "手机拍照数学题→AI分步讲解，清新学习风格", "time": "5分钟（复制粘贴+配图）", "image_prompt": "学习风格插画，手拿手机对数学公式拍照，AI分析界面，浅绿色背景，3:4竖版"}]}, {"day": 5, "date": "2026-04-12", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🗣️ 英语口语练习不用花钱请外教了", "content": "想练口语但外教课太贵？\nAI 外教 24 小时在线，还不会 judge 你 😂\n\n🆓 免费方案：\n𝟭. ChatGPT Voice 模式 → 英文对话练习\n实时聊天，说错了 GPT 会温柔纠正\n𝟮. ELSA AI → 发音矫正\n跟读句子，AI 分析每个音素的准确度\n精确到「你的 th 发音需要舌头再往前一点」\n\n💰 付费进阶：\nSpeak ($14/月) → 场景模拟：面试/课堂/社交\nTalkPal ($10/月) → 角色扮演对话练习\n\n每天 15 分钟，一个月口语肉眼可见进步\n\n🔗 完整语言学习工作流在主页\n\n#英语口语 #留学生 #英语学习 #AI学习 #口语练习", "image_desc": "手机屏幕展示AI对话界面，旁边音波图示发音分析", "time": "5分钟（复制粘贴+配图）", "image_prompt": "语言学习插画，手机AI对话气泡，音波麦克风图标，橙黄渐变，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：AI写作工具哪个好 / AI写作工具推荐」", "title": "", "content": "测了 40+ 个 AI 写作工具，按使用场景分类推荐：\n\nSEO 长文：Writesonic（$19/月起，有专门的 SEO 文章模板，配合 Surfer SEO 效果最好）\n\n学术写作：Claude（$20/月，长文本理解能力最强，上传论文做分析）+ Grammarly（语法+学术语气）\n\n电商文案：Jasper（$49/月，电商模板最全）\n\n社媒短文案：ChatGPT 免费版足够\n\n小红书种草文：Claude（分析爆文规律）+ ChatGPT（批量生成文案）\n\n零预算全能选手：ChatGPT 免费版。不是最好，但覆盖面最广。\n\n国产免费推荐：豆包（字节出品，中文写作很强）、Kimi（长文档处理最好）、通义千问（阿里出品，代码+写作都行）。\n\n完整的 40+ 工具对比表和每个场景的具体工作流在这里：[gopick.ai/compare/ai-writing]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 6, "date": "2026-04-13", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🎬 2026 免费 AI 视频生成实测：可灵 vs 即梦 vs Pika", "content": "AI 做视频已经能用了！但工具太多怎么选？\n\n我实测了三款，直接给结论 👇\n\n🏆 可灵 AI（快手出品）\n画质：⭐⭐⭐⭐⭐ 国产天花板\n运镜自然、人物表情生动\n中文提示词理解最好\n适合：产品广告、品牌宣传\n\n🥈 即梦 AI（字节出品）\n速度最快，完全免费\n风格多样：写实到动漫都行\n适合：快速出大量 B-roll 素材\n\n🥉 Pika\n最易上手，英文界面\n适合：创意短片、概念可视化\n\n💡 正确用法：\n不是一个工具出完整视频\n而是生成片段 → 剪映拼接+配乐+字幕 → 成品\n\n🔗 完整对比+工作流在主页\n\n#AI视频 #可灵AI #即梦 #Pika #AI工具 #视频创作", "image_desc": "三款工具logo并排，下方各自的生成效果截图对比", "time": "5分钟（复制粘贴+配图）", "image_prompt": "三个视频播放器并排不同画面风格，星级评分，深色科技背景紫色光效，3:4竖版"}]}, {"day": 7, "date": "2026-04-14", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🛒 跨境卖家：AI 自动写多语言商品描述（10个SKU只要1小时）", "content": "一个 SKU = 英文描述+日文+韩文\n10 个 SKU 手写要 5 小时，还不算翻译 😵\n\n✅ AI 工作流，1 小时搞定：\n\n𝟭. Jasper → 生成 SEO 描述\n选 Product Description 模板\n输入卖点+品牌调性 → 3 个版本选最好的\n技巧：Tone 写「像 Anker 一样强调数据」而不是「professional」\n\n𝟮. DeepL → 高质量多语言翻译\n比 Google 翻译自然太多\n特别是日韩文的商业用语\n\n𝟯. Surfer SEO → 关键词密度校验\n粘贴描述+目标关键词\n评分调到 70+ 再发布\n\n🆓 零预算版：ChatGPT(写) + 有道(翻)\n\n🔗 完整步骤在主页\n\n#跨境电商 #亚马逊 #独立站 #AI文案 #电商运营", "image_desc": "工作流三步图：生成→翻译→SEO校验，电商风格配色", "time": "5分钟（复制粘贴+配图）", "image_prompt": "跨境电商，三步骤文案翻译SEO流程线，橙色渐变商品元素，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：Midjourney替代品 / AI绘图工具推荐 / AI画图」", "title": "", "content": "Midjourney 是标杆，但不是唯一选择。按需求推荐：\n\n追求画质：Midjourney（$10/月起），目前整体质量最高。\n\n免费且好用：即梦 AI（字节出品，完全免费，风格多样）、Playground AI（每天 500 张免费）、Stable Diffusion（开源免费，需要自己部署）。\n\n带文字的图：Ideogram（$8/月起，AI 绘图工具里文字渲染最好的）。\n\n精细控制：Leonardo AI（$12/月起，精细调参能力强）。\n\n电商产品图：Photoroom（AI 换场景）、Pic Copilot（阿里出品免费）。\n\n照片修复增强：Remini（老照片修复）。\n\n27 款 AI 绘图工具的完整对比（含评分、价格、适合场景）：[gopick.ai/compare/ai-image]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 8, "date": "2026-04-15", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "💻 程序员必看：Cursor vs Copilot vs Windsurf 怎么选？", "content": "2026 年不用 AI 写代码 = 2010 年不用自动补全\n但工具太多，选错浪费钱还浪费切换成本\n\n🏆 Cursor ($20/月)\n最强功能：Composer 模式\n用自然语言描述需求 → 直接生成多文件改动\n适合：全栈开发、快速原型\n\n🥈 GitHub Copilot ($10/月)\n行内补全最流畅，Tab 一下函数体就出来\n适合：日常编码、稳定优先\n\n🥉 Windsurf ($15/月)\n多步推理：先拆解需求再执行\n适合：预算敏感、想试新\n\n🆓 零预算：通义灵码（阿里出品，完全免费）\n中文理解最好\n\n💡 推荐组合：Cursor 写主体 + Copilot 做 Review\n\n🔗 完整横评+工作流在主页\n\n#程序员 #AI编程 #Cursor #Copilot #代码 #开发者", "image_desc": "三款工具logo对比，价格/功能/适合人群三维对比图", "time": "5分钟（复制粘贴+配图）", "image_prompt": "三个代码编辑器扇形排列不同品牌色，深蓝背景代码行装饰，3:4竖版"}]}, {"day": 9, "date": "2026-04-16", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🤖 独立站客服 80% 的问题可以让 AI 自动回复", "content": "每天重复回答同样的问题，烦死了？\n\n「我的包裹到哪了」\n「可以退货吗」\n「有没有折扣码」\n\n✅ AI 客服自动化工作流：\n\n𝟭. ChatGPT → 批量生成标准话术\n输入你的常见问题清单\n一次生成全部回复模板\n\n𝟮. Tidio → 部署 AI 聊天机器人\n免费版就能用\n自动处理 80% 的常见咨询\n\n𝟯. Gorgias → 智能工单系统\nTidio 搞不定的自动转工单\n按优先级分配给客服团队\n\n💰 成本：Tidio 免费起步，够用了\n📊 效果：客服响应时间从 4 小时降到 30 秒\n\n🔗 完整工作流在主页\n\n#跨境电商 #客服 #AI自动化 #独立站 #电商运营", "image_desc": "聊天机器人界面示意，标注自动回复vs人工接管", "time": "5分钟（复制粘贴+配图）", "image_prompt": "聊天机器人中央对话气泡自动回复，蓝绿科技背景，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：AI编程工具 / Cursor / GitHub Copilot / AI代码」", "title": "", "content": "三个都用过，直接说结论。\n\nCursor（$20/月）：体验最好。Composer 模式用自然语言描述需求直接生成多文件改动。适合全栈开发和快速原型。\n\nGitHub Copilot（$10/月）：行内补全最流畅。Tab 一下函数体就出来。适合日常编码，稳定优先。学生免费。\n\nWindsurf（$15/月）：性价比新秀。多步推理功能先拆解需求再执行，减少 AI 一次性改太多搞砸的风险。\n\n零预算方案：通义灵码（阿里出品，完全免费，中文理解最好）。\n\n我的推荐组合：Cursor 写主体代码 + Copilot 做 Review。各取所长。\n\n9 款 AI 编程工具的完整对比和开发者工作流：[gopick.ai/compare/ai-coding]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 10, "date": "2026-04-17", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🎭 不露脸也能做视频博主：AI 数字人出镜教程", "content": "想做视频但不想露脸？\n社恐博主的救星来了 👇\n\n🆓 免费方案：\n𝟭. ChatGPT → 写口播脚本\n输入主题+时长，生成适合对镜讲述的稿子\n𝟮. HeyGen → 数字人出镜\n粘贴脚本，选 AI 形象，直接生成视频\n\n💰 进阶方案：\n𝟭. Claude → 批量生成系列脚本\n上传频道定位，保持人设一致\n𝟮. HeyGen Pro → 训练专属数字分身\n上传你的真人视频 → AI 学习你的样子\n以后输入文字就出视频，还能多语言口型同步\n𝟯. 剪映 → 后期包装\n字幕+特效+片头片尾\n\n🔗 完整工作流在主页\n\n#AI数字人 #视频博主 #HeyGen #不露脸 #自媒体", "image_desc": "真人照片→AI数字人视频，箭头连接展示转换效果", "time": "5分钟（复制粘贴+配图）", "image_prompt": "左人物轮廓右AI数字人视频框，转换箭头AI芯片，紫色渐变，3:4竖版"}]}, {"day": 11, "date": "2026-04-18", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "📦 亚马逊选品别靠直觉了！AI 数据化选品三步法", "content": "等你在 Best Sellers 看到热销品的时候\n这个品类早就红海了 🌊\n\n真正赚钱的卖家在产品上榜之前就发现了它\n靠的是数据，不是直觉\n\n✅ AI 选品工作流：\n\n𝟭. Helium 10 → 数据化选品\nBlack Box 筛选：月销 300-3000 + Review<200\nCerebro 反查竞品关键词\n\n𝟮. 卖家精灵 → 中国卖家竞争密度\n查看品类中中国卖家占比\n占比>70% + 利润率下降 = 避开\n\n𝟯. Claude → 生成选品报告\n上传两个平台数据\n输出：推荐品类+启动资金+差异化建议\n\n🔗 完整教程+报告模板在主页\n\n#亚马逊 #跨境电商 #选品 #HeliumTen #电商创业", "image_desc": "数据仪表盘风格，展示选品数据+AI分析结果", "time": "5分钟（复制粘贴+配图）", "image_prompt": "数据仪表盘销量曲线商品图标，AI分析放大镜，蓝色商务风，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：留学文书怎么写 / PS写作 / personal statement」", "title": "", "content": "申请过 5 所学校，PS 全部用 AI 辅助。分享方法：\n\n核心原则：AI 帮你「想清楚」，不是替你「写出来」。\n\n第一步：挖掘故事线\n把简历+活动列表+所有经历上传给 Claude，让它输出 3 个最有说服力的叙事角度。你选一个最有感觉的。\n\n第二步：快速出初稿\n将选定的角度和要点输入 Writesonic 的 Essay Writer。10 分钟出结构完整的初稿。\n\n第三步：母语级润色\n用 Wordtune 逐句改写——每句给 5-10 种选择，把中式英语升级为母语者表达。\n\n关键提醒：最终文书必须有你自己的真实故事和情感。招生官读得出来哪些是真的。AI 帮的是结构和表达，核心故事必须是你的。\n\n三种预算方案（免费/付费/国产）的完整工作流：[gopick.ai]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 12, "date": "2026-04-19", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "📱 用 AI 批量做小红书种草图文（一天出一周的量）", "content": "每天绞尽脑汁想选题、写文案、P图\n一天只能出 1-2 条？\n\n✅ AI 批量生产工作流：\n\n𝟭. Claude → 爆文分析+选题规划\n上传同品类 10 篇爆文截图\nClaude 拆解标题公式和内容结构\n输出 30 天种草选题计划！\n\n𝟮. Midjourney → 生成独家配图\n按选题输入产品风格关键词\n无版权纠纷的原创 AI 素材\n\n𝟯. Canva Pro → 品牌统一+批量出图\n品牌套件锁定字体/配色/水印\n一次出一周的量\n\n💡 核心心法：先分析爆文规律再创作\n不是随机发帖，是数据驱动的内容策略\n\n🔗 完整工作流在主页\n\n#小红书运营 #种草 #AI创作 #内容营销 #博主", "image_desc": "小红书笔记排版示例，展示AI生成的种草图文", "time": "5分钟（复制粘贴+配图）", "image_prompt": "笔记卡片堆叠爆文标记，AI魔法棒日历，粉红色渐变，3:4竖版"}]}, {"day": 13, "date": "2026-04-20", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🎙️ 在家做播客音质也能像录音棚？AI 一键搞定", "content": "新播客主最大的问题不是内容不好\n而是音质太差——听众 30 秒内就关掉了\n\n✅ AI 播客音质三步法：\n\n𝟭. Riverside → 高清录制\n本地录制不受网络波动影响\n断网也不怕，录音不丢\n\n𝟮. Descript → 可视化剪辑\n看着文字稿剪！\n选中文字按删除 = 对应音频被剪掉\n一键去除「嗯」「啊」口头禅\n\n𝟯. Adobe Podcast → AI 终极降噪\n一键处理，完全免费！\n家里录的 → 听起来像录音棚录的\n\n💡 这三步下来\n你只需要一个普通耳机麦克风\n\n🔗 完整教程在主页\n\n#播客 #Podcast #AI工具 #音频 #自媒体", "image_desc": "音频波形before/after对比，降噪前嘈杂vs降噪后干净", "time": "5分钟（复制粘贴+配图）", "image_prompt": "麦克风中央左嘈杂波形红右干净波形绿，深色录音棚背景，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：AI视频生成 / AI做视频 / AI视频工具」", "title": "", "content": "实测了市面上主流的 AI 视频生成工具，按使用场景分：\n\n国产天花板：可灵 AI（快手出品），运镜自然、人物表情生动，中文提示词理解最好。\n\n全球标杆：Runway Gen-3（$12/月起），行业最成熟，功能最全。\n\n免费快速：即梦 AI（字节出品，完全免费），速度最快，风格多样。\n\n最易上手：Pika（免费试用），30 秒出片，适合入门。\n\n重要认知：这些工具生成的是 3-15 秒的短片段，不是完整视频。要做成品需要拼接。\n\n推荐工作流：\n1. ChatGPT 写视频提示词\n2. 用以上任一工具生成片段\n3. 剪映拼接+配乐+字幕\n\n22 款 AI 视频工具完整对比：[gopick.ai/compare/ai-video]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 14, "date": "2026-04-21", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "📊 TikTok 电商选品：用蝉妈妈+AI 找到下一个爆品", "content": "TikTok 电商不是「人找货」\n而是「货找人」——你的竞争力在内容不在 Listing\n\n✅ AI 数据化选品+出片工作流：\n\n𝟭. 蝉妈妈 → 数据选品\n看近 7 天销量增长最快的商品\n关注：关联视频数多但没有头部达人 = 机会\n高播放低转化的 = 不跟\n\n𝟮. Claude → 内容策略\n上传蝉妈妈数据截图\n为每个选品生成 3 个视频选题+脚本\n\n𝟯. 剪映 → 批量出片\n爆款模板一键套用\n一天可以出 5-10 条\n\n📊 发布后盯两个数据：\n完播率 < 30% → 开头钩子不够强\n评论互动率低 → 没戳到痛点\n\n🔗 完整工作流在主页\n\n#TikTok电商 #蝉妈妈 #选品 #短视频带货 #跨境电商", "image_desc": "TikTok数据面板+AI分析箭头+剪映出片，三段式流程", "time": "5分钟（复制粘贴+配图）", "image_prompt": "手机短视频数据面板购物车上升趋势，黑色霓虹粉蓝光效，3:4竖版"}]}, {"day": 15, "date": "2026-04-22", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "📝 论文降重不花钱！国产 AI 免费方案", "content": "上次发了付费版降重工作流，很多同学问有没有免费的？\n\n有！国产 AI 免费方案 👇\n\n𝟭. 秘塔写作猫 → AI 改写降重\n免费基础版够用\n粘贴段落自动改写，保持语义\n\n𝟮. Kimi → 语法检查\n改写后的文本粘贴给 Kimi\n检查英文语法和学术语气\nKimi 的中文界面用起来最舒服\n\n💰 成本：完全免费！\n⚠️ 短板：没有查重验证环节\n建议改写完后找同学互查一下\n\n🆚 对比：\n免费版适合：改 1-2 段高重复率段落\n付费版适合：整篇论文系统性降重+查重验证\n\n🔗 免费/付费/国产三种方案对比在主页\n\n#留学生 #论文降重 #免费AI #秘塔 #Kimi", "image_desc": "免费方案两步流程图，强调¥0成本", "time": "5分钟（复制粘贴+配图）", "image_prompt": "两个图标箭头连接零元标签免费徽章，薄荷绿渐变，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：播客怎么做 / 播客录制工具 / 播客入门」", "title": "", "content": "做了半年播客，整理出最省钱省力的工作流。\n\n最大误区：新手以为要买专业设备。不用。一个普通耳机麦克风 + AI 降噪就够了。\n\n录制：Riverside（免费版 2 小时/月），本地高清录制不受网络影响。\n\n剪辑：Descript（$24/月），像编辑文档一样剪音频——删文字就删对应语音。一键去除嗯啊口头禅。\n\n降噪：Adobe Podcast（完全免费），一键 AI 降噪，在家录的听起来像录音棚。\n\nShow Notes：Otter.ai 转文字 → Claude 生成章节目录+要点+金句。\n\n二创：一期播客可以二创为博客文章、Twitter Thread、Newsletter、小红书图文、精华短视频 6 种格式。\n\n完整工作流（含免费/付费方案）：[gopick.ai]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 16, "date": "2026-04-23", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🧠 期末复习神器：AI 帮你生成模拟考题+批改", "content": "期末考试周来了，笔记看了三遍还是记不住？\n\n被动看笔记 ❌ → 主动测试自己 ✅\n\n𝟭. NotebookLM (Google出品) → AI 学习助手\n上传课程资料（PPT/PDF都行）\nAI 自动总结+你随时互动提问\n还能生成音频摘要通勤路上听！\n\n𝟮. Quizlet → 闪卡反复记忆\n把核心概念做成闪卡\n间隔重复，科学记忆法\n\n𝟯. Claude → 模拟考试\n上传复习大纲\n「生成 20 道模拟题+标准答案+评分+薄弱分析」\n\n💡 研究证明：\n主动回忆（做题）比被动复习（看书）效果好 3 倍\n\n🔗 完整学习工作流在主页\n\n#期末考试 #复习 #留学生 #AI学习 #学习方法", "image_desc": "NotebookLM界面+闪卡+模拟考试三合一展示", "time": "5分钟（复制粘贴+配图）", "image_prompt": "电脑显示AI模拟考题闪卡大脑图标，黄色渐变学习元素，3:4竖版"}]}, {"day": 17, "date": "2026-04-24", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "✍️ 留学申请文书：AI 帮你挖故事线+母语级润色", "content": "PS 不知道写什么？每一版都觉得不够好？\n\n先解决「写什么」再解决「怎么写」👇\n\n𝟭. Claude → 深度构思\n上传你的完整背景（简历+活动+经历）\nClaude 输出 3 个最有说服力的叙事角度\n你选一个最有感觉的\n\n𝟮. Writesonic → 快速出初稿\n将选定的角度+要点输入 Essay Writer\n结构完整的文书初稿 10 分钟搞定\n\n𝟯. Wordtune → 母语级润色\n逐句提供 5-10 种改写建议\n把中式英语升级为母语者表达\n\n💡 核心心法：\nAI 不是替你写，是帮你「想清楚」\n最终文书必须有你自己的真实故事\n\n🔗 完整工作流在主页\n\n#留学申请 #PS #文书 #PersonalStatement #留学", "image_desc": "三步流程：构思→初稿→润色，学术申请风格", "time": "5分钟（复制粘贴+配图）", "image_prompt": "三个文档图标构思初稿润色阶梯连接，深蓝大学建筑剪影，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：亚马逊运营工具 / 亚马逊选品」", "title": "", "content": "做亚马逊 3 年，从最早手动选品到现在全部 AI 辅助。分享工具组合。\n\n选品：Helium 10 的 Black Box（月销 300-3000 + Review < 200 + 价格 $20-50）+ Cerebro 反查竞品关键词。\n\n竞争分析：卖家精灵看中国卖家占比。占比 > 70% + 利润率下降 = 避开。\n\nListing 优化：Jasper 生成五点描述 → DeepL 翻译 → Surfer SEO 关键词校验。\n\n客户评价分析：Shulex VOC 批量抓取评价 → Claude 生成改进洞察。\n\n广告优化：Teikametrics 自动调价（虽然不是 AI 核心工具但省很多时间）。\n\n14 个电商场景的完整工作流在这里：[gopick.ai/for/ecommerce]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 18, "date": "2026-04-25", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "📸 没钱请摄影师？AI 帮你生成专业级产品图", "content": "请一次摄影师拍产品图要 2000-5000 块\nAI 帮你免费搞定 👇\n\n🆓 免费方案：\n𝟭. Remove.bg → 一键去背景\n上传实拍图，秒出透明底 PNG\n𝟮. Canva → 换场景模板\n拖入产品图+选电商模板 → 批量出图\n\n💰 付费进阶：\n𝟭. Photoroom → AI 场景化商拍\n自动去背景+生成多种场景效果图\n𝟮. WeShop AI → AI 换模特\n上传产品图 → AI 生成真人穿搭图\n𝟯. CreatorKit → AI 产品视频\n从图片自动生成产品展示视频！\n\n🇨🇳 国产免费：\nPic Copilot（阿里出品）→ 免费电商产品图\n\n🔗 完整工作流在主页\n\n#电商摄影 #产品图 #AI修图 #跨境电商", "image_desc": "产品实拍→AI去背景→场景化商拍效果对比", "time": "5分钟（复制粘贴+配图）", "image_prompt": "左普通产品照中间AI转换右专业商拍，柔和渐变，3:4竖版"}]}, {"day": 19, "date": "2026-04-26", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🎬 一条长视频拆成 10 条短视频，全自动", "content": "录了一条 30 分钟的长视频\n手动剪短视频又要花半天？\n\n✅ AI 批量拆条工作流：\n\n🆓 免费版：\n𝟭. 剪映 → 智能识别高光片段\n一键拆为多条+自动字幕\n𝟮. Canva → 批量做竖版封面\n\n💰 付费进阶：\n𝟭. Opus Clip → AI 拆条\n上传长视频，AI 评分排序最有传播力的片段\n一键生成竖版短视频合集\n𝟮. ElevenLabs → 多语言配音\n给每条短视频加英/西/日配音\n触达更多语言受众\n𝟯. Repurpose.io → 全平台分发\n自动推送到 TikTok/Shorts/Reels\n\n📊 一条长视频 → 10 条短视频 → 3 个平台\n= 30 条内容，全自动\n\n🔗 完整工作流在主页\n\n#短视频 #内容创作 #AI剪辑 #视频博主", "image_desc": "一条长视频分裂为多条短视频的视觉效果", "time": "5分钟（复制粘贴+配图）", "image_prompt": "大视频上方分裂多个竖版短视频，剪刀AI图标，蓝紫渐变，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：TikTok电商 / TikTok带货 / 短视频电商」", "title": "", "content": "TikTok 电商跟亚马逊完全不同——不是人找货，是货找人。核心竞争力在内容质量和出片速度。\n\n选品：蝉妈妈看近 7 天增长最快的商品。关注：关联视频多但没头部达人带 = 机会。\n\n内容策略：将蝉妈妈数据截图喂给 Claude，为每个选品生成 3 个视频选题+脚本大纲。比自己想选题靠谱得多。\n\n批量出片：剪映爆款模板一键套用，一天可以出 5-10 条。先做一条满意的作为模板，然后用剪同款快速复制。\n\n关键指标：完播率 < 30% 说明开头钩子不够强。评论互动率低说明没戳到痛点。\n\n完整工作流和脚本模板：[gopick.ai]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 20, "date": "2026-04-27", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "📝 博主写了 100 篇没流量？因为你跳过了这一步", "content": "写了 100 篇文章还是没流量？\n不是你写得不好，是选题不对 ‼️\n\n大部分博主的错误：\n先写文章 → 再想有没有人搜\n正确顺序应该是：\n先确认有人搜 → 再围绕关键词写\n\n✅ AI + SEO 一条龙：\n\n𝟭. Ahrefs → 找值得写的关键词\nKD<30 + 月搜索量>500 = 蓝海词\n看前 10 名网站的 DR，有低于 40 的你就有机会\n\n𝟮. Writesonic → AI 写 SEO 长文\n输入关键词+大纲 → 生成 2000-3000 字\n⚠️ 必须加入你自己的观点（Google 看重 EEAT）\n\n𝟯. Surfer SEO → 实时评分优化\n粘贴文章+目标关键词\n调到 70 分以上再发布\n\n🔗 完整工作流在主页\n\n#SEO #博主 #AI写作 #内容创作 #流量", "image_desc": "搜索量数据图+AI写作界面+SEO评分仪表盘", "time": "5分钟（复制粘贴+配图）", "image_prompt": "搜索框文章编辑器SEO评分仪表盘，关键词标签，绿色科技，3:4竖版"}]}, {"day": 21, "date": "2026-04-28", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "📧 跨境卖家邮件营销自动化（从0到自动赚钱）", "content": "你知道吗？\n邮件营销的 ROI 是所有营销渠道中最高的\n每花 $1 平均回报 $36 💰\n\n但你不需要手动写每封邮件！\n\n🆓 免费起步：\n𝟭. ChatGPT → 生成 5 封邮件序列\n（欢迎→教育→促销→弃购挽回→复购）\n𝟮. Mailchimp → 免费发送\n500 联系人以内免费\n设置自动化触发条件\n\n💰 付费进阶：\n𝟭. Klaviyo → 用户行为数据细分\n连接 Shopify 自动同步购买数据\n𝟮. Claude → 为每个人群写个性化邮件\n𝟯. GetResponse → A/B 测试+自动化\n\n🔗 完整工作流在主页\n\n#跨境电商 #邮件营销 #Mailchimp #电商自动化", "image_desc": "邮件序列流程图：欢迎→教育→促销→复购", "time": "5分钟（复制粘贴+配图）", "image_prompt": "邮件按序列欢迎促销复购，自动化流程线，深蓝紫渐变，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：AI效率工具 / 提高工作效率的AI工具」", "title": "", "content": "花了一个月测了 158 个 AI 工具，整理成按场景的推荐表。不推最贵的，只推最合适的。\n\n写文案：ChatGPT（免费全能）/ Jasper（电商专用）/ Claude（长文分析）\n画图片：Midjourney（最强）/ 即梦AI（免费最强）/ Canva（设计排版）\n做视频：剪映（免费剪辑）/ Runway（AI 生成）/ Opus Clip（智能拆条）\n写代码：Cursor（最强编辑器）/ 通义灵码（免费最强）\n做营销：Buffer（排期发布）/ Surfer SEO（内容优化）\n学习：NotebookLM（AI 学习）/ Quizlet（闪卡记忆）/ Elicit（文献检索）\n\n每个场景都有免费/付费/国产免费三种工作流方案。\n\n交互式匹配器（选身份→选痛点→选预算→出方案）：[gopick.ai]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 22, "date": "2026-04-29", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "✉️ 用 AI 写 Newsletter，每周只花 30 分钟", "content": "想做 Newsletter 但每周写不出来？\n\n✅ AI Newsletter 工作流：\n\n𝟭. Claude → 数据驱动选题\n上传过往打开率数据\nClaude 分析读者偏好推荐最佳选题\n\n𝟮. Grammarly → 全文润色\n语法+语气+可读性一次搞定\n\n𝟯. GetResponse → 自动化发送\nA/B 测试 2 个标题\n按最佳时间自动发送\n\n💡 核心：让 AI 做 80% 的活\n你只负责加入独特观点和个人故事\n\n🔗 完整工作流在主页\n\n#Newsletter #AI写作 #内容创作 #自媒体", "image_desc": "Newsletter邮件模板示例，简洁专业风格", "time": "5分钟（复制粘贴+配图）", "image_prompt": "打开邮件信纸AI编辑发送按钮，浅灰白渐变，3:4竖版"}]}, {"day": 23, "date": "2026-04-30", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "💻 用 AI 一句话生成网页界面（v0 + Cursor 实战）", "content": "不会设计？不会前端？\nAI 帮你一句话出网页 👇\n\n𝟭. v0 by Vercel → 自然语言生成 React 组件\n输入：「做一个带搜索框和卡片列表的产品页」\n输出：完整的 React + Tailwind 代码\n\n𝟮. Cursor → 补充后端逻辑\n将 v0 项目导入 Cursor\n用 AI 补充 API 对接、数据库、登录功能\n\n💰 总成本：v0 免费试用 + Cursor $20/月\n🆓 零预算：通义灵码(免费) + ChatGPT(免费)\n\n⚠️ AI 生成的代码不是直接能上线的\n但比从零开始快 5 倍以上\n\n🔗 完整开发者工作流在主页\n\n#程序员 #前端开发 #AI代码 #v0 #独立开发", "image_desc": "自然语言描述→AI生成的网页界面截图对比", "time": "5分钟（复制粘贴+配图）", "image_prompt": "浏览器漂亮网页界面代码符号对话气泡，深色科技渐变，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：小红书运营 / 小红书怎么涨粉 / AI做小红书」", "title": "", "content": "用 AI 把一天只能出 1-2 条变成一天出一周的量。\n\n核心方法：先分析爆文再创作，不是随机发帖。\n\n1. Claude：上传同品类 10 篇爆文截图，拆解标题公式和内容结构，输出 30 天选题计划。\n\n2. Midjourney/即梦AI：按选题生成独家配图。输入产品风格关键词，获得无版权纠纷的原创素材。\n\n3. Canva Pro：品牌套件锁定字体/配色/水印，批量导出。\n\n关键不是用 AI 代替你的思考，而是用 AI 把你验证有效的模式快速复制放大。\n\n完整工作流（含国产免费方案用 Kimi + 创客贴）：[gopick.ai]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 24, "date": "2026-05-01", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🎙️ 一期播客 = 6 种内容（AI 自动二创）", "content": "录完一期播客就完了？太浪费了！\n\n✅ AI 二创工作流：\n\n一期播客 → 6 种内容格式：\n📝 博客长文\n🐦 Twitter Thread\n📧 Newsletter 摘要\n📱 小红书图文笔记\n🎬 精华短视频\n💬 LinkedIn 帖子\n\n怎么做？\n\n𝟭. Otter.ai → 录音转文字\n上传录音，自动逐字稿\n\n𝟮. Claude → 一稿改写六种格式\n将逐字稿上传\n一次输出全部 6 种格式！\n\n𝟯. Opus Clip → 拆精华短视频\n上传视频版，AI 提取最精彩片段\n\n💡 一次录制，六倍产出\n\n🔗 完整工作流在主页\n\n#播客 #内容二创 #AI工具 #自媒体", "image_desc": "一个麦克风图标→六个内容格式图标的分裂效果", "time": "5分钟（复制粘贴+配图）", "image_prompt": "麦克风中央六条线连六种内容格式图标，橙色暖色调，3:4竖版"}]}, {"day": 25, "date": "2026-05-02", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "📚 50 页论文不想读？AI 帮你 10 分钟读完", "content": "导师丢来一篇 50 页的论文\n还要下周讨论 😭\n\n✅ AI 快速阅读工作流：\n\n🆓 免费方案：\n𝟭. PopAI → 上传 PDF\nAI 逐章总结关键信息\n标注最重要的段落\n𝟮. ChatGPT → 深度讲解\n把不理解的段落问 GPT\n用类比帮你理解复杂概念\n\n💰 付费进阶：\n加上 Speechify → 把重点转成音频\n通勤路上反复听，加深记忆\n\n🇨🇳 国产免费：\nKimi → 中文界面最友好\n上传长文档直接互动问答\n\n🔗 完整工作流在主页\n\n#留学生 #论文 #AI阅读 #学习方法 #效率", "image_desc": "厚厚的论文→AI总结→10分钟读完的视觉对比", "time": "5分钟（复制粘贴+配图）", "image_prompt": "厚论文左边简洁AI摘要右边闪电图标，学术蓝渐变，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：AI简历 / 简历优化 / ATS简历」", "title": "", "content": "投了 50 份简历零回复？可能不是你不够好，是你的简历被 ATS 系统过滤掉了。\n\n超过 70% 的简历在被人看到之前就被机器淘汰了。\n\n三步优化：\n\n1. Kickresume（$19/月）：输入目标岗位，AI 生成针对性简历。内置 ATS 评分，低于 70 分就要调整。\n\n2. Grammarly Premium（$12/月）：把 was responsible for 改成 led / spearheaded。每个 bullet point 用强动词开头。\n\n3. Claude（$20/月）：上传 JD + 简历，逐条对比。它会告诉你 JD 中哪些关键词你没覆盖，怎么改。\n\n零预算版：ChatGPT（STAR 法则改写）+ Canva（ATS 友好模板）。\n\n完整教程和简历模板：[gopick.ai]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 26, "date": "2026-05-03", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🌐 AI 10 分钟建一个独立站（不用写代码）", "content": "想做独立站但不会写代码？\nAI 帮你 10 分钟搞定 👇\n\n💰 付费方案（效果最好）：\n𝟭. Shopify Magic → 后台 AI 生成文案\n产品描述、邮件模板、FAQ 一键生成\n𝟮. Framer → AI 自动建站\n输入品牌描述 → 生成响应式网站\n𝟯. Looka → AI Logo 设计\n输入品牌名 → Logo+名片+社媒素材全套\n\n🆓 免费方案：\n𝟭. ChatGPT → 写网站全部文案\n𝟮. Canva → 做 Logo 和 Banner\n\n💡 先上线再完美，别在建站上耗太久\n产品和流量才是关键\n\n🔗 完整工作流在主页\n\n#独立站 #电商 #AI建站 #Shopify #创业", "image_desc": "AI生成的独立站界面截图，专业简洁风格", "time": "5分钟（复制粘贴+配图）", "image_prompt": "电脑电商网站Logo和AI助手图标，橙色渐变，3:4竖版"}]}, {"day": 27, "date": "2026-05-04", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🎵 视频配乐不用花钱买版权了！AI 生成原创音乐", "content": "用有版权的音乐 → 视频被下架\n买版权音乐 → 又贵又难找到合适的\n\n✅ AI 生成原创配乐工作流：\n\n𝟭. Suno → AI 作曲\n输入风格描述（如「欢快电子/温暖吉他」）\n30 秒生成一首完整背景音乐\n还能输入歌词生成带人声的歌！\n\n𝟮. LALAL.AI → 人声分离\n想要纯伴奏？\n上传 → 分离人声和伴奏 → 下载伴奏\n\n𝟯. 剪映 → 音频混合\n导入配乐，调整音量匹配视频节奏\n\n💰 Suno 免费试用就够做几首\nLALAL.AI $15 买断制\n\n🔗 完整工作流在主页\n\n#AI音乐 #视频配乐 #Suno #音乐创作 #视频创作", "image_desc": "音符+AI芯片的创意插画，音乐创作风格", "time": "5分钟（复制粘贴+配图）", "image_prompt": "音符音波从AI芯片流出旋律曲线，紫蓝渐变星空，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：AI音乐 / AI作曲 / 视频配乐」", "title": "", "content": "视频配乐版权问题一直是创作者的痛。现在 AI 可以生成原创音乐，商用零风险。\n\n推荐：Suno（$10/月起，免费试用）。输入风格描述（如「欢快电子」「温暖吉他」），30 秒生成完整背景音乐。还能输入歌词生成带人声的歌。\n\n需要纯伴奏：LALAL.AI（$15 买断）做人声分离。\n\n需要专业旁白：ElevenLabs（$5/月起）生成 AI 配音。\n\n5 款 AI 音乐工具对比：[gopick.ai/compare/ai-music]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 28, "date": "2026-05-05", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🎨 AI 帮你做品牌全套设计（Logo+名片+官网）", "content": "请设计师做品牌设计要几千到几万\nAI 帮你 1 小时搞定基础版 👇\n\n💰 付费方案：\n𝟭. Looka → AI Logo 设计\n输入品牌名+行业\nAI 生成 Logo+名片+社媒头像全套\n\n𝟮. Framer → AI 建个人网站/作品集\n输入描述 → 自动生成响应式网站\n\n𝟯. Claude → 写网站文案\n上传网站结构 → 批量生成每页 SEO 文案\n\n🆓 免费版：\nChatGPT(创意) + Canva(制作)\n\n💡 品牌设计不需要完美\n先有一个 80 分的版本上线\n等赚钱了再请专业设计师升级\n\n🔗 完整工作流在主页\n\n#品牌设计 #Logo #AI设计 #个人品牌 #博主", "image_desc": "AI生成的Logo+名片+网站三合一展示", "time": "5分钟（复制粘贴+配图）", "image_prompt": "Logo名片网站三角形排列AI设计工具，珊瑚粉渐变，3:4竖版"}]}, {"day": 29, "date": "2026-05-06", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🎯 用 AI 模拟面试：20 道题+标准答案+发音练习", "content": "面试前紧张到失眠？\nAI 帮你提前演练 100 遍 👇\n\n🆓 免费方案：\n𝟭. ChatGPT → 生成面试题\n输入目标岗位 JD\nGPT 生成 20 道高频题+STAR 法则参考答案\n\n𝟮. Grammarly → 检查英文表达\n答案粘贴进去确保语法和流畅度\n\n💰 付费进阶：\n𝟭. Claude → 针对性面试辅导\n上传 JD+简历，逐条点评你的回答\n𝟮. Speak → 英文口语模拟\n导入面试题做口语练习\n𝟯. ElevenLabs → 标准发音练习\n将答案生成音频，跟读到脱口而出\n\n🔗 完整工作流在主页\n\n#面试 #求职 #留学生 #面试准备 #AI", "image_desc": "面试场景+AI辅导界面，职场专业风格", "time": "5分钟（复制粘贴+配图）", "image_prompt": "人坐电脑前练面试屏幕AI辅导问题列表，蓝灰渐变，3:4竖版"}, {"platform": "知乎", "action": "回答问题「搜索：AI工具推荐 / 好用的AI工具 / AI工具大全」", "title": "", "content": "测了 158 个 AI 工具，按人群整理推荐。\n\n不搞工具大全式列清单，每个场景只推荐最好的一套组合（工作流），按步骤告诉你怎么用。\n\n6 类人群覆盖：\n- 跨境电商卖家（14 个场景）\n- 视频创作者（9 个场景）\n- 播客主（5 个场景）\n- 图文博主（8 个场景）\n- 留学生（14 个场景）\n- 独立开发者（5 个场景）\n\n每个场景有免费/付费/国产免费三种方案。\n\n交互式匹配器：选身份→选痛点→选预算→30 秒出方案。\n\n[gopick.ai]", "image_desc": "", "time": "5分钟（搜索问题+粘贴回答）", "image_prompt": ""}]}, {"day": 30, "date": "2026-05-07", "tasks": [{"platform": "小红书", "action": "发布笔记", "title": "🏆 我测了 158 个 AI 工具，总结出这份「人群×场景」推荐表", "content": "做了一个月的 AI 工具深度测评\n从 158 个工具中筛选出真正好用的\n按人群和场景整理成了完整的推荐表 👇\n\n🛒 跨境电商卖家 → 14 个场景覆盖\n🎬 视频创作者 → 9 个场景覆盖\n🎙️ 播客主 → 5 个场景覆盖\n✍️ 图文博主 → 8 个场景覆盖\n🎓 留学生 → 14 个场景覆盖\n💻 独立开发者 → 5 个场景覆盖\n\n每个场景都有 3 种方案：\n💚 免费方案\n💰 付费方案\n🇨🇳 中文免费方案\n\n不推荐最贵的，只推荐最合适的\n每个方案都是我验证过的完整工作流\n\n🔗 交互式匹配器在主页：\n选身份 → 选痛点 → 选预算 → 30秒出方案\n\nGoPick AI — 帮你挑出最值得用的 AI 工具\n\n#AI工具 #AI推荐 #效率工具 #工具测评 #AI2026", "image_desc": "6个身份图标+55个痛点+152条工作流的全景数据图", "time": "5分钟（复制粘贴+配图）", "image_prompt": "六个人群图标环绕中央AI核心，渐变彩虹色科技未来感，3:4竖版"}]}];
+const TODAY = "2026-04-08";
+const STORAGE_KEY = "gopick_workstation_v1";
+
+let state = { currentDay: 1, done: {} };
+
+// 加载本地状态
+function loadState() {
+  try {
+    const s = localStorage.getItem(STORAGE_KEY);
+    if (s) {
+      const parsed = JSON.parse(s);
+      if (parsed.done) state.done = parsed.done;
+      if (parsed.currentDay) state.currentDay = parsed.currentDay;
+    }
+  } catch (e) {}
+  // 如果没有保存过，默认跳到今天
+  const todayDay = DATA.find(d => d.date === TODAY);
+  if (todayDay && !localStorage.getItem(STORAGE_KEY)) {
+    state.currentDay = todayDay.day;
+  }
+}
+
+function saveState() {
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+  } catch (e) {}
+}
+
+function taskKey(dayIdx, taskIdx) {
+  return `${dayIdx}_${taskIdx}`;
+}
+
+function isDone(dayIdx, taskIdx) {
+  return !!state.done[taskKey(dayIdx, taskIdx)];
+}
+
+function isDayDone(day) {
+  const tasks = day.tasks || [];
+  if (tasks.length === 0) return false;
+  return tasks.every((_, i) => isDone(day.day - 1, i));
+}
+
+function toggleDone(dayIdx, taskIdx) {
+  const key = taskKey(dayIdx, taskIdx);
+  if (state.done[key]) delete state.done[key];
+  else state.done[key] = true;
+  saveState();
+  renderRail();
+  renderTasks();
+  updateProgress();
+}
+
+function showToast(msg) {
+  const t = document.getElementById("toast");
+  t.textContent = msg;
+  t.classList.add("show");
+  clearTimeout(t._timer);
+  t._timer = setTimeout(() => t.classList.remove("show"), 1500);
+}
+
+async function copyText(text, btn) {
+  try {
+    await navigator.clipboard.writeText(text);
+    if (btn) {
+      const orig = btn.textContent;
+      btn.classList.add("copied");
+      btn.textContent = "✓ 已复制";
+      setTimeout(() => {
+        btn.classList.remove("copied");
+        btn.textContent = orig;
+      }, 1500);
+    } else {
+      showToast("✓ 已复制");
+    }
+  } catch (e) {
+    showToast("❌ 复制失败，请手动选中");
+  }
+}
+
+// 复制函数入口（按 dayIndex/taskIndex 查询原始数据）
+window.cp = function(dayIdx, taskIdx, field, btn) {
+  const day = DATA[dayIdx];
+  if (!day) return;
+  const task = day.tasks[taskIdx];
+  if (!task) return;
+  let text = "";
+  if (field === "title") text = task.title || "";
+  else if (field === "content") text = task.content || "";
+  else if (field === "titleContent") {
+    text = (task.title ? task.title + "\n\n" : "") + (task.content || "");
+  } else if (field === "prompt") text = task.image_prompt || "";
+  copyText(text, btn);
+};
+
+function renderRail() {
+  const rail = document.getElementById("dayRail");
+  rail.innerHTML = "";
+  DATA.forEach(day => {
+    const btn = document.createElement("div");
+    btn.className = "day-btn";
+    if (day.day === state.currentDay) btn.classList.add("active");
+    if (day.date === TODAY) btn.classList.add("today");
+    if (isDayDone(day)) btn.classList.add("done");
+    btn.innerHTML = `<div class="d-num">D${day.day}</div><div class="d-date">${day.date.slice(5)}</div>`;
+    btn.onclick = () => {
+      state.currentDay = day.day;
+      saveState();
+      renderRail();
+      renderTasks();
+      // 滚动到顶部
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
+    rail.appendChild(btn);
+  });
+  // 自动滚动到当前
+  const activeBtn = rail.querySelector(".day-btn.active");
+  if (activeBtn) activeBtn.scrollIntoView({ behavior: "smooth", inline: "center", block: "nearest" });
+}
+
+function renderTasks() {
+  const day = DATA.find(d => d.day === state.currentDay);
+  if (!day) return;
+  const dayIdx = day.day - 1;
+
+  document.getElementById("dayTitle").textContent = `Day ${day.day}`;
+  document.getElementById("dayDate").textContent = day.date;
+
+  const list = document.getElementById("taskList");
+  list.innerHTML = "";
+
+  day.tasks.forEach((task, taskIdx) => {
+    const done = isDone(dayIdx, taskIdx);
+    const isXhs = task.platform && task.platform.indexOf("小红书") !== -1;
+    const card = document.createElement("div");
+    card.className = "task-card" + (done ? " done" : "");
+
+    const labelClass = isXhs ? "label-xhs" : "label-zh";
+    const labelIcon = isXhs ? "📕" : "💬";
+
+    let html = `
+      <div class="task-head">
+        <div>
+          <span class="task-label ${labelClass}">${labelIcon} ${escapeHtml(task.platform)}</span>
+          ${task.action ? `<div class="task-action">${escapeHtml(task.action)}${task.time ? ' · ⏱ ' + escapeHtml(task.time) : ''}</div>` : ''}
+        </div>
+        <button class="check-btn" onclick="window.toggleDone(${dayIdx}, ${taskIdx})" title="标记完成">✓</button>
+      </div>
+    `;
+
+    if (task.title) {
+      html += `
+        <div class="section-label">标题</div>
+        <div class="title-block">${escapeHtml(task.title)}</div>
+        <div class="btn-row">
+          <button class="btn btn-secondary" onclick="cp(${dayIdx}, ${taskIdx}, 'title', this)">📋 复制标题</button>
+        </div>
+      `;
+    }
+
+    if (task.content) {
+      html += `
+        <div class="section-label">正文</div>
+        <div class="content-block">${escapeHtml(task.content)}</div>
+        <div class="btn-row">
+          <button class="btn btn-primary" onclick="cp(${dayIdx}, ${taskIdx}, 'content', this)">📋 复制正文</button>
+          ${task.title ? `<button class="btn btn-secondary" onclick="cp(${dayIdx}, ${taskIdx}, 'titleContent', this)">📋 复制标题+正文</button>` : ''}
+        </div>
+      `;
+    }
+
+    if (isXhs && task.image_prompt) {
+      html += `
+        <div class="section-label">配图 Prompt（粘贴到即梦AI）</div>
+        <div class="prompt-block">${escapeHtml(task.image_prompt)}</div>
+        <div class="btn-row">
+          <button class="btn btn-amber" onclick="cp(${dayIdx}, ${taskIdx}, 'prompt', this)">🎨 复制 Prompt → 即梦AI</button>
+        </div>
+      `;
+    }
+
+    if (isXhs && task.image_desc) {
+      html += `
+        <div class="section-label">配图构思参考</div>
+        <div class="image-desc">💡 ${escapeHtml(task.image_desc)}</div>
+      `;
+    }
+
+    card.innerHTML = html;
+    list.appendChild(card);
+  });
+
+  // 导航按钮
+  document.getElementById("prevBtn").disabled = state.currentDay <= 1;
+  document.getElementById("nextBtn").disabled = state.currentDay >= DATA.length;
+}
+
+window.toggleDone = toggleDone;
+
+function escapeHtml(str) {
+  if (!str) return "";
+  return String(str)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#039;");
+}
+
+function updateProgress() {
+  const total = DATA.reduce((sum, d) => sum + d.tasks.length, 0);
+  const done = Object.keys(state.done).length;
+  const pct = total > 0 ? Math.round(done / total * 100) : 0;
+  document.getElementById("progress").textContent = `已完成 ${done} / ${total} · ${pct}%`;
+}
+
+document.getElementById("prevBtn").onclick = () => {
+  if (state.currentDay > 1) {
+    state.currentDay--;
+    saveState();
+    renderRail();
+    renderTasks();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+};
+document.getElementById("nextBtn").onclick = () => {
+  if (state.currentDay < DATA.length) {
+    state.currentDay++;
+    saveState();
+    renderRail();
+    renderTasks();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }
+};
+
+// 键盘快捷键
+document.addEventListener("keydown", (e) => {
+  if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
+  if (e.key === "ArrowLeft") document.getElementById("prevBtn").click();
+  if (e.key === "ArrowRight") document.getElementById("nextBtn").click();
+});
+
+// 启动
+loadState();
+renderRail();
+renderTasks();
+updateProgress();
+</script>
+</body>
+</html>
